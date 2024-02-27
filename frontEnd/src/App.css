@@ -4,3 +4,18 @@
   padding: 2rem;
   text-align: center;
 }
+
+.homeCard {
+  padding-bottom: 2rem;
+}
+.product-image {
+  min-height: 14rem;
+  max-height: 14rem;
+  object-fit: cover;
+}
+
+.modal-image {
+  max-width: 100%;
+  min-width: 100%;
+  object-fit: contain;
+}
