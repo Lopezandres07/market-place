@@ -1,0 +1,8 @@
+
+Started GET / for :: ::1 at Mon Feb 26 2024 22:30:22 GMT-0300 (hora estándar de Brasilia)
+  Parameters in body: {}
+Completed: 404 message:  Time response: 12 ms Request ID: [209db374-5544-48f9-8918-19859da61f5d]
+
+Started POST /api/v1/products for :: ::1 at Tue Feb 27 2024 14:16:09 GMT-0300 (hora estándar de Brasilia)
+  Parameters in body: {"name":"Mueble","description":"Mueblede color blanca","price":19990,"URLimage":"image's URL"}
+Completed: 404 message:  Time response: 6 ms Request ID: [550d67d2-d024-4301-8a6b-a5b19a2939d3]

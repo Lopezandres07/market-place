@@ -1,5 +1,6 @@
 import swaggerJSDoc from 'swagger-jsdoc'
 import swaggerUi from 'swagger-ui-express'
+import YAML from 'yamljs'
 
 const options = {
   definition: {
@@ -15,10 +16,12 @@ const options = {
       },
     ],
   },
-  apis: ['config/routes/docs/*.json'],
+  apis: ['config/routes/docs/*.yaml'],
 }
 
-const specs = swaggerJSDoc(options)
+const swaggerDocument = YAML.load('config/routes/docs/swaggerV1.yaml')
+
+const specs = swaggerJSDoc({ ...options, ...swaggerDocument })
 
 export default (app) => {
   app.use(
