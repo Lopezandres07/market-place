@@ -22,10 +22,6 @@ function App() {
           element={<RegisterPage />}
         />
         <Route
-          path='/Products'
-          element={<Products />}
-        />
-        <Route
           path='*'
           element={<NotFound />}
         />
