@@ -1,7 +1,15 @@
-import './App.css'
+import "./App.css";
+import "bootstrap/dist/css/bootstrap.min.css";
+import Products from "./Views/Products";
 
 function App() {
-  return <></>
+  return (
+    <>
+      <div className="App">
+        <Products />
+      </div>
+    </>
+  );
 }
 
-export default App
+export default App;
