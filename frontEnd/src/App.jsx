@@ -40,6 +40,10 @@ function App() {
           path='/admin/publications/create'
           element={token ? <CreatePublication /> : <Navigate to='/login' />}
         />
+        <Route
+          path='/admin/products'
+          element={token ? <Products /> : <Navigate to='/login' />}
+        />
 
         {/* User Routes */}
 
