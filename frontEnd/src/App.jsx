@@ -3,11 +3,11 @@ import 'bootstrap/dist/css/bootstrap.min.css'
 import Products from './Views/Products'
 import { Routes, Route, Navigate } from 'react-router-dom'
 import NavigationBar from './components/NavigationBar'
-
-
+import { UserContext } from './providers/UserProvider'
+import { useContext } from 'react'
 
 function App() {
-  /*   const { token } = useContext(UserContext) */
+  const { token } = useContext(UserContext)
 
   return (
     <main>
@@ -32,7 +32,7 @@ function App() {
 
         {/* Admin Routes */}
 
-        {/*   <Route
+        {/* <Route
           path='/admin/profile'
           element={token ? <AdminProfile /> : <Navigate to='/login' />}
         />
@@ -51,7 +51,7 @@ function App() {
 
         {/* User Routes */}
 
-        {/*  <Route
+        {/* <Route
           path='/user/profile'
           element={token ? <UserProfile /> : <Navigate to='/login' />}
         />
