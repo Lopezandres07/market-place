@@ -5,6 +5,10 @@ import { Routes, Route, Navigate } from 'react-router-dom'
 import NavigationBar from './components/NavigationBar'
 import { UserContext } from './providers/UserProvider'
 import { useContext } from 'react'
+import NotFound from './Views/NotFound'
+import Home from './Views/Home'
+import Register from './Views/Register'
+import Login from './Views/Login'
 
 function App() {
   const { token } = useContext(UserContext)
@@ -13,26 +17,30 @@ function App() {
     <main>
       <NavigationBar />
       <Routes>
-        {/* <Route
+        <Route
           path='/'
-          element={<HomePage />}
+          element={<Home />}
         />
         <Route
           path='/login'
-          element={<LoginPage />}
+          element={<Login />}
         />
         <Route
           path='/register'
-          element={<RegisterPage />}
+          element={<Register />}
+        />
+        <Route
+          path='/products'
+          element={<Products />}
         />
         <Route
           path='*'
           element={<NotFound />}
-        /> */}
+        />
 
         {/* Admin Routes */}
 
-        {/* <Route
+        {/*  <Route
           path='/admin/profile'
           element={token ? <AdminProfile /> : <Navigate to='/login' />}
         />
@@ -43,26 +51,26 @@ function App() {
         <Route
           path='/admin/publications/create'
           element={token ? <CreatePublication /> : <Navigate to='/login' />}
-        />
+        /> */}
         <Route
           path='/admin/products'
           element={token ? <Products /> : <Navigate to='/login' />}
-        /> */}
+        />
 
         {/* User Routes */}
 
-        {/* <Route
+        {/*   <Route
           path='/user/profile'
           element={token ? <UserProfile /> : <Navigate to='/login' />}
-        />
-        <Route
-          path='/user/products'
-          element={token ? <Products /> : <Navigate to='/login' />}
         />
         <Route
           path='/user/favorites'
           element={token ? <Favorites /> : <Navigate to='/login' />}
         /> */}
+        <Route
+          path='/user/products'
+          element={token ? <Products /> : <Navigate to='/login' />}
+        />
       </Routes>
     </main>
   )
