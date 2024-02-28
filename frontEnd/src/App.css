@@ -8,6 +8,11 @@
 .homeCard {
   padding-bottom: 2rem;
 }
+
+.precio {
+  font-size: 1.3rem;
+  font-weight: 500;
+}
 .product-image {
   min-height: 14rem;
   max-height: 14rem;
@@ -18,4 +23,38 @@
   max-width: 100%;
   min-width: 100%;
   object-fit: contain;
+  text-align: center;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-around;
+}
+#btn-detalles {
+  background-color: #ffffff;
+  border-color: #000000;
+  color: #000000;
+}
+#btn-detalles:hover {
+  background-color: #26ff00;
+  border-color: #000000;
+  color: #000000;
+}
+#btn-favorite {
+  background-color: #ffffff;
+  border-color: #000000;
+  color: #000000;
+}
+.favorite-heart {
+  color: red;
+}
+
+.homeCardFavorites {
+  padding-bottom: 2rem;
+}
+
+.product-image-fav {
+  min-height: 18rem;
+  max-height: 18rem;
+  object-fit: cover;
 }
