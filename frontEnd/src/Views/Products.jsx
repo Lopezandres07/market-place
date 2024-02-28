@@ -1,10 +1,13 @@
-import React, { useState } from 'react'
-import { Card, Row, Col, Button, Modal } from 'react-bootstrap'
-import '../App.css'
+import React, { useState } from "react";
+import { Card, Row, Col, Button, Modal } from "react-bootstrap";
+import Favorites from "./Favorites";
+import "../App.css";
 
 const Products = () => {
-  const [showDetails, setShowDetails] = useState(false)
-  const [selectedProduct, setSelectedProduct] = useState(null)
+  const [showDetails, setShowDetails] = useState(false);
+  const [selectedProduct, setSelectedProduct] = useState(null);
+  const [favorites, setFavorites] = useState([]);
+
 
   const handleDetailsClick = (product) => {
     setSelectedProduct(product)
@@ -14,6 +17,22 @@ const Products = () => {
   const handleCloseDetails = () => {
     setShowDetails(false)
   }
+
+  const addToFavorites = (product) => {
+    if (isFavorite(product)) {
+      setFavorites(favorites.filter((fav) => fav.id !== product.id));
+    } else {
+      setFavorites([...favorites, product]);
+    }
+  };
+
+  const isFavorite = (product) => {
+    return favorites.some((fav) => fav.id === product.id);
+  };
+
+  const removeFromFavorites = (product) => {
+    setFavorites(favorites.filter((fav) => fav.id !== product.id));
+  };
 
   const products = [
     {
@@ -88,13 +107,31 @@ const Products = () => {
                       ? item.description.substring(0, 20) + '...'
                       : item.description}{' '}
                   </Card.Text>
-                  <Card.Text> Precio: $ {item.price}</Card.Text>
-                  <div className='d-flex justify-content-center'>
+
+                  <Card.Text className="precio">
+                    {" "}
+                    Precio: $ {item.price}
+                  </Card.Text>
+                  <div className="buttons">
+
                     <Button
+                      id="btn-detalles"
                       key={item.id}
                       onClick={() => handleDetailsClick(item)}
                     >
                       Detalles 👀
+                    </Button>
+                    <Button
+                      id="btn-favorite"
+                      onClick={() => addToFavorites(item)}
+                    >
+                      <i
+                        className={
+                          isFavorite(item)
+                            ? "fas fa-heart favorite-heart"
+                            : "far fa-heart"
+                        }
+                      ></i>
                     </Button>
                   </div>
                 </Card.Body>
@@ -111,18 +148,30 @@ const Products = () => {
         <Modal.Header closeButton>
           <Modal.Title>{selectedProduct && selectedProduct.name}</Modal.Title>
         </Modal.Header>
-        <Modal.Body>
+        <Modal.Body className="text-center">
           <img
             src={selectedProduct && selectedProduct.urlimage}
             alt={selectedProduct && selectedProduct.name}
             className='modal-image'
           />
-          <p>{selectedProduct && selectedProduct.description}</p>
-          <p>Precio: $ {selectedProduct && selectedProduct.price}</p>
+          <p className="text-justify">
+            {selectedProduct && selectedProduct.description}
+          </p>
+          <p className="text-center h4">
+            Precio: $ {selectedProduct && selectedProduct.price}
+          </p>
         </Modal.Body>
       </Modal>
-    </div>
-  )
-}
+
+
+      {/* Vista de Favoritos */}
+      <Favorites
+        favorites={favorites}
+        removeFromFavorites={removeFromFavorites}
+      />
+    </>
+  );
+};
+
 
 export default Products
