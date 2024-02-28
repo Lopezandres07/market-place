@@ -2,14 +2,16 @@ import './App.css'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import Products from './Views/Products'
 import { Routes, Route, Navigate } from 'react-router-dom'
+import NavigationBar from './components/NavigationBar'
 
 function App() {
-  const { token } = useContext(UserContext)
+  /*   const { token } = useContext(UserContext) */
 
   return (
     <main>
+      <NavigationBar />
       <Routes>
-        <Route
+        {/* <Route
           path='/'
           element={<HomePage />}
         />
@@ -24,11 +26,11 @@ function App() {
         <Route
           path='*'
           element={<NotFound />}
-        />
+        /> */}
 
         {/* Admin Routes */}
 
-        <Route
+        {/*   <Route
           path='/admin/profile'
           element={token ? <AdminProfile /> : <Navigate to='/login' />}
         />
@@ -43,11 +45,11 @@ function App() {
         <Route
           path='/admin/products'
           element={token ? <Products /> : <Navigate to='/login' />}
-        />
+        /> */}
 
         {/* User Routes */}
 
-        <Route
+        {/*  <Route
           path='/user/profile'
           element={token ? <UserProfile /> : <Navigate to='/login' />}
         />
@@ -58,7 +60,7 @@ function App() {
         <Route
           path='/user/favorites'
           element={token ? <Favorites /> : <Navigate to='/login' />}
-        />
+        /> */}
       </Routes>
     </main>
   )
