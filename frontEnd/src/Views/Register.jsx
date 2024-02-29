@@ -5,7 +5,6 @@ const Register = () => {
   const {
     register,
     handleSubmit,
-    watch,
     setValue,
     reset,
     formState: { errors },
@@ -43,9 +42,18 @@ const Register = () => {
       <input
         type='text'
         {...register('Apellido', {
-          required: true,
+          required: {
+            value: true,
+            message: 'Apellido es requerido',
+          },
+          minLength: {
+            value: 2,
+            message: 'Apellido debe tener al menos 2 caracteres',
+          },
         })}
       />
+
+      {errors.Apellido && <span>{errors.Apellido.message}</span>}
 
       <label htmlFor='Email'>Correo</label>
       <input
@@ -106,9 +114,7 @@ const Register = () => {
         }}
       />
 
-      <button>Enviar</button>
-
-      {/* <pre>{JSON.stringify(watch(), null, 1)}</pre> */}
+      <button className='mt-2'>Enviar</button>
     </form>
   )
 }
