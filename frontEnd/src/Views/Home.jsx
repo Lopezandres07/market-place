@@ -1,29 +1,42 @@
-import React from 'react'
+import React from 'react';
+import { Link } from 'react-router-dom';
+import '../App.css'; // Importamos los estilos CSS
 
-const Home = () => {
+function Home() {
   return (
-    <div>
-      {/* Header */}
-      <header className='header'>
-        <div className='header-left'>
-          {/* Logo */}
-          <img
-            src='/ruta/a/tu/logo.png'
-            alt='Logo'
-            className='logo'
-          />
-          {/* Nombre del marketplace */}
-          <h1>Nombre del Marketplace</h1>
-        </div>
+    <div className="container">
+      <header className="header">
+        <h1>MarketPlace</h1>
       </header>
-
-      {/* Contenido principal */}
-      <div className='main-content'>
-        <h1>Bienvenido a nuestro Marketplace</h1>
-        <p>Explora nuestros productos y encuentra lo que necesitas.</p>
+      <div className="content">
+        <aside className="sidebar">
+          <h2>Filtrar por categorías</h2>
+          <ul>
+            <li><Link to="/category/ropa" className="link">Ropa</Link></li>
+            <li><Link to="/category/tecnologia" className="link">Tecnología</Link></li>
+            <li><Link to="/category/hogar" className="link">Hogar</Link></li>
+            {/* Agrega más categorías según sea necesario */}
+          </ul>
+        </aside>
+        <main className="main-content">
+          <h2>Bienvenido a MarketPlace</h2>
+          <p>Descubre una amplia variedad de productos de diferentes categorías.</p>
+          <p>¿Ya tienes una cuenta? <Link to="/login" className="link">Inicia sesión</Link></p>
+          <p>¿Eres nuevo aquí? <Link to="/register" className="link">Regístrate</Link></p>
+        </main>
       </div>
+      <footer className="footer">
+        <div className="social-links">
+          <a href="https://www.instagram.com/rustico.kids/?next=%2F" target="_blank" rel="noopener noreferrer">
+            <img src="/instagram-icon.png" alt="Instagram" />
+          </a>
+          {/* Agrega más enlaces según sea necesario */}
+        </div>
+        <p>MarketPlace - Todos los derechos reservados &copy; {new Date().getFullYear()}</p>
+      </footer>
     </div>
-  )
+  );
 }
 
-export default Home
+export default Home;
+
