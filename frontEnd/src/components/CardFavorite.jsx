@@ -16,7 +16,7 @@ const CardFavorite = ({ favorite, removeFromFavorites, handleShowModal }) => {
             <Card.Title>{favorite.name}</Card.Title>
             <Button
               variant="outline"
-              onClick={() => removeFromFavorites(favorite)}
+              onClick={() => removeFromFavorites(favorite.id)}
             >
               <i className="fas fa-heart"></i>
             </Button>

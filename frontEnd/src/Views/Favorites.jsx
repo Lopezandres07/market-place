@@ -1,11 +1,13 @@
 import React from "react";
-import { Row, Col } from "react-bootstrap";
+import { Row, Col, Button, Modal } from "react-bootstrap";
 import CardFavorite from "../components/CardFavorite";
-import { Modal } from "react-bootstrap";
+import { useFavorites } from "../components/contexts/FavoritesContext";
+import { useState } from "react";
 
-const Favorites = ({ favorites, removeFromFavorites }) => {
-  const [showModal, setShowModal] = React.useState(false);
-  const [selectedProduct, setSelectedProduct] = React.useState(null);
+const Favorites = () => {
+  const { favorites, removeFromFavorites } = useFavorites();
+  const [showModal, setShowModal] = useState(false);
+  const [selectedProduct, setSelectedProduct] = useState(null);
 
   console.log(favorites);
 
