@@ -4,7 +4,7 @@ import { Card, Button } from "react-bootstrap";
 const CardProduct = ({
   product,
   handleDetailsClick,
-  addToFavorites,
+  toggleFavorite,
   isFavorite,
 }) => {
   return (
@@ -31,7 +31,7 @@ const CardProduct = ({
             >
               Detalles 👀
             </Button>
-            <Button id="btn-favorite" onClick={() => addToFavorites(product)}>
+            <Button id="btn-favorite" onClick={() => toggleFavorite(product)}>
               <i
                 className={
                   isFavorite(product)

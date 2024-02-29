@@ -1,14 +1,14 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom"; // Importa Link desde React Router
 import { Row, Col } from "react-bootstrap";
 import CardProduct from "../components/CardProducts";
 import { Modal } from "react-bootstrap";
+import { useFavorites } from "../components/contexts/FavoritesContext";
 
 const Products = () => {
+  const { favorites, addToFavorites, toggleFavorite } = useFavorites();
   const [showDetails, setShowDetails] = useState(false);
   const [selectedProduct, setSelectedProduct] = useState(null);
-  const [favorites, setFavorites] = useState([]);
-
-  console.log(favorites);
 
   const handleDetailsClick = (product) => {
     setSelectedProduct(product);
@@ -17,14 +17,6 @@ const Products = () => {
 
   const handleCloseDetails = () => {
     setShowDetails(false);
-  };
-
-  const addToFavorites = (product) => {
-    if (isFavorite(product)) {
-      setFavorites(favorites.filter((fav) => fav.id !== product.id));
-    } else {
-      setFavorites([...favorites, product]);
-    }
   };
 
   const isFavorite = (product) => {
@@ -81,6 +73,7 @@ const Products = () => {
 
   return (
     <>
+      <Link to="/favorites">Ir a Favoritos</Link>
       <Row xs={1} sm={2} md={4}>
         {products.map((item) => (
           <Col key={item.id}>
@@ -88,6 +81,7 @@ const Products = () => {
               product={item}
               handleDetailsClick={handleDetailsClick}
               addToFavorites={addToFavorites}
+              toggleFavorite={toggleFavorite}
               isFavorite={isFavorite}
               favorites={favorites}
             />
