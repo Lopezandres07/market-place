@@ -9,6 +9,7 @@ import NotFound from './Views/NotFound'
 import Home from './Views/Home'
 import Register from './Views/Register'
 import Login from './Views/Login'
+import Favorites from './Views/Favorites'
 
 function App() {
   const { token } = useContext(UserContext)
@@ -36,6 +37,10 @@ function App() {
         <Route
           path='*'
           element={<NotFound />}
+        />
+        <Route
+          path='/favorites'
+          element={<Favorites />}
         />
 
         {/* Admin Routes */}

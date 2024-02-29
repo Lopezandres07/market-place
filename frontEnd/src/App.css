@@ -55,3 +55,15 @@
   max-height: 18rem;
   object-fit: cover;
 }
+
+.active {
+  color: rgb(255, 0, 0);
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.noActive {
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  text-decoration: none;
+}
