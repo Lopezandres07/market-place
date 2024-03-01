@@ -1,33 +1,42 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import Gallery from "../components/Gallery";
 import "../App.css";
+import Products from "../components/Products";
 
-function Home() {
+function HomeUser() {
   return (
     <div className="container">
       <header className="header">
         <h1>MarketPlace</h1>
       </header>
       <div className="content">
+        <aside className="sidebar">
+          <h2>Filtrar por categorías</h2>
+          <ul>
+            <li>
+              <Link to="/category/ropa" className="link">
+                Ropa
+              </Link>
+            </li>
+            <li>
+              <Link to="/category/tecnologia" className="link">
+                Tecnología
+              </Link>
+            </li>
+            <li>
+              <Link to="/category/hogar" className="link">
+                Hogar
+              </Link>
+            </li>
+            {/* Agrega más categorías según sea necesario */}
+          </ul>
+        </aside>
         <main className="main-content">
           <h2>Bienvenido a MarketPlace</h2>
           <p>
             Descubre una amplia variedad de productos de diferentes categorías.
           </p>
-          <Gallery />
-          <p>
-            ¿Ya tienes una cuenta?{" "}
-            <Link to="/login" className="link">
-              Inicia sesión
-            </Link>
-          </p>
-          <p>
-            ¿Eres nuevo aquí?{" "}
-            <Link to="/register" className="link">
-              Regístrate
-            </Link>
-          </p>
+          <Products />
         </main>
       </div>
       <footer className="footer">
@@ -50,4 +59,4 @@ function Home() {
   );
 }
 
-export default Home;
+export default HomeUser;

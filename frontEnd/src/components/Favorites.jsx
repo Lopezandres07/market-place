@@ -1,8 +1,9 @@
 import React from "react";
 import { Row, Col, Button, Modal } from "react-bootstrap";
-import CardFavorite from "../components/CardFavorite";
-import { useFavorites } from "../components/contexts/FavoritesContext";
+import CardFavorite from "./CardFavorite";
+import { useFavorites } from "./contexts/FavoritesContext";
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 const Favorites = () => {
   const { favorites, removeFromFavorites } = useFavorites();
@@ -22,8 +23,11 @@ const Favorites = () => {
 
   return (
     <>
+      <Link to="/homeUser" className="text-decoration-none text-dark">
+        Volver a Productos
+      </Link>
       <h2 className="text-center mb-4">Favoritos</h2>
-      <Row xs={1} sm={2} md={3} lg={4} className="mb-4">
+      <Row xs={1} sm={2} md={3} className="mb-4">
         {favorites.map((item) => (
           <Col key={item.id}>
             <CardFavorite

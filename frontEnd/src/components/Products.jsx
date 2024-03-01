@@ -1,9 +1,9 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom"; // Importa Link desde React Router
+import { Link } from "react-router-dom";
 import { Row, Col } from "react-bootstrap";
-import CardProduct from "../components/CardProducts";
+import CardProduct from "./CardProducts";
 import { Modal } from "react-bootstrap";
-import { useFavorites } from "../components/contexts/FavoritesContext";
+import { useFavorites } from "./contexts/FavoritesContext";
 
 const Products = () => {
   const { favorites, addToFavorites, toggleFavorite } = useFavorites();
@@ -73,7 +73,10 @@ const Products = () => {
 
   return (
     <>
-      <Link to="/favorites">Ir a Favoritos</Link>
+      <Link to="/FavoritesUser" className="text-decoration-none text-dark">
+        Ir a Favoritos
+      </Link>
+      <h2 className="text-center mb-4">Productos</h2>
       <Row xs={1} sm={2} md={4}>
         {products.map((item) => (
           <Col key={item.id}>
@@ -88,7 +91,7 @@ const Products = () => {
           </Col>
         ))}
       </Row>
-      {/* Vista superpuesta */}
+      {/* Modal para ver mas detalles */}
       <Modal show={showDetails} onHide={handleCloseDetails}>
         <Modal.Header closeButton>
           <Modal.Title>{selectedProduct && selectedProduct.name}</Modal.Title>
