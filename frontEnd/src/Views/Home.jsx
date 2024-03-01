@@ -7,7 +7,7 @@ function Home() {
   return (
     <div className="container">
       <header className="header">
-        <h1>MarketPlace</h1>
+        <h1>Bienvenidos a MarketPleca</h1>
       </header>
       <div className="content">
         <main className="main-content">
