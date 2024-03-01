@@ -73,10 +73,10 @@ const Products = () => {
 
   return (
     <>
+      <h2 className="text-center mb-4">Productos</h2>
       <Link to="/FavoritesUser" className="text-decoration-none text-dark">
         Ir a Favoritos
       </Link>
-      <h2 className="text-center mb-4">Productos</h2>
       <Row xs={1} sm={2} md={4}>
         {products.map((item) => (
           <Col key={item.id}>

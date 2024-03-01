@@ -23,10 +23,10 @@ const Favorites = () => {
 
   return (
     <>
+      <h2 className="text-center mb-4">Favoritos</h2>
       <Link to="/homeUser" className="text-decoration-none text-dark">
         Volver a Productos
       </Link>
-      <h2 className="text-center mb-4">Favoritos</h2>
       <Row xs={1} sm={2} md={3} className="mb-4">
         {favorites.map((item) => (
           <Col key={item.id}>

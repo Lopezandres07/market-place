@@ -32,10 +32,6 @@ function FavoritesUser() {
           </ul>
         </aside>
         <main className="main-content">
-          <h2>Bienvenido a MarketPlace</h2>
-          <p>
-            Descubre una amplia variedad de productos de diferentes categorías.
-          </p>
           <Favorites />
         </main>
       </div>

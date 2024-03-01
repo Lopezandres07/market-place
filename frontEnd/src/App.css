@@ -78,7 +78,7 @@
   text-decoration: none;
 }
 
-.link:hover {
+.navLink:hover {
   text-decoration: underline;
   .active {
     color: rgb(255, 0, 0);
@@ -91,3 +91,4 @@
     font-weight: bold;
     text-decoration: none;
   }
+}

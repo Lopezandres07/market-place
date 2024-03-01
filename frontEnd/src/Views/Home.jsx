@@ -6,9 +6,6 @@ import "../App.css";
 function Home() {
   return (
     <div className="container">
-      <header className="header">
-        <h1>Bienvenidos a MarketPleca</h1>
-      </header>
       <div className="content">
         <main className="main-content">
           <h2>Bienvenido a MarketPlace</h2>
