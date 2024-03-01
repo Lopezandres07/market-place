@@ -1,31 +1,47 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import { useForm } from 'react-hook-form'
+import { UserContext } from '../providers/UserProvider'
 
 const Register = () => {
+  const { registerWithRegisterInputs } = useContext(UserContext)
+
   const {
     register,
     handleSubmit,
     setValue,
     reset,
+    watch,
     formState: { errors },
   } = useForm()
 
   console.log(errors)
 
-  const onSubmit = handleSubmit((data) => {
-    console.log(data)
+  const onSubmit = handleSubmit(async (data) => {
+    console.log('User: ', data)
+    const { firstName, lastName, email, password, avatarURL } = data
+    console.log(firstName, lastName, email, password, avatarURL)
 
-    alert('Usuario registrado con éxito')
+    const response = await registerWithRegisterInputs(
+      firstName,
+      lastName,
+      email,
+      password,
+      avatarURL
+    )
 
+    console.log(response)
+
+    /*     alert('Usuario registrado con éxito')
+     */
     reset()
   })
 
   return (
     <form onSubmit={onSubmit}>
-      <label htmlFor='Nombre'>Nombre</label>
+      <label htmlFor='firstName'>Nombre</label>
       <input
         type='text'
-        {...register('Nombre', {
+        {...register('firstName', {
           required: {
             value: true,
             message: 'Nombre es requerido',
@@ -36,12 +52,12 @@ const Register = () => {
           },
         })}
       />
-      {errors.Nombre && <span>{errors.Nombre.message}</span>}
+      {errors.fistName && <span>{errors.fistName.message}</span>}
 
-      <label htmlFor='Apellido'>Apellido</label>
+      <label htmlFor='lastName'>Apellido</label>
       <input
         type='text'
-        {...register('Apellido', {
+        {...register('lastName', {
           required: {
             value: true,
             message: 'Apellido es requerido',
@@ -53,12 +69,12 @@ const Register = () => {
         })}
       />
 
-      {errors.Apellido && <span>{errors.Apellido.message}</span>}
+      {errors.lastName && <span>{errors.lastName.message}</span>}
 
-      <label htmlFor='Email'>Correo</label>
+      <label htmlFor='email'>Correo</label>
       <input
         type='email'
-        {...register('Email', {
+        {...register('email', {
           required: {
             value: true,
             message: 'Correo es requerido',
@@ -70,12 +86,12 @@ const Register = () => {
         })}
       />
 
-      {errors.Email && <span>{errors.Email.message}</span>}
+      {errors.email && <span>{errors.email.message}</span>}
 
-      <label htmlFor='Password'>Contraseña</label>
+      <label htmlFor='password'>Contraseña</label>
       <input
         type='password'
-        {...register('Contraseña', {
+        {...register('password', {
           required: {
             value: true,
             message: 'Contraseña es requerida',
@@ -87,24 +103,22 @@ const Register = () => {
         })}
       />
 
-      {errors.Contraseña && <span>{errors.Contraseña.message}</span>}
+      {errors.password && <span>{errors.password.message}</span>}
 
-      <label htmlFor='Password'>Confirmar contraseña</label>
+      <label htmlFor='password'>Confirmar contraseña</label>
       <input
         type='password'
-        {...register('confirmarContraseña', {
+        {...register('passwordConfirm', {
           required: {
             value: true,
             message: 'Contraseña es requerida',
           },
           validate: (value) =>
-            value === watch('Contraseña') || 'Las contraseñas no coinciden',
+            value === watch('password') || 'Las contraseñas no coinciden',
         })}
       />
 
-      {errors.confirmarContraseña && (
-        <span>{errors.confirmarContraseña.message}</span>
-      )}
+      {errors.passwordConfirm && <span>{errors.passwordConfirm.message}</span>}
 
       <label htmlFor='Foto'>Foto de perfil</label>
       <input

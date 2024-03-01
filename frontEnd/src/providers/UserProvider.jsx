@@ -30,11 +30,19 @@ const UserProvider = ({ children }) => {
     return data
   }
 
-  const registerWithEmailAndPassword = async (email, password) => {
+  const registerWithRegisterInputs = async (
+    firstName,
+    lastName,
+    email,
+    password,
+    avatarURL
+  ) => {
+    console.log(firstName, lastName, email, password, avatarURL)
+
     const response = await fetch('http://localhost:5000/users/register', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ email, password }),
+      body: JSON.stringify({ firstName, lastName, email, password, avatarURL }),
     })
     const data = await response.json()
     return data
@@ -48,7 +56,7 @@ const UserProvider = ({ children }) => {
     <UserContext.Provider
       value={{
         loginWithEmailAndPassword,
-        registerWithEmailAndPassword,
+        registerWithRegisterInputs,
         token,
 
         logout,
