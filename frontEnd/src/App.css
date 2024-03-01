@@ -2,60 +2,6 @@
   text-align: center;
 }
 
-.homeCard {
-  padding-bottom: 2rem;
-}
-
-.precio {
-  font-size: 1.3rem;
-  font-weight: 500;
-}
-.product-image {
-  min-height: 14rem;
-  max-height: 14rem;
-  object-fit: cover;
-}
-
-.modal-image {
-  max-width: 100%;
-  min-width: 100%;
-  object-fit: contain;
-  text-align: center;
-}
-
-.buttons {
-  display: flex;
-  justify-content: space-around;
-}
-#btn-detalles {
-  background-color: #ffffff;
-  border-color: #000000;
-  color: #000000;
-}
-#btn-detalles:hover {
-  background-color: #26ff00;
-  border-color: #000000;
-  color: #000000;
-}
-#btn-favorite {
-  background-color: #ffffff;
-  border-color: #000000;
-  color: #000000;
-}
-.favorite-heart {
-  color: red;
-}
-
-.homeCardFavorites {
-  padding-bottom: 2rem;
-}
-
-.product-image-fav {
-  min-height: 18rem;
-  max-height: 18rem;
-  object-fit: cover;
-}
-
 /* Estilos para el contenedor principal */
 .container {
   display: flex;
@@ -84,13 +30,55 @@
   margin-right: 10px;
 }
 
+/* Estilos para el contenido */
+.content {
+  display: flex;
+  flex: 1;
+}
+
+.sidebar {
+  background-color: #f0f0f0;
+  padding: 20px;
+  width: 15%;
+}
+
+.sidebar h2 {
+  margin-top: 0;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar ul li {
+  margin-bottom: 10px;
+}
+
+.main-content {
+  padding: 20px;
+  flex: 1;
+}
+
+/* Estilos para el pie de página */
+.footer {
+  background-color: #333;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+.footer p {
+  margin: 0;
+}
+
 /* Estilos para los enlaces */
 .link {
   color: #007bff;
   text-decoration: none;
 }
 
-.link:hover {
+.navLink:hover {
   text-decoration: underline;
   .active {
     color: rgb(255, 0, 0);
@@ -103,3 +91,4 @@
     font-weight: bold;
     text-decoration: none;
   }
+}

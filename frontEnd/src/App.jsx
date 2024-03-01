@@ -8,8 +8,8 @@ import NotFound from "./Views/NotFound";
 import Home from "./Views/Home";
 import Register from "./Views/Register";
 import Login from "./Views/Login";
-import Products from "./Views/Products";
-import Favorites from "./Views/Favorites";
+import HomeUser from "./Views/HomeUser";
+import FavoritesUser from "./Views/FavoritesUser";
 
 function App() {
   const { token } = useContext(UserContext);
@@ -34,12 +34,12 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/login" element={<Login />} />
         <Route path="/register" element={<Register />} />
-        <Route path="/products" element={<Products />} />
+        <Route path="/homeUser" element={<HomeUser />} />
         <Route path="*" element={<NotFound />} />
         <Route
-          path="/favorites"
+          path="/favoritesUser"
           element={
-            <Favorites
+            <FavoritesUser
               favorites={favorites}
               removeFromFavorites={removeFromFavorites}
             />
