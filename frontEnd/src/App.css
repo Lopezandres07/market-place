@@ -65,8 +65,8 @@
 
 /* Estilos para el encabezado */
 .header {
-  background-color: #333;
-  color: white;
+  background-color: #ffffff;
+  color: rgb(0, 0, 0);
   padding: 20px;
 }
 
@@ -84,48 +84,6 @@
   margin-right: 10px;
 }
 
-/* Estilos para el contenido */
-.content {
-  display: flex;
-  flex: 1;
-}
-
-.sidebar {
-  background-color: #f0f0f0;
-  padding: 20px;
-  width: 25%;
-}
-
-.sidebar h2 {
-  margin-top: 0;
-}
-
-.sidebar ul {
-  list-style: none;
-  padding: 0;
-}
-
-.sidebar ul li {
-  margin-bottom: 10px;
-}
-
-.main-content {
-  padding: 20px;
-  flex: 1;
-}
-
-/* Estilos para el pie de página */
-.footer {
-  background-color: #333;
-  color: white;
-  padding: 20px;
-  text-align: center;
-}
-
-.footer p {
-  margin: 0;
-}
-
 /* Estilos para los enlaces */
 .link {
   color: #007bff;
@@ -134,16 +92,15 @@
 
 .link:hover {
   text-decoration: underline;
-=======
+  .active {
+    color: rgb(255, 0, 0);
+    font-weight: bold;
+    text-decoration: none;
+  }
 
-.active {
-  color: rgb(255, 0, 0);
-  font-weight: bold;
-  text-decoration: none;
-}
-
-.noActive {
-  color: rgb(0, 0, 0);
-  font-weight: bold;
-  text-decoration: none;
+  .noActive {
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    text-decoration: none;
+  }
 }
