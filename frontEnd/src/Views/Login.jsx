@@ -1,88 +1,65 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import { useForm } from 'react-hook-form'
+import { UserContext } from '../providers/UserProvider'
 
 const Login = () => {
+  const { loginWithEmailAndPassword } = useContext(UserContext)
+
   const {
     register,
     handleSubmit,
+    reset,
     formState: { errors },
   } = useForm()
 
-  console.log(errors)
+  console.log('Login errors: ', errors)
 
-  const onSubmit = handleSubmit((data) => {
-    console.log(data)
+  const onSubmit = handleSubmit(async (data) => {
+    const { email, password } = data
+    console.log(email, password)
+
+    const response = await loginWithEmailAndPassword(email, password)
+
+    console.log(response)
+
+    /*     alert(response?.message || 'Something went wrong')
+     */
+    reset()
   })
 
   return (
-    <form onSubmit={onSubmit}>
-      <label htmlFor='Nombre'>Nombre</label>
-      <input
-        type='text'
-        {...register('Nombre', {
-          required: {
-            value: true,
-            message: 'Nombre es requerido',
-          },
-          minLength: {
-            value: 2,
-            message: 'Nombre debe tener al menos 2 caracteres',
-          },
-        })}
-      />
-      {errors.Nombre && <span>{errors.Nombre.message}</span>}
+    <>
+      <h1>Login</h1>
+      <form onSubmit={onSubmit}>
+        <label htmlFor='email'>Email</label>
+        <input
+          type='email'
+          {...register('email', {
+            required: {
+              value: true,
+              message: 'Correo es requerido',
+            },
+          })}
+        />
 
-      <label htmlFor='Apellido'>Apellido</label>
-      <input
-        type='text'
-        {...register('Apellido', {
-          required: true,
-        })}
-      />
+        {errors.Email && <span>{errors.Email.message}</span>}
 
-      <label htmlFor='Email'>Correo</label>
-      <input
-        type='email'
-        {...register('Email', {
-          required: {
-            value: true,
-            message: 'Correo es requerido',
-          },
-          pattern: {
-            value: /[a-z0-9]+@[a-z]+\.[a-z]{2,4}$/,
-            message: 'Correo no valido',
-          },
-        })}
-      />
+        <label htmlFor='password'>Contraseña</label>
+        <input
+          type='password'
+          {...register('password', {
+            required: {
+              value: true,
+              message: 'Contraseña es requerida',
+            },
+          })}
+        />
 
-      {errors.Email && <span>{errors.Email.message}</span>}
+        {errors.Contraseña && <span>{errors.Contraseña.message}</span>}
 
-      <label htmlFor='Password'>contraseña</label>
-      <input
-        type='password'
-        {...register('Contraseña', {
-          required: true,
-        })}
-      />
-
-      <label htmlFor='Password'>Confirmar contraseña</label>
-      <input
-        type='password'
-        {...register('Password', {
-          required: true,
-        })}
-      />
-
-      <label htmlFor='Foto'>Foto de perfil</label>
-      <input
-        type='file'
-        {...register('Foto', {
-          required: true,
-        })}
-      />
-
-      <button>Enviar</button>
-    </form>
+        <button className='mt-2'>Enviar</button>
+      </form>
+    </>
   )
 }
 
