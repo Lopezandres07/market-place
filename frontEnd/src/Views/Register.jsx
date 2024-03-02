@@ -1,10 +1,8 @@
-import React, { useContext } from 'react'
+import React from 'react'
 import { useForm } from 'react-hook-form'
-import { UserContext } from '../providers/UserProvider'
+import createUser from '../components/CreateUser'
 
 const Register = () => {
-  const { registerWithRegisterInputs } = useContext(UserContext)
-
   const {
     register,
     handleSubmit,
@@ -21,7 +19,7 @@ const Register = () => {
     const { firstName, lastName, email, password, avatarURL } = data
     console.log(firstName, lastName, email, password, avatarURL)
 
-    const response = await registerWithRegisterInputs(
+    const response = await createUser(
       firstName,
       lastName,
       email,

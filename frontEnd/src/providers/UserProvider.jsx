@@ -30,24 +30,6 @@ const UserProvider = ({ children }) => {
     return data
   }
 
-  const registerWithRegisterInputs = async (
-    firstName,
-    lastName,
-    email,
-    password,
-    avatarURL
-  ) => {
-    console.log(firstName, lastName, email, password, avatarURL)
-
-    const response = await fetch('http://localhost:5000/users/register', {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ firstName, lastName, email, password, avatarURL }),
-    })
-    const data = await response.json()
-    return data
-  }
-
   const logout = () => {
     setToken(null)
   }
@@ -56,9 +38,7 @@ const UserProvider = ({ children }) => {
     <UserContext.Provider
       value={{
         loginWithEmailAndPassword,
-        registerWithRegisterInputs,
         token,
-
         logout,
       }}
     >
