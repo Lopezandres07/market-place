@@ -19,7 +19,7 @@ const NavigationBar = () => {
           onClick={() => navigate("/")}
           className="d-flex align-items-center"
         >
-          <img alt="Logo" style={{ width: "4rem" }} src="" />
+          <img alt="Logo" style={{ width: "6rem" }} src="../img/logo.png" />
           <NavbarText style={{ color: "black" }}>
             <h4>Market Place</h4>
           </NavbarText>
@@ -41,6 +41,8 @@ const NavigationBar = () => {
                   <NavLink to="/login" className={setActiveClass}>
                     Login
                   </NavLink>
+                </section>
+                <section className="navLink">
                   <NavLink to="/register" className={setActiveClass}>
                     Register
                   </NavLink>

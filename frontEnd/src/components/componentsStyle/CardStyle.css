@@ -33,14 +33,19 @@ section {
   color: #000000;
 }
 #btn-detalles:hover {
-  background-color: #26ff00;
+  background-color: #eabe3f;
   border-color: #000000;
-  color: #000000;
+  color: #ffffff;
 }
 #btn-favorite {
   background-color: #ffffff;
   border-color: #000000;
   color: #000000;
+}
+#btn-favorite:hover {
+  background-color: #eabe3f;
+  border-color: #000000;
+  color: #ffffff;
 }
 .favorite-heart {
   color: red;
