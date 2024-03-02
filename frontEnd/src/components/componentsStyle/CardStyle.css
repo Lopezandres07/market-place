@@ -6,6 +6,18 @@ section {
   padding-bottom: 2rem;
 }
 
+.CardFavorites {
+  padding-bottom: 2rem;
+}
+
+.cardGallery {
+  padding-bottom: 2rem;
+  .product-image {
+    min-height: 20rem;
+    max-height: 20rem;
+    object-fit: cover;
+  }
+}
 .precio {
   font-size: 1.3rem;
   font-weight: 500;
@@ -49,10 +61,6 @@ section {
 }
 .favorite-heart {
   color: red;
-}
-
-.CardFavorites {
-  padding-bottom: 2rem;
 }
 
 .product-image-fav {

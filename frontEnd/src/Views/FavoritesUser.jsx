@@ -6,9 +6,6 @@ import Favorites from "../components/Favorites";
 function FavoritesUser() {
   return (
     <div className="container">
-      <header className="header">
-        <h1>MarketPlace</h1>
-      </header>
       <div className="content">
         <aside className="sidebar">
           <h2>Filtrar por categorías</h2>

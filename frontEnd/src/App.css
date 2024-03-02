@@ -2,6 +2,10 @@
   text-align: center;
 }
 
+.logo {
+  padding: 0.3rem;
+}
+
 /* Estilos para el contenedor principal */
 .container {
   display: flex;
@@ -37,9 +41,12 @@
 }
 
 .sidebar {
-  background-color: #f0f0f0;
+  background-color: #ffffff;
   padding: 20px;
   width: 15%;
+  min-width: 11rem;
+  border-right: solid;
+  border-right-color: #eabf3fb1;
 }
 
 .sidebar h2 {
@@ -62,10 +69,12 @@
 
 /* Estilos para el pie de página */
 .footer {
-  background-color: #333;
-  color: white;
+  background-color: white;
+  color: black;
   padding: 20px;
   text-align: center;
+  border-top: solid;
+  border-top-color: #eabf3fb1;
 }
 
 .footer p {

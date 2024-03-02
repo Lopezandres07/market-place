@@ -10,23 +10,20 @@ const Gallery = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        // Realizar solicitud a la API de manera asíncrona
         const response = await axios.get(dataAPI);
-        // Actualizar el estado con los datos recibidos
         setProducts(response.data);
       } catch (error) {
         console.error("Error fetching products:", error);
       }
     };
 
-    // Llamar a la función fetchData al montar el componente
     fetchData();
   }, []);
 
   return (
     <>
-      <Row xs={1} sm={2} md={4}>
-        {products.map((item) => (
+      <Row xs={1} sm={2} md={3} lg={3}>
+        {products.slice(0, 3).map((item) => (
           <Col key={item.id}>
             <CardGallery product={item} />
           </Col>

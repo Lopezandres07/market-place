@@ -5,7 +5,7 @@ import "./componentsStyle/CardStyle.css";
 const CardGallery = ({ product }) => {
   return (
     <section>
-      <div className="homeCard">
+      <div className="cardGallery">
         <Card>
           <Card.Img
             variant="top"

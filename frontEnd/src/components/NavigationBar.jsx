@@ -13,13 +13,21 @@ const NavigationBar = () => {
     <>
       <Navbar
         className="d-flex justify-content-between px-4 py-0 "
-        style={{ backgroundColor: "lightgrey" }}
+        style={{
+          backgroundColor: "white",
+          borderBottom: "5px solid #eabf3fb1",
+        }}
       >
         <Navbar.Brand
           onClick={() => navigate("/")}
           className="d-flex align-items-center"
         >
-          <img alt="Logo" style={{ width: "6rem" }} src="../img/logo.png" />
+          <img
+            alt="Logo"
+            style={{ width: "6rem" }}
+            src="../img/logo.png"
+            className="logo"
+          />
           <NavbarText style={{ color: "black" }}>
             <h4>Market Place</h4>
           </NavbarText>
