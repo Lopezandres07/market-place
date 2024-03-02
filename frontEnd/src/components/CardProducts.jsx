@@ -2,7 +2,7 @@ import React from "react";
 import { Card, Button } from "react-bootstrap";
 import "./componentsStyle/CardStyle.css";
 
-const CardProduct = ({
+const CardProducts = ({
   product,
   handleDetailsClick,
   toggleFavorite,
@@ -50,4 +50,4 @@ const CardProduct = ({
   );
 };
 
-export default CardProduct;
+export default CardProducts;

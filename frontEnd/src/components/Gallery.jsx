@@ -1,60 +1,32 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Row, Col } from "react-bootstrap";
 import CardGallery from "./CardGallery";
+import axios from "axios";
+const dataAPI = "./products.json";
 
 const Gallery = () => {
-  const products = [
-    {
-      id: 1,
-      name: "smartphone",
-      description:
-        "smartphone de vanguardia Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat ad amet aspernatur iusto quam sit accusamus error eum expedita autem dicta facere cumque doloribus, laboriosam repellat quia nulla, asperiores odit?",
-      price: 2000000,
-      urlimage:
-        "https://images.pexels.com/photos/699122/pexels-photo-699122.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-    },
-    {
-      id: 2,
-      name: "BMW",
-      description:
-        "auto de vanguardia Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat ad amet aspernatur iusto quam sit accusamus error eum expedita autem dicta facere cumque doloribus, laboriosam repellat quia nulla, asperiores odit?",
-      price: 2000000,
-      urlimage:
-        "https://images.pexels.com/photos/170811/pexels-photo-170811.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-    },
-    {
-      id: 3,
-      name: "NES",
-      description:
-        "comsola retro Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat ad amet aspernatur iusto quam sit accusamus error eum expedita autem dicta facere cumque doloribus, laboriosam repellat quia nulla, asperiores odit?",
-      price: 2000000,
-      urlimage:
-        "https://images.pexels.com/photos/9100862/pexels-photo-9100862.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-    },
-    {
-      id: 4,
-      name: "NES",
-      description:
-        "comsola retro Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat ad amet aspernatur iusto quam sit accusamus error eum expedita autem dicta facere cumque doloribus, laboriosam repellat quia nulla, asperiores odit?",
-      price: 2000000,
-      urlimage:
-        "https://images.pexels.com/photos/9100862/pexels-photo-9100862.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-    },
-    {
-      id: 5,
-      name: "NES",
-      description:
-        "comsola retro Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat ad amet aspernatur iusto quam sit accusamus error eum expedita autem dicta facere cumque doloribus, laboriosam repellat quia nulla, asperiores odit?",
-      price: 2000000,
-      urlimage:
-        "https://images.pexels.com/photos/9100862/pexels-photo-9100862.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-    },
-  ];
+  const [products, setProducts] = useState([]);
+
+  useEffect(() => {
+    const fetchData = async () => {
+      try {
+        // Realizar solicitud a la API de manera asíncrona
+        const response = await axios.get(dataAPI);
+        // Actualizar el estado con los datos recibidos
+        setProducts(response.data);
+      } catch (error) {
+        console.error("Error fetching products:", error);
+      }
+    };
+
+    // Llamar a la función fetchData al montar el componente
+    fetchData();
+  }, []);
 
   return (
     <>
       <Row xs={1} sm={2} md={4}>
-        {products.slice(0, 4).map((item) => (
+        {products.map((item) => (
           <Col key={item.id}>
             <CardGallery product={item} />
           </Col>
