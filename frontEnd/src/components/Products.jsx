@@ -45,7 +45,7 @@ const Products = () => {
       <Link to="/FavoritesUser" className="text-decoration-none text-dark">
         Ir a Favoritos
       </Link>
-      <Row xs={1} sm={2} md={4}>
+      <Row xs={1} sm={2} md={3} lg={4}>
         {products.map((item) => (
           <Col key={item.id}>
             <CardProduct
