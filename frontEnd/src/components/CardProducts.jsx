@@ -25,7 +25,7 @@ const CardProducts = ({
                 ? product.description.substring(0, 20) + "..."
                 : product.description}
             </Card.Text>
-            <Card.Text className="precio">Precio: $ {product.price}</Card.Text>
+            <Card.Text className="precio">Precio: $ {product.price}</Card.Text>{" "}
             <div className="buttons">
               <Button
                 id="btn-detalles"

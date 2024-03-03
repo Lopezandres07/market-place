@@ -1,9 +1,9 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import "../App.css";
-import Products from "../components/Products";
+import "../../App.css";
+import Favorites from "../../components/Favorites";
 
-function HomeUser() {
+function FavoritesUser() {
   return (
     <div className="container">
       <div className="content">
@@ -25,11 +25,10 @@ function HomeUser() {
                 Hogar
               </Link>
             </li>
-            {/* Agrega más categorías según sea necesario */}
           </ul>
         </aside>
         <main className="main-content">
-          <Products />
+          <Favorites />
         </main>
       </div>
       <footer className="footer">
@@ -41,7 +40,6 @@ function HomeUser() {
           >
             <img src="/instagram-icon.png" alt="Instagram" />
           </a>
-          {/* Agrega más enlaces según sea necesario */}
         </div>
         <p>
           MarketPlace - Todos los derechos reservados &copy;{" "}
@@ -52,4 +50,4 @@ function HomeUser() {
   );
 }
 
-export default HomeUser;
+export default FavoritesUser;
