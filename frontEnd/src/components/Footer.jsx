@@ -1,4 +1,5 @@
-import React from 'react'
+import React from 'react';
+import '../App.css'; 
 
 const Footer = () => {
   return (
@@ -9,19 +10,17 @@ const Footer = () => {
           target='_blank'
           rel='noopener noreferrer'
         >
-          <img
-            src='/instagram-icon.png'
-            alt='Instagram'
-          />
+          <i className="fab fa-instagram"></i> 
         </a>
-        {/* Agrega más enlaces según sea necesario */}
+        <span className='social-text'>Síguenos en redes sociales</span>
+       
       </div>
       <p>
         MarketPlace - Todos los derechos reservados &copy;{' '}
         {new Date().getFullYear()}
       </p>
     </footer>
-  )
-}
+  );
+};
 
-export default Footer
+export default Footer;
