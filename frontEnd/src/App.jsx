@@ -9,6 +9,7 @@ import Home from "./Views/Home";
 import Register from "./Views/Register";
 import Login from "./Views/Login";
 import HomeUser from "./Views/User/HomeUser";
+import UserProfile from "./Views/User/UserProfile";
 import FavoritesUser from "./Views/User/FavoritesUser";
 import AdminCreatePublication from "./Views/Admin/AdminCreatePublication";
 import HomeAdmin from "./Views/Admin/HomeAdmin";
@@ -48,6 +49,7 @@ function App() {
             />
           }
         />
+        <Route path="/UserProfile" element={<UserProfile />} />
         <Route
           path="/admin/publications/create"
           element={<AdminCreatePublication />}
