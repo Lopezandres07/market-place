@@ -1,36 +1,32 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import "../App.css";
-import Favorites from "../components/Favorites";
+import "../../App.css";
 
-function FavoritesUser() {
+function HomeAdmin() {
   return (
     <div className="container">
       <div className="content">
         <aside className="sidebar">
-          <h2>Filtrar por categorías</h2>
+          <h2>Menu</h2>
           <ul>
             <li>
-              <Link to="/category/ropa" className="link">
-                Ropa
+              <Link to="/admin/home" className="link">
+                Mis publicaciones.
               </Link>
             </li>
             <li>
-              <Link to="/category/tecnologia" className="link">
-                Tecnología
+              <Link to="/admin/publications/create" className="link">
+                Crear publicación.
               </Link>
             </li>
             <li>
-              <Link to="/category/hogar" className="link">
-                Hogar
+              <Link to="/admin/contact" className="link">
+                Datos de contacto.
               </Link>
             </li>
-            {/* Agrega más categorías según sea necesario */}
           </ul>
         </aside>
-        <main className="main-content">
-          <Favorites />
-        </main>
+        <main className="main-content"></main>
       </div>
       <footer className="footer">
         <div className="social-links">
@@ -41,7 +37,6 @@ function FavoritesUser() {
           >
             <img src="/instagram-icon.png" alt="Instagram" />
           </a>
-          {/* Agrega más enlaces según sea necesario */}
         </div>
         <p>
           MarketPlace - Todos los derechos reservados &copy;{" "}
@@ -52,4 +47,4 @@ function FavoritesUser() {
   );
 }
 
-export default FavoritesUser;
+export default HomeAdmin;
