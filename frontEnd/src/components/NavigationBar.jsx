@@ -25,7 +25,7 @@ const NavigationBar = () => {
           <img
             alt='Logo'
             style={{ width: '6rem' }}
-            src='../../public/img/logo.png'
+            src='/img/logo.png'
             className='logo'
           />
           <NavbarText style={{ color: 'black' }}>
