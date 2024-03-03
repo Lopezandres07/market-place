@@ -1,34 +1,34 @@
-import { useContext } from "react";
-import { Nav, Navbar, NavbarText } from "react-bootstrap";
-import { NavLink, useNavigate } from "react-router-dom";
-import { UserContext } from "../providers/UserProvider";
+import { useContext } from 'react'
+import { Nav, Navbar, NavbarText } from 'react-bootstrap'
+import { NavLink, useNavigate } from 'react-router-dom'
+import { UserContext } from '../providers/UserProvider'
 
-const setActiveClass = ({ isActive }) => (isActive ? "active" : "noActive");
+const setActiveClass = ({ isActive }) => (isActive ? 'active' : 'noActive')
 
 const NavigationBar = () => {
-  const { token, logout } = useContext(UserContext);
-  const navigate = useNavigate();
+  const { token, logout } = useContext(UserContext)
+  const navigate = useNavigate()
 
   return (
     <>
       <Navbar
-        className="d-flex justify-content-between px-4 py-0 "
+        className='d-flex justify-content-between px-4 py-0 '
         style={{
-          backgroundColor: "white",
-          borderBottom: "5px solid #eabf3fb1",
+          backgroundColor: 'white',
+          borderBottom: '5px solid #eabf3fb1',
         }}
       >
         <Navbar.Brand
-          onClick={() => navigate("/")}
-          className="d-flex align-items-center"
+          onClick={() => navigate('/')}
+          className='d-flex align-items-center'
         >
           <img
-            alt="Logo"
-            style={{ width: "6rem" }}
-            src="../img/logo.png"
-            className="logo"
+            alt='Logo'
+            style={{ width: '6rem' }}
+            src='../../public/img/logo.png'
+            className='logo'
           />
-          <NavbarText style={{ color: "black" }}>
+          <NavbarText style={{ color: 'black' }}>
             <h4>Market Place</h4>
           </NavbarText>
         </Navbar.Brand>
@@ -36,22 +36,34 @@ const NavigationBar = () => {
           <div>
             {token ? (
               <>
-                <NavLink to="/" className={setActiveClass}>
+                <NavLink
+                  to='/'
+                  className={setActiveClass}
+                >
                   Home
                 </NavLink>
-                <button className={setActiveClass} onClick={logout}>
+                <button
+                  className={setActiveClass}
+                  onClick={logout}
+                >
                   logout
                 </button>
               </>
             ) : (
               <>
-                <section className="navLink">
-                  <NavLink to="/login" className={setActiveClass}>
+                <section className='navLink'>
+                  <NavLink
+                    to='/login'
+                    className={setActiveClass}
+                  >
                     Login
                   </NavLink>
                 </section>
-                <section className="navLink">
-                  <NavLink to="/register" className={setActiveClass}>
+                <section className='navLink'>
+                  <NavLink
+                    to='/register'
+                    className={setActiveClass}
+                  >
                     Register
                   </NavLink>
                 </section>
@@ -99,7 +111,7 @@ const NavigationBar = () => {
         </div>
       </div>
     </div> */
-  );
-};
+  )
+}
 
-export default NavigationBar;
+export default NavigationBar
