@@ -1,9 +1,22 @@
-import React, { useContext } from 'react'
+import React, { useContext, useEffect } from 'react'
 import { useForm } from 'react-hook-form'
 import { UserContext } from '../providers/UserProvider'
+import { gapi } from 'gapi-script'
+import GoogleLogin from 'react-google-login'
 
 const Login = () => {
   const { loginWithEmailAndPassword } = useContext(UserContext)
+
+  const googleId =
+    '532934723345-md1l4accaej51e91i140vcqbegrp7bv0.apps.googleusercontent.com'
+
+  useEffect(() => {
+    const start = () => {
+      gapi.client.init({ clientId: googleId })
+    }
+
+    gapi.load('client:auth2', start)
+  }, [])
 
   const {
     register,
@@ -22,6 +35,14 @@ const Login = () => {
 
     reset()
   })
+
+  const onSuccess = (response) => {
+    console.log(response)
+  }
+
+  const onFailure = () => {
+    console.log('Error al iniciar sesión')
+  }
 
   return (
     <>
@@ -55,6 +76,18 @@ const Login = () => {
 
         <button className='mt-2'>Enviar</button>
       </form>
+      <div>
+        <h4>O puedes iniciar sesión con tu cuenta de Google</h4>
+        <div className='btn'>
+          <GoogleLogin
+            clientId={googleId}
+            onSuccess={onSuccess}
+            onFailure={onFailure}
+            cookiePolicy={'single_host_origin'}
+            isSignedIn={true}
+          />
+        </div>
+      </div>
     </>
   )
 }
