@@ -1,5 +1,6 @@
-import React from "react";
-import { useForm } from "react-hook-form";
+import React from 'react'
+import { useForm } from 'react-hook-form'
+import Swal from 'sweetalert2'
 
 const CreatePublication = () => {
   const {
@@ -8,78 +9,94 @@ const CreatePublication = () => {
     setValue,
     reset,
     formState: { errors },
-  } = useForm();
+  } = useForm()
 
-  console.log("Login errors: ", errors);
+  console.log('Login errors: ', errors)
 
   const onSubmit = handleSubmit(async (data) => {
-    const { name, description, price, URLImage } = data;
-    console.log(name, description, price, URLImage);
+    const { name, description, price, URLImage } = data
+    console.log(name, description, price, URLImage)
 
-    const response = await createProduct(name, description, price, URLImage);
+    const response = await createProduct(name, description, price, URLImage)
 
-    console.log(response);
+    console.log(response)
 
-    reset();
-  });
+    if (response.success) {
+      Swal.fire({
+        icon: 'success',
+        title: 'Producto creado con éxito',
+        showConfirmButton: false,
+        timer: 1500,
+      })
+      reset()
+    } else {
+      Swal.fire({
+        icon: 'error',
+        title: 'Error al crear el producto',
+        text: response.message,
+      })
+    }
+
+    reset()
+  })
 
   return (
     <>
       <h1>Creación de producto</h1>
       <form onSubmit={onSubmit}>
-        <label htmlFor="name">Nombre del producto</label>
+        <label htmlFor='name'>Nombre del producto</label>
         <input
-          type="text"
-          {...register("name", {
+          type='text'
+          {...register('name', {
             required: {
               value: true,
-              message: "Nombre es requerido",
+              message: 'Nombre es requerido',
             },
           })}
         />
 
         {errors.name && <span>{errors.name.message}</span>}
 
-        <label htmlFor="description">Descripción del producto</label>
+        <label htmlFor='description'>Descripción del producto</label>
         <input
-          type="description"
-          {...register("description", {
+          type='description'
+          {...register('description', {
             required: {
               value: true,
-              message: "Descripción requerida",
+              message: 'Descripción requerida',
             },
           })}
         />
 
         {errors.description && <span>{errors.description.message}</span>}
 
-        <label htmlFor="price">Precio del producto</label>
+        <label htmlFor='price'>Precio del producto</label>
         <input
-          type="text"
-          {...register("price", {
+          type='text'
+          {...register('price', {
             required: {
               value: true,
-              message: "Precio requerido",
+              message: 'Precio requerido',
             },
           })}
         />
 
         {errors.price && <span>{errors.price.message}</span>}
 
-        <label htmlFor="photo">Foto del producto</label>
+        <label htmlFor='photo'>Foto del producto</label>
         <input
-          type="file"
+          type='file'
           onChange={(e) => {
-            setValue("URLImage", e.target.files[0].name);
+            setValue('URLImage', e.target.files[0].name)
           }}
         />
 
         {errors.URLImage && <span>{errors.URLImage.message}</span>}
 
-        <button className="mt-2">Añadir producto</button>
+        <button className='mt-2'>Añadir producto</button>
       </form>
     </>
-  );
-};
+  )
+}
 
-export default CreatePublication;
+export default CreatePublication

@@ -36,18 +36,32 @@ const NavigationBar = () => {
           <div>
             {token ? (
               <>
-                <NavLink
-                  to='/'
-                  className={setActiveClass}
-                >
-                  Home
-                </NavLink>
-                <button
-                  className={setActiveClass}
-                  onClick={logout}
-                >
-                  logout
-                </button>
+                <section className='navLink'>
+                  <NavLink
+                    className={setActiveClass}
+                    onClick={logout}
+                    to='/'
+                  >
+                    Inicio
+                  </NavLink>
+                </section>
+                <section className='navLink'>
+                  <NavLink
+                    to={`/user/profile/${userId}`}
+                    className={setActiveClass}
+                  >
+                    Mi Perfil
+                  </NavLink>
+                </section>
+                <section className='navLink'>
+                  <NavLink
+                    className={setActiveClass}
+                    onClick={logout}
+                    to='/'
+                  >
+                    Cerrar Sesión
+                  </NavLink>
+                </section>
               </>
             ) : (
               <>
@@ -56,7 +70,7 @@ const NavigationBar = () => {
                     to='/login'
                     className={setActiveClass}
                   >
-                    Login
+                    Iniciar Sesión
                   </NavLink>
                 </section>
                 <section className='navLink'>
@@ -64,7 +78,15 @@ const NavigationBar = () => {
                     to='/register'
                     className={setActiveClass}
                   >
-                    Register
+                    Registrarse
+                  </NavLink>
+                </section>
+                <section className='navLink'>
+                  <NavLink
+                    to='/UserProfile'
+                    className={setActiveClass}
+                  >
+                    Mi Perfil
                   </NavLink>
                 </section>
               </>

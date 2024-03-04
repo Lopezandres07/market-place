@@ -12,8 +12,6 @@ const Login = () => {
     formState: { errors },
   } = useForm()
 
-  console.log('Login errors: ', errors)
-
   const onSubmit = handleSubmit(async (data) => {
     const { email, password } = data
     console.log(email, password)
@@ -22,8 +20,6 @@ const Login = () => {
 
     console.log(response)
 
-    /*     alert(response?.message || 'Something went wrong')
-     */
     reset()
   })
 
