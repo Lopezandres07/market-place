@@ -114,3 +114,10 @@
   color: rgb(0, 0, 0);
   text-decoration: none;
 }
+
+.social-links .fab.fa-instagram {
+  font-size: 2em; 
+}
+.social-text {
+  color: black;
+}
