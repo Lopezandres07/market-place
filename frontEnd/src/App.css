@@ -1,4 +1,8 @@
 #root {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  min-width: 100vh;
   text-align: center;
 }
 
@@ -6,14 +10,11 @@
   padding: 0.3rem;
 }
 
-/* Estilos para el contenedor principal */
 .container {
-  display: flex;
-  flex-direction: column;
   min-height: 100vh;
+  min-width: 100%;
 }
 
-/* Estilos para el encabezado */
 .header {
   background-color: #ffffff;
   color: rgb(0, 0, 0);
@@ -34,7 +35,6 @@
   margin-right: 10px;
 }
 
-/* Estilos para el contenido */
 .content {
   display: flex;
   flex: 1;
@@ -47,6 +47,7 @@
   min-width: 11rem;
   border-right: solid;
   border-right-color: #eabf3fb1;
+  min-height: 100vh;
 }
 
 .sidebar h2 {
@@ -67,12 +68,13 @@
   flex: 1;
 }
 
-/* Estilos para el pie de página */
 .footer {
   background-color: white;
   color: black;
   padding: 20px;
   text-align: center;
+  width: 100%;
+  margin-top: 10px;
   border-top: solid;
   border-top-color: #eabf3fb1;
 }
