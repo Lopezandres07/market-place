@@ -14,7 +14,6 @@ const Footer = () => {
             alt='Instagram'
           />
         </a>
-        {/* Agrega más enlaces según sea necesario */}
       </div>
       <p>
         MarketPlace - Todos los derechos reservados &copy;{' '}

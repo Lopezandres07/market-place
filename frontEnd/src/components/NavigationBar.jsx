@@ -1,12 +1,14 @@
 import { useContext } from 'react'
 import { Nav, Navbar, NavbarText } from 'react-bootstrap'
-import { NavLink, useNavigate } from 'react-router-dom'
+import { NavLink, useNavigate, useParams } from 'react-router-dom'
 import { UserContext } from '../providers/UserProvider'
 
 const setActiveClass = ({ isActive }) => (isActive ? 'active' : 'noActive')
 
 const NavigationBar = () => {
   const { token, logout } = useContext(UserContext)
+  const { userId } = useParams()
+
   const navigate = useNavigate()
 
   return (
@@ -83,7 +85,7 @@ const NavigationBar = () => {
                 </section>
                 <section className='navLink'>
                   <NavLink
-                    to='/UserProfile'
+                    to={`/user/profile/${userId}`}
                     className={setActiveClass}
                   >
                     Mi Perfil

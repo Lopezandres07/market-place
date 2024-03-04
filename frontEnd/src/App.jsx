@@ -33,90 +33,92 @@ function App() {
   }
 
   return (
-    <main>
+    <>
       <NavigationBar />
-      <Routes>
-        <Route
-          path='/'
-          element={<Home />}
-        />
-        <Route
-          path='/login'
-          element={<Login />}
-        />
-        <Route
-          path='/register'
-          element={<Register />}
-        />
-        <Route
-          path='/homeUser'
-          element={<HomeUser />}
-        />
-        <Route
-          path='*'
-          element={<NotFound />}
-        />
-        <Route
-          path='/favoritesUser'
-          element={
-            <FavoritesUser
-              favorites={favorites}
-              removeFromFavorites={removeFromFavorites}
-            />
-          }
-        />
-        <Route
-          path='/user/profile/:userId'
-          element={<UserProfile />}
-        />
-        <Route
-          path='/admin/publications/create'
-          element={<AdminCreatePublication />}
-        />
-        <Route
-          path='/admin/home'
-          element={<HomeAdmin />}
-        />
-        <Route
-          path='/admin/contact'
-          element={<AdminContact />}
-        />
-        {/* Admin Routes */}
+      <main>
+        <Routes>
+          <Route
+            path='/'
+            element={<Home />}
+          />
+          <Route
+            path='/login'
+            element={<Login />}
+          />
+          <Route
+            path='/register'
+            element={<Register />}
+          />
+          <Route
+            path='/homeUser'
+            element={<HomeUser />}
+          />
+          <Route
+            path='*'
+            element={<NotFound />}
+          />
+          <Route
+            path='/favoritesUser'
+            element={
+              <FavoritesUser
+                favorites={favorites}
+                removeFromFavorites={removeFromFavorites}
+              />
+            }
+          />
+          <Route
+            path='/user/profile/:userId'
+            element={<UserProfile />}
+          />
+          <Route
+            path='/admin/publications/create'
+            element={<AdminCreatePublication />}
+          />
+          <Route
+            path='/admin/home'
+            element={<HomeAdmin />}
+          />
+          <Route
+            path='/admin/contact'
+            element={<AdminContact />}
+          />
+          {/* Admin Routes */}
 
-        {/*  <Route
+          {/*  <Route
           path='/admin/profile'
           element={token ? <AdminProfile /> : <Navigate to='/login' />}
-        />
-        <Route
+          />
+          <Route
           path='/admin/publications'
           element={token ? <AdminPublications /> : <Navigate to='/login' />}
-        />
+          />
         <Route
-          path='/admin/publications/create'
+        path='/admin/publications/create'
           element={token ? <CreatePublication /> : <Navigate to='/login' />}
-        /> 
+          /> 
         <Route
-          path="/admin/products"
-          element={token ? <Products /> : <Navigate to="/login" />}
-        />*/}
+        path="/admin/products"
+        element={token ? <Products /> : <Navigate to="/login" />}
+      />*/}
 
-        {/* User Routes */}
+          {/* User Routes */}
 
-        {/*   <Route
+          {/*   <Route
           path='/user/profile'
           element={token ? <UserProfile /> : <Navigate to='/login' />}
-        />
-        <Route
+          />
+          <Route
           path='/user/favorites'
           element={token ? <Favorites /> : <Navigate to='/login' />}
-        /> 
-        <Route
+          /> 
+          <Route
           path="/user/products"
           element={token ? <Products /> : <Navigate to="/login" />}
         />*/}
-      </Routes>
+        </Routes>
+      </main>
       <Footer />
-    </main>
+    </>
   )
 }
 
