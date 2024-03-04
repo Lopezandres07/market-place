@@ -1,12 +1,3 @@
-:root {
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #ffff;
-}
-
-body {
-  min-height: 100vh;
-}
-
 form {
   margin-top: 10px;
   display: flex;

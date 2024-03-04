@@ -4,7 +4,7 @@ const NotFound = () => {
   return (
     <div className='d-flex justify-content-center'>
       <img
-        src=''
+        src='/img/404.png'
         alt='not found'
       />
     </div>

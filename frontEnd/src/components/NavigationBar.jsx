@@ -1,12 +1,14 @@
 import { useContext } from 'react'
 import { Nav, Navbar, NavbarText } from 'react-bootstrap'
-import { NavLink, useNavigate } from 'react-router-dom'
+import { NavLink, useNavigate, useParams } from 'react-router-dom'
 import { UserContext } from '../providers/UserProvider'
 
 const setActiveClass = ({ isActive }) => (isActive ? 'active' : 'noActive')
 
 const NavigationBar = () => {
   const { token, logout } = useContext(UserContext)
+  const { userId } = useParams()
+
   const navigate = useNavigate()
 
   return (
@@ -36,18 +38,32 @@ const NavigationBar = () => {
           <div>
             {token ? (
               <>
-                <NavLink
-                  to='/'
-                  className={setActiveClass}
-                >
-                  Home
-                </NavLink>
-                <button
-                  className={setActiveClass}
-                  onClick={logout}
-                >
-                  logout
-                </button>
+                <section className='navLink'>
+                  <NavLink
+                    className={setActiveClass}
+                    onClick={logout}
+                    to='/'
+                  >
+                    Inicio
+                  </NavLink>
+                </section>
+                <section className='navLink'>
+                  <NavLink
+                    to={`/user/profile/${userId}`}
+                    className={setActiveClass}
+                  >
+                    Mi Perfil
+                  </NavLink>
+                </section>
+                <section className='navLink'>
+                  <NavLink
+                    className={setActiveClass}
+                    onClick={logout}
+                    to='/'
+                  >
+                    Cerrar Sesión
+                  </NavLink>
+                </section>
               </>
             ) : (
               <>
@@ -56,7 +72,7 @@ const NavigationBar = () => {
                     to='/login'
                     className={setActiveClass}
                   >
-                    Login
+                    Iniciar Sesión
                   </NavLink>
                 </section>
                 <section className='navLink'>
@@ -64,7 +80,15 @@ const NavigationBar = () => {
                     to='/register'
                     className={setActiveClass}
                   >
-                    Register
+                    Registrarse
+                  </NavLink>
+                </section>
+                <section className='navLink'>
+                  <NavLink
+                    to={`/user/profile/${userId}`}
+                    className={setActiveClass}
+                  >
+                    Mi Perfil
                   </NavLink>
                 </section>
               </>

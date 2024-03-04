@@ -13,7 +13,6 @@ const Footer = () => {
           <i className="fab fa-instagram"></i> 
         </a>
         <span className='social-text'>Síguenos en redes sociales</span>
-       
       </div>
       <p>
         MarketPlace - Todos los derechos reservados &copy;{' '}
