@@ -5,7 +5,7 @@ import CardProduct from "./CardProducts";
 import { Modal } from "react-bootstrap";
 import axios from "axios";
 import { useFavorites } from "./contexts/FavoritesContext";
-const dataAPI = "./products.json";
+const dataAPI = "/public/products.json";
 
 const Products = () => {
   const { favorites, addToFavorites, toggleFavorite } = useFavorites();
