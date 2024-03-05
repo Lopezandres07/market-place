@@ -68,3 +68,8 @@ section {
   max-height: 18rem;
   object-fit: cover;
 }
+
+.btnAdmin {
+  display: flex;
+  flex-direction: column;
+}

@@ -116,8 +116,57 @@
 }
 
 .social-links .fab.fa-instagram {
-  font-size: 2em; 
+  font-size: 2em;
 }
 .social-text {
   color: black;
+}
+
+.login {
+  margin: auto;
+  border: solid;
+  border-color: #eabf3fb1;
+  border-radius: 10px;
+  padding: 20px;
+  max-width: 25rem;
+  width: 90%;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+
+#btnEnviar {
+  background-color: #ffffff;
+}
+#btnEnviar:hover {
+  background-color: #eabe3f;
+  color: #ffffff;
+  font-weight: bold;
+}
+
+.login .btn {
+  text-align: center;
+}
+
+.register {
+  margin: auto;
+  border: solid;
+  border-color: #eabf3fb1;
+  border-radius: 10px;
+  padding: 20px;
+  max-width: 25rem;
+  width: 90%;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+
+.createPublication {
+  margin: auto;
+  border: solid;
+  border-color: #eabf3fb1;
+  border-radius: 10px;
+  padding: 20px;
+  max-width: 25rem;
+  width: 90%;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
 }
