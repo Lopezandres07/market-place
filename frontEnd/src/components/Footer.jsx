@@ -1,5 +1,5 @@
-import React from 'react';
-import '../App.css'; 
+import React from 'react'
+import '../App.css'
 
 const Footer = () => {
   return (
@@ -10,16 +10,16 @@ const Footer = () => {
           target='_blank'
           rel='noopener noreferrer'
         >
-          <i className="fab fa-instagram"></i> 
+          <i className='fab fa-instagram'></i>
         </a>
         <span className='social-text'>Síguenos en redes sociales</span>
       </div>
       <p>
-        MarketPlace - Todos los derechos reservados &copy;{' '}
+        Rústico Kids - Todos los derechos reservados &copy;{' '}
         {new Date().getFullYear()}
       </p>
     </footer>
-  );
-};
+  )
+}
 
-export default Footer;
+export default Footer

@@ -1,9 +1,11 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import { useForm } from 'react-hook-form'
-import createUser from '../components/CreateUser'
+import { UserContext } from '../providers/UserProvider'
 import Swal from 'sweetalert2'
 
 const Register = () => {
+  const { createUser } = useContext(UserContext)
+
   const {
     register,
     handleSubmit,

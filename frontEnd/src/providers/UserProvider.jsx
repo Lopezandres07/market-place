@@ -17,7 +17,30 @@ const UserProvider = ({ children }) => {
     }
   }, [token])
 
+  const createUser = async (
+    firstName,
+    lastName,
+    email,
+    password,
+    avatarURL
+  ) => {
+    console.log(firstName, lastName, email, password, avatarURL)
+
+    const response = await fetch('http://localhost:5000/users/register', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ firstName, lastName, email, password, avatarURL }),
+    })
+
+    const data = await response.json()
+    setToken(data.token || null)
+
+    return data
+  }
+
   const loginWithEmailAndPassword = async (email, password) => {
+    console.log(email, password)
+
     const response = await fetch('http://localhost:5000/users/login', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
@@ -68,6 +91,7 @@ const UserProvider = ({ children }) => {
         loginWithEmailAndPassword,
         token,
         logout,
+        createUser,
         updateUserProfile,
         getUserData,
         userData,

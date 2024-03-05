@@ -31,7 +31,7 @@ const NavigationBar = () => {
             className='logo'
           />
           <NavbarText style={{ color: 'black' }}>
-            <h4>Market Place</h4>
+            <h4>Rústico Kids</h4>
           </NavbarText>
         </Navbar.Brand>
         <Nav>
