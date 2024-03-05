@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "../../App.css";
-import Products from "../../components/Products";
+import ProductsAdmin from "../../components/ProductsAdmin";
 
 function HomeAdmin() {
   return (
@@ -28,7 +28,7 @@ function HomeAdmin() {
           </ul>
         </aside>
         <main className="main-content">
-          <Products />
+          <ProductsAdmin />
         </main>
       </div>
     </div>
