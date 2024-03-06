@@ -6,12 +6,17 @@ CREATE DATABASE columpios;
 
 // Creacion de las tablas
 
+CREATE TABLE roles (
+    id SERIAL PRIMARY KEY,
+    role_name VARCHAR(50) NOT NULL
+);
+
 CREATE TABLE users (
     id SERIAL PRIMARY KEY,
     role_id INT REFERENCES roles(id),
     firstName VARCHAR (50) NOT NULL,
     lastName VARCHAR (50) NOT NULL,
-    avatarURL VARCHAR (50) NOT NULL,
+    avatarURL VARCHAR (1000) NOT NULL,
     email VARCHAR (50) UNIQUE NOT NULL,
     password VARCHAR(150) NOT NULL,
     created_at TIMESTAMP NOT NULL DEFAULT NOW(),
@@ -36,7 +41,3 @@ CREATE TABLE users_favourites (
     created_at TIMESTAMP NOT NULL DEFAULT NOW()
 );
 
-CREATE TABLE roles (
-    id SERIAL PRIMARY KEY,
-    role_name VARCHAR(50) NOT NULL
-)
