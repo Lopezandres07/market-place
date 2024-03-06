@@ -1,4 +1,4 @@
-import pool from "../../../../config/db/conectionDb";
+import pool from "../../../../config/db/conectionDb.js";
 import bcrypt from "bcryptjs";
 
 const createUser = async ({
