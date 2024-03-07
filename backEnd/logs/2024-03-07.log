@@ -1,0 +1,235 @@
+
+Started POST /api/v1/users for :: ::ffff:127.0.0.1 at Thu Mar 07 2024 00:07:38 GMT-0300 (hora estándar de Brasilia)
+  Parameters in body: {"user":{"firstName":"Andres","lastName":"Lopez","email":"test@test.cl","password":"123456","avatarURL":"avatar.jpg"}}
+Completed: 400 message:  Time response: 275 ms Request ID: [2be67bb9-0fd1-49f7-b496-e074ff6de2f0]
+
+Started POST /api/v1/users for :: ::ffff:127.0.0.1 at Thu Mar 07 2024 00:08:58 GMT-0300 (hora estándar de Brasilia)
+  Parameters in body: {"user":{"firstName":"Andres","lastName":"Lopez","email":"test@test.cl","password":"123456","avatarURL":"avatar.jpg"}}
+Completed: 400 message:  Time response: 206 ms Request ID: [7e8632de-5e35-4e52-88d8-8d4c5c0a2069]
+
+Started POST /api/v1/users for :: ::ffff:127.0.0.1 at Thu Mar 07 2024 00:13:50 GMT-0300 (hora estándar de Brasilia)
+  Parameters in body: {"user":{"firstName":"Andres","lastName":"Lopez","email":"test@test.cl","password":"123456","avatarURL":"avatar.jpg"}}
+Completed: 400 message:  Time response: 245 ms Request ID: [2d54496b-8e87-40d5-9a7f-8395e82cdf41]
+
+Started POST /api/v1/users for :: ::ffff:127.0.0.1 at Thu Mar 07 2024 00:18:10 GMT-0300 (hora estándar de Brasilia)
+  Parameters in body: {"user":{"firstName":"Andres","lastName":"Lopez","email":"test@test.cl","password":"123456","avatarURL":"avatar.jpg"}}
+Completed: 400 message:  Time response: 254 ms Request ID: [dd240d30-69b3-472c-8e75-87e7411c694e]
+
+Started POST /api/v1/users for :: ::ffff:127.0.0.1 at Thu Mar 07 2024 00:18:26 GMT-0300 (hora estándar de Brasilia)
+  Parameters in body: {"user":{"firstName":"Andres","lastName":"Lopez","email":"test@test.cl","password":"123456","avatarURL":"avatar.jpg"}}
+Completed: 400 message:  Time response: 208 ms Request ID: [a60d0c6d-2f11-42b3-ad0b-69a238f95874]
+
+Started POST /api/v1/users for :: ::ffff:127.0.0.1 at Thu Mar 07 2024 00:19:28 GMT-0300 (hora estándar de Brasilia)
+  Parameters in body: {"user":{"firstName":"Andres","lastName":"Lopez","email":"test@test.cl","password":"123456","avatarURL":"avatar.jpg"}}
+Completed: 400 message:  Time response: 320 ms Request ID: [bee48985-1b7f-4512-8ef7-3083235652c9]
+
+Started POST /api/v1/users for :: ::ffff:127.0.0.1 at Thu Mar 07 2024 00:20:22 GMT-0300 (hora estándar de Brasilia)
+  Parameters in body: {"user":{"firstName":"Andres","lastName":"Lopez","email":"test@test.cl","password":"123456","avatarURL":"avatar.jpg"}}
+Completed: 201 message:  Time response: 121 ms Request ID: [f2d2871d-7d2b-4818-b1f0-a6745083cffc]
+
+Started POST /api/v1/users for :: ::ffff:127.0.0.1 at Thu Mar 07 2024 00:22:43 GMT-0300 (hora estándar de Brasilia)
+  Parameters in body: {"user":{"firstName":"well","lastName":"Lopez","email":"well@test.cl","password":"123456","avatarURL":"avatar.jpg"}}
+Completed: 201 message:  Time response: 349 ms Request ID: [b0946650-6c0e-4fe0-93fd-526fe4df4a6f]
+
+Started POST /src/API/V1/users for :: ::ffff:127.0.0.1 at Thu Mar 07 2024 10:39:03 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {"user":{"role_id":1,"firstName":"John","lastName":"Doe","avatarURL":"https://www.clker.com/cliparts/3/a/f/e/11949837341769281089crawfish1_ganson.svg.thumb.png","email":"john.doe@example.com","password":"123456"}}
+Completed: 404 message:  Time response: 10 ms Request ID: [c7db21e6-3717-4bb7-b34e-a10911a207ee]
+
+Started POST /API/V1/users for :: ::ffff:127.0.0.1 at Thu Mar 07 2024 10:40:06 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {"user":{"role_id":1,"firstName":"John","lastName":"Doe","avatarURL":"https://www.clker.com/cliparts/3/a/f/e/11949837341769281089crawfish1_ganson.svg.thumb.png","email":"john.doe@example.com","password":"123456"}}
+Completed: 201 message:  Time response: 268 ms Request ID: [3a2eb470-aae0-4972-9e08-d8fde1ee93b9]
+
+Started POST /API/V1/products for :: ::ffff:127.0.0.1 at Thu Mar 07 2024 11:40:35 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {"name":"Nombre del producto","description":"Descripción del producto","price":50000,"image":"https://i.imgur.com/6hOPFRH.jpg"}
+Completed: 404 message:  Time response: 17 ms Request ID: [30c4af97-467e-4425-a1fe-75628fe3615c]
+
+Started POST /API/V1/products for :: ::ffff:127.0.0.1 at Thu Mar 07 2024 11:42:26 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {"name":"Nombre del producto","description":"Descripción del producto","price":50000,"image":"https://i.imgur.com/6hOPFRH.jpg"}
+Completed: 404 message:  Time response: 3 ms Request ID: [abbeccb5-5a7e-42f4-b7fe-46306a8df025]
+
+Started POST /API/V1/products for :: ::ffff:127.0.0.1 at Thu Mar 07 2024 11:43:56 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {"name":"Nombre del producto","description":"Descripción del producto","price":50000,"image":"https://i.imgur.com/6hOPFRH.jpg"}
+Completed: 404 message:  Time response: 5 ms Request ID: [96cacd9b-89b7-40c1-8518-50778b4e89d8]
+
+Started POST /API/V1/users for :: ::ffff:127.0.0.1 at Thu Mar 07 2024 11:44:53 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {"user":{"role_id":1,"firstName":"John","lastName":"Doe","avatarURL":"https://www.clker.com/cliparts/3/a/f/e/11949837341769281089crawfish1_ganson.svg.thumb.png","email":"john.doe@example.com","password":"123456"}}
+Completed: 400 message:  Time response: 224 ms Request ID: [fff12ce9-fad1-46da-97c1-1cedcb1c5bd1]
+
+Started POST /API/V1/products for :: ::ffff:127.0.0.1 at Thu Mar 07 2024 11:45:04 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {"name":"Nombre del producto","description":"Descripción del producto","price":50000,"image":"https://i.imgur.com/6hOPFRH.jpg"}
+Completed: 404 message:  Time response: 6 ms Request ID: [200d745c-f894-4c25-8d74-51c5aad9b441]
+
+Started POST /API/V1/products for :: ::ffff:127.0.0.1 at Thu Mar 07 2024 11:45:37 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {"name":"Nombre del producto","description":"Descripción del producto","price":50000,"image":"https://i.imgur.com/6hOPFRH.jpg"}
+Completed: 404 message:  Time response: 6 ms Request ID: [15499702-f088-42b7-9b76-5637db2867d5]
+
+Started POST /API/V1/products for :: ::ffff:127.0.0.1 at Thu Mar 07 2024 11:47:32 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {"user_id":1,"name":"Columpio azul con estrellas","description":"Descripción del producto","price":50000,"imageURL":"https://i.imgur.com/6hOPFRH.jpg"}
+Completed: 404 message:  Time response: 3 ms Request ID: [1e0a52a9-ae0e-463a-ac64-27e6890f9c6d]
+
+Started POST /API/V1/products for :: ::ffff:127.0.0.1 at Thu Mar 07 2024 11:50:11 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {"user_id":1,"name":"Columpio azul con estrellas","description":"Descripción del producto","price":50000,"imageURL":"https://i.imgur.com/6hOPFRH.jpg"}
+Completed: 404 message:  Time response: 9 ms Request ID: [71904c32-78c2-41a4-b048-92a0d014cd14]
+
+Started POST /API/V1/products for :: ::ffff:127.0.0.1 at Thu Mar 07 2024 11:51:21 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {"product":{"user_id":1,"name":"Columpio azul con estrellas","description":"Descripción del producto","price":50000,"imageURL":"https://i.imgur.com/6hOPFRH.jpg"}}
+Completed: 404 message:  Time response: 9 ms Request ID: [6286b798-8856-4141-a1b9-c8f6ba6287c5]
+
+Started POST /API/V1/products for :: ::ffff:127.0.0.1 at Thu Mar 07 2024 11:51:48 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {"product":{"user_id":1,"name":"Columpio azul con estrellas","description":"Descripción del producto","price":50000,"imageURL":"https://i.imgur.com/6hOPFRH.jpg"}}
+Completed: 404 message:  Time response: 3 ms Request ID: [7068fc7e-8efc-40aa-bf36-5d7910576d30]
+
+Started POST /API/V1/products for :: ::ffff:127.0.0.1 at Thu Mar 07 2024 11:53:55 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {"product":{"user_id":1,"name":"Columpio azul con estrellas","description":"Descripción del producto","price":50000,"imageURL":"https://i.imgur.com/6hOPFRH.jpg"}}
+Completed: 404 message:  Time response: 5 ms Request ID: [00688dc3-bb0b-40f5-958f-c0f0a9ded7b0]
+
+Started POST /API/V1/product for :: ::ffff:127.0.0.1 at Thu Mar 07 2024 12:19:08 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {"product":{"user_id":1,"name":"Columpio azul con estrellas","description":"Descripción del producto","price":50000,"imageURL":"https://i.imgur.com/6hOPFRH.jpg"}}
+Completed: 404 message:  Time response: 6 ms Request ID: [c9ff18a8-165f-4169-93a2-3fadf64e0319]
+
+Started POST /API/V1/products for :: ::ffff:127.0.0.1 at Thu Mar 07 2024 12:19:17 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {"product":{"user_id":1,"name":"Columpio azul con estrellas","description":"Descripción del producto","price":50000,"imageURL":"https://i.imgur.com/6hOPFRH.jpg"}}
+Completed: 404 message:  Time response: 3 ms Request ID: [257ececf-d1eb-4c18-912d-546db14a4689]
+
+Started POST /products for :: ::ffff:127.0.0.1 at Thu Mar 07 2024 12:25:35 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {"product":{"user_id":1,"name":"Columpio azul con estrellas","description":"Descripción del producto","price":50000,"imageURL":"https://i.imgur.com/6hOPFRH.jpg"}}
+Completed: 404 message:  Time response: 4 ms Request ID: [13585a46-d0c5-4469-8833-048291c53498]
+
+Started POST /API/V1/products for :: ::ffff:127.0.0.1 at Thu Mar 07 2024 12:25:46 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {"product":{"user_id":1,"name":"Columpio azul con estrellas","description":"Descripción del producto","price":50000,"imageURL":"https://i.imgur.com/6hOPFRH.jpg"}}
+Completed: 404 message:  Time response: 3 ms Request ID: [27208873-b083-493d-958a-4e1b89082605]
+
+Started POST /API/V1/products for :: ::ffff:127.0.0.1 at Thu Mar 07 2024 12:33:34 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {"product":{"user_id":1,"name":"Columpio azul con estrellas","description":"Descripción del producto","price":50000,"imageURL":"https://i.imgur.com/6hOPFRH.jpg"}}
+Completed: 404 message:  Time response: 3 ms Request ID: [6dd54eb7-8f50-421c-82fd-1846d464aecb]
+
+Started GET / for :: ::1 at Thu Mar 07 2024 12:36:27 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {}
+Completed: 404 message:  Time response: 9 ms Request ID: [39b31ecf-55b7-4e73-9656-8354a53fc326]
+
+Started POST /API/V1/products for :: ::ffff:127.0.0.1 at Thu Mar 07 2024 12:39:09 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {"product":{"user_id":1,"name":"Columpio azul con estrellas","description":"Descripción del producto","price":50000,"imageURL":"https://i.imgur.com/6hOPFRH.jpg"}}
+Completed: 201 message:  Time response: 78 ms Request ID: [0c3dd477-e939-48a6-89e0-40923ecd4d36]
+
+Started POST /API/V1/products for :: ::ffff:127.0.0.1 at Thu Mar 07 2024 12:39:43 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {"product":{"user_id":1,"name":"Columpio azul con estrellas","description":"Descripción del producto","price":50000,"imageURL":"https://i.imgur.com/6hOPFRH.jpg"}}
+Completed: 201 message:  Time response: 67 ms Request ID: [ad248c7b-b4cb-4a73-8f33-754ba7e875bd]
+
+Started POST /API/V1/products for :: ::ffff:127.0.0.1 at Thu Mar 07 2024 12:39:46 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {"product":{"user_id":1,"name":"Columpio azul con estrellas","description":"Descripción del producto","price":50000,"imageURL":"https://i.imgur.com/6hOPFRH.jpg"}}
+Completed: 201 message:  Time response: 7 ms Request ID: [18bbc263-2e04-4775-b7ec-675d649bfb36]
+Started POST /api/v1/users/register for :: ::1 at Thu Mar 07 2024 08:35:25 GMT-0300 (hora estándar de Brasilia)
+  Parameters in body: {"firstName":"Andres","lastName":"Lopez","email":"andres@lopez.com","password":"123456","avatarURL":"Foto.jpg"}
+Completed: 404 message:  Time response: 9 ms Request ID: [f6840495-a456-444f-8c2e-e879e7ca4a7f]
+
+Started POST /api/v1/users/register for :: ::1 at Thu Mar 07 2024 08:37:16 GMT-0300 (hora estándar de Brasilia)
+  Parameters in body: {"firstName":"Andres","lastName":"López","email":"andres@lopez.com","password":"123456","avatarURL":"Foto.jpg"}
+Completed: 404 message:  Time response: 8 ms Request ID: [3ea79660-96e6-4ec2-8db0-786ec229bc1b]
+
+Started POST /api/v1/users/register for :: ::1 at Thu Mar 07 2024 08:37:30 GMT-0300 (hora estándar de Brasilia)
+  Parameters in body: {"firstName":"Andres","lastName":"López","email":"andres@lopez.com","password":"123456","avatarURL":"Foto.jpg"}
+Completed: 404 message:  Time response: 7 ms Request ID: [5c5fbfbf-8dd8-4e86-b3fb-dcd3dcf1d701]
+
+Started POST /api/v1/register for :: ::1 at Thu Mar 07 2024 08:38:23 GMT-0300 (hora estándar de Brasilia)
+  Parameters in body: {"firstName":"Andres","lastName":"Lopez","email":"andres@lopez.com","password":"123456","avatarURL":"Foto.jpg"}
+Completed: 400 message:  Time response: 18 ms Request ID: [a720700d-4a5a-4aaf-855f-91f4e52599e0]
+
+Started POST /api/v1/register for :: ::1 at Thu Mar 07 2024 08:44:57 GMT-0300 (hora estándar de Brasilia)
+  Parameters in body: {"firstName":"Andres","lastName":"Lopez","email":"andres@lopez.com","password":"123456","avatarURL":"Foto.jpg"}
+Completed: 400 message:  Time response: 10 ms Request ID: [1b7a7147-b71d-4067-9dc2-e5b6f91b3fab]
+
+Started POST /api/v1/register for :: ::1 at Thu Mar 07 2024 08:47:18 GMT-0300 (hora estándar de Brasilia)
+  Parameters in body: {"firstName":"Andres","lastName":"Lopez","email":"andres@lopez.com","password":"123456","avatarURL":"Foto.jpg"}
+Completed: 400 message:  Time response: 12 ms Request ID: [09d86da7-d571-42f8-a77b-73b50adbb21b]
+
+Started POST /api/v1/register for :: ::1 at Thu Mar 07 2024 09:02:42 GMT-0300 (hora estándar de Brasilia)
+  Parameters in body: {"firstName":"Andres","lastName":"Lopez","email":"andres@lopez.com","password":"123456","avatarURL":"Foto.jpg"}
+Completed: 400 message:  Time response: 4 ms Request ID: [089dce66-06c3-40ba-8d30-b71540b95871]
+
+Started POST /api/v1/register for :: ::1 at Thu Mar 07 2024 09:59:22 GMT-0300 (hora estándar de Brasilia)
+  Parameters in body: {"user":"Andres"}
+Completed: 400 message:  Time response: 10 ms Request ID: [ecb3d517-c1fd-43f7-af13-54c732f9b80b]
+
+Started POST /api/v1/register for :: ::1 at Thu Mar 07 2024 10:20:41 GMT-0300 (hora estándar de Brasilia)
+  Parameters in body: {"data":{"firstName":"Andres","lastName":"Lopez","email":"andres@lopez.com","password":"123456","passwordConfirm":"123456","avatarURL":"Foto.jpg"}}
+Completed: 400 message:  Time response: 11 ms Request ID: [32e8329a-13de-4548-8d8c-ffc140bc2c71]
+
+Started POST /api/v1/register for :: ::1 at Thu Mar 07 2024 10:21:18 GMT-0300 (hora estándar de Brasilia)
+  Parameters in body: {"data":{"firstName":"Andres","lastName":"Lopez","email":"andres@lopez.com","password":"123456","passwordConfirm":"123456","avatarURL":"Foto.jpg"}}
+Completed: 400 message:  Time response: 11 ms Request ID: [fbcf42bc-175d-4bcf-83e4-48a1160d445e]
+
+Started POST /api/v1/register for :: ::1 at Thu Mar 07 2024 11:33:18 GMT-0300 (hora estándar de Brasilia)
+  Parameters in body: {"data":{"firstName":"Andres","lastName":"Lopez","email":"andres@lopez.com","password":"123456","passwordConfirm":"123456","avatarURL":"Foto.jpg"}}
+Completed: 400 message:  Time response: 7 ms Request ID: [09ab6c12-7683-46c0-8e9d-f46199c957a6]
+
+Started POST /api/v1/register for :: ::1 at Thu Mar 07 2024 11:36:06 GMT-0300 (hora estándar de Brasilia)
+  Parameters in body: {"data":{"firstName":"Andres","lastName":"Lopez","email":"andres@lopez.com","password":"123456","passwordConfirm":"123456","avatarURL":"Foto.jpg"}}
+Completed: 400 message:  Time response: 268 ms Request ID: [bbb578ea-8f89-4b5f-98c0-c286d33675b0]
+
+Started POST /api/v1/register for :: ::1 at Thu Mar 07 2024 11:36:39 GMT-0300 (hora estándar de Brasilia)
+  Parameters in body: {"data":{"firstName":"Andres","lastName":"Lopez","email":"andres@lopez.com","password":"123456","passwordConfirm":"123456","avatarURL":"Foto.jpg"}}
+Completed: 201 message:  Time response: 250 ms Request ID: [7a14c787-9443-4875-9203-d3570b65601f]
+
+Started POST /api/v1/register for :: ::1 at Thu Mar 07 2024 11:36:45 GMT-0300 (hora estándar de Brasilia)
+  Parameters in body: {"data":{"firstName":"Andres","lastName":"Lopez","email":"andres@lopez.com","password":"123456","passwordConfirm":"123456","avatarURL":"Foto.jpg"}}
+Completed: 400 message:  Time response: 277 ms Request ID: [3e4eac34-bf2f-4225-b243-bde6464ac61c]
+
+Started POST /api/v1/register for :: ::1 at Thu Mar 07 2024 11:37:11 GMT-0300 (hora estándar de Brasilia)
+  Parameters in body: {"data":{"firstName":"Andres","lastName":"Lopez","email":"andres@test.com","password":"123456","passwordConfirm":"123456","avatarURL":"Foto.jpg"}}
+Completed: 201 message:  Time response: 137 ms Request ID: [9bc7fc29-0ff9-4300-b8fd-49c01b4ceee9]
+
+Started POST /api/v1/register for :: ::1 at Thu Mar 07 2024 11:37:16 GMT-0300 (hora estándar de Brasilia)
+  Parameters in body: {"data":{"firstName":"Andres","lastName":"Lopez","email":"andres@test.com","password":"123456","passwordConfirm":"123456","avatarURL":"Foto.jpg"}}
+Completed: 400 message:  Time response: 235 ms Request ID: [5b0aa037-b3a6-4441-b800-a11a722926f8]
+
+Started POST /api/v1/register for :: ::1 at Thu Mar 07 2024 11:38:32 GMT-0300 (hora estándar de Brasilia)
+  Parameters in body: {"data":{"firstName":"Andres","lastName":"Lopez","email":"andres@test.com","password":"123456","passwordConfirm":"123456","avatarURL":"Foto.jpg"}}
+Completed: 201 message:  Time response: 327 ms Request ID: [98fa9bc4-de2d-40ab-9b78-53134c84b1a2]
+
+Started POST /api/v1/register for :: ::1 at Thu Mar 07 2024 11:39:15 GMT-0300 (hora estándar de Brasilia)
+  Parameters in body: {"data":{"firstName":"Andres","lastName":"Lopez","email":"andres@test.com","password":"123456","passwordConfirm":"123456","avatarURL":"Foto.jpg"}}
+Completed: 400 message:  Time response: 247 ms Request ID: [6ba981fc-d8ad-43a4-9a5e-60a1a826bb58]
+
+Started POST /api/v1/register for :: ::1 at Thu Mar 07 2024 11:42:03 GMT-0300 (hora estándar de Brasilia)
+  Parameters in body: {"data":{"firstName":"Andres","lastName":"Lopez","email":"andres@test.com","password":"123456","passwordConfirm":"123456","avatarURL":"Foto.jpg"}}
+Completed: 201 message:  Time response: 191 ms Request ID: [d333ac8a-71b1-4c50-8bb6-44cf9f7c7905]
+
+Started POST /api/v1/register for :: ::1 at Thu Mar 07 2024 11:44:22 GMT-0300 (hora estándar de Brasilia)
+  Parameters in body: {"data":{"firstName":"Andres","lastName":"Lopez","email":"andres@lopez.com","password":"123456","passwordConfirm":"123456","avatarURL":"Foto.jpg"}}
+Completed: 201 message:  Time response: 237 ms Request ID: [ff5a2fbd-6bdb-4e78-b705-cc52e6755260]
+
+Started POST /api/v1/register for :: ::1 at Thu Mar 07 2024 11:44:34 GMT-0300 (hora estándar de Brasilia)
+  Parameters in body: {"data":{"firstName":"Andres","lastName":"Lopez","email":"andres@lopez.com","password":"123456","passwordConfirm":"123456","avatarURL":"Foto.jpg"}}
+Completed: 400 message:  Time response: 249 ms Request ID: [c0b7b509-c8f5-43d2-bb1d-94c4e59ddd09]
+
+Started POST /api/v1/register for :: ::1 at Thu Mar 07 2024 11:44:40 GMT-0300 (hora estándar de Brasilia)
+  Parameters in body: {"data":{"firstName":"Andres","lastName":"Lopez","email":"test@test.com","password":"123456","passwordConfirm":"123456","avatarURL":"Foto.jpg"}}
+Completed: 201 message:  Time response: 236 ms Request ID: [274c81ad-cb61-438a-987a-3ce1477294fb]
+
+Started POST /api/v1/register for :: ::1 at Thu Mar 07 2024 11:45:29 GMT-0300 (hora estándar de Brasilia)
+  Parameters in body: {"data":{"firstName":"Andres","lastName":"Lopez","email":"nicoshima@gmail.com","password":"123456","passwordConfirm":"123456","avatarURL":"Cachapa.jpg"}}
+Completed: 201 message:  Time response: 182 ms Request ID: [96d05839-5b50-4b22-91b3-0bfa43589b1d]
+
+Started POST /api/v1/register for :: ::1 at Thu Mar 07 2024 11:48:06 GMT-0300 (hora estándar de Brasilia)
+  Parameters in body: {"data":{"firstName":"Andres","lastName":"Lopez","email":"jrodriguezf@koandina.com","password":"123456","passwordConfirm":"123456","avatarURL":"Cachapa.jpg"}}
+Completed: 201 message:  Time response: 247 ms Request ID: [c775af38-389d-4419-86da-3fb34a84a186]
+
+Started POST /api/v1/register for :: ::1 at Thu Mar 07 2024 11:49:59 GMT-0300 (hora estándar de Brasilia)
+  Parameters in body: {"data":{"firstName":"Andres","lastName":"Lopez","email":"andres.lopez@serviceone.cl","password":"123456","passwordConfirm":"123456","avatarURL":"Cachapa.jpg"}}
+Completed: 201 message:  Time response: 324 ms Request ID: [16d6f337-0599-4e03-8320-cb7f15232704]
+
+Started POST /api/v1/register for :: ::1 at Thu Mar 07 2024 11:50:45 GMT-0300 (hora estándar de Brasilia)
+  Parameters in body: {"data":{"firstName":"Andres","lastName":"Lopez","email":"mari@test.com","password":"123456","passwordConfirm":"123456","avatarURL":"Cachapa.jpg"}}
+Completed: 201 message:  Time response: 294 ms Request ID: [192af8cf-db71-4880-b04d-85a5c1fff9f7]
+
+Started POST /api/v1/register for :: ::1 at Thu Mar 07 2024 11:53:31 GMT-0300 (hora estándar de Brasilia)
+  Parameters in body: {"data":{"firstName":"Andres","lastName":"Lopez","email":"hola@test.cl","password":"123456","passwordConfirm":"123456","avatarURL":"Cachapa.jpg"}}
+Completed: 201 message:  Time response: 151 ms Request ID: [132cd219-0f9d-4d97-a234-691b210a39ae]
+
+Started POST /api/v1/register for :: ::1 at Thu Mar 07 2024 11:54:21 GMT-0300 (hora estándar de Brasilia)
+  Parameters in body: {"data":{"firstName":"Cristian","lastName":"Arevalo","email":"cristian@test.cl","password":"123456","passwordConfirm":"123456","avatarURL":"Cachapa.jpg"}}
+Completed: 201 message:  Time response: 371 ms Request ID: [b04b1aad-d8b9-4356-b9bb-0d4b057c73b1]
+
+Started POST /api/v1/register for :: ::ffff:127.0.0.1 at Thu Mar 07 2024 12:00:45 GMT-0300 (hora estándar de Brasilia)
+  Parameters in body: {"data":{"firstName":"well","lastName":"Lopez","email":"well@test.cl","password":"123456","avatarURL":"avatar.jpg"}}
+Completed: 201 message:  Time response: 139 ms Request ID: [8fff938a-b779-4eae-8fc2-e52aef07ccd7]

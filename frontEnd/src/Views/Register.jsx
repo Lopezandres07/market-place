@@ -1,9 +1,11 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import { useForm } from 'react-hook-form'
-import createUser from '../components/CreateUser'
+import { UserContext } from '../providers/UserProvider'
 import Swal from 'sweetalert2'
 
 const Register = () => {
+  const { createUser } = useContext(UserContext)
+
   const {
     register,
     handleSubmit,
@@ -14,15 +16,9 @@ const Register = () => {
   } = useForm()
 
   const onSubmit = handleSubmit(async (data) => {
-    const { firstName, lastName, email, password, avatarURL } = data
+    console.log(data)
 
-    const response = await createUser(
-      firstName,
-      lastName,
-      email,
-      password,
-      avatarURL
-    )
+    const response = await createUser(data)
 
     console.log(response)
 
@@ -44,7 +40,7 @@ const Register = () => {
   })
 
   return (
-    <>
+    <section className='register'>
       <h1>Creación de usuario</h1>
       <form onSubmit={onSubmit}>
         <label htmlFor='firstName'>Nombre</label>
@@ -139,9 +135,14 @@ const Register = () => {
           }}
         />
 
-        <button className='mt-2'>Crear usuario</button>
+        <button
+          id='btnEnviar'
+          className='mt-2'
+        >
+          Crear usuario
+        </button>
       </form>
-    </>
+    </section>
   )
 }
 

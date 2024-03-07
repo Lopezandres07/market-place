@@ -1,0 +1,36 @@
+
+Started POST /users for :: ::ffff:127.0.0.1 at Wed Mar 06 2024 14:46:35 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {"user":{"role_id":1,"firstName":"John","lastName":"Doe","avatarURL":"https://www.clker.com/cliparts/3/a/f/e/11949837341769281089crawfish1_ganson.svg.thumb.png","email":"john.doe@example.com","password":"123456"}}
+Completed: 404 message:  Time response: 11 ms Request ID: [c293ca98-4236-4260-8df1-f05c4f42905e]
+
+Started POST /users?role_id=1&firstName=john&%20lastName=doe&avatarURL=https://www.clker.com/cliparts/3/a/f/e/11949837341769281089crawfish1_ganson.svg.thumb.png&email=john.doe@example.com&password=123456 for :: ::ffff:127.0.0.1 at Wed Mar 06 2024 14:48:35 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {}
+Completed: 404 message:  Time response: 7 ms Request ID: [d6f37a91-c847-4407-8621-3c154dc0e510]
+
+Started POST /users for :: ::ffff:127.0.0.1 at Wed Mar 06 2024 14:53:40 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {"user":{"role_id":1,"firstName":"John","lastName":"Doe","avatarURL":"https://www.clker.com/cliparts/3/a/f/e/11949837341769281089crawfish1_ganson.svg.thumb.png","email":"john.doe@example.com","password":"123456"}}
+Completed: 404 message:  Time response: 4 ms Request ID: [530d4298-9715-4927-8548-95e60e6c73d8]
+
+Started GET / for :: ::1 at Wed Mar 06 2024 14:57:50 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {}
+Completed: 404 message:  Time response: 11 ms Request ID: [14eda47c-83c6-482b-8e32-d2d707596571]
+
+Started GET /users for :: ::1 at Wed Mar 06 2024 14:57:56 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {}
+Completed: 404 message:  Time response: 4 ms Request ID: [6ffaeb15-8266-47b7-8389-682a61f7b192]
+
+Started POST /users for :: ::ffff:127.0.0.1 at Wed Mar 06 2024 15:00:00 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {"user":{"role_id":1,"firstName":"John","lastName":"Doe","avatarURL":"https://www.clker.com/cliparts/3/a/f/e/11949837341769281089crawfish1_ganson.svg.thumb.png","email":"john.doe@example.com","password":"123456"}}
+Completed: 404 message:  Time response: 10 ms Request ID: [b5365a4f-a5ea-4f9d-a423-67e7ea587d1e]
+
+Started POST /users for :: ::ffff:127.0.0.1 at Wed Mar 06 2024 15:07:00 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {"user":{"role_id":1,"firstName":"John","lastName":"Doe","avatarURL":"https://www.clker.com/cliparts/3/a/f/e/11949837341769281089crawfish1_ganson.svg.thumb.png","email":"john.doe@example.com","password":"123456"}}
+Completed: 404 message:  Time response: 10 ms Request ID: [d5cfa165-2741-4428-9c8f-70b7660bf8f4]
+
+Started POST /users for :: ::ffff:127.0.0.1 at Wed Mar 06 2024 15:08:04 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {"user":{"role_id":1,"firstName":"John","lastName":"Doe","avatarURL":"https://www.clker.com/cliparts/3/a/f/e/11949837341769281089crawfish1_ganson.svg.thumb.png","email":"john.doe@example.com","password":"123456"}}
+Completed: 404 message:  Time response: 12 ms Request ID: [7a93de73-b286-4eb0-a8eb-e0cbb60050bb]
+
+Started POST /users for :: ::ffff:127.0.0.1 at Wed Mar 06 2024 15:08:24 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {"user":{"role_id":1,"firstName":"John","lastName":"Doe","avatarURL":"https://www.clker.com/cliparts/3/a/f/e/11949837341769281089crawfish1_ganson.svg.thumb.png","email":"john.doe@example.com","password":"123456"}}
+Completed: 404 message:  Time response: 3 ms Request ID: [525692d3-46af-4eba-bb26-35e845e5beee]
