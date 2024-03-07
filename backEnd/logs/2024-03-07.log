@@ -31,6 +31,93 @@ Started POST /api/v1/users for :: ::ffff:127.0.0.1 at Thu Mar 07 2024 00:22:43 G
   Parameters in body: {"user":{"firstName":"well","lastName":"Lopez","email":"well@test.cl","password":"123456","avatarURL":"avatar.jpg"}}
 Completed: 201 message:  Time response: 349 ms Request ID: [b0946650-6c0e-4fe0-93fd-526fe4df4a6f]
 
+Started POST /src/API/V1/users for :: ::ffff:127.0.0.1 at Thu Mar 07 2024 10:39:03 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {"user":{"role_id":1,"firstName":"John","lastName":"Doe","avatarURL":"https://www.clker.com/cliparts/3/a/f/e/11949837341769281089crawfish1_ganson.svg.thumb.png","email":"john.doe@example.com","password":"123456"}}
+Completed: 404 message:  Time response: 10 ms Request ID: [c7db21e6-3717-4bb7-b34e-a10911a207ee]
+
+Started POST /API/V1/users for :: ::ffff:127.0.0.1 at Thu Mar 07 2024 10:40:06 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {"user":{"role_id":1,"firstName":"John","lastName":"Doe","avatarURL":"https://www.clker.com/cliparts/3/a/f/e/11949837341769281089crawfish1_ganson.svg.thumb.png","email":"john.doe@example.com","password":"123456"}}
+Completed: 201 message:  Time response: 268 ms Request ID: [3a2eb470-aae0-4972-9e08-d8fde1ee93b9]
+
+Started POST /API/V1/products for :: ::ffff:127.0.0.1 at Thu Mar 07 2024 11:40:35 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {"name":"Nombre del producto","description":"Descripción del producto","price":50000,"image":"https://i.imgur.com/6hOPFRH.jpg"}
+Completed: 404 message:  Time response: 17 ms Request ID: [30c4af97-467e-4425-a1fe-75628fe3615c]
+
+Started POST /API/V1/products for :: ::ffff:127.0.0.1 at Thu Mar 07 2024 11:42:26 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {"name":"Nombre del producto","description":"Descripción del producto","price":50000,"image":"https://i.imgur.com/6hOPFRH.jpg"}
+Completed: 404 message:  Time response: 3 ms Request ID: [abbeccb5-5a7e-42f4-b7fe-46306a8df025]
+
+Started POST /API/V1/products for :: ::ffff:127.0.0.1 at Thu Mar 07 2024 11:43:56 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {"name":"Nombre del producto","description":"Descripción del producto","price":50000,"image":"https://i.imgur.com/6hOPFRH.jpg"}
+Completed: 404 message:  Time response: 5 ms Request ID: [96cacd9b-89b7-40c1-8518-50778b4e89d8]
+
+Started POST /API/V1/users for :: ::ffff:127.0.0.1 at Thu Mar 07 2024 11:44:53 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {"user":{"role_id":1,"firstName":"John","lastName":"Doe","avatarURL":"https://www.clker.com/cliparts/3/a/f/e/11949837341769281089crawfish1_ganson.svg.thumb.png","email":"john.doe@example.com","password":"123456"}}
+Completed: 400 message:  Time response: 224 ms Request ID: [fff12ce9-fad1-46da-97c1-1cedcb1c5bd1]
+
+Started POST /API/V1/products for :: ::ffff:127.0.0.1 at Thu Mar 07 2024 11:45:04 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {"name":"Nombre del producto","description":"Descripción del producto","price":50000,"image":"https://i.imgur.com/6hOPFRH.jpg"}
+Completed: 404 message:  Time response: 6 ms Request ID: [200d745c-f894-4c25-8d74-51c5aad9b441]
+
+Started POST /API/V1/products for :: ::ffff:127.0.0.1 at Thu Mar 07 2024 11:45:37 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {"name":"Nombre del producto","description":"Descripción del producto","price":50000,"image":"https://i.imgur.com/6hOPFRH.jpg"}
+Completed: 404 message:  Time response: 6 ms Request ID: [15499702-f088-42b7-9b76-5637db2867d5]
+
+Started POST /API/V1/products for :: ::ffff:127.0.0.1 at Thu Mar 07 2024 11:47:32 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {"user_id":1,"name":"Columpio azul con estrellas","description":"Descripción del producto","price":50000,"imageURL":"https://i.imgur.com/6hOPFRH.jpg"}
+Completed: 404 message:  Time response: 3 ms Request ID: [1e0a52a9-ae0e-463a-ac64-27e6890f9c6d]
+
+Started POST /API/V1/products for :: ::ffff:127.0.0.1 at Thu Mar 07 2024 11:50:11 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {"user_id":1,"name":"Columpio azul con estrellas","description":"Descripción del producto","price":50000,"imageURL":"https://i.imgur.com/6hOPFRH.jpg"}
+Completed: 404 message:  Time response: 9 ms Request ID: [71904c32-78c2-41a4-b048-92a0d014cd14]
+
+Started POST /API/V1/products for :: ::ffff:127.0.0.1 at Thu Mar 07 2024 11:51:21 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {"product":{"user_id":1,"name":"Columpio azul con estrellas","description":"Descripción del producto","price":50000,"imageURL":"https://i.imgur.com/6hOPFRH.jpg"}}
+Completed: 404 message:  Time response: 9 ms Request ID: [6286b798-8856-4141-a1b9-c8f6ba6287c5]
+
+Started POST /API/V1/products for :: ::ffff:127.0.0.1 at Thu Mar 07 2024 11:51:48 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {"product":{"user_id":1,"name":"Columpio azul con estrellas","description":"Descripción del producto","price":50000,"imageURL":"https://i.imgur.com/6hOPFRH.jpg"}}
+Completed: 404 message:  Time response: 3 ms Request ID: [7068fc7e-8efc-40aa-bf36-5d7910576d30]
+
+Started POST /API/V1/products for :: ::ffff:127.0.0.1 at Thu Mar 07 2024 11:53:55 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {"product":{"user_id":1,"name":"Columpio azul con estrellas","description":"Descripción del producto","price":50000,"imageURL":"https://i.imgur.com/6hOPFRH.jpg"}}
+Completed: 404 message:  Time response: 5 ms Request ID: [00688dc3-bb0b-40f5-958f-c0f0a9ded7b0]
+
+Started POST /API/V1/product for :: ::ffff:127.0.0.1 at Thu Mar 07 2024 12:19:08 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {"product":{"user_id":1,"name":"Columpio azul con estrellas","description":"Descripción del producto","price":50000,"imageURL":"https://i.imgur.com/6hOPFRH.jpg"}}
+Completed: 404 message:  Time response: 6 ms Request ID: [c9ff18a8-165f-4169-93a2-3fadf64e0319]
+
+Started POST /API/V1/products for :: ::ffff:127.0.0.1 at Thu Mar 07 2024 12:19:17 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {"product":{"user_id":1,"name":"Columpio azul con estrellas","description":"Descripción del producto","price":50000,"imageURL":"https://i.imgur.com/6hOPFRH.jpg"}}
+Completed: 404 message:  Time response: 3 ms Request ID: [257ececf-d1eb-4c18-912d-546db14a4689]
+
+Started POST /products for :: ::ffff:127.0.0.1 at Thu Mar 07 2024 12:25:35 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {"product":{"user_id":1,"name":"Columpio azul con estrellas","description":"Descripción del producto","price":50000,"imageURL":"https://i.imgur.com/6hOPFRH.jpg"}}
+Completed: 404 message:  Time response: 4 ms Request ID: [13585a46-d0c5-4469-8833-048291c53498]
+
+Started POST /API/V1/products for :: ::ffff:127.0.0.1 at Thu Mar 07 2024 12:25:46 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {"product":{"user_id":1,"name":"Columpio azul con estrellas","description":"Descripción del producto","price":50000,"imageURL":"https://i.imgur.com/6hOPFRH.jpg"}}
+Completed: 404 message:  Time response: 3 ms Request ID: [27208873-b083-493d-958a-4e1b89082605]
+
+Started POST /API/V1/products for :: ::ffff:127.0.0.1 at Thu Mar 07 2024 12:33:34 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {"product":{"user_id":1,"name":"Columpio azul con estrellas","description":"Descripción del producto","price":50000,"imageURL":"https://i.imgur.com/6hOPFRH.jpg"}}
+Completed: 404 message:  Time response: 3 ms Request ID: [6dd54eb7-8f50-421c-82fd-1846d464aecb]
+
+Started GET / for :: ::1 at Thu Mar 07 2024 12:36:27 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {}
+Completed: 404 message:  Time response: 9 ms Request ID: [39b31ecf-55b7-4e73-9656-8354a53fc326]
+
+Started POST /API/V1/products for :: ::ffff:127.0.0.1 at Thu Mar 07 2024 12:39:09 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {"product":{"user_id":1,"name":"Columpio azul con estrellas","description":"Descripción del producto","price":50000,"imageURL":"https://i.imgur.com/6hOPFRH.jpg"}}
+Completed: 201 message:  Time response: 78 ms Request ID: [0c3dd477-e939-48a6-89e0-40923ecd4d36]
+
+Started POST /API/V1/products for :: ::ffff:127.0.0.1 at Thu Mar 07 2024 12:39:43 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {"product":{"user_id":1,"name":"Columpio azul con estrellas","description":"Descripción del producto","price":50000,"imageURL":"https://i.imgur.com/6hOPFRH.jpg"}}
+Completed: 201 message:  Time response: 67 ms Request ID: [ad248c7b-b4cb-4a73-8f33-754ba7e875bd]
+
+Started POST /API/V1/products for :: ::ffff:127.0.0.1 at Thu Mar 07 2024 12:39:46 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {"product":{"user_id":1,"name":"Columpio azul con estrellas","description":"Descripción del producto","price":50000,"imageURL":"https://i.imgur.com/6hOPFRH.jpg"}}
+Completed: 201 message:  Time response: 7 ms Request ID: [18bbc263-2e04-4775-b7ec-675d649bfb36]
 Started POST /api/v1/users/register for :: ::1 at Thu Mar 07 2024 08:35:25 GMT-0300 (hora estándar de Brasilia)
   Parameters in body: {"firstName":"Andres","lastName":"Lopez","email":"andres@lopez.com","password":"123456","avatarURL":"Foto.jpg"}
 Completed: 404 message:  Time response: 9 ms Request ID: [f6840495-a456-444f-8c2e-e879e7ca4a7f]

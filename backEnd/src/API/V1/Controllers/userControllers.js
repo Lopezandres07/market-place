@@ -1,4 +1,4 @@
-import { createUser } from '../Models/userModels.js'
+import { createUser } from "../Models/userModels.js";
 
 const createNewUser = async (req, res) => {
   const { data } = req.body
@@ -14,8 +14,8 @@ const createNewUser = async (req, res) => {
     )
     res.status(201).json({ success: true, newUser })
   } catch (error) {
-    res.status(400).json(error.message)
+    res.status(400).json(error.message);
   }
-}
+};
 
-export { createNewUser }
+export { createNewUser };
