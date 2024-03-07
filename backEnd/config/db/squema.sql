@@ -11,6 +11,8 @@ CREATE TABLE roles (
     role_name VARCHAR(50) NOT NULL
 );
 
+INSERT INTO roles (role_name) VALUES (Administrator), (User);
+
 CREATE TABLE users (
     id SERIAL PRIMARY KEY,
     role_id INT REFERENCES roles(id),
@@ -18,7 +20,7 @@ CREATE TABLE users (
     lastName VARCHAR (50) NOT NULL,
     avatarURL VARCHAR (1000) NOT NULL,
     email VARCHAR (50) UNIQUE NOT NULL,
-    password VARCHAR(150) NOT NULL,
+    password VARCHAR(250) NOT NULL,
     created_at TIMESTAMP NOT NULL DEFAULT NOW(),
     updated_at TIMESTAMP NOT NULL DEFAULT NOW()   
 );

@@ -1,0 +1,32 @@
+
+Started POST /api/v1/users for :: ::ffff:127.0.0.1 at Thu Mar 07 2024 00:07:38 GMT-0300 (hora estándar de Brasilia)
+  Parameters in body: {"user":{"firstName":"Andres","lastName":"Lopez","email":"test@test.cl","password":"123456","avatarURL":"avatar.jpg"}}
+Completed: 400 message:  Time response: 275 ms Request ID: [2be67bb9-0fd1-49f7-b496-e074ff6de2f0]
+
+Started POST /api/v1/users for :: ::ffff:127.0.0.1 at Thu Mar 07 2024 00:08:58 GMT-0300 (hora estándar de Brasilia)
+  Parameters in body: {"user":{"firstName":"Andres","lastName":"Lopez","email":"test@test.cl","password":"123456","avatarURL":"avatar.jpg"}}
+Completed: 400 message:  Time response: 206 ms Request ID: [7e8632de-5e35-4e52-88d8-8d4c5c0a2069]
+
+Started POST /api/v1/users for :: ::ffff:127.0.0.1 at Thu Mar 07 2024 00:13:50 GMT-0300 (hora estándar de Brasilia)
+  Parameters in body: {"user":{"firstName":"Andres","lastName":"Lopez","email":"test@test.cl","password":"123456","avatarURL":"avatar.jpg"}}
+Completed: 400 message:  Time response: 245 ms Request ID: [2d54496b-8e87-40d5-9a7f-8395e82cdf41]
+
+Started POST /api/v1/users for :: ::ffff:127.0.0.1 at Thu Mar 07 2024 00:18:10 GMT-0300 (hora estándar de Brasilia)
+  Parameters in body: {"user":{"firstName":"Andres","lastName":"Lopez","email":"test@test.cl","password":"123456","avatarURL":"avatar.jpg"}}
+Completed: 400 message:  Time response: 254 ms Request ID: [dd240d30-69b3-472c-8e75-87e7411c694e]
+
+Started POST /api/v1/users for :: ::ffff:127.0.0.1 at Thu Mar 07 2024 00:18:26 GMT-0300 (hora estándar de Brasilia)
+  Parameters in body: {"user":{"firstName":"Andres","lastName":"Lopez","email":"test@test.cl","password":"123456","avatarURL":"avatar.jpg"}}
+Completed: 400 message:  Time response: 208 ms Request ID: [a60d0c6d-2f11-42b3-ad0b-69a238f95874]
+
+Started POST /api/v1/users for :: ::ffff:127.0.0.1 at Thu Mar 07 2024 00:19:28 GMT-0300 (hora estándar de Brasilia)
+  Parameters in body: {"user":{"firstName":"Andres","lastName":"Lopez","email":"test@test.cl","password":"123456","avatarURL":"avatar.jpg"}}
+Completed: 400 message:  Time response: 320 ms Request ID: [bee48985-1b7f-4512-8ef7-3083235652c9]
+
+Started POST /api/v1/users for :: ::ffff:127.0.0.1 at Thu Mar 07 2024 00:20:22 GMT-0300 (hora estándar de Brasilia)
+  Parameters in body: {"user":{"firstName":"Andres","lastName":"Lopez","email":"test@test.cl","password":"123456","avatarURL":"avatar.jpg"}}
+Completed: 201 message:  Time response: 121 ms Request ID: [f2d2871d-7d2b-4818-b1f0-a6745083cffc]
+
+Started POST /api/v1/users for :: ::ffff:127.0.0.1 at Thu Mar 07 2024 00:22:43 GMT-0300 (hora estándar de Brasilia)
+  Parameters in body: {"user":{"firstName":"well","lastName":"Lopez","email":"well@test.cl","password":"123456","avatarURL":"avatar.jpg"}}
+Completed: 201 message:  Time response: 349 ms Request ID: [b0946650-6c0e-4fe0-93fd-526fe4df4a6f]
