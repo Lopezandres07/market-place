@@ -9,7 +9,7 @@ const PORT = 3000
 swagger(app)
 
 app.use(express.json())
-app.options('*', cors())
+app.use('*', cors())
 app.use(logger())
 app.use('/api/v1', userRoutes)
 
