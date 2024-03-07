@@ -17,25 +17,22 @@ const UserProvider = ({ children }) => {
     }
   }, [token])
 
-  const createUser = async (
-    firstName,
-    lastName,
-    email,
-    password,
-    avatarURL
-  ) => {
-    console.log(firstName, lastName, email, password, avatarURL)
+  const createUser = async (data) => {
+    console.log(data)
 
-    const response = await fetch('http://localhost:5000/users/register', {
+    const response = await fetch('http://localhost:3000/api/v1/register', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ firstName, lastName, email, password, avatarURL }),
+      body: JSON.stringify({
+        data,
+      }),
     })
 
-    const data = await response.json()
-    setToken(data.token || null)
+    const user = await response.json()
+    /*     setToken(data.token || null) */
+    console.log(user)
 
-    return data
+    return user
   }
 
   const loginWithEmailAndPassword = async (email, password) => {

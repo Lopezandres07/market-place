@@ -15,6 +15,7 @@ app.use(logger());
 app.use("/api/v1", userRoutes);
 app.use("/api/v1", productsRoutes);
 
+
 app.listen(PORT, () => {
   console.log(`Example app listening at http://localhost:${PORT}`);
   console.log(`Swagger docs available at http://localhost:${PORT}/api/v1/docs`);
