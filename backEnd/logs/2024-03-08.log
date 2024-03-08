@@ -1,0 +1,48 @@
+
+Started POST /api/v1/login for :: ::1 at Fri Mar 08 2024 10:55:27 GMT-0300 (hora estándar de Brasilia)
+  Parameters in body: {"data":{"email":"test@test.com","password":"123456"}}
+Completed: 500 message:  Time response: 59 ms Request ID: [30c1d600-c159-46f0-aade-051538d15113]
+
+Started POST /api/v1/login for :: ::1 at Fri Mar 08 2024 11:20:35 GMT-0300 (hora estándar de Brasilia)
+  Parameters in body: {"data":{"email":"test@test.com","password":"123456"}}
+Completed: 500 message:  Time response: 21 ms Request ID: [51bd9b54-22b6-4f99-8559-4be2f232beed]
+
+Started POST /api/v1/login for :: ::1 at Fri Mar 08 2024 11:21:21 GMT-0300 (hora estándar de Brasilia)
+  Parameters in body: {"data":{"email":"test@test.com","password":"123456"}}
+Completed: 500 message:  Time response: 35 ms Request ID: [bf5b8b0a-01ae-411e-90f9-61772273a205]
+
+Started POST /api/v1/login for :: ::1 at Fri Mar 08 2024 11:21:52 GMT-0300 (hora estándar de Brasilia)
+  Parameters in body: {"data":{"email":"test@test.com","password":"123456"}}
+Completed: 500 message:  Time response: 21 ms Request ID: [d00ea38d-1e5d-401c-8ed8-7774ed53a98e]
+
+Started POST /api/v1/login for :: ::1 at Fri Mar 08 2024 11:22:48 GMT-0300 (hora estándar de Brasilia)
+  Parameters in body: {"data":{"email":"test@test.com","password":"123456"}}
+Completed: 200 message:  Time response: 237 ms Request ID: [f8f538eb-4c8f-463d-b82f-b1b7b22cd29d]
+
+Started POST /api/v1/login for :: ::1 at Fri Mar 08 2024 11:23:28 GMT-0300 (hora estándar de Brasilia)
+  Parameters in body: {"data":{"email":"test@test.com","password":"123456"}}
+Completed: 200 message:  Time response: 279 ms Request ID: [e2ab01f1-4815-4568-b4d5-568ae6954b83]
+
+Started POST /api/v1/login for :: ::1 at Fri Mar 08 2024 11:24:01 GMT-0300 (hora estándar de Brasilia)
+  Parameters in body: {"data":{"email":"test@test.com","password":"123456"}}
+Completed: 200 message:  Time response: 164 ms Request ID: [75dea445-4f57-473f-9ba0-5949083048a0]
+
+Started POST /api/v1/login for :: ::1 at Fri Mar 08 2024 11:47:20 GMT-0300 (hora estándar de Brasilia)
+  Parameters in body: {"data":{"email":"test@test.com","password":"123456"}}
+Completed: 200 message:  Time response: 199 ms Request ID: [d8848937-e7d6-4578-af08-e714c6319f06]
+
+Started POST /api/v1/login for :: ::1 at Fri Mar 08 2024 11:48:09 GMT-0300 (hora estándar de Brasilia)
+  Parameters in body: {"data":{"email":"test@test.com","password":"123456"}}
+Completed: 200 message:  Time response: 207 ms Request ID: [c35fcf3f-d2cf-46cb-b665-ce517a53ff16]
+
+Started POST /api/v1/googleLogin for :: ::1 at Fri Mar 08 2024 12:00:15 GMT-0300 (hora estándar de Brasilia)
+  Parameters in body: {"tokenId":"eyJhbGciOiJSUzI1NiIsImtpZCI6IjA4YmY1YzM3NzJkZDRlN2E3MjdhMTAxYmY1MjBmNjU3NWNhYzMyNmYiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJhY2NvdW50cy5nb29nbGUuY29tIiwiYXpwIjoiNTMyOTM0NzIzMzQ1LW1kMWw0YWNjYWVqNTFlOTFpMTQwdmNxYmVncnA3YnYwLmFwcHMuZ29vZ2xldXNlcmNvbnRlbnQuY29tIiwiYXVkIjoiNTMyOTM0NzIzMzQ1LW1kMWw0YWNjYWVqNTFlOTFpMTQwdmNxYmVncnA3YnYwLmFwcHMuZ29vZ2xldXNlcmNvbnRlbnQuY29tIiwic3ViIjoiMTA1OTA0MDQ5NTUxMjE1OTUxNjQ1IiwiZW1haWwiOiJhbmRsb3AxN0BnbWFpbC5jb20iLCJlbWFpbF92ZXJpZmllZCI6dHJ1ZSwiYXRfaGFzaCI6Ik41REZjZWZmLUFyT1ZBMVRjWUpvZEEiLCJuYmYiOjE3MDk5MDY4NTksIm5hbWUiOiJBbmRyZXMgTG9wZXoiLCJwaWN0dXJlIjoiaHR0cHM6Ly9saDMuZ29vZ2xldXNlcmNvbnRlbnQuY29tL2EvQUNnOG9jSmd6a3lpVDNucHBDeTBTc1doX2FMUEdvc0dYTzdfZEdodjIwbElidG1QdGNzPXM5Ni1jIiwiZ2l2ZW5fbmFtZSI6IkFuZHJlcyIsImZhbWlseV9uYW1lIjoiTG9wZXoiLCJsb2NhbGUiOiJlcyIsImlhdCI6MTcwOTkwNzE1OSwiZXhwIjoxNzA5OTEwNzU5LCJqdGkiOiJlNzAxYTUzNDU5MWUyYTQ1OWJmN2MwMjk5ZDRiZjNjNWZkMWRjN2VjIn0.l6RzvGHyVW0J9ndm0rR0xU5H5U7jie7bMp5RAOuuKt_MjqEhoccj3FT8ckmtvHf9Im4tlJFS1mRQbfer30qefpRQWGxN2PmNL1VtZyxAHO4TJydGL7jyJ5yyFiOuKYscW1skGmdi5DxMFZqJDwUgzB4RxvikjGkNYAj-zuu_yhvz2siL-C6V5mO6EZcq-XLCmUTmDVy6DdaP_KD2o1fXqVh-f-eP7Rp8JFvuMZ7V8OjXqfqJn8SikmprBDHNt3N_ojd5celiWAWVc12G-KeWuH0ZmKY7SarPaNzt6C2zTu7t5uNFgNbb3gQ6w4TC026roSGmCL6Ri5DvAiDO8Wl1rQ"}
+Completed: 404 message:  Time response: 6 ms Request ID: [157b581d-8d28-415e-9032-c2b18dd65fa3]
+
+Started POST /api/v1/googleLogin for :: ::1 at Fri Mar 08 2024 12:00:20 GMT-0300 (hora estándar de Brasilia)
+  Parameters in body: {"tokenId":"eyJhbGciOiJSUzI1NiIsImtpZCI6IjA4YmY1YzM3NzJkZDRlN2E3MjdhMTAxYmY1MjBmNjU3NWNhYzMyNmYiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJhY2NvdW50cy5nb29nbGUuY29tIiwiYXpwIjoiNTMyOTM0NzIzMzQ1LW1kMWw0YWNjYWVqNTFlOTFpMTQwdmNxYmVncnA3YnYwLmFwcHMuZ29vZ2xldXNlcmNvbnRlbnQuY29tIiwiYXVkIjoiNTMyOTM0NzIzMzQ1LW1kMWw0YWNjYWVqNTFlOTFpMTQwdmNxYmVncnA3YnYwLmFwcHMuZ29vZ2xldXNlcmNvbnRlbnQuY29tIiwic3ViIjoiMTA1OTA0MDQ5NTUxMjE1OTUxNjQ1IiwiZW1haWwiOiJhbmRsb3AxN0BnbWFpbC5jb20iLCJlbWFpbF92ZXJpZmllZCI6dHJ1ZSwiYXRfaGFzaCI6Ik41REZjZWZmLUFyT1ZBMVRjWUpvZEEiLCJuYmYiOjE3MDk5MDY4NTksIm5hbWUiOiJBbmRyZXMgTG9wZXoiLCJwaWN0dXJlIjoiaHR0cHM6Ly9saDMuZ29vZ2xldXNlcmNvbnRlbnQuY29tL2EvQUNnOG9jSmd6a3lpVDNucHBDeTBTc1doX2FMUEdvc0dYTzdfZEdodjIwbElidG1QdGNzPXM5Ni1jIiwiZ2l2ZW5fbmFtZSI6IkFuZHJlcyIsImZhbWlseV9uYW1lIjoiTG9wZXoiLCJsb2NhbGUiOiJlcyIsImlhdCI6MTcwOTkwNzE1OSwiZXhwIjoxNzA5OTEwNzU5LCJqdGkiOiJlNzAxYTUzNDU5MWUyYTQ1OWJmN2MwMjk5ZDRiZjNjNWZkMWRjN2VjIn0.l6RzvGHyVW0J9ndm0rR0xU5H5U7jie7bMp5RAOuuKt_MjqEhoccj3FT8ckmtvHf9Im4tlJFS1mRQbfer30qefpRQWGxN2PmNL1VtZyxAHO4TJydGL7jyJ5yyFiOuKYscW1skGmdi5DxMFZqJDwUgzB4RxvikjGkNYAj-zuu_yhvz2siL-C6V5mO6EZcq-XLCmUTmDVy6DdaP_KD2o1fXqVh-f-eP7Rp8JFvuMZ7V8OjXqfqJn8SikmprBDHNt3N_ojd5celiWAWVc12G-KeWuH0ZmKY7SarPaNzt6C2zTu7t5uNFgNbb3gQ6w4TC026roSGmCL6Ri5DvAiDO8Wl1rQ"}
+Completed: 404 message:  Time response: 3 ms Request ID: [9cb9cc52-ad37-4b72-a875-584cf3258b82]
+
+Started POST /api/v1/googleLogin for :: ::1 at Fri Mar 08 2024 12:00:23 GMT-0300 (hora estándar de Brasilia)
+  Parameters in body: {"tokenId":"eyJhbGciOiJSUzI1NiIsImtpZCI6IjA4YmY1YzM3NzJkZDRlN2E3MjdhMTAxYmY1MjBmNjU3NWNhYzMyNmYiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJhY2NvdW50cy5nb29nbGUuY29tIiwiYXpwIjoiNTMyOTM0NzIzMzQ1LW1kMWw0YWNjYWVqNTFlOTFpMTQwdmNxYmVncnA3YnYwLmFwcHMuZ29vZ2xldXNlcmNvbnRlbnQuY29tIiwiYXVkIjoiNTMyOTM0NzIzMzQ1LW1kMWw0YWNjYWVqNTFlOTFpMTQwdmNxYmVncnA3YnYwLmFwcHMuZ29vZ2xldXNlcmNvbnRlbnQuY29tIiwic3ViIjoiMTA1OTA0MDQ5NTUxMjE1OTUxNjQ1IiwiZW1haWwiOiJhbmRsb3AxN0BnbWFpbC5jb20iLCJlbWFpbF92ZXJpZmllZCI6dHJ1ZSwiYXRfaGFzaCI6Ik41REZjZWZmLUFyT1ZBMVRjWUpvZEEiLCJuYmYiOjE3MDk5MDY4NTksIm5hbWUiOiJBbmRyZXMgTG9wZXoiLCJwaWN0dXJlIjoiaHR0cHM6Ly9saDMuZ29vZ2xldXNlcmNvbnRlbnQuY29tL2EvQUNnOG9jSmd6a3lpVDNucHBDeTBTc1doX2FMUEdvc0dYTzdfZEdodjIwbElidG1QdGNzPXM5Ni1jIiwiZ2l2ZW5fbmFtZSI6IkFuZHJlcyIsImZhbWlseV9uYW1lIjoiTG9wZXoiLCJsb2NhbGUiOiJlcyIsImlhdCI6MTcwOTkwNzE1OSwiZXhwIjoxNzA5OTEwNzU5LCJqdGkiOiJlNzAxYTUzNDU5MWUyYTQ1OWJmN2MwMjk5ZDRiZjNjNWZkMWRjN2VjIn0.l6RzvGHyVW0J9ndm0rR0xU5H5U7jie7bMp5RAOuuKt_MjqEhoccj3FT8ckmtvHf9Im4tlJFS1mRQbfer30qefpRQWGxN2PmNL1VtZyxAHO4TJydGL7jyJ5yyFiOuKYscW1skGmdi5DxMFZqJDwUgzB4RxvikjGkNYAj-zuu_yhvz2siL-C6V5mO6EZcq-XLCmUTmDVy6DdaP_KD2o1fXqVh-f-eP7Rp8JFvuMZ7V8OjXqfqJn8SikmprBDHNt3N_ojd5celiWAWVc12G-KeWuH0ZmKY7SarPaNzt6C2zTu7t5uNFgNbb3gQ6w4TC026roSGmCL6Ri5DvAiDO8Wl1rQ"}
+Completed: 404 message:  Time response: 4 ms Request ID: [01a660f8-e627-4ff9-a619-6f000fa28b8c]
