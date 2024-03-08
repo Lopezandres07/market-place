@@ -5,9 +5,9 @@ import CardProduct from "./CardProducts";
 import { Modal } from "react-bootstrap";
 import axios from "axios";
 import { useFavorites } from "./contexts/FavoritesContext";
-const dataAPI = "/public/products.json";
+const dataAPI = "/products.json";
 
-const Products = () => {
+const Products = ({ nameFilter }) => { // Recibimos el filtro por nombre como prop
   const { favorites, addToFavorites, toggleFavorite } = useFavorites();
   const [showDetails, setShowDetails] = useState(false);
   const [selectedProduct, setSelectedProduct] = useState(null);
@@ -39,6 +39,11 @@ const Products = () => {
     return favorites.some((fav) => fav.id === product.id);
   };
 
+  // Función de filtrado de productos por nombre
+  const filteredProducts = products.filter((product) =>
+    product.name.toLowerCase().includes(nameFilter.toLowerCase())
+  );
+
   return (
     <>
       <h2 className="text-center mb-4">Productos</h2>
@@ -46,7 +51,7 @@ const Products = () => {
         Ir a Favoritos
       </Link>
       <Row xs={1} sm={2} md={3} lg={4}>
-        {products.map((item) => (
+        {filteredProducts.map((item) => (
           <Col key={item.id}>
             <CardProduct
               product={item}
@@ -83,3 +88,4 @@ const Products = () => {
 };
 
 export default Products;
+
