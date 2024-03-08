@@ -1,13 +1,9 @@
 import pool from '../../../../config/db/conectionDb.js'
 import bcrypt from 'bcryptjs'
 
-const createUser = async ({
-  firstName,
-  lastName,
-  email,
-  password,
-  avatarURL,
-}) => {
+const createUser = async (data) => {
+  const { firstName, lastName, email, password, avatarURL } = data
+
   const hashedPasword = bcrypt.hashSync(password)
 
   const SQLquery = {
@@ -15,6 +11,7 @@ const createUser = async ({
     values: [firstName, lastName, email, hashedPasword, avatarURL],
   }
   const response = await pool.query(SQLquery)
+
   return response.rows[0]
 }
 

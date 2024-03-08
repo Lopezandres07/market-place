@@ -2,10 +2,12 @@ import React, { useContext } from 'react'
 import { useForm } from 'react-hook-form'
 import { UserContext } from '../providers/UserProvider'
 import GoogleLoginButton from '../components/GoogleLoginButton'
+import { useNavigate } from 'react-router-dom'
 
 const Login = () => {
   const { loginWithEmailAndPassword, googleLoginSuccess, googleLoginFailure } =
     useContext(UserContext)
+  const navigate = useNavigate()
 
   const {
     register,
@@ -17,6 +19,10 @@ const Login = () => {
   const onSubmit = handleSubmit(async (data) => {
     const response = await loginWithEmailAndPassword(data)
     console.log(response)
+
+    if (response && response.token) {
+      navigate('/homeUser')
+    }
 
     reset()
   })

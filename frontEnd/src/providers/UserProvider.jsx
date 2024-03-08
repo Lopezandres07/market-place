@@ -29,7 +29,6 @@ const UserProvider = ({ children }) => {
     })
 
     const user = await response.json()
-    console.log(user)
 
     return user
   }
@@ -55,7 +54,7 @@ const UserProvider = ({ children }) => {
     console.log('Google login success', response)
     const { tokenId } = response
     console.log(tokenId)
-
+    /* 
     const backendResponse = await fetch(
       'http://localhost:3000/api/v1/googleLogin',
       {
@@ -66,7 +65,7 @@ const UserProvider = ({ children }) => {
     )
 
     const backendData = await backendResponse.json()
-    console.log(backendData)
+    console.log(backendData) */
   }
 
   const googleLoginFailure = (error) => {

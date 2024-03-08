@@ -6,11 +6,12 @@ import userRoutes from './config/routes/userRoutes.js'
 import productsRoutes from './config/routes/productsRoutes.js'
 
 const app = express()
+app.use('*', cors())
+
 const PORT = 3000
 swagger(app)
 
 app.use(express.json())
-app.use('*', cors())
 app.use(logger())
 app.use('/api/v1', userRoutes)
 app.use('/api/v1', productsRoutes)

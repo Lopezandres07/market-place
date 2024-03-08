@@ -346,3 +346,115 @@ Completed: 404 message:  Time response: 3 ms Request ID: [9cb9cc52-ad37-4b72-a87
 Started POST /api/v1/googleLogin for :: ::1 at Fri Mar 08 2024 12:00:23 GMT-0300 (hora estándar de Brasilia)
   Parameters in body: {"tokenId":"eyJhbGciOiJSUzI1NiIsImtpZCI6IjA4YmY1YzM3NzJkZDRlN2E3MjdhMTAxYmY1MjBmNjU3NWNhYzMyNmYiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJhY2NvdW50cy5nb29nbGUuY29tIiwiYXpwIjoiNTMyOTM0NzIzMzQ1LW1kMWw0YWNjYWVqNTFlOTFpMTQwdmNxYmVncnA3YnYwLmFwcHMuZ29vZ2xldXNlcmNvbnRlbnQuY29tIiwiYXVkIjoiNTMyOTM0NzIzMzQ1LW1kMWw0YWNjYWVqNTFlOTFpMTQwdmNxYmVncnA3YnYwLmFwcHMuZ29vZ2xldXNlcmNvbnRlbnQuY29tIiwic3ViIjoiMTA1OTA0MDQ5NTUxMjE1OTUxNjQ1IiwiZW1haWwiOiJhbmRsb3AxN0BnbWFpbC5jb20iLCJlbWFpbF92ZXJpZmllZCI6dHJ1ZSwiYXRfaGFzaCI6Ik41REZjZWZmLUFyT1ZBMVRjWUpvZEEiLCJuYmYiOjE3MDk5MDY4NTksIm5hbWUiOiJBbmRyZXMgTG9wZXoiLCJwaWN0dXJlIjoiaHR0cHM6Ly9saDMuZ29vZ2xldXNlcmNvbnRlbnQuY29tL2EvQUNnOG9jSmd6a3lpVDNucHBDeTBTc1doX2FMUEdvc0dYTzdfZEdodjIwbElidG1QdGNzPXM5Ni1jIiwiZ2l2ZW5fbmFtZSI6IkFuZHJlcyIsImZhbWlseV9uYW1lIjoiTG9wZXoiLCJsb2NhbGUiOiJlcyIsImlhdCI6MTcwOTkwNzE1OSwiZXhwIjoxNzA5OTEwNzU5LCJqdGkiOiJlNzAxYTUzNDU5MWUyYTQ1OWJmN2MwMjk5ZDRiZjNjNWZkMWRjN2VjIn0.l6RzvGHyVW0J9ndm0rR0xU5H5U7jie7bMp5RAOuuKt_MjqEhoccj3FT8ckmtvHf9Im4tlJFS1mRQbfer30qefpRQWGxN2PmNL1VtZyxAHO4TJydGL7jyJ5yyFiOuKYscW1skGmdi5DxMFZqJDwUgzB4RxvikjGkNYAj-zuu_yhvz2siL-C6V5mO6EZcq-XLCmUTmDVy6DdaP_KD2o1fXqVh-f-eP7Rp8JFvuMZ7V8OjXqfqJn8SikmprBDHNt3N_ojd5celiWAWVc12G-KeWuH0ZmKY7SarPaNzt6C2zTu7t5uNFgNbb3gQ6w4TC026roSGmCL6Ri5DvAiDO8Wl1rQ"}
 Completed: 404 message:  Time response: 4 ms Request ID: [01a660f8-e627-4ff9-a619-6f000fa28b8c]
+
+Started POST /api/v1/googleLogin for :: ::1 at Fri Mar 08 2024 15:23:04 GMT-0300 (hora estándar de Brasilia)
+  Parameters in body: {"tokenId":"eyJhbGciOiJSUzI1NiIsImtpZCI6IjA4YmY1YzM3NzJkZDRlN2E3MjdhMTAxYmY1MjBmNjU3NWNhYzMyNmYiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJhY2NvdW50cy5nb29nbGUuY29tIiwiYXpwIjoiNTMyOTM0NzIzMzQ1LW1kMWw0YWNjYWVqNTFlOTFpMTQwdmNxYmVncnA3YnYwLmFwcHMuZ29vZ2xldXNlcmNvbnRlbnQuY29tIiwiYXVkIjoiNTMyOTM0NzIzMzQ1LW1kMWw0YWNjYWVqNTFlOTFpMTQwdmNxYmVncnA3YnYwLmFwcHMuZ29vZ2xldXNlcmNvbnRlbnQuY29tIiwic3ViIjoiMTA1OTA0MDQ5NTUxMjE1OTUxNjQ1IiwiZW1haWwiOiJhbmRsb3AxN0BnbWFpbC5jb20iLCJlbWFpbF92ZXJpZmllZCI6dHJ1ZSwiYXRfaGFzaCI6IkJmWG9uYWlRM0NIUWM0NzV6dWdjTUEiLCJuYmYiOjE3MDk5MjEzNTIsIm5hbWUiOiJBbmRyZXMgTG9wZXoiLCJwaWN0dXJlIjoiaHR0cHM6Ly9saDMuZ29vZ2xldXNlcmNvbnRlbnQuY29tL2EvQUNnOG9jSmd6a3lpVDNucHBDeTBTc1doX2FMUEdvc0dYTzdfZEdodjIwbElidG1QdGNzPXM5Ni1jIiwiZ2l2ZW5fbmFtZSI6IkFuZHJlcyIsImZhbWlseV9uYW1lIjoiTG9wZXoiLCJsb2NhbGUiOiJlcyIsImlhdCI6MTcwOTkyMTY1MiwiZXhwIjoxNzA5OTI1MjUyLCJqdGkiOiIxZDgyOTU5OWU5YWRiNjhkMjBlZjBkMjZhOTE4NzVhNTk3MTViZjE4In0.jXj1XYbQOxFuInj1MF0e1K1TCcEdIJCfx3YuHwpFQwsaRKhpLWoiYQioTR4FQSnjqbKJck-F522VVgizLfM9OKPqU7ML7Zwlhf82FHFPcEUdHdXOYB9KXVm6FTl44nTjeGORl4kIOC2AIK-BzNLtV1nDc3WU9li46YFN6qjDil706VodoYwriDw33_Jtg2JOEDgzGvJD5MkgrQk9rg7DcYYPBKYLawkEcEG-iQfJOmkx_hxELB7tdnwl8hu1x5hC54mNaEUIQ5_af9c06l_ZrtAXjoQ94euF9Osxxd4i164flonsxKt75843MvkQKghRc--LWlWhDORlQkmo8D7zWQ"}
+Completed: 404 message:  Time response: 4 ms Request ID: [9b0f94cb-9c23-4144-a755-645cbf5a724e]
+
+Started POST /api/v1/googleLogin for :: ::1 at Fri Mar 08 2024 15:23:30 GMT-0300 (hora estándar de Brasilia)
+  Parameters in body: {"tokenId":"eyJhbGciOiJSUzI1NiIsImtpZCI6IjA4YmY1YzM3NzJkZDRlN2E3MjdhMTAxYmY1MjBmNjU3NWNhYzMyNmYiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJhY2NvdW50cy5nb29nbGUuY29tIiwiYXpwIjoiNTMyOTM0NzIzMzQ1LW1kMWw0YWNjYWVqNTFlOTFpMTQwdmNxYmVncnA3YnYwLmFwcHMuZ29vZ2xldXNlcmNvbnRlbnQuY29tIiwiYXVkIjoiNTMyOTM0NzIzMzQ1LW1kMWw0YWNjYWVqNTFlOTFpMTQwdmNxYmVncnA3YnYwLmFwcHMuZ29vZ2xldXNlcmNvbnRlbnQuY29tIiwic3ViIjoiMTA1OTA0MDQ5NTUxMjE1OTUxNjQ1IiwiZW1haWwiOiJhbmRsb3AxN0BnbWFpbC5jb20iLCJlbWFpbF92ZXJpZmllZCI6dHJ1ZSwiYXRfaGFzaCI6IkJmWG9uYWlRM0NIUWM0NzV6dWdjTUEiLCJuYmYiOjE3MDk5MjEzNTIsIm5hbWUiOiJBbmRyZXMgTG9wZXoiLCJwaWN0dXJlIjoiaHR0cHM6Ly9saDMuZ29vZ2xldXNlcmNvbnRlbnQuY29tL2EvQUNnOG9jSmd6a3lpVDNucHBDeTBTc1doX2FMUEdvc0dYTzdfZEdodjIwbElidG1QdGNzPXM5Ni1jIiwiZ2l2ZW5fbmFtZSI6IkFuZHJlcyIsImZhbWlseV9uYW1lIjoiTG9wZXoiLCJsb2NhbGUiOiJlcyIsImlhdCI6MTcwOTkyMTY1MiwiZXhwIjoxNzA5OTI1MjUyLCJqdGkiOiIxZDgyOTU5OWU5YWRiNjhkMjBlZjBkMjZhOTE4NzVhNTk3MTViZjE4In0.jXj1XYbQOxFuInj1MF0e1K1TCcEdIJCfx3YuHwpFQwsaRKhpLWoiYQioTR4FQSnjqbKJck-F522VVgizLfM9OKPqU7ML7Zwlhf82FHFPcEUdHdXOYB9KXVm6FTl44nTjeGORl4kIOC2AIK-BzNLtV1nDc3WU9li46YFN6qjDil706VodoYwriDw33_Jtg2JOEDgzGvJD5MkgrQk9rg7DcYYPBKYLawkEcEG-iQfJOmkx_hxELB7tdnwl8hu1x5hC54mNaEUIQ5_af9c06l_ZrtAXjoQ94euF9Osxxd4i164flonsxKt75843MvkQKghRc--LWlWhDORlQkmo8D7zWQ"}
+Completed: 404 message:  Time response: 11 ms Request ID: [29fafc92-0995-45ab-8e48-62335ad2a1fb]
+
+Started POST /api/v1/register for :: ::1 at Fri Mar 08 2024 15:24:43 GMT-0300 (hora estándar de Brasilia)
+  Parameters in body: {"data":{"firstName":"Andres","lastName":"Lopez","email":"mari.ane13oliveira@gmail.com","password":"123456","passwordConfirm":"123456","avatarURL":"Cachapa.jpg"}}
+Completed: 400 message:  Time response: 34 ms Request ID: [199dbf85-2f27-49f7-ae76-18862e31e31e]
+
+Started POST /api/v1/register for :: ::1 at Fri Mar 08 2024 15:26:18 GMT-0300 (hora estándar de Brasilia)
+  Parameters in body: {"data":{"firstName":"Andres","lastName":"Lopez","email":"mari.ane13oliveira@gmail.com","password":"123456","passwordConfirm":"123456","avatarURL":"Cachapa.jpg"}}
+Completed: 400 message:  Time response: 45 ms Request ID: [aaa50386-3eeb-4e74-b45a-bc527f0c4901]
+
+Started POST /api/v1/register for :: ::1 at Fri Mar 08 2024 15:26:29 GMT-0300 (hora estándar de Brasilia)
+  Parameters in body: {"data":{"firstName":"Andres","lastName":"Lopez","email":"mari.ane13oliveira@gmail.com","password":"123456","passwordConfirm":"123456","avatarURL":"Cachapa.jpg"}}
+Completed: 400 message:  Time response: 15 ms Request ID: [b89268bc-7d47-4167-9177-28b5aca1a946]
+
+Started POST /api/v1/register for :: ::1 at Fri Mar 08 2024 15:28:33 GMT-0300 (hora estándar de Brasilia)
+  Parameters in body: {"data":{"firstName":"Andres","lastName":"Lopez","email":"mari.ane13oliveira@gmail.com","password":"123456","passwordConfirm":"123456","avatarURL":"Cachapa.jpg"}}
+Completed: 400 message:  Time response: 33 ms Request ID: [6c601806-c3c5-4ea0-b6e1-6369d2a19a13]
+
+Started POST /api/v1/register for :: ::1 at Fri Mar 08 2024 15:29:28 GMT-0300 (hora estándar de Brasilia)
+  Parameters in body: {"data":{"firstName":"Andres","lastName":"Lopez","email":"mari.ane13oliveira@gmail.com","password":"123456","passwordConfirm":"123456","avatarURL":"Cachapa.jpg"}}
+Completed: 400 message:  Time response: 35 ms Request ID: [54e9e15f-8941-4d80-9d05-2cd006444127]
+
+Started POST /api/v1/register for :: ::1 at Fri Mar 08 2024 15:32:12 GMT-0300 (hora estándar de Brasilia)
+  Parameters in body: {"data":{"firstName":"Andres","lastName":"Lopez","email":"marco.coron@manantial.cl","password":"123456","passwordConfirm":"123456","avatarURL":"Cachapa.jpg"}}
+Completed: 400 message:  Time response: 38 ms Request ID: [0de0970a-54d5-4a56-8ce0-bd2a79004eb1]
+
+Started POST /api/v1/register for :: ::ffff:127.0.0.1 at Fri Mar 08 2024 15:34:34 GMT-0300 (hora estándar de Brasilia)
+  Parameters in body: {"data":{"firstName":"well","lastName":"Lopez","email":"tester@test.cl","password":"123456","avatarURL":"avatar.jpg"}}
+Completed: 400 message:  Time response: 13 ms Request ID: [3ea82cb1-275f-4ea4-aa4e-ea292a145dc0]
+
+Started POST /api/v1/register for :: ::ffff:127.0.0.1 at Fri Mar 08 2024 15:39:56 GMT-0300 (hora estándar de Brasilia)
+  Parameters in body: {"data":{"firstName":"well","lastName":"Lopez","email":"tester@test.cl","password":"123456","avatarURL":"avatar.jpg"}}
+Completed: 400 message:  Time response: 18 ms Request ID: [d65b119e-840c-43d8-a659-68437a26090e]
+
+Started POST /api/v1/register for :: ::1 at Fri Mar 08 2024 15:41:29 GMT-0300 (hora estándar de Brasilia)
+  Parameters in body: {"data":{"firstName":"Andres","lastName":"Lopez","email":"mari.ane13oliveira@gmail.com","password":"123456","passwordConfirm":"123456","avatarURL":"Cachapa.jpg"}}
+Completed: 400 message:  Time response: 18 ms Request ID: [f269876e-0821-4ac6-b7dc-1f5accd11bfd]
+
+Started POST /api/v1/register for :: ::1 at Fri Mar 08 2024 15:41:55 GMT-0300 (hora estándar de Brasilia)
+  Parameters in body: {"data":{"firstName":"Andres","lastName":"Lopez","email":"mari.ane13oliveira@gmail.com","password":"123456","passwordConfirm":"123456","avatarURL":"Cachapa.jpg"}}
+Completed: 400 message:  Time response: 32 ms Request ID: [751f31c7-7b78-4309-9ed4-4a4985c1d075]
+
+Started POST /api/v1/register for :: ::1 at Fri Mar 08 2024 15:42:39 GMT-0300 (hora estándar de Brasilia)
+  Parameters in body: {"data":{"firstName":"Andres","lastName":"Lopez","email":"mari.ane13oliveira@gmail.com","password":"123456","passwordConfirm":"123456","avatarURL":"Cachapa.jpg"}}
+Completed: 400 message:  Time response: 18 ms Request ID: [eb3a07f6-0e64-429c-bfeb-6b589158cd53]
+
+Started POST /api/v1/register for :: ::1 at Fri Mar 08 2024 15:44:43 GMT-0300 (hora estándar de Brasilia)
+  Parameters in body: {"data":{"firstName":"Andres","lastName":"Lopez","email":"mari.ane13oliveira@gmail.com","password":"123456","passwordConfirm":"123456","avatarURL":"Cachapa.jpg"}}
+Completed: 400 message:  Time response: 40 ms Request ID: [7f29aff3-fa41-4f1c-80a3-2005ce7cfe36]
+
+Started POST /api/v1/register for :: ::1 at Fri Mar 08 2024 15:45:02 GMT-0300 (hora estándar de Brasilia)
+  Parameters in body: {"data":{"firstName":"Andres","lastName":"Lopez","email":"mari.ane13oliveira@gmail.com","password":"123456","passwordConfirm":"123456","avatarURL":"Cachapa.jpg"}}
+Completed: 400 message:  Time response: 45 ms Request ID: [b38e0290-6df9-40f4-b825-318c000c6c5d]
+
+Started POST /api/v1/register for :: ::1 at Fri Mar 08 2024 16:05:45 GMT-0300 (hora estándar de Brasilia)
+  Parameters in body: {"data":{"firstName":"Andres","lastName":"Lopez","email":"mari.ane13oliveira@gmail.com","password":"123456","passwordConfirm":"123456","avatarURL":"Cachapa.jpg"}}
+Completed: 400 message:  Time response: 45 ms Request ID: [224719e2-7faa-4062-9364-37580fd27b81]
+
+Started POST /api/v1/register for :: ::1 at Fri Mar 08 2024 16:12:06 GMT-0300 (hora estándar de Brasilia)
+  Parameters in body: {"data":{"firstName":"Andres","lastName":"Lopez","email":"mari.ane13oliveira@gmail.com","password":"123456","passwordConfirm":"123456","avatarURL":"Cachapa.jpg"}}
+Completed: 400 message:  Time response: 12 ms Request ID: [e819026e-0f70-4fbf-8a58-4e0987b1f6d2]
+
+Started POST /api/v1/register for :: ::1 at Fri Mar 08 2024 16:12:25 GMT-0300 (hora estándar de Brasilia)
+  Parameters in body: {"data":{"firstName":"Andres","lastName":"Lopez","email":"mari.ane13oliveira@gmail.com","password":"123456","passwordConfirm":"123456","avatarURL":"Cachapa.jpg"}}
+Completed: 400 message:  Time response: 28 ms Request ID: [7de0d090-1889-48ea-8771-ba538c6412da]
+
+Started POST /api/v1/register for :: ::1 at Fri Mar 08 2024 16:12:56 GMT-0300 (hora estándar de Brasilia)
+  Parameters in body: {"data":{"firstName":"Andres","lastName":"Lopez","email":"mari.ane13oliveira@gmail.com","password":"123456","passwordConfirm":"123456","avatarURL":"Cachapa.jpg"}}
+Completed: 400 message:  Time response: 18 ms Request ID: [ba4149d4-40fe-456a-837c-a95e861127cb]
+
+Started POST /api/v1/register for :: ::1 at Fri Mar 08 2024 16:13:48 GMT-0300 (hora estándar de Brasilia)
+  Parameters in body: {"data":{"firstName":"Andres","lastName":"Lopez","email":"mari.ane13oliveira@gmail.com","password":"123456","passwordConfirm":"123456","avatarURL":"Cachapa.jpg"}}
+Completed: 400 message:  Time response: 44 ms Request ID: [9ad67aa7-c733-44ba-ad24-60e91bebb9c0]
+
+Started POST /api/v1/register for :: ::1 at Fri Mar 08 2024 16:14:39 GMT-0300 (hora estándar de Brasilia)
+  Parameters in body: {"data":{"firstName":"Andres","lastName":"Lopez","email":"mari.ane13oliveira@gmail.com","password":"123456","passwordConfirm":"123456","avatarURL":"Cachapa.jpg"}}
+Completed: 400 message:  Time response: 41 ms Request ID: [275c0f15-ef7f-49b3-a7fa-d4369078c03d]
+
+Started POST /api/v1/register for :: ::1 at Fri Mar 08 2024 16:15:26 GMT-0300 (hora estándar de Brasilia)
+  Parameters in body: {"data":{"firstName":"Andres","lastName":"Lopez","email":"mari.ane13oliveira@gmail.com","password":"123456","passwordConfirm":"123456","avatarURL":"Cachapa.jpg"}}
+Completed: 201 message:  Time response: 284 ms Request ID: [dcdc7ba1-0f55-4a76-98f1-3ba1cc819a06]
+
+Started POST /api/v1/login for :: ::1 at Fri Mar 08 2024 17:32:56 GMT-0300 (hora estándar de Brasilia)
+  Parameters in body: {"data":{"email":"test@test.com","password":"123456"}}
+Completed: 200 message:  Time response: 222 ms Request ID: [ea3bb279-8946-4be9-baa6-629e5092d5ec]
+
+Started POST /api/v1/login for :: ::1 at Fri Mar 08 2024 17:37:29 GMT-0300 (hora estándar de Brasilia)
+  Parameters in body: {"data":{"email":"test@test.com","password":"123456"}}
+Completed: 200 message:  Time response: 280 ms Request ID: [48c03288-7b2a-45cb-b9da-bada25cf9035]
+
+Started POST /api/v1/login for :: ::1 at Fri Mar 08 2024 17:45:38 GMT-0300 (hora estándar de Brasilia)
+  Parameters in body: {"data":{"email":"test@test.com","password":"123456"}}
+Completed: 200 message:  Time response: 340 ms Request ID: [17edcf20-a82d-4b24-8ea2-76f9980de270]
+
+Started POST /api/v1/login for :: ::1 at Fri Mar 08 2024 20:13:14 GMT-0300 (hora estándar de Brasilia)
+  Parameters in body: {"data":{"email":"test@test.com","password":"123456"}}
+Completed: 200 message:  Time response: 337 ms Request ID: [c2829a46-d407-4ea7-913e-5258ac6cc494]
+
+Started POST /api/v1/login for :: ::1 at Fri Mar 08 2024 20:14:26 GMT-0300 (hora estándar de Brasilia)
+  Parameters in body: {"data":{"email":"test@test.com","password":"123456"}}
+Completed: 200 message:  Time response: 238 ms Request ID: [1c98e035-6924-40ae-b83a-9e6c9ec60e49]
+
+Started POST /api/v1/login for :: ::1 at Fri Mar 08 2024 20:14:58 GMT-0300 (hora estándar de Brasilia)
+  Parameters in body: {"data":{"email":"test@test.com","password":"123456"}}
+Completed: 200 message:  Time response: 236 ms Request ID: [8aae749e-5bb7-4413-808c-69c5b7b6928e]
