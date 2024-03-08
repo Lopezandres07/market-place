@@ -1,12 +1,14 @@
-import React from "react";
+import React, { useContext } from "react";
 import { useForm } from "react-hook-form";
+import { productsContext } from "../providers/productsContext";
 import Swal from "sweetalert2";
 
 const CreatePublication = () => {
+  const { createProduct } = useContext(productsContext);
+
   const {
     register,
     handleSubmit,
-    setValue,
     reset,
     formState: { errors },
   } = useForm();
@@ -14,14 +16,14 @@ const CreatePublication = () => {
   console.log("Login errors: ", errors);
 
   const onSubmit = handleSubmit(async (data) => {
-    const { name, description, price, URLImage } = data;
-    console.log(name, description, price, URLImage);
+    const { name, description, price, imageURL } = data;
 
-    const response = await createProduct(name, description, price, URLImage);
+    console.log(data);
 
+    const response = await createProduct(name, description, price, imageURL);
     console.log(response);
 
-    if (response.success) {
+    if (response) {
       Swal.fire({
         icon: "success",
         title: "Producto creado con éxito",
@@ -59,7 +61,7 @@ const CreatePublication = () => {
 
         <label htmlFor="description">Descripción del producto</label>
         <input
-          type="description"
+          type="text"
           {...register("description", {
             required: {
               value: true,
@@ -72,7 +74,7 @@ const CreatePublication = () => {
 
         <label htmlFor="price">Precio del producto</label>
         <input
-          type="text"
+          type="number"
           {...register("price", {
             required: {
               value: true,
@@ -83,12 +85,15 @@ const CreatePublication = () => {
 
         {errors.price && <span>{errors.price.message}</span>}
 
-        <label htmlFor="photo">Foto del producto</label>
+        <label htmlFor="photo">URL de la imagen</label>
         <input
-          type="file"
-          onChange={(e) => {
-            setValue("URLImage", e.target.files[0].name);
-          }}
+          type="text"
+          {...register("imageURL", {
+            required: {
+              value: true,
+              message: "URL de la imagen requerida",
+            },
+          })}
         />
 
         {errors.URLImage && <span>{errors.URLImage.message}</span>}

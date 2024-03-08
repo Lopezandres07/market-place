@@ -4,7 +4,7 @@ import { Row, Col } from "react-bootstrap";
 import CardProduct from "./CardProducts";
 import { Modal } from "react-bootstrap";
 import axios from "axios";
-import { useFavorites } from "./contexts/FavoritesContext";
+import { useFavorites } from "../providers/FavoritesContext.jsx";
 const dataAPI = "/public/products.json";
 
 const Products = () => {

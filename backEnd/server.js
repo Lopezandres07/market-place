@@ -12,9 +12,9 @@ swagger(app);
 app.use(express.json());
 app.options("*", cors());
 app.use(logger());
+app.use(cors());
 app.use("/api/v1", userRoutes);
 app.use("/api/v1", productsRoutes);
-
 
 app.listen(PORT, () => {
   console.log(`Example app listening at http://localhost:${PORT}`);
