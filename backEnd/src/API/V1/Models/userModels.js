@@ -1,5 +1,5 @@
-import pool from "../../../../config/db/conectionDb.js";
-import bcrypt from "bcryptjs";
+import pool from '../../../../config/db/conectionDb.js'
+import bcrypt from 'bcryptjs'
 
 const createUser = async ({
   firstName,
@@ -8,14 +8,23 @@ const createUser = async ({
   password,
   avatarURL,
 }) => {
-  const hashedPasword = bcrypt.hashSync(password);
+  const hashedPasword = bcrypt.hashSync(password)
 
   const SQLquery = {
-    text: "INSERT INTO users (firstName, lastName, email, password, avatarURL) VALUES ($1, $2, $3, $4, $5) RETURNING *",
+    text: 'INSERT INTO users (firstName, lastName, email, password, avatarURL) VALUES ($1, $2, $3, $4, $5) RETURNING *',
     values: [firstName, lastName, email, hashedPasword, avatarURL],
-  };
-  const response = await pool.query(SQLquery);
-  return response.rows[0];
-};
+  }
+  const response = await pool.query(SQLquery)
+  return response.rows[0]
+}
 
-export { createUser };
+const byEmail = async ({ email }) => {
+  const SQLquery = {
+    text: 'SELECT * FROM users WHERE email = $1',
+    values: [email],
+  }
+  const response = await pool.query(SQLquery)
+  return response.rows[0]
+}
+
+export { createUser, byEmail }
