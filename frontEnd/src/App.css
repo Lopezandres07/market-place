@@ -117,6 +117,8 @@
 
 .social-links .fab.fa-instagram {
   font-size: 2em;
+  color: #000;
+  font-size: 2em;
 }
 .social-text {
   color: black;
@@ -169,4 +171,31 @@
   width: 90%;
   margin-top: 3rem;
   margin-bottom: 3rem;
+}
+.sidebar {
+  border: 1px solid #eabf3fb1; 
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); 
+}
+
+.sidebar-title {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.filter-container {
+  margin-bottom: 20px;
+}
+
+.filter-input {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #eabe3f; 
+  border-radius: 5px;
+  outline: none;
+}
+
+.filter-input::placeholder {
+  color: #999;
 }
