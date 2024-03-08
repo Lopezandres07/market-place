@@ -4,8 +4,10 @@ import { Row, Col } from "react-bootstrap";
 import CardProduct from "./CardProducts";
 import { Modal } from "react-bootstrap";
 import axios from "axios";
-import { useFavorites } from "./contexts/FavoritesContext";
-const dataAPI = "/products.json";
+
+import { useFavorites } from "../providers/FavoritesContext.jsx";
+const dataAPI = "/public/products.json";
+
 
 const Products = ({ nameFilter }) => { // Recibimos el filtro por nombre como prop
   const { favorites, addToFavorites, toggleFavorite } = useFavorites();

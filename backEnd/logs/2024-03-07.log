@@ -233,3 +233,7 @@ Completed: 201 message:  Time response: 371 ms Request ID: [b04b1aad-d8b9-4356-b
 Started POST /api/v1/register for :: ::ffff:127.0.0.1 at Thu Mar 07 2024 12:00:45 GMT-0300 (hora estándar de Brasilia)
   Parameters in body: {"data":{"firstName":"well","lastName":"Lopez","email":"well@test.cl","password":"123456","avatarURL":"avatar.jpg"}}
 Completed: 201 message:  Time response: 139 ms Request ID: [8fff938a-b779-4eae-8fc2-e52aef07ccd7]
+
+Started POST /API/V1/products for :: ::ffff:127.0.0.1 at Thu Mar 07 2024 13:00:30 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {"product":{"user_id":1,"name":"Columpio azul con estrellas","description":"Descripción del producto","price":50000,"imageURL":"https://i.imgur.com/6hOPFRH.jpg"}}
+Completed: 201 message:  Time response: 62 ms Request ID: [bb5b75d7-4462-411b-b86a-76eaaf5d609c]

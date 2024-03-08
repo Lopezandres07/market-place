@@ -1,7 +1,7 @@
 import React from "react";
 import { Row, Col, Button, Modal } from "react-bootstrap";
 import CardFavorite from "./CardFavorite";
-import { useFavorites } from "./contexts/FavoritesContext";
+import { useFavorites } from "../providers/FavoritesContext.jsx";
 import { useState } from "react";
 import { Link } from "react-router-dom";
 
