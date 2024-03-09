@@ -11,7 +11,7 @@ function HomeAdmin() {
           <h2>Menu</h2>
           <ul>
             <li>
-              <Link to="/admin/home" className="link">
+              <Link to="/admin/products" className="link">
                 Mis publicaciones.
               </Link>
             </li>

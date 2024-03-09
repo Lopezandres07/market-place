@@ -1,0 +1,644 @@
+
+Started POST /api/v1/register for :: ::1 at Sat Mar 09 2024 07:49:29 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {"data":{"firstName":"cristian","lastName":"arevalo","email":"cristian@test.com","password":"123456","passwordConfirm":"123456","avatarURL":"pkb.png"}}
+Completed: 201 message:  Time response: 323 ms Request ID: [9a6be79e-5b66-4785-b3f6-ab8c2c6239e8]
+
+Started POST /api/v1/login for :: ::1 at Sat Mar 09 2024 07:49:43 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {"data":{"email":"cristian@test.com","password":"123456"}}
+Completed: 200 message:  Time response: 292 ms Request ID: [a3f4fc66-db3b-4d42-9ca7-ff24fd64bb18]
+
+Started DELETE /api/v1/products/1 for :: ::1 at Sat Mar 09 2024 08:27:06 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {}
+Completed: 404 message:  Time response: 17 ms Request ID: [228d99ee-f646-4375-b40e-fadfcf1535de]
+
+Started DELETE /api/v1/products/1 for :: ::1 at Sat Mar 09 2024 08:27:15 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {}
+Completed: 404 message:  Time response: 5 ms Request ID: [8dafbc5a-c6da-41c7-af3f-568ab0fa4799]
+
+Started DELETE /api/v1/products/1 for :: ::1 at Sat Mar 09 2024 08:38:19 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {}
+Completed: 404 message:  Time response: 14 ms Request ID: [18454927-f55c-455e-9768-d286af43d88b]
+
+Started DELETE /api/v1/products/2 for :: ::1 at Sat Mar 09 2024 08:40:01 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {}
+Completed: 404 message:  Time response: 5 ms Request ID: [d2957cc1-6d0f-4c9d-86c2-8a9531ecacb8]
+
+Started DELETE /api/v1/products/1 for :: ::1 at Sat Mar 09 2024 08:46:25 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {}
+Completed: 404 message:  Time response: 6 ms Request ID: [28d72641-4a5a-4417-9651-68f66029cbb0]
+
+Started DELETE /api/v1/products/1 for :: ::1 at Sat Mar 09 2024 08:47:19 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {}
+Completed: 404 message:  Time response: 4 ms Request ID: [062f5385-eef0-4e35-9435-f9e04f664b2d]
+
+Started DELETE /api/v1/products/1 for :: ::1 at Sat Mar 09 2024 08:49:54 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {}
+Completed: 404 message:  Time response: 6 ms Request ID: [3dab7ca1-907c-43c7-a06f-6ca6e3a14365]
+
+Started DELETE /API/V1/products?id=1 for :: ::ffff:127.0.0.1 at Sat Mar 09 2024 08:52:33 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {}
+Completed: 404 message:  Time response: 3 ms Request ID: [affe05b1-c4ff-48d9-a0bb-a6359fc6e38a]
+
+Started DELETE /API/V1/products for :: ::ffff:127.0.0.1 at Sat Mar 09 2024 08:53:41 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {"product":{"productod":"1"}}
+Completed: 404 message:  Time response: 3 ms Request ID: [19d917d1-0a8d-488e-a735-b927d6f07840]
+
+Started DELETE /API/V1/products for :: ::ffff:127.0.0.1 at Sat Mar 09 2024 08:53:53 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {"product":{"productid":"1"}}
+Completed: 404 message:  Time response: 5 ms Request ID: [1fc9f9ee-ff9c-4925-bff9-f991309e135f]
+
+Started DELETE /API/V1/products for :: ::ffff:127.0.0.1 at Sat Mar 09 2024 08:54:08 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {"product":{"productsid":"1"}}
+Completed: 404 message:  Time response: 4 ms Request ID: [02bfa8f1-349a-41a2-beb6-94d0837ce91e]
+
+Started DELETE /API/V1/products/:productsId?id=1 for :: ::ffff:127.0.0.1 at Sat Mar 09 2024 08:55:26 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {}
+Completed: 404 message:  Time response: 5 ms Request ID: [1ea58791-956c-45b7-aa1c-726d99b24796]
+
+Started DELETE /API/V1/products/?id=1 for :: ::ffff:127.0.0.1 at Sat Mar 09 2024 08:55:42 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {}
+Completed: 404 message:  Time response: 6 ms Request ID: [b5bdbd9e-c925-49c6-a542-ddabd8189cf4]
+
+Started DELETE /api/v1/products/1 for :: ::1 at Sat Mar 09 2024 08:56:13 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {}
+Completed: 404 message:  Time response: 6 ms Request ID: [b303cc76-2804-41f6-98db-951c0debb641]
+
+Started DELETE /API/V1/products/1 for :: ::ffff:127.0.0.1 at Sat Mar 09 2024 08:58:09 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {}
+Completed: 404 message:  Time response: 5 ms Request ID: [03bdab02-d961-4b8a-bd4d-f73b003d5d39]
+
+Started DELETE /API/V1/products/ for :: ::ffff:127.0.0.1 at Sat Mar 09 2024 08:58:52 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {"productId":1}
+Completed: 404 message:  Time response: 5 ms Request ID: [a46a50f0-e490-423e-8067-8b0ec610a13a]
+
+Started DELETE /API/V1/products for :: ::ffff:127.0.0.1 at Sat Mar 09 2024 08:58:55 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {"productId":1}
+Completed: 404 message:  Time response: 6 ms Request ID: [85f988ae-27e7-466c-b06a-a75dc8478d64]
+
+Started DELETE /API/V1/products/ for :: ::ffff:127.0.0.1 at Sat Mar 09 2024 08:59:01 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {"productId":1}
+Completed: 404 message:  Time response: 6 ms Request ID: [64233fb9-bdc8-42b0-94d7-2530474e58eb]
+
+Started DELETE /api/v1/products/1 for :: ::1 at Sat Mar 09 2024 09:03:26 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {}
+Completed: 404 message:  Time response: 2 ms Request ID: [ebc08add-29a2-4830-94a1-6bc7877b2c44]
+
+Started DELETE /api/v1/products/1 for :: ::1 at Sat Mar 09 2024 09:03:30 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {}
+Completed: 404 message:  Time response: 1 ms Request ID: [38cdb201-b8fa-49c2-be89-aa7129663ea7]
+
+Started DELETE /api/v1/products/1 for :: ::1 at Sat Mar 09 2024 09:03:35 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {}
+Completed: 404 message:  Time response: 2 ms Request ID: [6672bb98-927d-4bb9-bcff-ba2577834d81]
+
+Started DELETE /API/V1/products/ for :: ::ffff:127.0.0.1 at Sat Mar 09 2024 09:06:14 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {"Id":3}
+Completed: 404 message:  Time response: 2 ms Request ID: [6abc2f41-7d8e-4aaf-af72-65fa0bab613c]
+
+Started DELETE /api/v1/products/3 for :: ::1 at Sat Mar 09 2024 09:08:45 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {}
+Completed: 404 message:  Time response: 4 ms Request ID: [e359bbd6-b4bc-461c-85a3-8c01b608cc22]
+
+Started DELETE /API/V1/products/?id=3 for :: ::ffff:127.0.0.1 at Sat Mar 09 2024 09:25:18 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {}
+Completed: 404 message:  Time response: 7 ms Request ID: [6d67fe82-f55f-41ab-b11d-9c56e7b67e42]
+
+Started DELETE /API/V1/products/?productId=3 for :: ::ffff:127.0.0.1 at Sat Mar 09 2024 09:25:31 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {}
+Completed: 404 message:  Time response: 4 ms Request ID: [c5d05279-db87-48f4-86e9-38cb5fac9b88]
+
+Started DELETE /api/v1/products/1 for :: ::1 at Sat Mar 09 2024 09:26:56 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {}
+Completed: 404 message:  Time response: 3 ms Request ID: [40884365-d002-4eb6-8e52-bde516b65b73]
+
+Started DELETE /api/v1/products/1 for :: ::1 at Sat Mar 09 2024 09:30:59 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {}
+Completed: 404 message:  Time response: 2 ms Request ID: [e3f86ae9-6b64-4f85-bb76-4d7f40c1d508]
+
+Started DELETE /api/v1/products/2 for :: ::1 at Sat Mar 09 2024 09:32:48 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {}
+Completed: 404 message:  Time response: 2 ms Request ID: [55bbb61a-ea2e-46c0-834a-fafe6aafe84f]
+
+Started DELETE /api/v1/products/1 for :: ::1 at Sat Mar 09 2024 09:34:45 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {}
+Completed: 404 message:  Time response: 3 ms Request ID: [b6e3c385-8264-4040-b415-83d20313cf85]
+
+Started DELETE /api/v1/products/4 for :: ::1 at Sat Mar 09 2024 09:37:48 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {}
+Completed: 404 message:  Time response: 3 ms Request ID: [f333c885-b1c6-498b-a1eb-358b9e76d562]
+
+Started DELETE /api/v1/products/4 for :: ::1 at Sat Mar 09 2024 09:39:49 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {}
+Completed: 404 message:  Time response: 5 ms Request ID: [17da93b1-c3b4-4860-876e-8a71d24c0ebd]
+
+Started DELETE /API/V1/products/?productId=3 for :: ::ffff:127.0.0.1 at Sat Mar 09 2024 09:42:43 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {}
+Completed: 404 message:  Time response: 5 ms Request ID: [749246a7-769b-42ba-b8c1-ef0d4769acc5]
+
+Started DELETE /api/v1/products/4 for :: ::1 at Sat Mar 09 2024 09:43:10 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {}
+Completed: 404 message:  Time response: 6 ms Request ID: [12bd6423-f928-4dbc-8511-27a3634650e2]
+
+Started DELETE /api/v1/products/3 for :: ::1 at Sat Mar 09 2024 09:43:24 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {}
+Completed: 404 message:  Time response: 4 ms Request ID: [d1145ed7-5d16-42ba-af9e-839aecbceb14]
+
+Started DELETE /api/v1/products/3 for :: ::1 at Sat Mar 09 2024 09:45:43 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {}
+Completed: 404 message:  Time response: 2 ms Request ID: [c1ac4bc1-4efc-49ef-a5a3-ab9b90ce849e]
+
+Started DELETE /api/v1/products/3 for :: ::1 at Sat Mar 09 2024 09:46:11 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {}
+Completed: 404 message:  Time response: 3 ms Request ID: [da6622dc-dec3-4e1a-829d-2d09865720b4]
+
+Started DELETE /api/v1/products/3 for :: ::1 at Sat Mar 09 2024 09:48:11 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {}
+Completed: 404 message:  Time response: 3 ms Request ID: [bf726400-2e67-4284-b1ac-83500642146c]
+
+Started DELETE /api/v1/products/3 for :: ::1 at Sat Mar 09 2024 09:48:59 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {}
+Completed: 404 message:  Time response: 3 ms Request ID: [16c867ec-ff70-46ee-aebb-848c99829050]
+
+Started DELETE /api/v1/products/4 for :: ::1 at Sat Mar 09 2024 09:49:34 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {}
+Completed: 404 message:  Time response: 3 ms Request ID: [0524f02d-b1a5-4e2f-a5af-385ec74a8538]
+
+Started DELETE /api/v1/products/3 for :: ::1 at Sat Mar 09 2024 09:50:28 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {}
+Completed: 404 message:  Time response: 6 ms Request ID: [f272c85a-01ca-446a-b78e-4913fb5c2b2b]
+
+Started DELETE /api/v1/products/3 for :: ::1 at Sat Mar 09 2024 09:53:09 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {}
+Completed: 404 message:  Time response: 10 ms Request ID: [d47be6f2-03b1-4dfb-9251-d8482e224f6c]
+
+Started DELETE /api/v1/products/1 for :: ::1 at Sat Mar 09 2024 10:24:57 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {}
+Completed: 404 message:  Time response: 9 ms Request ID: [e8b63f6a-25cf-4fa6-90d1-6f2ae3b5af52]
+
+Started DELETE /API/V1/products/?productId=1 for :: ::ffff:127.0.0.1 at Sat Mar 09 2024 10:25:23 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {}
+Completed: 404 message:  Time response: 3 ms Request ID: [1baa2f38-3bca-47a8-ad52-e74f06f0bf10]
+
+Started DELETE /API/V1/products/ for :: ::ffff:127.0.0.1 at Sat Mar 09 2024 10:26:07 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {"productId":1}
+Completed: 404 message:  Time response: 2 ms Request ID: [67ff7451-5bc8-49c4-bf7c-1e5140f74002]
+
+Started DELETE /API/V1/products/ for :: ::ffff:127.0.0.1 at Sat Mar 09 2024 10:26:41 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {"Id":1}
+Completed: 404 message:  Time response: 2 ms Request ID: [f1962550-1cdd-42d0-acec-ad27d05bb8a8]
+
+Started POST /api/v1/products for :: ::1 at Sat Mar 09 2024 10:27:45 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {"product":{"user_id":1,"name":"prueba 1","description":"prueba 1","price":"50000","imageURL":"https://i.imgur.com/zS6u6Co.jpg"}}
+Completed: 201 message:  Time response: 122 ms Request ID: [10faa065-36df-4a13-b590-6dfc0b3828bf]
+
+Started POST /api/v1/products for :: ::1 at Sat Mar 09 2024 10:28:05 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {"product":{"user_id":1,"name":"prueba 2","description":"prueba 2","price":"50000","imageURL":"https://i.imgur.com/1LrXtgz.jpg"}}
+Completed: 201 message:  Time response: 80 ms Request ID: [f3b203b9-6044-44cb-b3fa-cdcf225e06e4]
+
+Started POST /api/v1/products for :: ::1 at Sat Mar 09 2024 10:28:24 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {"product":{"user_id":1,"name":"product 3 ","description":"product 3","price":"5000","imageURL":"https://i.imgur.com/oybc97r.jpg"}}
+Completed: 201 message:  Time response: 61 ms Request ID: [b2e9c30e-7f16-4b67-a315-6f587204ab21]
+
+Started DELETE /api/v1/products/1 for :: ::1 at Sat Mar 09 2024 10:38:10 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {}
+Completed: 404 message:  Time response: 6 ms Request ID: [93c0d5a0-79ab-44b1-b203-a1c6acf5aa0a]
+
+Started DELETE /API/V1/products/?productId=1 for :: ::ffff:127.0.0.1 at Sat Mar 09 2024 10:39:00 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {}
+Completed: 404 message:  Time response: 3 ms Request ID: [93aa9307-bb2f-4ce9-b836-c93470e8c07e]
+
+Started DELETE /API/V1/products/?productId=33 for :: ::ffff:127.0.0.1 at Sat Mar 09 2024 10:39:13 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {}
+Completed: 404 message:  Time response: 2 ms Request ID: [151312fb-e67e-4a5b-8fa5-8f3fda90c7c6]
+
+Started DELETE /API/V1/products/33 for :: ::ffff:127.0.0.1 at Sat Mar 09 2024 10:39:37 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {}
+Completed: 404 message:  Time response: 3 ms Request ID: [ebb711e5-8d73-448a-9e79-ec71c88adcd1]
+
+Started GET /API/V1/products for :: ::ffff:127.0.0.1 at Sat Mar 09 2024 10:50:33 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {}
+Completed: 500 message:  Time response: 73 ms Request ID: [623fa4de-1994-4a59-9416-ed464e3ff611]
+
+Started GET /API/V1/products for :: ::ffff:127.0.0.1 at Sat Mar 09 2024 10:52:38 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {}
+Completed: 200 message:  Time response: 61 ms Request ID: [bc2fc95d-3a06-470e-ac5e-2a2a9b5bf557]
+
+Started GET /API/V1/products for :: ::1 at Sat Mar 09 2024 11:00:34 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {}
+Completed: 200 message:  Time response: 97 ms Request ID: [090238a2-2b95-4966-bba5-c5f377a7e026]
+
+Started GET /API/V1/products for :: ::1 at Sat Mar 09 2024 11:00:34 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {}
+Completed: 304 message:  Time response: 6 ms Request ID: [35a6841e-2810-46d8-a4ec-64de23f82bbf]
+
+Started DELETE /api/v1/products/33 for :: ::1 at Sat Mar 09 2024 11:00:42 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {}
+Completed: 404 message:  Time response: 4 ms Request ID: [30d55078-3b70-4cc0-8d02-d2dd84d5df16]
+
+Started DELETE /api/v1/products/33 for :: ::1 at Sat Mar 09 2024 11:02:38 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {}
+Completed: 404 message:  Time response: 5 ms Request ID: [725e2817-2169-45db-aba1-ff668da37d79]
+
+Started GET /API/V1/products for :: ::1 at Sat Mar 09 2024 11:03:40 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {}
+Completed: 304 message:  Time response: 68 ms Request ID: [c49f0d04-0a16-4dab-9cfd-17fda3b81b93]
+
+Started GET /API/V1/products for :: ::1 at Sat Mar 09 2024 11:03:40 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {}
+Completed: 304 message:  Time response: 3 ms Request ID: [53b0304d-22b2-4d1f-8de1-a1c36026bd6b]
+
+Started GET /API/V1/products for :: ::1 at Sat Mar 09 2024 11:05:02 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {}
+Completed: 304 message:  Time response: 61 ms Request ID: [fc911d1a-04d9-428c-8a20-aad876030465]
+
+Started GET /API/V1/products for :: ::1 at Sat Mar 09 2024 11:05:03 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {}
+Completed: 304 message:  Time response: 5 ms Request ID: [38a62c72-ffa4-4a34-83c9-4cc5e9f6699b]
+
+Started GET /API/V1/products for :: ::1 at Sat Mar 09 2024 11:06:13 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {}
+Completed: 304 message:  Time response: 66 ms Request ID: [a0aa8d1e-7e66-4d98-9ba2-55b7d3a75ef5]
+
+Started GET /API/V1/products for :: ::1 at Sat Mar 09 2024 11:06:13 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {}
+Completed: 304 message:  Time response: 3 ms Request ID: [9ed4ceae-584f-4047-a36e-a45ec864bacd]
+
+Started GET /API/V1/products for :: ::1 at Sat Mar 09 2024 11:06:52 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {}
+Completed: 304 message:  Time response: 77 ms Request ID: [d84b53f0-8b35-4933-9bde-b437cb74de88]
+
+Started GET /API/V1/products for :: ::1 at Sat Mar 09 2024 11:06:52 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {}
+Completed: 304 message:  Time response: 5 ms Request ID: [6ac3c338-4c57-4dd1-8a81-75e7a4f3f53b]
+
+Started GET /API/V1/products for :: ::1 at Sat Mar 09 2024 11:07:05 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {}
+Started GET /API/V1/products for :: ::1 at Sat Mar 09 2024 11:07:05 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {}
+Completed: 304 message:  Time response: 117 ms Request ID: [8a0374a3-d266-4b6c-9669-5bb59e01917c]
+
+Completed: 304 message:  Time response: 4 ms Request ID: [251cb5bb-db2b-4ddc-b76d-cd16623b3f63]
+
+Started DELETE /api/v1/products/33 for :: ::1 at Sat Mar 09 2024 11:07:10 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {}
+Completed: 404 message:  Time response: 3 ms Request ID: [931df350-a77b-4c1d-8eb1-1c9800aefab6]
+
+Started GET /API/V1/products for :: ::1 at Sat Mar 09 2024 11:07:23 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {}
+Started GET /API/V1/products for :: ::1 at Sat Mar 09 2024 11:07:23 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {}
+Completed: 304 message:  Time response: 120 ms Request ID: [4ceaa8d1-7aad-42f3-bade-cf98f698dbb8]
+
+Completed: 304 message:  Time response: 5 ms Request ID: [87fe14d0-be8e-4011-8b99-8a557c1b3a82]
+
+Started DELETE /api/v1/products/33 for :: ::1 at Sat Mar 09 2024 11:07:26 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {}
+Completed: 404 message:  Time response: 3 ms Request ID: [5c5a25dc-853e-41ac-8ea7-7a973d99958f]
+
+Started GET /API/V1/products for :: ::1 at Sat Mar 09 2024 11:09:38 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {}
+Completed: 304 message:  Time response: 109 ms Request ID: [fc752873-d58a-450c-989a-19b3dd1836f1]
+
+Started GET /API/V1/products for :: ::1 at Sat Mar 09 2024 11:09:38 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {}
+Completed: 304 message:  Time response: 5 ms Request ID: [dc69fbee-cb07-4621-9e7d-eef6bae608f9]
+
+Started DELETE /api/v1/products/33 for :: ::1 at Sat Mar 09 2024 11:09:41 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {}
+Completed: 404 message:  Time response: 4 ms Request ID: [cda72e6d-0625-4860-a2a8-d94aba54a306]
+
+Started GET /API/V1/products for :: ::1 at Sat Mar 09 2024 11:10:03 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {}
+Started GET /API/V1/products for :: ::1 at Sat Mar 09 2024 11:10:03 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {}
+Completed: 304 message:  Time response: 77 ms Request ID: [135e6fc7-a0ac-406c-b46a-0faad860c07b]
+
+Completed: 304 message:  Time response: 4 ms Request ID: [edd410dc-0e0e-48a4-b5c4-0f7540e2420f]
+
+Started DELETE /api/v1/products/33 for :: ::1 at Sat Mar 09 2024 11:10:07 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {}
+Completed: 404 message:  Time response: 3 ms Request ID: [65a108e6-5f12-4df7-a4da-624e1d1d9bb9]
+
+Started GET /API/V1/products for :: ::1 at Sat Mar 09 2024 11:10:22 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {}
+Completed: 304 message:  Time response: 158 ms Request ID: [d01a50e1-c2b5-4abb-a3e2-210f9bb29c40]
+
+Started GET /API/V1/products for :: ::1 at Sat Mar 09 2024 11:10:23 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {}
+Completed: 304 message:  Time response: 4 ms Request ID: [6cf4a03c-3c34-46d9-9e8c-0ee69d846bdb]
+
+Started DELETE /api/v1/products/33 for :: ::1 at Sat Mar 09 2024 11:11:17 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {}
+Completed: 404 message:  Time response: 4 ms Request ID: [631a3c50-10da-4201-a18c-b9ebccf0177a]
+
+Started GET /API/V1/products for :: ::1 at Sat Mar 09 2024 11:13:01 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {}
+Completed: 304 message:  Time response: 55 ms Request ID: [9e9d7880-0488-429b-a845-b33e734e0ae3]
+
+Started GET /API/V1/products for :: ::1 at Sat Mar 09 2024 11:13:01 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {}
+Completed: 304 message:  Time response: 3 ms Request ID: [b5fc0b65-021c-4788-ba2f-916be7387c9a]
+
+Started DELETE /api/v1/products/34 for :: ::ffff:127.0.0.1 at Sat Mar 09 2024 11:13:07 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {}
+Completed: 404 message:  Time response: 4 ms Request ID: [4565b7be-ad5a-48c9-9d2a-dfc1149fbfbd]
+
+Started DELETE /API/V1/products/?productId=33 for :: ::ffff:127.0.0.1 at Sat Mar 09 2024 11:13:35 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {}
+Completed: 404 message:  Time response: 2 ms Request ID: [26be70a9-081d-49cd-b72c-6a7ce65c54f1]
+
+Started GET /API/V1/products for :: ::1 at Sat Mar 09 2024 11:23:32 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {}
+Started GET /API/V1/products for :: ::1 at Sat Mar 09 2024 11:23:32 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {}
+Completed: 304 message:  Time response: 58 ms Request ID: [86ac7bf4-146b-4a57-958c-4977f4b7cb4b]
+
+Completed: 304 message:  Time response: 3 ms Request ID: [6d41dc56-da3b-4bcb-91b4-4b7ae8db6f1f]
+
+Started GET /API/V1/products for :: ::1 at Sat Mar 09 2024 11:24:56 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {}
+Completed: 304 message:  Time response: 84 ms Request ID: [992df654-d101-465c-9995-5b6e2547feb8]
+
+Started GET /API/V1/products for :: ::1 at Sat Mar 09 2024 11:24:56 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {}
+Completed: 304 message:  Time response: 3 ms Request ID: [85b24964-1537-494e-8f14-6493b63dbd4a]
+
+Started DELETE /api/v1/products/33 for :: ::1 at Sat Mar 09 2024 11:25:10 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {}
+Completed: 404 message:  Time response: 3 ms Request ID: [1420ed5a-61f8-4976-9232-4e25149a06b2]
+
+Started DELETE /API/V1/products/ for :: ::ffff:127.0.0.1 at Sat Mar 09 2024 11:25:40 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {"productId":33}
+Completed: 404 message:  Time response: 3 ms Request ID: [1cc892f1-5269-4763-ad99-f2427be509d8]
+
+Started DELETE /API/V1/products/ for :: ::ffff:127.0.0.1 at Sat Mar 09 2024 11:27:28 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {"product":{"id":33}}
+Completed: 404 message:  Time response: 2 ms Request ID: [f380b606-2afb-43f0-a710-9ab1b99ccd06]
+
+Started DELETE /API/V1/products/?productId=33 for :: ::ffff:127.0.0.1 at Sat Mar 09 2024 11:27:40 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {}
+Completed: 404 message:  Time response: 4 ms Request ID: [f8d5e3bd-c80a-4a38-aa8a-c3c4e9b9366f]
+
+Started GET /API/V1/products for :: ::1 at Sat Mar 09 2024 11:29:30 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {}
+Started GET /API/V1/products for :: ::1 at Sat Mar 09 2024 11:29:30 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {}
+Completed: 304 message:  Time response: 53 ms Request ID: [3259ccd3-84af-414f-b8f8-835959c08de6]
+
+Completed: 304 message:  Time response: 3 ms Request ID: [849e4e49-b193-4fb7-8745-9018d74146cb]
+
+Started DELETE /api/v1/products/33 for :: ::1 at Sat Mar 09 2024 11:29:32 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {}
+Completed: 404 message:  Time response: 3 ms Request ID: [5bb39cd1-735f-439f-96d0-5597b82b1a72]
+
+Started DELETE /api/v1/products/34 for :: ::1 at Sat Mar 09 2024 11:31:10 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {}
+Completed: 404 message:  Time response: 5 ms Request ID: [2b2d814c-a2f4-403f-99e3-93519f65d4f3]
+
+Started DELETE /api/v1/products/33 for :: ::1 at Sat Mar 09 2024 11:31:33 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {}
+Completed: 404 message:  Time response: 5 ms Request ID: [1af9c041-2c80-48a0-b00b-955cad5f56ae]
+
+Started GET /API/V1/products for :: ::1 at Sat Mar 09 2024 11:32:29 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {}
+Started GET /API/V1/products for :: ::1 at Sat Mar 09 2024 11:32:30 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {}
+Completed: 304 message:  Time response: 163 ms Request ID: [82b9028a-1bbe-4da7-9ec2-7398fdaa61a2]
+
+Completed: 304 message:  Time response: 8 ms Request ID: [d84dd18d-1f0b-417a-ae9a-75aedfc5d0f6]
+
+Started DELETE /api/v1/products/33 for :: ::1 at Sat Mar 09 2024 11:32:33 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {}
+Completed: 404 message:  Time response: 3 ms Request ID: [e001e2dc-297e-4e36-9eed-8256a7b4e864]
+
+Started GET /API/V1/products for :: ::1 at Sat Mar 09 2024 11:33:42 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {}
+Completed: 304 message:  Time response: 48 ms Request ID: [e2909bf3-b384-4398-a6d5-cfa7bc6882d5]
+
+Started GET /API/V1/products for :: ::1 at Sat Mar 09 2024 11:33:42 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {}
+Completed: 304 message:  Time response: 4 ms Request ID: [59ece931-9022-4ce3-a2ba-a236029a559b]
+
+Started DELETE /api/v1/products/33 for :: ::1 at Sat Mar 09 2024 11:33:48 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {}
+Completed: 404 message:  Time response: 2 ms Request ID: [74811336-b5d2-489a-8bda-8c5461301510]
+
+Started GET /API/V1/products for :: ::1 at Sat Mar 09 2024 11:34:16 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {}
+Completed: 304 message:  Time response: 62 ms Request ID: [66d20370-68c6-458a-b21f-cdb2df2f5c93]
+
+Started GET /API/V1/products for :: ::1 at Sat Mar 09 2024 11:34:16 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {}
+Completed: 304 message:  Time response: 3 ms Request ID: [49ccfb62-b783-4874-bc62-77580cac883b]
+
+Started GET /API/V1/products for :: ::1 at Sat Mar 09 2024 11:36:48 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {}
+Started GET /API/V1/products for :: ::1 at Sat Mar 09 2024 11:36:48 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {}
+Completed: 304 message:  Time response: 165 ms Request ID: [2e1a88b4-4d5c-4e44-9f11-6d0cf8aadfad]
+
+Completed: 304 message:  Time response: 3 ms Request ID: [23c53571-2ae3-4298-b405-78940f94959a]
+
+Started DELETE /api/v1/products/33 for :: ::1 at Sat Mar 09 2024 11:36:52 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {}
+Completed: 404 message:  Time response: 3 ms Request ID: [33b15a41-0618-423d-8267-3a51f136e810]
+
+Started GET /API/V1/products for :: ::1 at Sat Mar 09 2024 11:37:10 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {}
+Started GET /API/V1/products for :: ::1 at Sat Mar 09 2024 11:37:10 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {}
+Completed: 304 message:  Time response: 63 ms Request ID: [e0d517c2-8414-4326-b22d-de48c01cf64f]
+
+Completed: 304 message:  Time response: 4 ms Request ID: [697e4143-fbb2-4844-980d-4463f9f9b4be]
+
+Started DELETE /api/v1/products/33 for :: ::1 at Sat Mar 09 2024 11:37:13 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {}
+Completed: 404 message:  Time response: 2 ms Request ID: [78c33c52-f580-4b2e-a1a1-29db8028eff3]
+
+Started GET /API/V1/products for :: ::1 at Sat Mar 09 2024 11:37:21 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {}
+Completed: 304 message:  Time response: 89 ms Request ID: [3348d71a-c528-484f-9437-56873ef0c408]
+
+Started GET /API/V1/products for :: ::1 at Sat Mar 09 2024 11:37:21 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {}
+Completed: 304 message:  Time response: 4 ms Request ID: [9bcf2d09-d399-4152-9be1-baf79b6bbee1]
+
+Started DELETE /api/v1/products/33 for :: ::1 at Sat Mar 09 2024 11:37:24 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {}
+Completed: 404 message:  Time response: 1 ms Request ID: [3c02bdcb-ab70-43a4-8dd9-b990be54c52f]
+
+Started GET /API/V1/products for :: ::1 at Sat Mar 09 2024 11:41:59 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {}
+Completed: 304 message:  Time response: 60 ms Request ID: [8185c406-473c-4be7-bdf5-78d8f58909e1]
+
+Started GET /API/V1/products for :: ::1 at Sat Mar 09 2024 11:41:59 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {}
+Completed: 304 message:  Time response: 2 ms Request ID: [9eaae9c0-d753-4c4f-acb5-3f6440a1fb3d]
+
+Started DELETE /api/v1/products/33 for :: ::1 at Sat Mar 09 2024 11:42:02 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {}
+Completed: 404 message:  Time response: 3 ms Request ID: [539d2b57-724b-43e1-a0d3-069e6b49abfc]
+
+Started GET /API/V1/products for :: ::1 at Sat Mar 09 2024 11:43:13 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {}
+Completed: 304 message:  Time response: 50 ms Request ID: [c4f8dd32-72be-4b26-b189-e305a0f34fbf]
+
+Started GET /API/V1/products for :: ::1 at Sat Mar 09 2024 11:43:13 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {}
+Completed: 304 message:  Time response: 4 ms Request ID: [350b3f98-4b3e-419a-8723-ef263222682c]
+
+Started GET /API/V1/products for :: ::1 at Sat Mar 09 2024 11:43:15 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {}
+Completed: 304 message:  Time response: 3 ms Request ID: [5f6b2496-ebc6-4a92-b7f4-9d18b69c0635]
+
+Started GET /API/V1/products for :: ::1 at Sat Mar 09 2024 11:43:15 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {}
+Completed: 304 message:  Time response: 4 ms Request ID: [4418898c-768b-481d-879d-c1f1540c0ee5]
+
+Started DELETE /api/v1/products/34 for :: ::1 at Sat Mar 09 2024 11:44:30 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {}
+Completed: 404 message:  Time response: 2 ms Request ID: [c887dfc9-6c13-4cad-874f-fe9fbe74db0b]
+
+Started GET /API/V1/products for :: ::1 at Sat Mar 09 2024 11:47:00 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {}
+Completed: 304 message:  Time response: 81 ms Request ID: [e7956a20-8590-4b17-b8fd-94e9a41ef8b5]
+
+Started GET /API/V1/products for :: ::1 at Sat Mar 09 2024 11:47:00 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {}
+Completed: 304 message:  Time response: 7 ms Request ID: [f42fb3df-f62b-4271-828c-382c266b0294]
+
+Started DELETE /api/v1/products/33 for :: ::1 at Sat Mar 09 2024 11:47:02 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {}
+Completed: 200 message:  Time response: 12 ms Request ID: [1246e751-bbae-4fbe-b5a6-a3892b56ba98]
+
+Started DELETE /api/v1/products/34 for :: ::1 at Sat Mar 09 2024 11:48:02 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {}
+Completed: 200 message:  Time response: 44 ms Request ID: [c930f4f0-c13e-40ef-b933-68af822be695]
+
+Started DELETE /api/v1/products/35 for :: ::1 at Sat Mar 09 2024 11:48:05 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {}
+Completed: 200 message:  Time response: 7 ms Request ID: [ef5c08b7-095e-4922-a74b-e0cac38d6cd3]
+
+Started GET /API/V1/products for :: ::1 at Sat Mar 09 2024 11:48:12 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {}
+Completed: 200 message:  Time response: 5 ms Request ID: [13883c3c-d590-40c5-9c45-f747e99e05c1]
+
+Started GET /API/V1/products for :: ::1 at Sat Mar 09 2024 11:48:12 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {}
+Completed: 304 message:  Time response: 19 ms Request ID: [c24f354b-2537-426d-b693-2df9e87f265a]
+
+Started POST /api/v1/products for :: ::1 at Sat Mar 09 2024 11:48:31 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {"product":{"user_id":1,"name":"prueba","description":"prueba","price":"54100","imageURL":"prueba"}}
+Completed: 400 message:  Time response: 3 ms Request ID: [08faa762-0746-4319-8f6e-212a0e634d7d]
+
+Started GET /API/V1/products for :: ::1 at Sat Mar 09 2024 11:48:35 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {}
+Started GET /API/V1/products for :: ::1 at Sat Mar 09 2024 11:48:35 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {}
+Completed: 304 message:  Time response: 51 ms Request ID: [ebbf0f93-6d01-4dd8-b878-f5c3a0e42168]
+
+Completed: 304 message:  Time response: 3 ms Request ID: [35bc3f28-2e71-4d22-9c48-eafc03215cf1]
+
+Started GET /API/V1/products for :: ::1 at Sat Mar 09 2024 11:48:38 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {}
+Completed: 304 message:  Time response: 4 ms Request ID: [7b4e51cf-955c-4c79-b67c-6baa30121672]
+
+Started GET /API/V1/products for :: ::1 at Sat Mar 09 2024 11:48:38 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {}
+Completed: 304 message:  Time response: 7 ms Request ID: [edf4ea17-0166-4d9a-94b8-6803cf7e945b]
+
+Started POST /api/v1/products for :: ::1 at Sat Mar 09 2024 11:49:16 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {"product":{"user_id":1,"name":"prueba","description":"preuab","price":"10000","imageURL":"https://i.imgur.com/zS6u6Co.jpg"}}
+Completed: 400 message:  Time response: 3 ms Request ID: [dae6ccc8-e432-42a8-8abc-0999fe354032]
+
+Started POST /api/v1/products for :: ::1 at Sat Mar 09 2024 11:51:00 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {"product":{"user_id":1,"name":"prueba","description":"pruebs","price":"5000","imageURL":"https://i.imgur.com/zS6u6Co.jpg"}}
+Completed: 400 message:  Time response: 3 ms Request ID: [10441b26-994f-4df4-a898-0a6c2267a5c9]
+
+Started POST /api/v1/products for :: ::1 at Sat Mar 09 2024 11:51:43 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {"product":{"user_id":1,"name":"prueba","description":"2","price":"5000","imageURL":"https://i.imgur.com/zS6u6Co.jpg"}}
+Completed: 400 message:  Time response: 5 ms Request ID: [49a7f12f-8eff-4949-98c8-d77a8c100b89]
+
+Started POST /api/v1/products for :: ::1 at Sat Mar 09 2024 11:52:37 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {"products":{"user_id":1,"name":"1","description":"2","price":"3","imageURL":"https://i.imgur.com/zS6u6Co.jpg"}}
+Completed: 400 message:  Time response: 3 ms Request ID: [ae6881d1-f7ad-444c-929d-f765e0ade964]
+
+Started POST /API/V1/products for :: ::ffff:127.0.0.1 at Sat Mar 09 2024 11:53:44 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {"product":{"user_id":1,"name":"Columpio azul con estrellas","description":"Descripción del producto","price":50000,"imageURL":"https://i.imgur.com/6hOPFRH.jpg"}}
+Completed: 400 message:  Time response: 2 ms Request ID: [e6032eb0-e253-411e-a017-bb83aa780ba6]
+
+Started POST /API/V1/products for :: ::ffff:127.0.0.1 at Sat Mar 09 2024 11:53:56 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {"products":{"user_id":1,"name":"Columpio azul con estrellas","description":"Descripción del producto","price":50000,"imageURL":"https://i.imgur.com/6hOPFRH.jpg"}}
+Completed: 400 message:  Time response: 4 ms Request ID: [0daeb8c4-4807-4bfb-b6c8-f6a667c440a4]
+
+Started POST /API/V1/products for :: ::ffff:127.0.0.1 at Sat Mar 09 2024 11:54:11 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {"product":{"user_id":1,"name":"Columpio azul con estrellas","description":"Descripción del producto","price":50000,"imageURL":"https://i.imgur.com/6hOPFRH.jpg"}}
+Completed: 400 message:  Time response: 3 ms Request ID: [e5c03c05-6a33-436c-9c7d-dca516af1f62]
+
+Started POST /api/v1/products for :: ::1 at Sat Mar 09 2024 11:55:57 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {"products":{"user_id":1,"name":"5","description":"4","price":"3","imageURL":"2"}}
+Completed: 400 message:  Time response: 6 ms Request ID: [1598fd48-4fe2-4ff7-aadb-62fc9c5c9046]
+
+Started POST /api/v1/products for :: ::1 at Sat Mar 09 2024 11:56:42 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {"product":{"user_id":1,"name":"1","description":"2","price":"3","imageURL":"4"}}
+Completed: 400 message:  Time response: 3 ms Request ID: [199e65ce-773a-4dea-9fb9-d7d60b4cd6e0]
+
+Started POST /api/v1/products for :: ::1 at Sat Mar 09 2024 11:58:48 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {"product":{"user_id":1,"name":"1","description":"2","price":"3","imageURL":"1"}}
+Completed: 400 message:  Time response: 2 ms Request ID: [7eb0197a-a6ae-4f79-a6ee-bcb1a284c840]
+
+Started POST /api/v1/products for :: ::1 at Sat Mar 09 2024 12:02:24 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {"product":{"user_id":1,"name":"1","description":"2","price":"3","imageURL":"4"}}
+Completed: 201 message:  Time response: 86 ms Request ID: [1f38277f-fe83-4f71-8dd6-397b127ad86b]
+
+Started GET /API/V1/products for :: ::1 at Sat Mar 09 2024 12:02:28 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {}
+Completed: 200 message:  Time response: 6 ms Request ID: [46cef427-2443-4290-bc4f-bf756de89cde]
+
+Started GET /API/V1/products for :: ::1 at Sat Mar 09 2024 12:02:28 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {}
+Completed: 304 message:  Time response: 3 ms Request ID: [4dce7f34-5a38-4705-ae81-9a2a59bc8032]
+
+Started DELETE /api/v1/products/36 for :: ::1 at Sat Mar 09 2024 12:02:32 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {}
+Completed: 200 message:  Time response: 8 ms Request ID: [9c1bd162-36d7-41c5-b09e-f8daa5f93101]
+
+Started GET /API/V1/products for :: ::1 at Sat Mar 09 2024 12:02:41 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {}
+Completed: 200 message:  Time response: 4 ms Request ID: [d3b3ac3d-06c1-4631-9953-1428c15aeb84]
+
+Started GET /API/V1/products for :: ::1 at Sat Mar 09 2024 12:02:41 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {}
+Completed: 304 message:  Time response: 14 ms Request ID: [7d7b953f-565d-4442-9d5b-e54e35c538b1]
+
+Started POST /api/v1/products for :: ::1 at Sat Mar 09 2024 12:07:03 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {"product":{"user_id":1,"name":"1","description":"2","price":"3","imageURL":"4"}}
+Completed: 201 message:  Time response: 48 ms Request ID: [eff14dc3-fc73-47f2-b9bd-220b5e995d51]
+
+Started GET /API/V1/products for :: ::1 at Sat Mar 09 2024 12:07:07 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {}
+Completed: 200 message:  Time response: 13 ms Request ID: [27bd3a12-57ae-42f5-877e-7f977fd378e1]
+
+Started GET /API/V1/products for :: ::1 at Sat Mar 09 2024 12:07:07 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {}
+Completed: 304 message:  Time response: 3 ms Request ID: [bff2019c-8dc4-47fd-bfed-087f222e48b9]
+
+Started DELETE /api/v1/products/37 for :: ::1 at Sat Mar 09 2024 12:07:10 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {}
+Completed: 200 message:  Time response: 7 ms Request ID: [bdba4a0e-49e0-4db3-9eb9-4c4ab263d50f]
+
+Started DELETE /api/v1/products/37 for :: ::1 at Sat Mar 09 2024 12:07:25 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {}
+Completed: 200 message:  Time response: 43 ms Request ID: [a21c2073-8a4c-4ef9-b742-39664818176e]
+
+Started DELETE /api/v1/products/37 for :: ::1 at Sat Mar 09 2024 12:12:28 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {}
+Completed: 200 message:  Time response: 44 ms Request ID: [e7771f17-8a85-4cf0-af77-2f1039c2e02f]
+
+Started GET /API/V1/products for :: ::1 at Sat Mar 09 2024 12:12:30 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {}
+Completed: 200 message:  Time response: 4 ms Request ID: [1edb8cfc-3789-47e1-8ab4-3a0902669aa2]
+
+Started GET /API/V1/products for :: ::1 at Sat Mar 09 2024 12:12:30 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {}
+Completed: 304 message:  Time response: 3 ms Request ID: [80624472-4e15-43b2-b0f5-67f18c5e8b78]

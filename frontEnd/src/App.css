@@ -148,6 +148,14 @@
 .login .btn {
   text-align: center;
 }
+.google-login-button {
+  background-color: #ffffff;
+  border-radius: 20rem;
+}
+.google-login-button:hover {
+  background-color: #eabe3f;
+  color: #ffffff;
+}
 
 .register {
   margin: auto;
@@ -173,10 +181,10 @@
   margin-bottom: 3rem;
 }
 .sidebar {
-  border: 1px solid #eabf3fb1; 
+  border: 1px solid #eabf3fb1;
   padding: 20px;
   border-radius: 5px;
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); 
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
 }
 
 .sidebar-title {
@@ -191,7 +199,7 @@
 .filter-input {
   width: 100%;
   padding: 8px;
-  border: 1px solid #eabe3f; 
+  border: 1px solid #eabe3f;
   border-radius: 5px;
   outline: none;
 }
