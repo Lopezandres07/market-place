@@ -3,7 +3,8 @@ import { Row, Col } from "react-bootstrap";
 import { Modal } from "react-bootstrap";
 import axios from "axios";
 import CardAdminProducts from "./CardAdminProducts";
-const dataAPI = "/public/products.json";
+
+const dataAPI = "http://localhost:3000/API/V1/products";
 
 const ProductsAdmin = () => {
   const [showDetails, setShowDetails] = useState(false);

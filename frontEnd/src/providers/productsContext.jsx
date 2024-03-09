@@ -31,8 +31,32 @@ const ProductsProvider = ({ children }) => {
       throw error;
     }
   };
+
+  const deleteProduct = async (productId) => {
+    try {
+      const response = await fetch(
+        `http://localhost:3000/api/v1/products/${productId}`,
+        {
+          method: "DELETE",
+        }
+      );
+      if (response.ok) {
+        const deletedProduct = await response.json();
+        console.log("Producto eliminado:", deletedProduct);
+        // Actualiza el estado o la interfaz de usuario según sea necesario
+        return deletedProduct;
+      } else {
+        throw new Error("Error al eliminar el producto");
+      }
+    } catch (error) {
+      console.error("Error al eliminar el producto:", error.message);
+      throw error;
+    }
+  };
   return (
-    <productsContext.Provider value={{ productData, createProduct }}>
+    <productsContext.Provider
+      value={{ productData, createProduct, deleteProduct }}
+    >
       {children}
     </productsContext.Provider>
   );
