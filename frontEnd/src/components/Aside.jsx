@@ -12,7 +12,7 @@ const Aside = ({ onFilter }) => {
 
   return (
     <aside className="sidebar">
-      <h2>Busca Por Nombre </h2>
+      <h2>Buscar Por Nombre </h2>
       <input
         type="text"
         placeholder="Nombre del Producto"
