@@ -1,4 +1,5 @@
 import { createContext, useEffect, useState } from 'react'
+import { jwtDecode } from 'jwt-decode'
 
 export const UserContext = createContext()
 
@@ -34,8 +35,6 @@ const UserProvider = ({ children }) => {
   }
 
   const loginWithEmailAndPassword = async (data) => {
-    console.log(data)
-
     const response = await fetch('http://localhost:3000/api/v1/login', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
@@ -50,26 +49,22 @@ const UserProvider = ({ children }) => {
     return user
   }
 
-  const googleLoginSuccess = async (response) => {
-    console.log('Google login success', response)
-    const { tokenId } = response
-    console.log(tokenId)
-    /* 
-    const backendResponse = await fetch(
-      'http://localhost:3000/api/v1/googleLogin',
-      {
+  const loginWithGoogle = async (user) => {
+    const data = jwtDecode(user)
+
+    try {
+      const response = await fetch('http://localhost:3000/api/v1/googleLogin', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ tokenId }),
-      }
-    )
+        body: JSON.stringify({ data }),
+      })
 
-    const backendData = await backendResponse.json()
-    console.log(backendData) */
-  }
-
-  const googleLoginFailure = (error) => {
-    console.error('Google login failure', error)
+      const googleUser = await response.json()
+      setToken(googleUser.token || null)
+    } catch (error) {
+      console.error('Error en el proceso de inicio de sesión con Google', error)
+      throw error
+    }
   }
 
   const logout = () => {
@@ -107,12 +102,11 @@ const UserProvider = ({ children }) => {
   return (
     <UserContext.Provider
       value={{
+        createUser,
         loginWithEmailAndPassword,
-        googleLoginSuccess,
-        googleLoginFailure,
+        loginWithGoogle,
         token,
         logout,
-        createUser,
         updateUserProfile,
         getUserData,
         userData,
