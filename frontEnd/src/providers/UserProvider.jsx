@@ -42,7 +42,6 @@ const UserProvider = ({ children }) => {
     })
 
     const user = await response.json()
-    console.log(user)
 
     setToken(user.token || null)
 
@@ -52,19 +51,18 @@ const UserProvider = ({ children }) => {
   const loginWithGoogle = async (user) => {
     const data = jwtDecode(user)
 
-    try {
-      const response = await fetch('http://localhost:3000/api/v1/googleLogin', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ data }),
-      })
+    const response = await fetch('http://localhost:3000/api/v1/googleLogin', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ data }),
+    })
 
-      const googleUser = await response.json()
-      setToken(googleUser.token || null)
-    } catch (error) {
-      console.error('Error en el proceso de inicio de sesión con Google', error)
-      throw error
-    }
+    const googleUser = await response.json()
+    console.log(googleUser)
+
+    setToken(googleUser.token || null)
+
+    return googleUser
   }
 
   const logout = () => {

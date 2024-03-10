@@ -17,7 +17,7 @@ const Login = () => {
 
   const onSubmit = handleSubmit(async (data) => {
     const response = await loginWithEmailAndPassword(data)
-    console.log(response)
+    console.log('login: ', response)
 
     if (response && response.token) {
       navigate('/homeUser')
@@ -26,19 +26,15 @@ const Login = () => {
     reset()
   })
 
-  const handleGoogleLoginSuccess = async (credentialResponse) => {
-    const user = credentialResponse.credential
+  const handleGoogleLoginSuccess = async (data) => {
+    const { credential } = data
 
-    try {
-      const googleUser = await loginWithGoogle(user)
+    const response = await loginWithGoogle(credential)
 
-      console.log(googleUser)
+    console.log(response)
 
-      if (googleUser && googleUser.token) {
-        navigate('/homeUser')
-      }
-    } catch (error) {
-      console.error('Error en el proceso de inicio de sesión con Google', error)
+    if (response && response.token) {
+      navigate('/homeUser')
     }
   }
 

@@ -19,7 +19,6 @@ const loginUser = async (req, res) => {
 
   try {
     const findUser = await byEmail(data)
-    console.log(findUser)
 
     if (!findUser) {
       res.status(500).json({ error: error.message })
@@ -29,6 +28,7 @@ const loginUser = async (req, res) => {
         res.status(500).json({ error: error.message })
       } else {
         const { email, firstname, lastname } = findUser
+
         const token = jwt.sign({ email }, process.env.JWT_SECRET, {
           expiresIn: '1h',
         })
