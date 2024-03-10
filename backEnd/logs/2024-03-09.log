@@ -643,6 +643,7 @@ Started GET /API/V1/products for :: ::1 at Sat Mar 09 2024 12:12:30 GMT-0300 (ho
   Parameters in body: {}
 Completed: 304 message:  Time response: 3 ms Request ID: [80624472-4e15-43b2-b0f5-67f18c5e8b78]
 
+
 Started DELETE /API/V1/products/?productId=33 for :: ::ffff:127.0.0.1 at Sat Mar 09 2024 12:14:32 GMT-0300 (hora de verano de Chile)
   Parameters in body: {}
 Completed: 404 message:  Time response: 4 ms Request ID: [87727329-792a-42e4-ad79-c60c9a79a63e]
@@ -670,3 +671,16 @@ Completed: 304 message:  Time response: 278 ms Request ID: [4e55f43b-49eb-4655-9
 Started GET /API/V1/products for :: ::1 at Sat Mar 09 2024 19:13:27 GMT-0300 (hora de verano de Chile)
   Parameters in body: {}
 Completed: 304 message:  Time response: 12 ms Request ID: [9ee0e894-278d-414a-b730-ae8b317e5b58]
+
+Started POST /api/v1/login for :: ::1 at Sat Mar 09 2024 17:56:58 GMT-0300 (hora estándar de Brasilia)
+  Parameters in body: {"data":{"email":"andres@lopez.com","password":"123456"}}
+Completed: 200 message:  Time response: 289 ms Request ID: [7720f73a-1d05-4fd0-bb86-0e6a2e7d4cd4]
+
+Started POST /api/v1/login for :: ::1 at Sat Mar 09 2024 18:15:34 GMT-0300 (hora estándar de Brasilia)
+  Parameters in body: {"data":{"email":"andres@lopez.com","password":"123456"}}
+Completed: 200 message:  Time response: 321 ms Request ID: [17f7986d-701c-404f-96e1-1433e7ec4cc9]
+
+Started POST /api/v1/login for :: ::1 at Sat Mar 09 2024 18:15:34 GMT-0300 (hora estándar de Brasilia)
+  Parameters in body: {"data":{"email":"andres@lopez.com","password":"123456"}}
+Completed: 200 message:  Time response: 178 ms Request ID: [56bdcd23-e348-4c85-b448-e6dbbeee7d79]
+

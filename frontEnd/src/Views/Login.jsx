@@ -1,12 +1,11 @@
 import React, { useContext } from 'react'
 import { useForm } from 'react-hook-form'
 import { UserContext } from '../providers/UserProvider'
-import GoogleLoginButton from '../components/GoogleLoginButton'
 import { useNavigate } from 'react-router-dom'
+import { GoogleLogin } from '@react-oauth/google'
 
 const Login = () => {
-  const { loginWithEmailAndPassword, googleLoginSuccess, googleLoginFailure } =
-    useContext(UserContext)
+  const { loginWithEmailAndPassword, loginWithGoogle } = useContext(UserContext)
   const navigate = useNavigate()
 
   const {
@@ -26,6 +25,26 @@ const Login = () => {
 
     reset()
   })
+
+  const handleGoogleLoginSuccess = async (credentialResponse) => {
+    const user = credentialResponse.credential
+
+    try {
+      const googleUser = await loginWithGoogle(user)
+
+      console.log(googleUser)
+
+      if (googleUser && googleUser.token) {
+        navigate('/homeUser')
+      }
+    } catch (error) {
+      console.error('Error en el proceso de inicio de sesión con Google', error)
+    }
+  }
+
+  const handleGoogleLoginFailure = () => {
+    console.log('Login de Google fallido')
+  }
 
   return (
     <section className='login'>
@@ -67,9 +86,9 @@ const Login = () => {
       <div>
         <h6>O puedes iniciar sesión con tu cuenta de Google</h6>
         <div className='btn'>
-          <GoogleLoginButton
-            onSuccess={googleLoginSuccess}
-            onFailure={googleLoginFailure}
+          <GoogleLogin
+            onSuccess={handleGoogleLoginSuccess}
+            onFailure={handleGoogleLoginFailure}
           />
         </div>
       </div>
