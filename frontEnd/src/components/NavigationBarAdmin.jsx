@@ -5,7 +5,7 @@ import { UserContext } from "../providers/UserProvider";
 
 const setActiveClass = ({ isActive }) => (isActive ? "active" : "noActive");
 
-const NavigationBar = () => {
+const NavigationBarAdmin = () => {
   const { token, logout } = useContext(UserContext);
   const { userId } = useParams();
 
@@ -39,18 +39,11 @@ const NavigationBar = () => {
             {token ? (
               <>
                 <section className="navLink">
-                  <NavLink className={setActiveClass} to="/homeUser">
+                  <NavLink className={setActiveClass} to="/admin/products">
                     Inicio
                   </NavLink>
                 </section>
-                <section className="navLink">
-                  <NavLink
-                    to={`/user/profile/${userId}`}
-                    className={setActiveClass}
-                  >
-                    Mi Perfil
-                  </NavLink>
-                </section>
+
                 <section className="navLink">
                   <NavLink className={setActiveClass} onClick={logout} to="/">
                     Cerrar Sesión
@@ -75,45 +68,7 @@ const NavigationBar = () => {
         </Nav>
       </Navbar>
     </>
-    /* <div className='navbar navbar-dark bg-dark'>
-      <div className='container'>
-        <span className='navbar-brand'>Market Place</span>
-        <div>
-          {token ? (
-            <>
-              <Link
-                to='/'
-                className='btn btn-sm btn-outline-light me-2'
-              >
-                Home
-              </Link>
-              <button
-                className='btn btn-sm btn-outline-danger'
-                onClick={logout}
-              >
-                logout
-              </button>
-            </>
-          ) : (
-            <>
-              <Link
-                to='/login'
-                className='btn btn-sm btn-outline-light me-2'
-              >
-                Login
-              </Link>
-              <Link
-                to='/register'
-                className='btn btn-sm btn-outline-light'
-              >
-                Register
-              </Link>
-            </>
-          )}
-        </div>
-      </div>
-    </div> */
   );
 };
 
-export default NavigationBar;
+export default NavigationBarAdmin;

@@ -21,26 +21,28 @@ const loginUser = async (req, res) => {
     const findUser = await byEmail(data)
 
     if (!findUser) {
-      res.status(500).json({ error: error.message })
+      res.status(500).json({ error: 'User not found' })
     } else {
       const validPassword = bcrypt.compareSync(data.password, findUser.password)
+
       if (!validPassword) {
-        res.status(500).json({ error: error.message })
+        res.status(500).json({ error: 'Invalid password' })
       } else {
         const { email, firstname, lastname } = findUser
 
         const token = jwt.sign({ email }, process.env.JWT_SECRET, {
           expiresIn: '1h',
         })
+
         res.status(200).json({
-          message: `Bienvenido ${firstname} ${lastname}, has iniciado sesion`,
+          message: `Welcome ${firstname} ${lastname}, you have logged in`,
           code: 200,
           token,
+          userData: { email, firstname, lastname, role_id },
         })
       }
     }
   } catch (error) {
-    console.log(error)
     res.status(500).json({ error: error.message })
   }
 }
@@ -76,7 +78,6 @@ const googleLogin = async (req, res) => {
       }
     }
   } catch (error) {
-    console.log(error)
     res.status(500).json({ error: error.message })
   }
 }

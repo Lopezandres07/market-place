@@ -42,8 +42,22 @@ const UserProvider = ({ children }) => {
     })
 
     const user = await response.json()
-
     setToken(user.token || null)
+
+    // Aquí verificamos el role_id del usuario y redirigimos en consecuencia
+    if (user.token && user.userData) {
+      if (user.userData.role_id === 1) {
+        // Si el usuario tiene role_id 1, redirigir a una sección específica para ese tipo de usuario
+        window.location.href = '/admin/products'
+      } else if (user.userData.role_id === 2) {
+        // Si el usuario tiene role_id 2, redirigir a una sección específica para ese tipo de usuario
+        window.location.href = '/homeUser'
+      } else {
+        // Si el usuario tiene otro role_id o si hay algún error, redirigir a una sección predeterminada
+        window.location.href = '/'
+      }
+      console.log(user.userData.role_id)
+    }
 
     return user
   }
