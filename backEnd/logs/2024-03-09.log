@@ -642,3 +642,31 @@ Completed: 200 message:  Time response: 4 ms Request ID: [1edb8cfc-3789-47e1-8ab
 Started GET /API/V1/products for :: ::1 at Sat Mar 09 2024 12:12:30 GMT-0300 (hora de verano de Chile)
   Parameters in body: {}
 Completed: 304 message:  Time response: 3 ms Request ID: [80624472-4e15-43b2-b0f5-67f18c5e8b78]
+
+Started DELETE /API/V1/products/?productId=33 for :: ::ffff:127.0.0.1 at Sat Mar 09 2024 12:14:32 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {}
+Completed: 404 message:  Time response: 4 ms Request ID: [87727329-792a-42e4-ad79-c60c9a79a63e]
+
+Started DELETE /API/V1/products/33 for :: ::ffff:127.0.0.1 at Sat Mar 09 2024 12:14:41 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {}
+Completed: 200 message:  Time response: 42 ms Request ID: [3eaabda8-4f51-427c-879c-d9a179458edd]
+
+Started DELETE /API/V1/products/?productId=33 for :: ::ffff:127.0.0.1 at Sat Mar 09 2024 12:15:04 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {}
+Completed: 404 message:  Time response: 2 ms Request ID: [1e620e5e-5931-4a18-8215-c2665fb2a520]
+
+Started DELETE /API/V1/products/?Id=33 for :: ::ffff:127.0.0.1 at Sat Mar 09 2024 12:15:09 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {}
+Completed: 404 message:  Time response: 3 ms Request ID: [18020890-e815-4cd4-ad70-1ed7c4a739a8]
+
+Started DELETE /API/V1/products/?id=33 for :: ::ffff:127.0.0.1 at Sat Mar 09 2024 12:15:15 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {}
+Completed: 404 message:  Time response: 3 ms Request ID: [642633a5-ca7d-4a22-8b74-641634bc0f34]
+
+Started GET /API/V1/products for :: ::1 at Sat Mar 09 2024 19:13:27 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {}
+Completed: 304 message:  Time response: 278 ms Request ID: [4e55f43b-49eb-4655-9eda-fe2a72057ca9]
+
+Started GET /API/V1/products for :: ::1 at Sat Mar 09 2024 19:13:27 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {}
+Completed: 304 message:  Time response: 12 ms Request ID: [9ee0e894-278d-414a-b730-ae8b317e5b58]

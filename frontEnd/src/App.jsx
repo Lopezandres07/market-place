@@ -1,7 +1,6 @@
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { Routes, Route, Navigate } from "react-router-dom";
-import NavigationBar from "./components/NavigationBar";
 import { UserContext } from "./providers/UserProvider";
 import { useContext, useState } from "react";
 import NotFound from "./Views/NotFound";
@@ -13,8 +12,8 @@ import UserProfile from "./Views/User/UserProfile";
 import FavoritesUser from "./Views/User/FavoritesUser";
 import AdminCreatePublication from "./Views/Admin/AdminCreatePublication";
 import HomeAdmin from "./Views/Admin/HomeAdmin";
-import AdminContact from "./Views/Admin/AdminContact";
 import Footer from "./components/Footer";
+import adminProfile from "./Views/Admin/adminProfile";
 
 function App() {
   const { token } = useContext(UserContext);
@@ -34,13 +33,17 @@ function App() {
 
   return (
     <>
-      <NavigationBar />
       <main>
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/login" element={<Login />} />
           <Route path="/register" element={<Register />} />
-          <Route path="/homeUser" element={<HomeUser />} />
+          {/* <Route path="/homeUser" element={<HomeUser />} /> */}
+          <Route
+            path="/homeUser"
+            element={token ? <HomeUser /> : <Navigate to="/login" />}
+          />
+
           <Route path="*" element={<NotFound />} />
           <Route
             path="/favoritesUser"
@@ -57,8 +60,9 @@ function App() {
             element={<AdminCreatePublication />}
           />
           <Route path="/admin/products" element={<HomeAdmin />} />
-          <Route path="/dmin/products:id" element={<HomeAdmin />} />
-          <Route path="/admin/contact" element={<AdminContact />} />
+          <Route path="/admin/products:id" element={<HomeAdmin />} />
+          <Route path="/admin/contact" element={<adminProfile />} />
+
           {/* Admin Routes */}
 
           {/*  <Route

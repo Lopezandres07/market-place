@@ -1,13 +1,13 @@
-import React from 'react'
-import { Link } from 'react-router-dom'
-import '../../App.css'
-import Favorites from '../../components/Favorites'
+import React from "react";
+import { Link } from "react-router-dom";
+import "../../App.css";
+import Favorites from "../../components/Favorites";
 
 function FavoritesUser() {
   return (
-    <div className='container'>
-      <div className='content'>
-        <aside className='sidebar'>
+    <div className="container">
+      <div className="content">
+        {/* <aside className='sidebar'>
           <h2>Filtrar por categorías</h2>
           <ul>
             <li>
@@ -35,13 +35,13 @@ function FavoritesUser() {
               </Link>
             </li>
           </ul>
-        </aside>
-        <main className='main-content'>
+        </aside> */}
+        <main className="main-content">
           <Favorites />
         </main>
       </div>
     </div>
-  )
+  );
 }
 
-export default FavoritesUser
+export default FavoritesUser;

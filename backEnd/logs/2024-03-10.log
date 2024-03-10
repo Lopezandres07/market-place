@@ -1,0 +1,1184 @@
+
+Started POST /api/v1/login for :: ::1 at Sun Mar 10 2024 01:09:13 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {"data":{"email":"cristian@test.com","password":"123456"}}
+Completed: 200 message:  Time response: 172 ms Request ID: [26e8e1ff-a3d4-4db0-a089-e7625d5fa3ae]
+
+Started POST /API/V1/products for :: ::ffff:127.0.0.1 at Sun Mar 10 2024 01:34:03 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {"product":{"user_id":1,"name":"Columpio azul con estrellas","description":"Descripción del producto","price":50000,"imageURL":"https://i.imgur.com/6hOPFRH.jpg"}}
+Completed: 201 message:  Time response: 115 ms Request ID: [097edbd6-bf2d-4cc8-a6b4-60bc38de65fc]
+
+Started GET /API/V1/products for :: ::1 at Sun Mar 10 2024 01:41:37 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {}
+Completed: 200 message:  Time response: 71 ms Request ID: [3ad5fccf-ab82-465e-b756-8f481fd61ef4]
+
+Started GET /API/V1/products for :: ::1 at Sun Mar 10 2024 01:41:37 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {}
+Completed: 304 message:  Time response: 5 ms Request ID: [6d2c14f0-0b56-4beb-aaf2-f0b9fe7a4462]
+
+Started GET /API/V1/products for :: ::1 at Sun Mar 10 2024 01:43:10 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {}
+Completed: 304 message:  Time response: 81 ms Request ID: [4c898110-81c9-4ca0-87df-d51db3d07178]
+
+Started GET /API/V1/products for :: ::1 at Sun Mar 10 2024 01:43:10 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {}
+Completed: 304 message:  Time response: 5 ms Request ID: [c1364535-9831-4278-8378-45e1c079be8b]
+
+Started GET /API/V1/products for :: ::1 at Sun Mar 10 2024 01:43:13 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {}
+Completed: 304 message:  Time response: 12 ms Request ID: [9f82479c-79e0-4985-bd1f-c3df51e2cc7b]
+
+Started GET /API/V1/products for :: ::1 at Sun Mar 10 2024 01:43:13 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {}
+Completed: 304 message:  Time response: 10 ms Request ID: [501c0c2a-f2aa-4cae-a020-7f0852adbf60]
+
+Started GET /API/V1/products for :: ::1 at Sun Mar 10 2024 01:44:32 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {}
+Started GET /API/V1/products for :: ::1 at Sun Mar 10 2024 01:44:32 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {}
+Completed: 304 message:  Time response: 49 ms Request ID: [0360d0a9-3570-4442-82c0-fba6e2826b8a]
+
+Completed: 304 message:  Time response: 4 ms Request ID: [9db70c52-c295-4888-9164-df3e582a0bcc]
+
+Started GET /API/V1/products for :: ::1 at Sun Mar 10 2024 01:44:33 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {}
+Completed: 304 message:  Time response: 6 ms Request ID: [060202c7-4a8b-4523-a421-1f85d2c3c53c]
+
+Started GET /API/V1/products for :: ::1 at Sun Mar 10 2024 01:44:33 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {}
+Completed: 304 message:  Time response: 4 ms Request ID: [68308bd5-2a15-4188-a7de-336b34ff2470]
+
+Started GET /API/V1/products for :: ::1 at Sun Mar 10 2024 01:47:23 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {}
+Completed: 304 message:  Time response: 55 ms Request ID: [5f5437c0-7e0b-431b-9355-1e25ecfeab96]
+
+Started GET /API/V1/products for :: ::1 at Sun Mar 10 2024 01:47:23 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {}
+Completed: 304 message:  Time response: 3 ms Request ID: [5841357d-f7bc-4c96-87e2-db58aa776b71]
+
+Started POST /api/v1/login for :: ::1 at Sun Mar 10 2024 02:01:46 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {"data":{"email":"cristian@test.com","password":"123456"}}
+Completed: 200 message:  Time response: 155 ms Request ID: [ba4c68fb-77dc-453f-abd5-c695b7cd7610]
+
+Started POST /api/v1/login for :: ::1 at Sun Mar 10 2024 02:02:15 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {"data":{"email":"cristian@test.com","password":"123456"}}
+Completed: 200 message:  Time response: 109 ms Request ID: [7de624f4-70e3-49b5-80ce-8743c638572f]
+
+Started POST /api/v1/login for :: ::1 at Sun Mar 10 2024 02:02:35 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {"data":{"email":"cristian@test.com","password":"123456"}}
+Completed: 200 message:  Time response: 104 ms Request ID: [b5b648b6-c950-4e00-a6ae-1af2162c1b75]
+
+Started POST /api/v1/login for :: ::1 at Sun Mar 10 2024 02:03:20 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {"data":{"email":"cristian@test.com","password":"1111"}}
+Completed: 500 message:  Time response: 130 ms Request ID: [d8c38a30-5ea3-4d30-adb8-20661c59a58b]
+
+Started POST /api/v1/login for :: ::1 at Sun Mar 10 2024 02:03:30 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {"data":{"email":"cristian@test.com","password":"123456"}}
+Completed: 200 message:  Time response: 101 ms Request ID: [098abb01-224e-4702-81e4-ffa08d94e6c8]
+
+Started POST /api/v1/login for :: ::1 at Sun Mar 10 2024 02:07:45 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {"data":{"email":"cristian@test.com","password":"123456"}}
+Completed: 200 message:  Time response: 525 ms Request ID: [55116919-484a-4173-8315-cd0c1f25afa2]
+
+Started POST /api/v1/login for :: ::1 at Sun Mar 10 2024 02:08:42 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {"data":{"email":"cristian@test.com","password":"123456"}}
+Completed: 200 message:  Time response: 292 ms Request ID: [9fc96a52-360b-4e7a-be62-ae7b29e391c0]
+
+Started POST /api/v1/login for :: ::1 at Sun Mar 10 2024 02:09:03 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {"data":{"email":"cristian@test.com","password":"123456"}}
+Completed: 200 message:  Time response: 207 ms Request ID: [65f34df5-c9f9-4733-99b8-5fc1a77e1415]
+
+Started POST /api/v1/login for :: ::1 at Sun Mar 10 2024 02:10:56 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {"data":{"email":"cristian@test.com","password":"123456"}}
+Completed: 200 message:  Time response: 170 ms Request ID: [7497318b-9877-4596-a988-1741c53c9574]
+
+Started POST /api/v1/login for :: ::1 at Sun Mar 10 2024 02:12:39 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {"data":{"email":"cristian@test.com","password":"123456"}}
+Completed: 200 message:  Time response: 197 ms Request ID: [24d6afca-cfd3-4ccd-ba25-f9b6291ca982]
+
+Started POST /api/v1/login for :: ::1 at Sun Mar 10 2024 02:15:34 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {"data":{"email":"cristian@test.com","password":"123456"}}
+Completed: 200 message:  Time response: 259 ms Request ID: [5d9c82c0-866e-4dbd-aa04-e5dd19d03301]
+
+Started POST /api/v1/register for :: ::1 at Sun Mar 10 2024 02:16:14 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {"data":{"firstName":"12345","lastName":"12345","email":"test@test.com","password":"123456","passwordConfirm":"123456","avatarURL":"pkb.png"}}
+Completed: 201 message:  Time response: 238 ms Request ID: [560d8505-7e46-4c95-8995-41cd42a134f4]
+
+Started POST /api/v1/register for :: ::1 at Sun Mar 10 2024 02:18:53 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {"data":{"firstName":"test","lastName":"test","email":"test@test.com","password":"123456","passwordConfirm":"123456","avatarURL":"pkb.png"}}
+Completed: 400 message:  Time response: 137 ms Request ID: [7d640030-5b95-4225-a1b2-fd67d1374127]
+
+Started POST /api/v1/register for :: ::1 at Sun Mar 10 2024 02:19:02 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {"data":{"firstName":"test","lastName":"test","email":"test2@test.com","password":"123456","passwordConfirm":"123456","avatarURL":"pkb.png"}}
+Completed: 201 message:  Time response: 119 ms Request ID: [7b42b668-7d04-4bf7-8aa6-bc7a932afe4d]
+
+Started POST /api/v1/login for :: ::1 at Sun Mar 10 2024 02:19:15 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {"data":{"email":"test2@test.com","password":"123456"}}
+Completed: 200 message:  Time response: 117 ms Request ID: [6a714894-1947-4503-ab3e-2856945b6d88]
+
+Started POST /api/v1/login for :: ::1 at Sun Mar 10 2024 02:19:59 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {"data":{"email":"john.doe@example.com","password":"123456"}}
+Completed: 200 message:  Time response: 105 ms Request ID: [4208582b-017e-4c7b-ab32-a6a13c184c9e]
+
+Started POST /API/V1/products for :: ::ffff:127.0.0.1 at Sun Mar 10 2024 02:43:37 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {"product":{"user_id":2,"name":"Columpio azul con estrellas","description":"Descripción del producto","price":50000,"imageURL":"https://i.imgur.com/6hOPFRH.jpg"}}
+Completed: 400 message:  Time response: 102 ms Request ID: [a09b3dc1-d529-4456-912f-33f016a59ae8]
+
+Started POST /API/V1/products for :: ::ffff:127.0.0.1 at Sun Mar 10 2024 02:43:46 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {"product":{"user_id":33,"name":"Columpio azul con estrellas","description":"Descripción del producto","price":50000,"imageURL":"https://i.imgur.com/6hOPFRH.jpg"}}
+Completed: 400 message:  Time response: 40 ms Request ID: [e7c7f13e-e624-4dfa-b6ba-0e2eef9b2831]
+
+Started POST /API/V1/products for :: ::ffff:127.0.0.1 at Sun Mar 10 2024 02:44:06 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {"product":{"user_id":3,"name":"Columpio azul con estrellas","description":"Descripción del producto","price":50000,"imageURL":"https://i.imgur.com/6hOPFRH.jpg"}}
+Completed: 201 message:  Time response: 43 ms Request ID: [715c6396-ae25-4da9-9bb0-7c47c4a9e391]
+
+Started POST /API/V1/products for :: ::ffff:127.0.0.1 at Sun Mar 10 2024 02:45:43 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {"product":{"user_id":"","name":"Columpio azul con estrellas","description":"Descripción del producto","price":50000,"imageURL":"https://i.imgur.com/6hOPFRH.jpg"}}
+Completed: 400 message:  Time response: 64 ms Request ID: [b55d2dee-5d96-4e11-b224-903c26005799]
+
+Started POST /API/V1/products for :: ::ffff:127.0.0.1 at Sun Mar 10 2024 02:45:52 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {"product":{"user_id":"3","name":"Columpio azul con estrellas","description":"Descripción del producto","price":50000,"imageURL":"https://i.imgur.com/6hOPFRH.jpg"}}
+Completed: 201 message:  Time response: 53 ms Request ID: [9cd6529c-ed06-4d57-ad9f-b4111efb8457]
+
+Started GET /API/V1/products for :: ::1 at Sun Mar 10 2024 02:46:31 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {}
+Completed: 200 message:  Time response: 70 ms Request ID: [5ba44174-6c75-479a-a1f1-a27e07a0123f]
+
+Started GET /API/V1/products for :: ::1 at Sun Mar 10 2024 02:46:31 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {}
+Completed: 304 message:  Time response: 5 ms Request ID: [08f1a1cb-ea26-4b4f-ade7-ede3d5c4ba13]
+
+Started POST /api/v1/products for :: ::1 at Sun Mar 10 2024 02:46:46 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {"product":{"user_id":1,"name":"111","description":"222","price":"333","imageURL":"444"}}
+Completed: 201 message:  Time response: 69 ms Request ID: [a342b280-95da-4ee1-8e89-ca469e4afb99]
+
+Started POST /api/v1/register for :: ::1 at Sun Mar 10 2024 02:49:45 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {"data":{"firstName":"7777","lastName":"7777","email":"test7@test.com","password":"777777","passwordConfirm":"777777","avatarURL":"pkb.png"}}
+Completed: 400 message:  Time response: 242 ms Request ID: [d3348c80-3fed-4d8a-b7a1-b8b98f6d5a4c]
+
+Started POST /api/v1/register for :: ::1 at Sun Mar 10 2024 02:50:01 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {"data":{"firstName":"7777","lastName":"7777","email":"test7@test.com","password":"777777","passwordConfirm":"777777","avatarURL":"pkb.png"}}
+Completed: 201 message:  Time response: 133 ms Request ID: [af5cd219-5575-4810-bb09-d2b2feb31a42]
+
+Started POST /api/v1/login for :: ::1 at Sun Mar 10 2024 02:50:12 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {"data":{"email":"test7@test.com","password":"777777"}}
+Completed: 200 message:  Time response: 218 ms Request ID: [9a574c71-f3aa-46f3-a228-a26f72fae0d9]
+
+Started POST /api/v1/login for :: ::1 at Sun Mar 10 2024 03:01:45 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {"data":{"email":"john.doe@example.com","password":"123456"}}
+Completed: 500 message:  Time response: 354 ms Request ID: [e7ca9d89-766d-4a78-8e26-051de26358bc]
+
+Started POST /api/v1/login for :: ::1 at Sun Mar 10 2024 03:02:15 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {"data":{"email":"test@test.com","password":"123456"}}
+Completed: 500 message:  Time response: 224 ms Request ID: [e83d6c30-8c8d-48e0-b871-1347e3138161]
+
+Started POST /api/v1/register for :: ::1 at Sun Mar 10 2024 03:08:01 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {"data":{"firstName":"88","lastName":"88","email":"lala@lala.com","password":"888888","passwordConfirm":"888888","avatarURL":"pkb.png"}}
+Completed: 201 message:  Time response: 326 ms Request ID: [66af10c8-ce45-4b2c-a9b3-119de8dce094]
+
+Started POST /api/v1/login for :: ::1 at Sun Mar 10 2024 03:08:24 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {"data":{"email":"lala@lala.com","password":"123456"}}
+Completed: 500 message:  Time response: 119 ms Request ID: [f22e2c94-7511-4035-b25c-509b17b1fc6e]
+
+Started POST /api/v1/login for :: ::1 at Sun Mar 10 2024 03:08:37 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {"data":{"email":"lala@lala.com","password":"888888"}}
+Completed: 500 message:  Time response: 130 ms Request ID: [31c0d9c1-57bb-424b-b36e-26a251a5f43f]
+
+Started POST /api/v1/login for :: ::1 at Sun Mar 10 2024 03:14:04 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {"data":{"email":"john.doe@example.com","password":"123456"}}
+Completed: 500 message:  Time response: 281 ms Request ID: [26d3ebd8-a7ad-4159-97cd-647e1e016367]
+
+Started POST /api/v1/login for :: ::1 at Sun Mar 10 2024 03:14:17 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {"data":{"email":"cristian@test.com","password":"123456"}}
+Completed: 500 message:  Time response: 202 ms Request ID: [92a53c66-da27-4ac1-bacd-8ffb61110e61]
+
+Started POST /api/v1/login for :: ::1 at Sun Mar 10 2024 03:16:28 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {"data":{"email":"john.doe@example.com","password":"123456"}}
+Completed: 500 message:  Time response: 280 ms Request ID: [af55467b-b60d-4976-8381-a19b133df586]
+
+Started POST /api/v1/login for :: ::1 at Sun Mar 10 2024 03:17:23 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {"data":{"email":"cristian@test.com","password":"123456"}}
+Completed: 200 message:  Time response: 128 ms Request ID: [00cf0f0d-a987-469e-afdf-cc71e5cb4183]
+
+Started POST /api/v1/login for :: ::1 at Sun Mar 10 2024 03:25:11 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {"data":{"email":"john.doe@example.com","password":"123456"}}
+Completed: 200 message:  Time response: 141 ms Request ID: [223ad689-0898-46b1-9c1e-36e60941edb0]
+
+Started POST /api/v1/login for :: ::1 at Sun Mar 10 2024 03:28:17 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {"data":{"email":"john.doe@example.com","password":"123456"}}
+Completed: 500 message:  Time response: 135 ms Request ID: [52d26da5-f2f7-410d-91b0-828432fc1fcc]
+
+Started POST /api/v1/login for :: ::1 at Sun Mar 10 2024 03:28:59 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {"data":{"email":"john.doe@example.com","password":"123456"}}
+Completed: 200 message:  Time response: 131 ms Request ID: [6c7c966c-7a9b-42b0-b8ff-2e1d1837ba96]
+
+Started POST /api/v1/login for :: ::1 at Sun Mar 10 2024 03:32:25 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {"data":{"email":"lala@lala.com","password":"888888"}}
+Completed: 500 message:  Time response: 270 ms Request ID: [3b94ee59-a09e-472e-958f-1f14a76992ad]
+
+Started POST /api/v1/login for :: ::1 at Sun Mar 10 2024 03:32:43 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {"data":{"email":"lala@lala.com","password":"123456"}}
+Completed: 401 message:  Time response: 181 ms Request ID: [67d3b13e-1e21-482b-ac97-4a1501df2487]
+
+Started POST /api/v1/login for :: ::1 at Sun Mar 10 2024 03:32:52 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {"data":{"email":"lala@lala.com","password":"123456"}}
+Completed: 401 message:  Time response: 165 ms Request ID: [eab2d6ab-8dd8-42e7-8a95-e87fe9b78dd0]
+
+Started POST /api/v1/login for :: ::1 at Sun Mar 10 2024 03:33:03 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {"data":{"email":"lala@lala.com","password":"888888"}}
+Completed: 500 message:  Time response: 173 ms Request ID: [159e10a9-49cf-4505-bb03-28ad036b506d]
+
+Started POST /api/v1/login for :: ::1 at Sun Mar 10 2024 03:37:51 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {"data":{"email":"john.doe@example.com","password":"123456"}}
+Completed: 500 message:  Time response: 114 ms Request ID: [9626498b-803c-416b-bfdf-7ed538d3ba16]
+
+Started POST /api/v1/login for :: ::1 at Sun Mar 10 2024 03:38:22 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {"data":{"email":"lala@lala.com","password":"888888"}}
+Completed: 500 message:  Time response: 46 ms Request ID: [c3c5c94c-8d73-4cd2-9b6d-1b836e560c38]
+
+Started POST /api/v1/login for :: ::1 at Sun Mar 10 2024 03:40:16 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {"data":{"email":"lala@lala.com","password":"888888"}}
+Completed: 500 message:  Time response: 122 ms Request ID: [b08343c1-325b-431b-9ad5-aecad650aa5a]
+
+Started POST /api/v1/login for :: ::1 at Sun Mar 10 2024 03:44:02 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {"data":{"email":"lala@lala.com","password":"888888"}}
+Completed: 500 message:  Time response: 120 ms Request ID: [e575cc7b-7402-40f4-9bff-3d21571b0321]
+
+Started POST /api/v1/login for :: ::1 at Sun Mar 10 2024 03:44:56 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {"data":{"email":"cristian@test.com","password":"123456"}}
+Completed: 500 message:  Time response: 68 ms Request ID: [ea9a0d0b-48d3-4fb1-99a0-72dda2c58ca3]
+
+Started POST /api/v1/login for :: ::1 at Sun Mar 10 2024 03:45:45 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {"data":{"email":"cristian@test.com","password":"123456"}}
+Completed: 500 message:  Time response: 124 ms Request ID: [22e605ef-829b-47e6-a7c0-9ce09d231713]
+
+Started POST /api/v1/login for :: ::1 at Sun Mar 10 2024 03:46:16 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {"data":{"email":"test7@test.com","password":"777777"}}
+Completed: 500 message:  Time response: 165 ms Request ID: [0f64c798-ced8-4e42-89be-8e8bb0a6a4a9]
+
+Started POST /api/v1/login for :: ::1 at Sun Mar 10 2024 03:47:12 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {"data":{"email":"cristian@test.com","password":"123456"}}
+Completed: 200 message:  Time response: 134 ms Request ID: [7fa27250-4c13-4b9a-8f46-19566e629ad0]
+
+Started POST /api/v1/register for :: ::1 at Sun Mar 10 2024 03:48:04 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {"data":{"firstName":"teste","lastName":"teste","email":"hola@hola.com","password":"123456","passwordConfirm":"123456"}}
+Completed: 400 message:  Time response: 3 ms Request ID: [6080a160-5780-442f-bd08-50d2c3a0f235]
+
+Started POST /api/v1/register for :: ::1 at Sun Mar 10 2024 03:48:13 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {"data":{"firstName":"teste","lastName":"teste","email":"hola@hola.com","password":"123456","passwordConfirm":"123456","avatarURL":"pkb.png"}}
+Completed: 400 message:  Time response: 178 ms Request ID: [10436127-f8b7-48a2-9b72-4a6eab6c9204]
+
+Started POST /api/v1/register for :: ::1 at Sun Mar 10 2024 03:50:48 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {"data":{"firstName":"teste","lastName":"teste","email":"hola@hola.com","password":"123456","passwordConfirm":"123456","avatarURL":"pkb.png"}}
+Completed: 201 message:  Time response: 150 ms Request ID: [3d2167a8-bc01-4582-9889-3fe47077023e]
+
+Started POST /api/v1/login for :: ::1 at Sun Mar 10 2024 03:51:21 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {"data":{"email":"hola@hola.com","password":"123456"}}
+Completed: 200 message:  Time response: 215 ms Request ID: [c09e615d-49a8-4e7f-800f-59ab8a030cc4]
+
+Started POST /api/v1/login for :: ::1 at Sun Mar 10 2024 04:11:42 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {"data":{"email":"hola@hola.com","password":"123456"}}
+Completed: 200 message:  Time response: 176 ms Request ID: [b1b5d7f7-f85c-4ddf-a320-752b9682bce5]
+
+Started POST /API/V1/users for :: ::ffff:127.0.0.1 at Sun Mar 10 2024 04:12:27 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {"user":{"role_id":1,"firstName":"John","lastName":"Doe","avatarURL":"https://www.clker.com/cliparts/3/a/f/e/11949837341769281089crawfish1_ganson.svg.thumb.png","email":"john.doe@example.com","password":"123456"}}
+Completed: 404 message:  Time response: 6 ms Request ID: [01d90d53-f535-44f1-817c-f28c1e2cfe2b]
+
+Started POST /api/v1/login for :: ::1 at Sun Mar 10 2024 04:14:40 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {"data":{"email":"john.doe@example.com","password":"123456"}}
+Completed: 200 message:  Time response: 114 ms Request ID: [bbec3b2e-b6c5-4506-8bb1-9638dccb3f50]
+
+Started GET /API/V1/products for :: ::1 at Sun Mar 10 2024 04:15:04 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {}
+Completed: 200 message:  Time response: 57 ms Request ID: [c6792443-bcbc-4cea-b337-5e21d232957a]
+
+Started GET /API/V1/products for :: ::1 at Sun Mar 10 2024 04:15:04 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {}
+Completed: 304 message:  Time response: 3 ms Request ID: [be1fd60c-3ea1-45a1-bb83-a30924cfd803]
+
+Started GET /API/V1/products for :: ::1 at Sun Mar 10 2024 04:15:24 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {}
+Started GET /API/V1/products for :: ::1 at Sun Mar 10 2024 04:15:24 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {}
+Completed: 304 message:  Time response: 73 ms Request ID: [e5a2570e-d022-4ca3-b8bf-e7b90ee0cf68]
+
+Completed: 304 message:  Time response: 5 ms Request ID: [89e2fcb8-29ef-4af3-b8cf-03519dfd4ad9]
+
+Started DELETE /api/v1/products/43 for :: ::1 at Sun Mar 10 2024 04:15:29 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {}
+Completed: 200 message:  Time response: 19 ms Request ID: [1dbc9deb-7a8d-4fdb-9554-8886baf1e4a1]
+
+Started GET /API/V1/products for :: ::1 at Sun Mar 10 2024 04:15:30 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {}
+Completed: 200 message:  Time response: 10 ms Request ID: [9621e4bc-70d0-4265-a9c7-2f7b4171a85c]
+
+Started GET /API/V1/products for :: ::1 at Sun Mar 10 2024 04:15:30 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {}
+Completed: 304 message:  Time response: 6 ms Request ID: [2e7f07e1-a24d-4432-9a74-cfff37926cdd]
+
+Started POST /api/v1/login for :: ::1 at Sun Mar 10 2024 04:15:45 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {"data":{"email":"john.doe@example.com","password":"123456"}}
+Completed: 200 message:  Time response: 195 ms Request ID: [3cfa1875-e4a4-4960-9dc1-a5d618e775ce]
+
+Started GET /API/V1/products for :: ::1 at Sun Mar 10 2024 04:16:10 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {}
+Started GET /API/V1/products for :: ::1 at Sun Mar 10 2024 04:16:10 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {}
+Completed: 304 message:  Time response: 52 ms Request ID: [48f029a4-4622-412f-84b9-2e375dad1afd]
+
+Completed: 304 message:  Time response: 12 ms Request ID: [fef1177a-c2b6-4039-a799-40e3d9281d5d]
+
+Started POST /api/v1/login for :: ::1 at Sun Mar 10 2024 04:16:51 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {"data":{"email":"john.doe@example.com","password":"123456"}}
+Completed: 200 message:  Time response: 199 ms Request ID: [34e06398-1698-49a6-920b-49dd51a4176a]
+
+Started POST /api/v1/login for :: ::1 at Sun Mar 10 2024 04:17:23 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {"data":{"email":"john.doe@example.com","password":"123456"}}
+Completed: 200 message:  Time response: 231 ms Request ID: [1bbc3ca7-d399-409c-93c2-86f2e546e39a]
+
+Started POST /api/v1/login for :: ::1 at Sun Mar 10 2024 04:18:06 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {"data":{"email":"test@test.com","password":"123456"}}
+Completed: 200 message:  Time response: 104 ms Request ID: [d39aa015-98cc-4cbe-a50d-de879557e3ba]
+
+Started POST /api/v1/login for :: ::1 at Sun Mar 10 2024 04:18:38 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {"data":{"email":"hola@hola.com","password":"888888"}}
+Completed: 500 message:  Time response: 111 ms Request ID: [db70bb30-0dcb-4ca6-a65c-e9d7a129fe46]
+
+Started POST /api/v1/login for :: ::1 at Sun Mar 10 2024 04:18:50 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {"data":{"email":"hola@hola.com","password":"888888"}}
+Completed: 500 message:  Time response: 96 ms Request ID: [0c86bbe1-f1d3-401d-8d20-34ff6c40f429]
+
+Started POST /api/v1/login for :: ::1 at Sun Mar 10 2024 04:19:07 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {"data":{"email":"lala@lala.com","password":"1235456"}}
+Completed: 500 message:  Time response: 99 ms Request ID: [78c28fdc-ad1d-4aae-9337-c479fb2883e1]
+
+Started POST /api/v1/login for :: ::1 at Sun Mar 10 2024 04:19:28 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {"data":{"email":"cristian@test.com","password":"123456"}}
+Completed: 200 message:  Time response: 329 ms Request ID: [d4dd44cf-da69-4dbb-a9c8-941ee776ee77]
+
+Started POST /api/v1/login for :: ::1 at Sun Mar 10 2024 04:19:36 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {"data":{"email":"john.doe@example.com","password":"123456"}}
+Completed: 200 message:  Time response: 148 ms Request ID: [c6ba9576-a567-4c66-9010-eda95f4da598]
+
+Started POST /api/v1/login for :: ::1 at Sun Mar 10 2024 04:20:59 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {"data":{"email":"john.doe@example.com","password":"123456"}}
+Completed: 200 message:  Time response: 209 ms Request ID: [b1079291-8c2c-4e18-ae91-0eeed78d75ef]
+
+Started POST /api/v1/login for :: ::1 at Sun Mar 10 2024 04:21:47 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {"data":{"email":"john.doe@example.com","password":"123456"}}
+Completed: 200 message:  Time response: 191 ms Request ID: [07890171-50d1-4d86-84e7-0a25864a29d1]
+
+Started POST /api/v1/register for :: ::1 at Sun Mar 10 2024 04:24:35 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {"data":{"firstName":"test","lastName":"test","email":"test@test.com","password":"123456","passwordConfirm":"123456","avatarURL":"pkb.png"}}
+Completed: 201 message:  Time response: 179 ms Request ID: [6b834b07-5d0d-41da-a80f-870ca8e19050]
+
+Started POST /api/v1/login for :: ::1 at Sun Mar 10 2024 04:24:43 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {"data":{"email":"test@test.com","password":"123456"}}
+Completed: 200 message:  Time response: 151 ms Request ID: [19b0f6e3-d953-4ccb-834f-ac6f712fe064]
+
+Started POST /api/v1/login for :: ::1 at Sun Mar 10 2024 04:25:25 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {"data":{"email":"john.doe@example.com","password":"123456"}}
+Completed: 500 message:  Time response: 48 ms Request ID: [70a22aaf-80ae-4cfa-8118-3cf27149975f]
+
+Started POST /api/v1/login for :: ::1 at Sun Mar 10 2024 04:25:35 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {"data":{"email":"test@test.com","password":"123456"}}
+Completed: 200 message:  Time response: 150 ms Request ID: [e73369e2-acd5-4637-acb3-d91516710221]
+
+Started POST /api/v1/login for :: ::1 at Sun Mar 10 2024 04:26:43 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {"data":{"email":"john.doe@example.com","password":"123456"}}
+Completed: 500 message:  Time response: 62 ms Request ID: [5b37b0cb-42ae-482a-a0ae-b85534a97e9e]
+
+Started POST /api/v1/login for :: ::1 at Sun Mar 10 2024 04:27:09 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {"data":{"email":"test@test.com","password":"123456"}}
+Completed: 200 message:  Time response: 101 ms Request ID: [74b9f3b0-828c-48c5-a258-e8bcf2dfa9bb]
+
+Started POST /api/v1/login for :: ::1 at Sun Mar 10 2024 04:27:31 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {"data":{"email":"john.doe@example.com","password":"123456"}}
+Completed: 500 message:  Time response: 56 ms Request ID: [7fb84952-6d4c-495d-b77e-63679cd80e66]
+
+Started GET /API/V1/products for :: ::1 at Sun Mar 10 2024 04:27:37 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {}
+Completed: 200 message:  Time response: 8 ms Request ID: [bac01da9-361b-47c5-84b9-3afac4fff30f]
+
+Started GET /API/V1/products for :: ::1 at Sun Mar 10 2024 04:27:37 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {}
+Completed: 304 message:  Time response: 4 ms Request ID: [39773576-f609-4276-857e-eb6911130981]
+
+Started GET /API/V1/products for :: ::1 at Sun Mar 10 2024 04:28:13 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {}
+Completed: 304 message:  Time response: 54 ms Request ID: [068b7a25-2503-42c5-8b27-7de2b3c124bb]
+
+Started GET /API/V1/products for :: ::1 at Sun Mar 10 2024 04:28:13 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {}
+Completed: 304 message:  Time response: 4 ms Request ID: [8081d9f0-f0dc-490a-904c-8860b8f2c93d]
+
+Started POST /api/v1/login for :: ::1 at Sun Mar 10 2024 04:28:29 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {"data":{"email":"test@test.com","password":"123456"}}
+Completed: 200 message:  Time response: 258 ms Request ID: [711a71b1-118f-43ee-9806-aac617a11e6b]
+
+Started POST /api/v1/login for :: ::1 at Sun Mar 10 2024 04:29:31 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {"data":{"email":"test@test.com","password":"123456"}}
+Completed: 200 message:  Time response: 109 ms Request ID: [05f44b0a-dac4-4a39-9b2c-47fb48d996a6]
+
+Started POST /api/v1/login for :: ::1 at Sun Mar 10 2024 04:30:31 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {"data":{"email":"john.doe@example.com","password":"123456"}}
+Completed: 500 message:  Time response: 36 ms Request ID: [0f574dc5-32a4-470d-b725-e7b1e1cf9739]
+
+Started GET /API/V1/products for :: ::1 at Sun Mar 10 2024 04:30:41 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {}
+Started GET /API/V1/products for :: ::1 at Sun Mar 10 2024 04:30:41 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {}
+Completed: 304 message:  Time response: 65 ms Request ID: [2ec6e190-a438-49fd-a61d-7ed5dee85fbb]
+
+Completed: 304 message:  Time response: 4 ms Request ID: [2384765a-64b5-4d85-b7a5-a993a1602ee8]
+
+Started GET /API/V1/products for :: ::1 at Sun Mar 10 2024 04:31:57 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {}
+Completed: 304 message:  Time response: 69 ms Request ID: [b0ae8036-41dd-4940-80ed-0798f73b9cc6]
+
+Started GET /API/V1/products for :: ::1 at Sun Mar 10 2024 04:31:57 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {}
+Completed: 304 message:  Time response: 2 ms Request ID: [1de0a538-7706-4f2f-8047-04394f95b920]
+
+Started GET /API/V1/products for :: ::1 at Sun Mar 10 2024 04:35:02 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {}
+Completed: 304 message:  Time response: 174 ms Request ID: [196b27da-514a-44d6-919a-8e04873cad6e]
+
+Started GET /API/V1/products for :: ::1 at Sun Mar 10 2024 04:35:02 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {}
+Completed: 304 message:  Time response: 4 ms Request ID: [c9f36841-7b81-48e5-9fb5-66c211b7318f]
+
+Started POST /api/v1/login for :: ::1 at Sun Mar 10 2024 04:35:12 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {"data":{"email":"john.doe@example.com","password":"123456"}}
+Completed: 500 message:  Time response: 16 ms Request ID: [76ed9217-38ab-49e4-aed2-c780f7a7cb65]
+
+Started POST /api/v1/login for :: ::1 at Sun Mar 10 2024 04:37:31 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {"data":{"email":"john.doe@example.com","password":"123456"}}
+Completed: 500 message:  Time response: 64 ms Request ID: [2ee2140a-383a-41c5-96ae-e7f0d338b76a]
+
+Started POST /api/v1/login for :: ::1 at Sun Mar 10 2024 04:38:34 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {"data":{"email":"test@test.com","password":"123456"}}
+Completed: 200 message:  Time response: 110 ms Request ID: [aebf669e-704a-41a7-9542-0b9f55facc6e]
+
+Started POST /api/v1/login for :: ::1 at Sun Mar 10 2024 04:39:04 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {"data":{"email":"cristian@test.com","password":"2222222"}}
+Completed: 500 message:  Time response: 51 ms Request ID: [694f0329-d1ae-4cc0-b983-400763889360]
+
+Started POST /api/v1/login for :: ::1 at Sun Mar 10 2024 04:39:41 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {"data":{"email":"test@test.com","password":"1235566"}}
+Completed: 500 message:  Time response: 182 ms Request ID: [3c8153c3-cd51-4e4a-9e8e-4c1ac0b81c04]
+
+Started POST /api/v1/login for :: ::1 at Sun Mar 10 2024 04:39:50 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {"data":{"email":"test@test.com","password":"123456"}}
+Completed: 200 message:  Time response: 164 ms Request ID: [e3979b02-fffd-4434-8d21-5d9aaaf4352e]
+
+Started POST /api/v1/login for :: ::1 at Sun Mar 10 2024 04:40:04 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {"data":{"email":"john.doe@example.com","password":"123456"}}
+Completed: 500 message:  Time response: 62 ms Request ID: [53619cb8-ddaa-4fb4-9c67-f567f7667bec]
+
+Started POST /api/v1/login for :: ::1 at Sun Mar 10 2024 04:40:12 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {"data":{"email":"john.doe@example.com","password":"123456"}}
+Completed: 500 message:  Time response: 9 ms Request ID: [4a2ba80c-bff0-48d2-adb9-37199572d522]
+
+Started POST /api/v1/login for :: ::1 at Sun Mar 10 2024 04:40:25 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {"data":{"email":"test@test.com","password":"123456"}}
+Completed: 200 message:  Time response: 196 ms Request ID: [8a02487d-72f8-40bd-b2e1-3fe57bd79dc4]
+
+Started POST /api/v1/register for :: ::1 at Sun Mar 10 2024 04:42:58 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {"data":{"firstName":"jon","lastName":"doe","email":"john.doe@example.com","password":"123456","passwordConfirm":"123456","avatarURL":"pkb.png"}}
+Completed: 201 message:  Time response: 137 ms Request ID: [d5c10d48-0ab5-4d43-9513-3e5ddbca6a41]
+
+Started POST /api/v1/login for :: ::1 at Sun Mar 10 2024 04:43:06 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {"data":{"email":"john.doe@example.com","password":"123456"}}
+Completed: 200 message:  Time response: 76 ms Request ID: [fca19267-40a3-44dd-8cee-0f4db3a691f1]
+
+Started GET /API/V1/products for :: ::1 at Sun Mar 10 2024 04:43:19 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {}
+Completed: 304 message:  Time response: 66 ms Request ID: [9413eadf-dadf-4b77-b7b1-6771d4b205be]
+
+Started GET /API/V1/products for :: ::1 at Sun Mar 10 2024 04:43:19 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {}
+Completed: 304 message:  Time response: 5 ms Request ID: [64570238-75cf-4181-bae9-16d4b9e84ea6]
+
+Started GET /API/V1/products for :: ::1 at Sun Mar 10 2024 04:44:55 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {}
+Started GET /API/V1/products for :: ::1 at Sun Mar 10 2024 04:44:55 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {}
+Completed: 304 message:  Time response: 111 ms Request ID: [694ffc96-a4d8-4bf5-a196-fcbe24d49717]
+
+Completed: 304 message:  Time response: 5 ms Request ID: [83a0bb4e-fc40-4c04-8075-1300a855a51d]
+
+Started POST /api/v1/login for :: ::1 at Sun Mar 10 2024 04:45:09 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {"data":{"email":"john.doe@example.com","password":"123456"}}
+Completed: 200 message:  Time response: 253 ms Request ID: [434a123c-72a0-4eb4-97c0-b012865693fc]
+
+Started POST /api/v1/login for :: ::1 at Sun Mar 10 2024 04:45:48 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {"data":{"email":"john.doe@example.com","password":"123456"}}
+Completed: 200 message:  Time response: 208 ms Request ID: [0de08270-70cf-4c01-ac8d-de1b4020e107]
+
+Started POST /api/v1/login for :: ::1 at Sun Mar 10 2024 04:46:11 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {"data":{"email":"john.doe@example.com","password":"123456"}}
+Completed: 200 message:  Time response: 224 ms Request ID: [99112cd6-e8e4-4dba-88d0-097cb45fb558]
+
+Started POST /api/v1/login for :: ::1 at Sun Mar 10 2024 04:46:54 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {"data":{"email":"john.doe@example.com","password":"123456"}}
+Completed: 200 message:  Time response: 160 ms Request ID: [cde8fa95-0880-460f-8ec0-31042e276f65]
+
+Started POST /api/v1/login for :: ::1 at Sun Mar 10 2024 04:48:13 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {"data":{"email":"test@test.com","password":"123456"}}
+Completed: 200 message:  Time response: 226 ms Request ID: [9cccf2d6-c4f1-455d-85e5-673b8a163b84]
+
+Started POST /api/v1/login for :: ::1 at Sun Mar 10 2024 04:48:28 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {"data":{"email":"john.doe@example.com","password":"123456"}}
+Completed: 200 message:  Time response: 194 ms Request ID: [f0ba8bab-f1f4-464d-9c05-5593ffaa0ca3]
+
+Started GET /API/V1/products for :: ::1 at Sun Mar 10 2024 04:48:42 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {}
+Completed: 304 message:  Time response: 52 ms Request ID: [1a15decd-8f2f-4211-925f-c9a2b1e49a99]
+
+Started GET /API/V1/products for :: ::1 at Sun Mar 10 2024 04:48:43 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {}
+Completed: 304 message:  Time response: 5 ms Request ID: [93be5bf3-9045-4950-9cdf-797fae3dd0a4]
+
+Started POST /api/v1/login for :: ::1 at Sun Mar 10 2024 04:48:56 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {"data":{"email":"test@test.com","password":"123456"}}
+Completed: 200 message:  Time response: 201 ms Request ID: [d5f1565f-7c97-44da-8da8-ab72569e3cbb]
+
+Started GET /API/V1/products for :: ::1 at Sun Mar 10 2024 04:49:00 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {}
+Completed: 304 message:  Time response: 8 ms Request ID: [e5f61ffc-4b82-464a-9448-08e20149f203]
+
+Started GET /API/V1/products for :: ::1 at Sun Mar 10 2024 04:49:00 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {}
+Completed: 304 message:  Time response: 4 ms Request ID: [b20a8c76-fd35-424a-931b-11699f79ce55]
+
+Started GET /API/V1/products for :: ::1 at Sun Mar 10 2024 04:50:06 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {}
+Completed: 304 message:  Time response: 64 ms Request ID: [c4bbbc2c-0c83-4c53-be68-c1559a5a7e50]
+
+Started GET /API/V1/products for :: ::1 at Sun Mar 10 2024 04:50:06 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {}
+Completed: 304 message:  Time response: 6 ms Request ID: [eec0e2dd-6ff6-4e0b-b872-07907d12f35d]
+
+Started POST /api/v1/login for :: ::1 at Sun Mar 10 2024 04:50:17 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {"data":{"email":"john.doe@example.com","password":"123456"}}
+Completed: 200 message:  Time response: 216 ms Request ID: [80998af8-a976-40a7-920c-6bc293c0598f]
+
+Started POST /api/v1/login for :: ::1 at Sun Mar 10 2024 04:50:51 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {"data":{"email":"cristian@test.com","password":"111111"}}
+Completed: 500 message:  Time response: 69 ms Request ID: [d7009df0-302a-43d4-8560-3042a23a9816]
+
+Started POST /api/v1/login for :: ::1 at Sun Mar 10 2024 04:52:41 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {"data":{"email":"john.doe@example.com","password":"123456"}}
+Completed: 200 message:  Time response: 199 ms Request ID: [bdc4a5eb-774b-4b9d-bec0-c29da4f72aa8]
+
+Started POST /api/v1/login for :: ::1 at Sun Mar 10 2024 04:52:54 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {"data":{"email":"john.doe@example.com","password":"123456"}}
+Completed: 200 message:  Time response: 209 ms Request ID: [f645345f-5391-4ff3-9c60-019c666d7b0a]
+
+Started GET /API/V1/products for :: ::1 at Sun Mar 10 2024 04:53:07 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {}
+Completed: 304 message:  Time response: 61 ms Request ID: [230190d3-c073-41d8-84c8-6d634a7c6727]
+
+Started GET /API/V1/products for :: ::1 at Sun Mar 10 2024 04:53:07 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {}
+Completed: 304 message:  Time response: 3 ms Request ID: [dd434dc2-d169-4099-a3ef-00bba7c5eb97]
+
+Started POST /api/v1/login for :: ::1 at Sun Mar 10 2024 04:54:22 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {"data":{"email":"cristian@test.com","password":"123456"}}
+Completed: 500 message:  Time response: 56 ms Request ID: [7db0a96a-ae91-431a-a019-8b7c5d9348d1]
+
+Started POST /api/v1/login for :: ::1 at Sun Mar 10 2024 04:55:19 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {"data":{"email":"cristian@test.com","password":"55555"}}
+Completed: 500 message:  Time response: 56 ms Request ID: [a10d7a64-27fc-4095-8074-78bc1bcc6796]
+
+Started POST /api/v1/login for :: ::1 at Sun Mar 10 2024 04:57:26 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {"data":{"email":"cristian@test.com","password":"151511515"}}
+Completed: 500 message:  Time response: 125 ms Request ID: [6cbde4ce-7c77-4751-ae5a-13700974b895]
+
+Started POST /api/v1/login for :: ::1 at Sun Mar 10 2024 04:57:51 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {"data":{"email":"cristian@test.com","password":"12334666"}}
+Completed: 500 message:  Time response: 105 ms Request ID: [63c3044c-fe26-486d-9717-fbb7152f9e0d]
+
+Started POST /api/v1/login for :: ::1 at Sun Mar 10 2024 04:59:38 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {"data":{"email":"john.doe@example.com","password":"123456"}}
+Completed: 200 message:  Time response: 163 ms Request ID: [892f7939-ea6e-4d39-b136-33f803065970]
+
+Started GET /API/V1/products for :: ::1 at Sun Mar 10 2024 05:00:20 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {}
+Completed: 304 message:  Time response: 71 ms Request ID: [a9cb9f47-08a1-4065-b5c2-ada1ab5ee796]
+
+Started GET /API/V1/products for :: ::1 at Sun Mar 10 2024 05:00:20 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {}
+Completed: 304 message:  Time response: 5 ms Request ID: [9f548fb6-1bbf-43b7-b24a-e00bf1acdbc5]
+
+Started POST /api/v1/products for :: ::1 at Sun Mar 10 2024 05:00:30 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {"product":{"user_id":1,"name":"111","description":"111","price":"111","imageURL":"111"}}
+Completed: 400 message:  Time response: 59 ms Request ID: [b754fade-2ec9-4408-a125-38d7e85a7572]
+
+Started GET /API/V1/products for :: ::1 at Sun Mar 10 2024 05:00:34 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {}
+Completed: 304 message:  Time response: 54 ms Request ID: [2ff9bc68-af4a-4ddd-94bb-daf0ec243937]
+
+Started GET /API/V1/products for :: ::1 at Sun Mar 10 2024 05:00:34 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {}
+Completed: 304 message:  Time response: 8 ms Request ID: [433d756a-cf1e-470e-8854-88af16f3543a]
+
+Started POST /api/v1/products for :: ::1 at Sun Mar 10 2024 05:00:59 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {"product":{"user_id":1,"name":"teste","description":"testet","price":"5000","imageURL":"teste"}}
+Completed: 400 message:  Time response: 68 ms Request ID: [86791bee-5cc3-4a2b-8bdc-f2c9bbf28131]
+
+Started GET /API/V1/products for :: ::1 at Sun Mar 10 2024 05:01:08 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {}
+Completed: 304 message:  Time response: 71 ms Request ID: [298e43c4-2267-4c9f-b778-5e6409cdbfa3]
+
+Started GET /API/V1/products for :: ::1 at Sun Mar 10 2024 05:01:08 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {}
+Completed: 304 message:  Time response: 6 ms Request ID: [68786bf6-4d09-4808-a349-d51592920617]
+
+Started POST /api/v1/products for :: ::1 at Sun Mar 10 2024 05:03:26 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {"product":{"user_id":1,"name":"preuba","description":"1111","price":"50000","imageURL":"https://i.imgur.com/6hOPFRH.jpg"}}
+Completed: 400 message:  Time response: 152 ms Request ID: [ccdeedbc-890c-47e5-92dd-e3d631830df1]
+
+Started GET /API/V1/products for :: ::1 at Sun Mar 10 2024 05:05:01 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {}
+Completed: 304 message:  Time response: 57 ms Request ID: [29ff1ff0-915e-4e91-b320-e3c1d77b77fd]
+
+Started GET /API/V1/products for :: ::1 at Sun Mar 10 2024 05:05:01 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {}
+Completed: 304 message:  Time response: 6 ms Request ID: [61923acb-8003-4e18-917c-8a700da1c243]
+
+Started POST /api/v1/products for :: ::1 at Sun Mar 10 2024 05:05:38 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {"product":{"user_id":1,"name":"hola hoal","description":"hola","price":"55555","imageURL":"https://i.imgur.com/6hOPFRH.jpg"}}
+Completed: 400 message:  Time response: 96 ms Request ID: [f31e7b1a-d0bb-417c-9881-e5b301c7cc6f]
+
+Started POST /api/v1/products for :: ::1 at Sun Mar 10 2024 05:08:26 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {"product":{"user_id":1,"name":"qq","description":"qqq","price":"5000","imageURL":"https://i.imgur.com/6hOPFRH.jpg"}}
+Completed: 400 message:  Time response: 112 ms Request ID: [7ab5bbdf-632d-4a93-a8c9-3c8a343bcd22]
+
+Started POST /api/v1/products for :: ::1 at Sun Mar 10 2024 05:13:15 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {"product":{"user_id":1,"name":"prueba","description":"teste","price":"998","imageURL":"https://i.imgur.com/6hOPFRH.jpg"}}
+Completed: 400 message:  Time response: 110 ms Request ID: [21517bbb-a235-4357-ae15-49c83dbe6da4]
+
+Started POST /API/V1/products for :: ::ffff:127.0.0.1 at Sun Mar 10 2024 05:13:41 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {"product":{"user_id":"3","name":"Columpio azul con estrellas","description":"Descripción del producto","price":50000,"imageURL":"https://i.imgur.com/6hOPFRH.jpg"}}
+Completed: 400 message:  Time response: 52 ms Request ID: [5fceeb2c-e2c2-4afe-9655-d6986c55815c]
+
+Started POST /API/V1/products for :: ::ffff:127.0.0.1 at Sun Mar 10 2024 05:13:46 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {"product":{"user_id":"13","name":"Columpio azul con estrellas","description":"Descripción del producto","price":50000,"imageURL":"https://i.imgur.com/6hOPFRH.jpg"}}
+Completed: 201 message:  Time response: 48 ms Request ID: [c387cce9-237b-4bf0-95c0-63222518ddf4]
+
+Started GET /API/V1/products for :: ::1 at Sun Mar 10 2024 05:13:55 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {}
+Completed: 200 message:  Time response: 7 ms Request ID: [4bd35a43-6639-4538-ac19-2db5a5068872]
+
+Started GET /API/V1/products for :: ::1 at Sun Mar 10 2024 05:13:55 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {}
+Completed: 304 message:  Time response: 5 ms Request ID: [59b83e03-4b81-4358-8414-92b0d92a2bba]
+
+Started GET /API/V1/products for :: ::1 at Sun Mar 10 2024 05:14:29 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {}
+Completed: 304 message:  Time response: 62 ms Request ID: [78f900c8-ad80-437b-9597-d0f45711d11a]
+
+Started GET /API/V1/products for :: ::1 at Sun Mar 10 2024 05:14:29 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {}
+Completed: 304 message:  Time response: 3 ms Request ID: [449dd8fd-f33d-412e-a808-c886595965ea]
+
+Started DELETE /api/v1/products/51 for :: ::1 at Sun Mar 10 2024 05:14:30 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {}
+Completed: 200 message:  Time response: 13 ms Request ID: [c0fa0323-aa87-461f-b73e-2d6d26c5e644]
+
+Started GET /API/V1/products for :: ::1 at Sun Mar 10 2024 05:14:33 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {}
+Completed: 200 message:  Time response: 5 ms Request ID: [bc1b3e47-e68c-4452-8246-fa819bfd1270]
+
+Started GET /API/V1/products for :: ::1 at Sun Mar 10 2024 05:14:33 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {}
+Completed: 304 message:  Time response: 5 ms Request ID: [d2ad3f77-b02d-456d-b32e-5c14c1a4dc7c]
+
+Started POST /api/v1/products for :: ::1 at Sun Mar 10 2024 05:16:01 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {"product":{"user_id":1,"name":"prueba","description":"teste","price":"5000","imageURL":"https://i.imgur.com/oybc97r.jpg"}}
+Completed: 201 message:  Time response: 111 ms Request ID: [b880a4b8-1e6b-41dd-b557-adbac12655ae]
+
+Started GET /API/V1/products for :: ::1 at Sun Mar 10 2024 05:16:05 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {}
+Completed: 200 message:  Time response: 7 ms Request ID: [658b4a09-b651-4270-9ca2-3f28b190f653]
+
+Started GET /API/V1/products for :: ::1 at Sun Mar 10 2024 05:16:05 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {}
+Completed: 304 message:  Time response: 6 ms Request ID: [48a8be72-6c68-4e04-bfc7-3ad5e9dfb3f1]
+
+Started DELETE /api/v1/products/52 for :: ::1 at Sun Mar 10 2024 05:16:07 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {}
+Completed: 200 message:  Time response: 10 ms Request ID: [0265f95f-7fae-4c23-ae86-e5b7cb9d7fd6]
+
+Started GET /API/V1/products for :: ::1 at Sun Mar 10 2024 05:16:09 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {}
+Completed: 200 message:  Time response: 4 ms Request ID: [2232b9a9-cb00-422f-8d24-9bf974145755]
+
+Started GET /API/V1/products for :: ::1 at Sun Mar 10 2024 05:16:09 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {}
+Completed: 304 message:  Time response: 4 ms Request ID: [955db30f-4dc4-4d3a-879c-5441cf19a4ad]
+
+Started POST /api/v1/login for :: ::1 at Sun Mar 10 2024 05:17:25 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {"data":{"email":"test@test.com","password":"123456"}}
+Completed: 200 message:  Time response: 343 ms Request ID: [a461144d-fe3f-4f52-a459-b76b0a064502]
+
+Started POST /api/v1/login for :: ::1 at Sun Mar 10 2024 05:17:44 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {"data":{"email":"john.doe@example.com","password":"123456"}}
+Completed: 200 message:  Time response: 236 ms Request ID: [b486144a-02cf-498c-b0d8-a24814453f99]
+
+Started POST /api/v1/login for :: ::1 at Sun Mar 10 2024 05:22:28 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {"data":{"email":"john.doe@example.com","password":"123456"}}
+Completed: 200 message:  Time response: 397 ms Request ID: [2ec3a543-d2a4-47ef-81d3-9dbd5d46a3fb]
+
+Started POST /api/v1/login for :: ::1 at Sun Mar 10 2024 05:23:22 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {"data":{"email":"john.doe@example.com","password":"123456"}}
+Completed: 200 message:  Time response: 270 ms Request ID: [767a2ec8-43c6-4a68-ae94-8a292c08ea0f]
+
+Started POST /api/v1/login for :: ::1 at Sun Mar 10 2024 05:25:19 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {"data":{"email":"john.doe@example.com","password":"123456"}}
+Completed: 200 message:  Time response: 281 ms Request ID: [015773af-fb77-400d-bb7e-3742f810fcaf]
+
+Started GET /API/V1/products for :: ::1 at Sun Mar 10 2024 05:25:19 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {}
+Completed: 304 message:  Time response: 29 ms Request ID: [1c40388e-fafe-4a1e-88e6-6fd58cfb19f5]
+
+Started GET /API/V1/products for :: ::1 at Sun Mar 10 2024 05:25:19 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {}
+Completed: 304 message:  Time response: 6 ms Request ID: [ae667efb-52b0-4b2e-a9d9-dadb6096f452]
+
+Started POST /api/v1/login for :: ::1 at Sun Mar 10 2024 05:25:32 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {"data":{"email":"test@test.com","password":"123456"}}
+Completed: 200 message:  Time response: 244 ms Request ID: [2b69b07c-0dca-4b58-97d3-3dfabf6ac0f8]
+
+Started POST /api/v1/login for :: ::1 at Sun Mar 10 2024 05:26:48 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {"data":{"email":"john.doe@example.com","password":"123456"}}
+Completed: 200 message:  Time response: 289 ms Request ID: [a9de7863-5e7b-4a91-aed2-3ac2eeff9ecf]
+
+Started GET /API/V1/products for :: ::1 at Sun Mar 10 2024 05:26:49 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {}
+Started GET /API/V1/products for :: ::1 at Sun Mar 10 2024 05:26:49 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {}
+Completed: 304 message:  Time response: 7 ms Request ID: [eb9953c1-939f-49e1-8672-6d287b815a11]
+
+Completed: 304 message:  Time response: 7 ms Request ID: [6dabec5b-e615-4039-b7ac-adc7cfc4b006]
+
+Started GET /API/V1/products for :: ::1 at Sun Mar 10 2024 05:27:03 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {}
+Completed: 304 message:  Time response: 51 ms Request ID: [0c740316-4f15-4199-9cf8-97cfb7fcfb1b]
+
+Started GET /API/V1/products for :: ::1 at Sun Mar 10 2024 05:27:03 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {}
+Completed: 304 message:  Time response: 7 ms Request ID: [7abd41fa-2b29-4906-8278-747a70955c0f]
+
+Started POST /api/v1/login for :: ::1 at Sun Mar 10 2024 05:30:23 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {"data":{"email":"test@test.com","password":"123456"}}
+Completed: 200 message:  Time response: 247 ms Request ID: [ea4f568c-6b40-4c9d-bc20-2c2d9fc03ec4]
+
+Started POST /api/v1/login for :: ::1 at Sun Mar 10 2024 05:30:33 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {"data":{"email":"john.doe@example.com","password":"123456"}}
+Completed: 200 message:  Time response: 204 ms Request ID: [c7f6f99a-ac76-4d62-aaa6-472eb74fee5e]
+
+Started GET /API/V1/products for :: ::1 at Sun Mar 10 2024 05:30:34 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {}
+Completed: 304 message:  Time response: 6 ms Request ID: [85922c53-7224-468a-99b7-11c3718e2008]
+
+Started GET /API/V1/products for :: ::1 at Sun Mar 10 2024 05:30:34 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {}
+Completed: 304 message:  Time response: 5 ms Request ID: [333efd70-38b0-4b39-b252-9fdbddfb3a9f]
+
+Started POST /api/v1/login for :: ::1 at Sun Mar 10 2024 05:31:30 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {"data":{"email":"john.doe@example.com","password":"123456"}}
+Completed: 200 message:  Time response: 211 ms Request ID: [1b45d72f-40fb-4d28-873f-f602bd472683]
+
+Started GET /API/V1/products for :: ::1 at Sun Mar 10 2024 05:31:31 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {}
+Completed: 304 message:  Time response: 6 ms Request ID: [79205f45-168e-404a-b14f-e6f88b8c881e]
+
+Started GET /API/V1/products for :: ::1 at Sun Mar 10 2024 05:31:31 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {}
+Completed: 304 message:  Time response: 7 ms Request ID: [cffec052-ad45-4c64-98ad-e91eb9d4ab96]
+
+Started POST /api/v1/login for :: ::1 at Sun Mar 10 2024 05:41:37 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {"data":{"email":"john.doe@example.com","password":"123456"}}
+Completed: 200 message:  Time response: 142 ms Request ID: [544ef4c4-e943-4755-9c19-b9310a4119be]
+
+Started GET /API/V1/products for :: ::1 at Sun Mar 10 2024 05:41:37 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {}
+Completed: 304 message:  Time response: 22 ms Request ID: [217c127f-b14b-4fb9-8e39-53926431a8e4]
+
+Started GET /API/V1/products for :: ::1 at Sun Mar 10 2024 05:41:37 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {}
+Completed: 304 message:  Time response: 7 ms Request ID: [c6f4b323-9d2d-432f-a825-d7b4a582cb82]
+
+Started GET /API/V1/products for :: ::1 at Sun Mar 10 2024 05:44:01 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {}
+Completed: 304 message:  Time response: 42 ms Request ID: [a4317ea4-391a-433c-85c0-dbf31c14b418]
+
+Started GET /API/V1/products for :: ::1 at Sun Mar 10 2024 05:44:01 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {}
+Completed: 304 message:  Time response: 3 ms Request ID: [97fcbf93-e957-4c07-b11a-9c045aad1bb9]
+
+Started GET /API/V1/products for :: ::1 at Sun Mar 10 2024 05:44:09 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {}
+Completed: 304 message:  Time response: 7 ms Request ID: [1d95e1fd-ebe6-4b85-98cf-e833aaa4508a]
+
+Started GET /API/V1/products for :: ::1 at Sun Mar 10 2024 05:44:09 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {}
+Completed: 304 message:  Time response: 11 ms Request ID: [1eb9d625-a026-4066-b077-d59d31d87f05]
+
+Started GET /API/V1/products for :: ::1 at Sun Mar 10 2024 05:46:08 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {}
+Completed: 304 message:  Time response: 57 ms Request ID: [7f8051fb-a1ec-41c1-819d-fc61f1ce2a8c]
+
+Started GET /API/V1/products for :: ::1 at Sun Mar 10 2024 05:46:08 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {}
+Completed: 304 message:  Time response: 3 ms Request ID: [bf685678-986a-4410-a749-8f101be2ae83]
+
+Started GET /API/V1/products for :: ::1 at Sun Mar 10 2024 05:49:14 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {}
+Completed: 304 message:  Time response: 39 ms Request ID: [ce214df9-81d9-4aee-944d-d8d05fc93b19]
+
+Started GET /API/V1/products for :: ::1 at Sun Mar 10 2024 05:49:14 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {}
+Completed: 304 message:  Time response: 2 ms Request ID: [f90536da-3501-48e9-a22f-c698cc255333]
+
+Started GET /API/V1/products for :: ::1 at Sun Mar 10 2024 05:49:20 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {}
+Completed: 304 message:  Time response: 5 ms Request ID: [8304892e-7a02-47a0-91b4-3ca3d8c6b442]
+
+Started GET /API/V1/products for :: ::1 at Sun Mar 10 2024 05:49:20 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {}
+Completed: 304 message:  Time response: 5 ms Request ID: [7962528d-0b46-43c2-a78c-1b3353cace60]
+
+Started GET /API/V1/products for :: ::1 at Sun Mar 10 2024 05:50:15 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {}
+Completed: 304 message:  Time response: 52 ms Request ID: [cb95cc0c-e5bc-48f3-945f-ea4322fdb433]
+
+Started GET /API/V1/products for :: ::1 at Sun Mar 10 2024 05:50:15 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {}
+Completed: 304 message:  Time response: 4 ms Request ID: [473d099c-73a5-4038-a712-4eca9937d490]
+
+Started GET /API/V1/products for :: ::1 at Sun Mar 10 2024 05:50:20 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {}
+Completed: 304 message:  Time response: 4 ms Request ID: [89f15e8a-c80e-47bc-9d4f-34761c000898]
+
+Started GET /API/V1/products for :: ::1 at Sun Mar 10 2024 05:50:20 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {}
+Completed: 304 message:  Time response: 4 ms Request ID: [230a5cbc-b078-47d4-982f-5f80c3269539]
+
+Started GET /API/V1/products for :: ::1 at Sun Mar 10 2024 05:50:22 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {}
+Completed: 304 message:  Time response: 7 ms Request ID: [42696b8e-77d1-4748-8281-1afef04d4512]
+
+Started GET /API/V1/products for :: ::1 at Sun Mar 10 2024 05:50:22 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {}
+Completed: 304 message:  Time response: 6 ms Request ID: [8126a4d4-a37a-4ccf-a118-331bfeb6eafe]
+
+Started GET /API/V1/products for :: ::1 at Sun Mar 10 2024 05:50:24 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {}
+Completed: 304 message:  Time response: 7 ms Request ID: [67d1b02e-70b9-49e1-bdec-2319b1fb5765]
+
+Started GET /API/V1/products for :: ::1 at Sun Mar 10 2024 05:50:24 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {}
+Completed: 304 message:  Time response: 5 ms Request ID: [559333fa-a4ef-49b8-ae52-eed264fdaf79]
+
+Started GET /API/V1/products for :: ::1 at Sun Mar 10 2024 05:50:31 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {}
+Completed: 304 message:  Time response: 5 ms Request ID: [6b70950a-a2cb-4c96-98f9-65b6e28ce6ec]
+
+Started GET /API/V1/products for :: ::1 at Sun Mar 10 2024 05:50:31 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {}
+Completed: 304 message:  Time response: 8 ms Request ID: [f33295ca-6062-4fda-86b1-63af51d30bb4]
+
+Started GET /API/V1/products for :: ::1 at Sun Mar 10 2024 05:50:35 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {}
+Completed: 304 message:  Time response: 5 ms Request ID: [4c54259c-00b1-411b-81f0-931c5087088a]
+
+Started GET /API/V1/products for :: ::1 at Sun Mar 10 2024 05:50:35 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {}
+Completed: 304 message:  Time response: 8 ms Request ID: [3eb4edfa-3909-46b8-b2ec-197c6dac1dd1]
+
+Started GET /API/V1/products for :: ::1 at Sun Mar 10 2024 05:50:50 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {}
+Completed: 304 message:  Time response: 39 ms Request ID: [3920f0e1-f65b-416e-b8f7-7a7419438c8a]
+
+Started GET /API/V1/products for :: ::1 at Sun Mar 10 2024 05:50:50 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {}
+Completed: 304 message:  Time response: 3 ms Request ID: [2b5ebd12-c291-4ccd-ad21-ecd6e4ac89ee]
+
+Started GET /API/V1/products for :: ::1 at Sun Mar 10 2024 05:50:54 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {}
+Completed: 304 message:  Time response: 5 ms Request ID: [104b9649-b2a6-4a51-9bd1-fc322fa8126f]
+
+Started GET /API/V1/products for :: ::1 at Sun Mar 10 2024 05:50:54 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {}
+Completed: 304 message:  Time response: 6 ms Request ID: [91bf7e23-ae10-4a81-8773-3dc2def39a17]
+
+Started GET /API/V1/products for :: ::1 at Sun Mar 10 2024 05:51:00 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {}
+Completed: 304 message:  Time response: 4 ms Request ID: [0ce60a82-2d4f-4995-9bef-ff0f22489c74]
+
+Started GET /API/V1/products for :: ::1 at Sun Mar 10 2024 05:51:00 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {}
+Completed: 304 message:  Time response: 6 ms Request ID: [40259d94-5736-47f9-9e17-3c08741c2eb4]
+
+Started POST /api/v1/login for :: ::1 at Sun Mar 10 2024 05:53:31 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {"data":{"email":"john.doe@example.com","password":"123456"}}
+Completed: 200 message:  Time response: 198 ms Request ID: [d82eb7c2-2593-4470-b5e6-ef77a7475ff4]
+
+Started GET /API/V1/products for :: ::1 at Sun Mar 10 2024 05:53:32 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {}
+Started GET /API/V1/products for :: ::1 at Sun Mar 10 2024 05:53:32 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {}
+Completed: 304 message:  Time response: 5 ms Request ID: [1d5da5be-559f-45ef-a72a-86f0e5fc2772]
+
+Completed: 304 message:  Time response: 7 ms Request ID: [6c164261-4531-43a2-95af-434750dba2f1]
+
+Started GET /API/V1/products for :: ::1 at Sun Mar 10 2024 05:53:38 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {}
+Completed: 304 message:  Time response: 4 ms Request ID: [368cfd2c-47cc-469b-bd4b-48ad98e5cf73]
+
+Started GET /API/V1/products for :: ::1 at Sun Mar 10 2024 05:53:38 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {}
+Completed: 304 message:  Time response: 5 ms Request ID: [ced143b0-70a2-4eb3-9818-4ed2f2fbc0ad]
+
+Started GET /API/V1/products for :: ::1 at Sun Mar 10 2024 05:55:24 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {}
+Completed: 304 message:  Time response: 45 ms Request ID: [c9ed81ff-a753-40fa-89ad-f7349895d1ef]
+
+Started GET /API/V1/products for :: ::1 at Sun Mar 10 2024 05:55:24 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {}
+Completed: 304 message:  Time response: 3 ms Request ID: [d6a4b864-bfcc-46bc-b7f4-ce07453550a9]
+
+Started GET /API/V1/products for :: ::1 at Sun Mar 10 2024 05:56:42 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {}
+Completed: 304 message:  Time response: 49 ms Request ID: [918bd277-d5ae-46c7-bb2c-00eb8ee4b317]
+
+Started GET /API/V1/products for :: ::1 at Sun Mar 10 2024 05:56:42 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {}
+Completed: 304 message:  Time response: 4 ms Request ID: [e32351ce-6a49-48a6-bb41-20bcccd09bcd]
+
+Started GET /API/V1/products for :: ::1 at Sun Mar 10 2024 05:57:18 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {}
+Completed: 304 message:  Time response: 50 ms Request ID: [8d12fc7c-bf8c-46fc-bb21-9a6bed03d852]
+
+Started GET /API/V1/products for :: ::1 at Sun Mar 10 2024 05:57:18 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {}
+Completed: 304 message:  Time response: 2 ms Request ID: [5660b967-d935-4402-b9a3-2084a0c08c22]
+
+Started GET /API/V1/products for :: ::1 at Sun Mar 10 2024 05:57:22 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {}
+Completed: 304 message:  Time response: 5 ms Request ID: [aaefcdb4-c1f1-4d00-9a0d-8fdf62ad726d]
+
+Started GET /API/V1/products for :: ::1 at Sun Mar 10 2024 05:57:22 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {}
+Completed: 304 message:  Time response: 4 ms Request ID: [6372f9fb-4a9c-4052-a59f-64be7b87aa81]
+
+Started GET /API/V1/products for :: ::1 at Sun Mar 10 2024 05:58:26 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {}
+Completed: 304 message:  Time response: 39 ms Request ID: [7a155164-7b13-4a5d-b539-8b7143d70650]
+
+Started GET /API/V1/products for :: ::1 at Sun Mar 10 2024 05:58:26 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {}
+Completed: 304 message:  Time response: 2 ms Request ID: [9234d9b1-b251-4446-81d4-9b7324ef218a]
+
+Started GET /API/V1/products for :: ::1 at Sun Mar 10 2024 05:58:46 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {}
+Completed: 304 message:  Time response: 49 ms Request ID: [f25378de-f7a6-4187-be75-fc8e66055aea]
+
+Started GET /API/V1/products for :: ::1 at Sun Mar 10 2024 05:58:46 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {}
+Completed: 304 message:  Time response: 3 ms Request ID: [c6bd2bfe-e4eb-4f5d-8a61-b800f139ae72]
+
+Started GET /API/V1/products for :: ::1 at Sun Mar 10 2024 05:58:48 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {}
+Completed: 304 message:  Time response: 4 ms Request ID: [0c275690-ca59-4743-8384-b31f037f04eb]
+
+Started GET /API/V1/products for :: ::1 at Sun Mar 10 2024 05:58:48 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {}
+Completed: 304 message:  Time response: 5 ms Request ID: [1b359f45-d062-49c3-8bfd-1a7fdf6e943d]
+
+Started GET /API/V1/products for :: ::1 at Sun Mar 10 2024 05:59:36 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {}
+Completed: 304 message:  Time response: 40 ms Request ID: [6988ea5e-cd91-493c-95ed-209078fecfa8]
+
+Started GET /API/V1/products for :: ::1 at Sun Mar 10 2024 05:59:36 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {}
+Completed: 304 message:  Time response: 3 ms Request ID: [c138a700-2e44-40a5-955f-15717c719ed5]
+
+Started GET /API/V1/products for :: ::1 at Sun Mar 10 2024 05:59:38 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {}
+Started GET /API/V1/products for :: ::1 at Sun Mar 10 2024 05:59:38 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {}
+Completed: 304 message:  Time response: 2 ms Request ID: [3871fedd-7648-46de-b97a-751c89dd56ed]
+
+Completed: 304 message:  Time response: 3 ms Request ID: [a15daa4c-0c5b-403f-a45b-320fa5af0ad5]
+
+Started GET /API/V1/products for :: ::1 at Sun Mar 10 2024 05:59:43 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {}
+Completed: 304 message:  Time response: 6 ms Request ID: [64f31bf8-14a7-498b-9f69-b6ceca4956a9]
+
+Started GET /API/V1/products for :: ::1 at Sun Mar 10 2024 05:59:43 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {}
+Completed: 304 message:  Time response: 6 ms Request ID: [10bc5cac-bb71-4724-86eb-5a41b9fbb8f3]
+
+Started POST /api/v1/login for :: ::1 at Sun Mar 10 2024 06:00:01 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {"data":{"email":"test@test.com","password":"123456"}}
+Completed: 200 message:  Time response: 92 ms Request ID: [5e4ed48b-50eb-4c24-947c-27e6929ee9e1]
+
+Started POST /api/v1/login for :: ::1 at Sun Mar 10 2024 06:00:21 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {"data":{"email":"cristian@test.com","password":"5555555"}}
+Completed: 500 message:  Time response: 35 ms Request ID: [67bb5183-0287-4803-85c0-8631ce3aa85e]
+
+Started POST /api/v1/login for :: ::1 at Sun Mar 10 2024 06:00:29 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {"data":{"email":"john.doe@example.com","password":"123456"}}
+Completed: 200 message:  Time response: 63 ms Request ID: [e6f644e7-86f7-40ff-b140-57ecf035cf5e]
+
+Started GET /API/V1/products for :: ::1 at Sun Mar 10 2024 06:00:30 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {}
+Completed: 304 message:  Time response: 5 ms Request ID: [d9622607-5892-4062-9133-8472fcc15a51]
+
+Started GET /API/V1/products for :: ::1 at Sun Mar 10 2024 06:00:30 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {}
+Completed: 304 message:  Time response: 5 ms Request ID: [441c7cb7-85f2-46b7-93ff-9beeb346aa08]
+
+Started GET /API/V1/products for :: ::1 at Sun Mar 10 2024 06:00:40 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {}
+Completed: 304 message:  Time response: 52 ms Request ID: [c1b1aa38-8bd1-4476-a31a-9151f948cf37]
+
+Started GET /API/V1/products for :: ::1 at Sun Mar 10 2024 06:00:40 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {}
+Completed: 304 message:  Time response: 2 ms Request ID: [d5cded55-2b07-49eb-8212-9cf25877ccff]
+
+Started GET /API/V1/products for :: ::1 at Sun Mar 10 2024 06:02:40 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {}
+Completed: 304 message:  Time response: 37 ms Request ID: [7e70d018-085c-4048-a9d6-009861c94805]
+
+Started GET /API/V1/products for :: ::1 at Sun Mar 10 2024 06:02:40 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {}
+Completed: 304 message:  Time response: 3 ms Request ID: [77ca5197-9e03-4161-b50a-56c66407cc9e]
+
+Started GET /API/V1/products for :: ::1 at Sun Mar 10 2024 06:02:41 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {}
+Completed: 304 message:  Time response: 6 ms Request ID: [ec5d187b-e8fd-489a-89ec-0795ef80b8a3]
+
+Started GET /API/V1/products for :: ::1 at Sun Mar 10 2024 06:02:41 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {}
+Completed: 304 message:  Time response: 5 ms Request ID: [9e69a52c-a58f-4e18-8f32-4d08a5d99d44]
+
+Started GET /API/V1/products for :: ::1 at Sun Mar 10 2024 06:03:18 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {}
+Completed: 304 message:  Time response: 41 ms Request ID: [760acf28-86de-42c4-b5c5-4a48a676d5dd]
+
+Started GET /API/V1/products for :: ::1 at Sun Mar 10 2024 06:03:18 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {}
+Completed: 304 message:  Time response: 2 ms Request ID: [6b9a70ee-bc02-4fdb-8524-91c0efa6ae8b]
+
+Started GET /API/V1/products for :: ::1 at Sun Mar 10 2024 06:04:42 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {}
+Started GET /API/V1/products for :: ::1 at Sun Mar 10 2024 06:04:42 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {}
+Completed: 304 message:  Time response: 37 ms Request ID: [1d009645-6781-46dc-a03c-40ef160a0f2d]
+
+Completed: 304 message:  Time response: 1 ms Request ID: [cfd0fe04-3515-402d-97e6-902bd09d1dcd]
+
+Started GET /API/V1/products for :: ::1 at Sun Mar 10 2024 06:04:45 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {}
+Completed: 304 message:  Time response: 4 ms Request ID: [1341847f-6561-4ae8-9042-4cb6f0187286]
+
+Started GET /API/V1/products for :: ::1 at Sun Mar 10 2024 06:04:45 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {}
+Completed: 304 message:  Time response: 7 ms Request ID: [3b150c48-291a-4c15-8595-4af0f6768974]
+
+Started GET /API/V1/products for :: ::1 at Sun Mar 10 2024 06:04:47 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {}
+Started GET /API/V1/products for :: ::1 at Sun Mar 10 2024 06:04:47 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {}
+Completed: 304 message:  Time response: 5 ms Request ID: [c520ffff-235b-4446-af06-56869033f544]
+
+Completed: 304 message:  Time response: 3 ms Request ID: [e415e2f4-4b4e-46c6-9f67-83335c9fe92c]
+
+Started GET /API/V1/products for :: ::1 at Sun Mar 10 2024 06:05:01 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {}
+Started GET /API/V1/products for :: ::1 at Sun Mar 10 2024 06:05:01 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {}
+Completed: 304 message:  Time response: 48 ms Request ID: [3fc5716e-7348-481b-abd2-c782c2071436]
+
+Completed: 304 message:  Time response: 3 ms Request ID: [0a667ecb-4759-4ac1-b4a5-4a13140bdf2c]
+
+Started GET /API/V1/products for :: ::1 at Sun Mar 10 2024 06:09:31 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {}
+Completed: 304 message:  Time response: 44 ms Request ID: [dce4ee28-cc95-4a12-a821-6d2ab61489eb]
+
+Started GET /API/V1/products for :: ::1 at Sun Mar 10 2024 06:09:31 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {}
+Completed: 304 message:  Time response: 4 ms Request ID: [47f17184-34b5-4458-a35a-e6ba3aa668ec]
+
+Started GET /API/V1/products for :: ::1 at Sun Mar 10 2024 06:09:33 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {}
+Completed: 304 message:  Time response: 6 ms Request ID: [b81612ab-e7ee-4d52-8035-d1132aa23e4d]
+
+Started GET /API/V1/products for :: ::1 at Sun Mar 10 2024 06:09:33 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {}
+Completed: 304 message:  Time response: 7 ms Request ID: [818d3d06-8a50-432d-862d-d2daa39e3ea4]
+
+Started GET /API/V1/products for :: ::1 at Sun Mar 10 2024 06:10:04 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {}
+Completed: 304 message:  Time response: 42 ms Request ID: [7b017b7e-52ad-46b2-a70c-4c59e35be848]
+
+Started GET /API/V1/products for :: ::1 at Sun Mar 10 2024 06:10:04 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {}
+Completed: 304 message:  Time response: 2 ms Request ID: [f4b0afcd-339e-4f50-b313-3f7fe80a3847]
+
+Started GET /API/V1/products for :: ::1 at Sun Mar 10 2024 06:11:03 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {}
+Completed: 304 message:  Time response: 59 ms Request ID: [fa32144e-404e-46df-83b9-7079422ef579]
+
+Started GET /API/V1/products for :: ::1 at Sun Mar 10 2024 06:11:03 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {}
+Completed: 304 message:  Time response: 3 ms Request ID: [4683d3fd-fd73-421f-9cc1-2e70e83336b2]
+
+Started POST /api/v1/login for :: ::1 at Sun Mar 10 2024 06:13:54 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {"data":{"email":"test@test.com","password":"123456"}}
+Completed: 200 message:  Time response: 211 ms Request ID: [ea7e4b26-aaa4-432b-af9e-50f62eb83091]
+
+Started GET /API/V1/products for :: ::1 at Sun Mar 10 2024 06:14:02 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {}
+Completed: 304 message:  Time response: 4 ms Request ID: [fe7ea094-cbff-4a05-83e5-fd8a24e9ceae]
+
+Started GET /API/V1/products for :: ::1 at Sun Mar 10 2024 06:14:02 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {}
+Completed: 304 message:  Time response: 3 ms Request ID: [85c5b52a-bbd6-48ac-a043-a67b61c86a9e]
+
+Started GET /API/V1/products for :: ::1 at Sun Mar 10 2024 06:14:22 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {}
+Started GET /API/V1/products for :: ::1 at Sun Mar 10 2024 06:14:22 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {}
+Completed: 304 message:  Time response: 38 ms Request ID: [272fec02-bc2a-47ef-9879-08026af73b85]
+
+Completed: 304 message:  Time response: 6 ms Request ID: [3ff90430-ede3-4df5-a7a2-326ad5fdec58]
+
+Started GET /API/V1/products for :: ::1 at Sun Mar 10 2024 06:14:25 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {}
+Completed: 304 message:  Time response: 6 ms Request ID: [1c2de243-2aac-47bf-8f8f-c6836f8f30fc]
+
+Started GET /API/V1/products for :: ::1 at Sun Mar 10 2024 06:14:25 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {}
+Completed: 304 message:  Time response: 6 ms Request ID: [a5d4fb70-ff7c-42ad-b8da-b80cad64f49e]
+
+Started GET /API/V1/products for :: ::1 at Sun Mar 10 2024 06:14:30 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {}
+Completed: 304 message:  Time response: 4 ms Request ID: [b88f50f3-7515-4118-beef-3f18517f91e9]
+
+Started GET /API/V1/products for :: ::1 at Sun Mar 10 2024 06:14:30 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {}
+Completed: 304 message:  Time response: 4 ms Request ID: [7375cc35-559c-4d61-902f-78f609ce02a4]
+
+Started GET /API/V1/products for :: ::1 at Sun Mar 10 2024 06:24:11 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {}
+Started GET /API/V1/products for :: ::1 at Sun Mar 10 2024 06:24:11 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {}
+Completed: 304 message:  Time response: 57 ms Request ID: [bd7fa77e-0679-40f2-96f4-e3cdd528458e]
+
+Completed: 304 message:  Time response: 5 ms Request ID: [1cc98821-2859-472f-8840-1dbe6d90bf26]
