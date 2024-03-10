@@ -1,5 +1,6 @@
 import { createContext, useEffect, useState } from 'react'
 import { jwtDecode } from 'jwt-decode'
+import { useNavigate } from 'react-router-dom'
 
 export const UserContext = createContext()
 
@@ -20,9 +21,9 @@ const UserProvider = ({ children }) => {
     }
   }, [token])
 
-  const createUser = async (data) => {
-    console.log(data)
+  const navigate = useNavigate()
 
+  const createUser = async (data) => {
     const response = await fetch('http://localhost:3000/api/v1/register', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
@@ -42,21 +43,21 @@ const UserProvider = ({ children }) => {
     })
 
     const user = await response.json()
+    console.log(user)
+
     setToken(user.token || null)
 
-    // Aquí verificamos el role_id del usuario y redirigimos en consecuencia
     if (user.token && user.userData) {
       if (user.userData.role_id === 1) {
-        // Si el usuario tiene role_id 1, redirigir a una sección específica para ese tipo de usuario
-        window.location.href = '/admin/products'
+        navigate('/admin/products')
       } else if (user.userData.role_id === 2) {
-        // Si el usuario tiene role_id 2, redirigir a una sección específica para ese tipo de usuario
-        window.location.href = '/homeUser'
+        navigate('/homeUser')
       } else {
-        // Si el usuario tiene otro role_id o si hay algún error, redirigir a una sección predeterminada
-        window.location.href = '/'
+        navigate('/')
       }
-      console.log(user.userData.role_id)
+    }
+
+    if (response && response.token) {
     }
 
     return user
@@ -75,6 +76,16 @@ const UserProvider = ({ children }) => {
     console.log(googleUser)
 
     setToken(googleUser.token || null)
+
+    if (googleUser.token && googleUser.userData) {
+      if (googleUser.userData.role_id === 1) {
+        navigate('/admin/products')
+      } else if (googleUser.userData.role_id === 2) {
+        navigate('/homeUser')
+      } else {
+        navigate('/')
+      }
+    }
 
     return googleUser
   }

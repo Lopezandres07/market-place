@@ -10,16 +10,16 @@ import { GoogleOAuthProvider } from '@react-oauth/google'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <GoogleOAuthProvider clientId='532934723345-md1l4accaej51e91i140vcqbegrp7bv0.apps.googleusercontent.com'>
-      <ProductsProvider>
-        <FavoritesProvider>
-          <UserProvider>
-            <BrowserRouter>
+    <BrowserRouter>
+      <GoogleOAuthProvider clientId={import.meta.env.VITE_GOOGLE_CLIENT_ID}>
+        <ProductsProvider>
+          <FavoritesProvider>
+            <UserProvider>
               <App />
-            </BrowserRouter>
-          </UserProvider>
-        </FavoritesProvider>
-      </ProductsProvider>
-    </GoogleOAuthProvider>
+            </UserProvider>
+          </FavoritesProvider>
+        </ProductsProvider>
+      </GoogleOAuthProvider>
+    </BrowserRouter>
   </React.StrictMode>
 )

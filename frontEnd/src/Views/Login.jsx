@@ -1,12 +1,10 @@
 import React, { useContext } from 'react'
 import { useForm } from 'react-hook-form'
 import { UserContext } from '../providers/UserProvider'
-import { useNavigate } from 'react-router-dom'
 import { GoogleLogin } from '@react-oauth/google'
 
 const Login = () => {
   const { loginWithEmailAndPassword, loginWithGoogle } = useContext(UserContext)
-  const navigate = useNavigate()
 
   const {
     register,
@@ -19,10 +17,6 @@ const Login = () => {
     const response = await loginWithEmailAndPassword(data)
     console.log('login: ', response)
 
-    if (response && response.token) {
-      navigate('/homeUser')
-    }
-
     reset()
   })
 
@@ -30,12 +24,6 @@ const Login = () => {
     const { credential } = data
 
     const response = await loginWithGoogle(credential)
-
-    console.log(response)
-
-    if (response && response.token) {
-      navigate('/homeUser')
-    }
   }
 
   const handleGoogleLoginFailure = () => {

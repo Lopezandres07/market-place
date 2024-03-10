@@ -28,7 +28,8 @@ const loginUser = async (req, res) => {
       if (!validPassword) {
         res.status(500).json({ error: 'Invalid password' })
       } else {
-        const { email, firstname, lastname } = findUser
+        const { email, firstname, lastname, role_id } = findUser
+        console.log(findUser)
 
         const token = jwt.sign({ email }, process.env.JWT_SECRET, {
           expiresIn: '1h',
@@ -47,6 +48,21 @@ const loginUser = async (req, res) => {
   }
 }
 
+const handleNewUser = async (res, newUser) => {
+  const { email, firstname, lastname, role_id } = newUser
+
+  const token = jwt.sign({ email }, process.env.JWT_SECRET, {
+    expiresIn: '1h',
+  })
+
+  res.status(200).json({
+    message: `Bienvenido ${firstname} ${lastname}, has iniciado sesion`,
+    code: 200,
+    token,
+    userData: { email, firstname, lastname, role_id },
+  })
+}
+
 const googleLogin = async (req, res) => {
   const { data } = req.body
 
@@ -56,7 +72,7 @@ const googleLogin = async (req, res) => {
     if (!findUser) {
       try {
         const newUser = await createGoogleUser(data)
-        res.status(201).json({ success: true, newUser })
+        await handleNewUser(res, newUser)
       } catch (error) {
         res.status(400).json(error.message)
       }
@@ -66,7 +82,7 @@ const googleLogin = async (req, res) => {
       if (!validPassword) {
         res.status(500).json({ error: error.message })
       } else {
-        const { email, firstname, lastname } = findUser
+        const { email, firstname, lastname, role_id } = findUser
         const token = jwt.sign({ email }, process.env.JWT_SECRET, {
           expiresIn: '1h',
         })
@@ -74,6 +90,7 @@ const googleLogin = async (req, res) => {
           message: `Bienvenido ${firstname} ${lastname}, has iniciado sesion`,
           code: 200,
           token,
+          userData: { email, firstname, lastname, role_id },
         })
       }
     }

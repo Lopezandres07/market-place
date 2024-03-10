@@ -1322,3 +1322,71 @@ Completed: 200 message:  Time response: 241 ms Request ID: [4cffb131-9857-4a6b-a
 Started POST /api/v1/googleLogin for :: ::1 at Sun Mar 10 2024 16:57:49 GMT-0300 (hora de verano de Chile)
   Parameters in body: {"data":{"iss":"https://accounts.google.com","azp":"532934723345-md1l4accaej51e91i140vcqbegrp7bv0.apps.googleusercontent.com","aud":"532934723345-md1l4accaej51e91i140vcqbegrp7bv0.apps.googleusercontent.com","sub":"105904049551215951645","email":"andlop17@gmail.com","email_verified":true,"nbf":1710100369,"name":"Andres Lopez","picture":"https://lh3.googleusercontent.com/a/ACg8ocJgzkyiT3nppCy0SsWh_aLPGosGXO7_dGhv20lIbtmPtcs=s96-c","given_name":"Andres","family_name":"Lopez","locale":"es","iat":1710100669,"exp":1710104269,"jti":"9eeb57c97d4e4f9a3f707d77bced2516697de6f4"}}
 Completed: 200 message:  Time response: 159 ms Request ID: [5cbd9de8-29df-4056-8b0c-c1e1fc00c338]
+
+Started POST /api/v1/login for :: ::1 at Sun Mar 10 2024 17:08:08 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {"data":{"email":"andres@lopez.com","password":"123456"}}
+Completed: 500 message:  Time response: 148 ms Request ID: [c0943d2c-c4ec-4389-90b0-2f5790a04d9a]
+
+Started POST /api/v1/login for :: ::1 at Sun Mar 10 2024 17:09:29 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {"data":{"email":"andres@lopez.com","password":"123456"}}
+Completed: 500 message:  Time response: 186 ms Request ID: [ba6b1b00-5e8b-4563-85f1-3347a6c1aae2]
+
+Started POST /api/v1/login for :: ::1 at Sun Mar 10 2024 17:12:39 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {"data":{"email":"andres@lopez.com","password":"123456"}}
+Completed: 500 message:  Time response: 192 ms Request ID: [f1551002-356f-4d21-99e7-a42b45fa1c54]
+
+Started POST /api/v1/login for :: ::1 at Sun Mar 10 2024 17:16:24 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {"data":{"email":"andres@lopez.com","password":"123456"}}
+Completed: 500 message:  Time response: 406 ms Request ID: [40a8a9d1-9834-4cd5-aa06-903ca2cff5b7]
+
+Started POST /api/v1/login for :: ::1 at Sun Mar 10 2024 17:17:51 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {"data":{"email":"andres@lopez.com","password":"123456"}}
+Completed: 500 message:  Time response: 365 ms Request ID: [3390eaac-54b5-445b-85c9-62bfd2503557]
+
+Started POST /api/v1/login for :: ::1 at Sun Mar 10 2024 17:19:04 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {"data":{"email":"andres@lopez.com","password":"123456"}}
+Completed: 500 message:  Time response: 145 ms Request ID: [7631aa02-032a-49ce-b34f-f74cc44b2b1e]
+
+Started POST /api/v1/register for :: ::1 at Sun Mar 10 2024 17:23:12 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {"data":{"firstName":"Andres","lastName":"Lopez","email":"test@test.com","password":"123456","passwordConfirm":"123456","avatarURL":"Cachapa.jpg"}}
+Completed: 201 message:  Time response: 160 ms Request ID: [c674b453-ae48-4673-ab76-516b82a9016b]
+
+Started POST /api/v1/login for :: ::1 at Sun Mar 10 2024 17:24:21 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {"data":{"email":"test@test.com","password":"123456"}}
+Completed: 200 message:  Time response: 286 ms Request ID: [5da86a11-21f9-4f2d-ae72-e335ab699ad8]
+
+Started POST /api/v1/login for :: ::1 at Sun Mar 10 2024 17:25:23 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {"data":{"email":"test@test.com","password":"123456"}}
+Completed: 200 message:  Time response: 271 ms Request ID: [5e735dcd-fe30-4889-a0c0-91d6c9dc0ff9]
+
+Started POST /api/v1/login for :: ::1 at Sun Mar 10 2024 17:31:07 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {"data":{"email":"test@test.com","password":"123456"}}
+Completed: 200 message:  Time response: 257 ms Request ID: [e2d6d640-de12-4f48-aa6a-a6306949b2da]
+
+Started POST /api/v1/googleLogin for :: ::1 at Sun Mar 10 2024 17:31:35 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {"data":{"iss":"https://accounts.google.com","azp":"532934723345-md1l4accaej51e91i140vcqbegrp7bv0.apps.googleusercontent.com","aud":"532934723345-md1l4accaej51e91i140vcqbegrp7bv0.apps.googleusercontent.com","sub":"105904049551215951645","email":"andlop17@gmail.com","email_verified":true,"nbf":1710102394,"name":"Andres Lopez","picture":"https://lh3.googleusercontent.com/a/ACg8ocJgzkyiT3nppCy0SsWh_aLPGosGXO7_dGhv20lIbtmPtcs=s96-c","given_name":"Andres","family_name":"Lopez","locale":"es","iat":1710102694,"exp":1710106294,"jti":"f585570188304d6c9f4619a14aaa9e7fbe6cc796"}}
+Completed: 400 message:  Time response: 136 ms Request ID: [3dd430f8-b0f5-4699-a6eb-e64850e759f9]
+
+Started POST /api/v1/googleLogin for :: ::1 at Sun Mar 10 2024 17:32:51 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {"data":{"iss":"https://accounts.google.com","azp":"532934723345-md1l4accaej51e91i140vcqbegrp7bv0.apps.googleusercontent.com","aud":"532934723345-md1l4accaej51e91i140vcqbegrp7bv0.apps.googleusercontent.com","sub":"105904049551215951645","email":"andlop17@gmail.com","email_verified":true,"nbf":1710102470,"name":"Andres Lopez","picture":"https://lh3.googleusercontent.com/a/ACg8ocJgzkyiT3nppCy0SsWh_aLPGosGXO7_dGhv20lIbtmPtcs=s96-c","given_name":"Andres","family_name":"Lopez","locale":"es","iat":1710102770,"exp":1710106370,"jti":"9ec4abc574d300eba9e50090c028cf80e32c6889"}}
+Completed: 400 message:  Time response: 231 ms Request ID: [f58756de-4bff-4dd8-a034-d6e11f1d9b57]
+
+Started POST /api/v1/googleLogin for :: ::1 at Sun Mar 10 2024 17:33:19 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {"data":{"iss":"https://accounts.google.com","azp":"532934723345-md1l4accaej51e91i140vcqbegrp7bv0.apps.googleusercontent.com","aud":"532934723345-md1l4accaej51e91i140vcqbegrp7bv0.apps.googleusercontent.com","sub":"105904049551215951645","email":"andlop17@gmail.com","email_verified":true,"nbf":1710102499,"name":"Andres Lopez","picture":"https://lh3.googleusercontent.com/a/ACg8ocJgzkyiT3nppCy0SsWh_aLPGosGXO7_dGhv20lIbtmPtcs=s96-c","given_name":"Andres","family_name":"Lopez","locale":"es","iat":1710102799,"exp":1710106399,"jti":"bd7b4042abc0aa0d5545303811f50d861e4fb31a"}}
+Completed: 400 message:  Time response: 268 ms Request ID: [2cc4a4be-c739-4ee4-ba5c-3133161cd6b5]
+
+Started POST /api/v1/googleLogin for :: ::1 at Sun Mar 10 2024 17:34:20 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {"data":{"iss":"https://accounts.google.com","azp":"532934723345-md1l4accaej51e91i140vcqbegrp7bv0.apps.googleusercontent.com","aud":"532934723345-md1l4accaej51e91i140vcqbegrp7bv0.apps.googleusercontent.com","sub":"105904049551215951645","email":"andlop17@gmail.com","email_verified":true,"nbf":1710102560,"name":"Andres Lopez","picture":"https://lh3.googleusercontent.com/a/ACg8ocJgzkyiT3nppCy0SsWh_aLPGosGXO7_dGhv20lIbtmPtcs=s96-c","given_name":"Andres","family_name":"Lopez","locale":"es","iat":1710102860,"exp":1710106460,"jti":"3abe19a361cb702abca30e03aaa7d4c6045aa549"}}
+Completed: 201 message:  Time response: 228 ms Request ID: [bb99233c-7e0d-4527-ab9e-cf6df54a63d9]
+
+Started POST /api/v1/googleLogin for :: ::1 at Sun Mar 10 2024 17:35:25 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {"data":{"iss":"https://accounts.google.com","azp":"532934723345-md1l4accaej51e91i140vcqbegrp7bv0.apps.googleusercontent.com","aud":"532934723345-md1l4accaej51e91i140vcqbegrp7bv0.apps.googleusercontent.com","sub":"105904049551215951645","email":"andlop17@gmail.com","email_verified":true,"nbf":1710102625,"name":"Andres Lopez","picture":"https://lh3.googleusercontent.com/a/ACg8ocJgzkyiT3nppCy0SsWh_aLPGosGXO7_dGhv20lIbtmPtcs=s96-c","given_name":"Andres","family_name":"Lopez","locale":"es","iat":1710102925,"exp":1710106525,"jti":"3625ab8c54c71595caff705d473b1b677d3288b0"}}
+Completed: 200 message:  Time response: 158 ms Request ID: [2732146d-4df0-4bae-8ddf-0e22804dd5cd]
+
+Started POST /api/v1/googleLogin for :: ::1 at Sun Mar 10 2024 17:46:19 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {"data":{"iss":"https://accounts.google.com","azp":"532934723345-md1l4accaej51e91i140vcqbegrp7bv0.apps.googleusercontent.com","aud":"532934723345-md1l4accaej51e91i140vcqbegrp7bv0.apps.googleusercontent.com","sub":"105904049551215951645","email":"andlop17@gmail.com","email_verified":true,"nbf":1710103278,"name":"Andres Lopez","picture":"https://lh3.googleusercontent.com/a/ACg8ocJgzkyiT3nppCy0SsWh_aLPGosGXO7_dGhv20lIbtmPtcs=s96-c","given_name":"Andres","family_name":"Lopez","locale":"es","iat":1710103578,"exp":1710107178,"jti":"f0e0b06916abd418871a967dc6d97eaeacefe347"}}
+Completed: 200 message:  Time response: 177 ms Request ID: [beaee1cd-b09e-4a38-913b-4d88ecf8c20e]
+
+Started POST /api/v1/googleLogin for :: ::1 at Sun Mar 10 2024 18:09:08 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {"data":{"iss":"https://accounts.google.com","azp":"532934723345-md1l4accaej51e91i140vcqbegrp7bv0.apps.googleusercontent.com","aud":"532934723345-md1l4accaej51e91i140vcqbegrp7bv0.apps.googleusercontent.com","sub":"105904049551215951645","email":"andlop17@gmail.com","email_verified":true,"nbf":1710104648,"name":"Andres Lopez","picture":"https://lh3.googleusercontent.com/a/ACg8ocJgzkyiT3nppCy0SsWh_aLPGosGXO7_dGhv20lIbtmPtcs=s96-c","given_name":"Andres","family_name":"Lopez","locale":"es","iat":1710104948,"exp":1710108548,"jti":"b1cda4e2bdd48cef67d8549d1d053ccce15055a4"}}
+Completed: 200 message:  Time response: 220 ms Request ID: [78d7fe27-c558-40ef-ad90-d70f4676e3cf]
