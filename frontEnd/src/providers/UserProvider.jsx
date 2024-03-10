@@ -1,53 +1,69 @@
 import { createContext, useEffect, useState } from 'react'
 import { jwtDecode } from 'jwt-decode'
 
-export const UserContext = createContext()
 
-const initialStateToken = localStorage.getItem('token') || null
+export const UserContext = createContext();
+
+const initialStateToken = localStorage.getItem("token") || null;
 
 const UserProvider = ({ children }) => {
-  const [token, setToken] = useState(initialStateToken)
-  console.log(token)
+  const [token, setToken] = useState(initialStateToken);
+  console.log(token);
 
-  const [userData, setUserData] = useState(null)
+  const [userData, setUserData] = useState(null);
 
   useEffect(() => {
     if (token) {
-      localStorage.setItem('token', token)
+      localStorage.setItem("token", token);
     } else {
-      localStorage.removeItem('token')
-      setUserData(null)
+      localStorage.removeItem("token");
+      setUserData(null);
     }
-  }, [token])
+  }, [token]);
 
   const createUser = async (data) => {
-    console.log(data)
+    console.log(data);
 
-    const response = await fetch('http://localhost:3000/api/v1/register', {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
+    const response = await fetch("http://localhost:3000/api/v1/register", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ data }),
-    })
+    });
 
-    const user = await response.json()
+    const user = await response.json();
 
-    return user
-  }
+    return user;
+  };
 
   const loginWithEmailAndPassword = async (data) => {
     const response = await fetch('http://localhost:3000/api/v1/login', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ data }),
-    })
+    });
 
-    const user = await response.json()
-    console.log(user)
+    const user = await response.json();
+    console.log(user);
 
-    setToken(user.token || null)
+    setToken(user.token || null);
 
-    return user
-  }
+    // Aquí verificamos el role_id del usuario y redirigimos en consecuencia
+    if (user.token && user.userData) {
+      if (user.userData.role_id === 1) {
+        // Si el usuario tiene role_id 1, redirigir a una sección específica para ese tipo de usuario
+        window.location.href = "/admin/products";
+      } else if (user.userData.role_id === 2) {
+        // Si el usuario tiene role_id 2, redirigir a una sección específica para ese tipo de usuario
+        window.location.href = "/homeUser";
+      } else {
+        // Si el usuario tiene otro role_id o si hay algún error, redirigir a una sección predeterminada
+        window.location.href = "/";
+      }
+      console.log(user.userData.role_id);
+    }
+
+    return user;
+  };
 
   const loginWithGoogle = async (user) => {
     const data = jwtDecode(user)
@@ -68,36 +84,36 @@ const UserProvider = ({ children }) => {
   }
 
   const logout = () => {
-    setToken(null)
-    setUserData(null)
-  }
+    setToken(null);
+    setUserData(null);
+  };
 
   const getUserData = async (userId) => {
     const response = await fetch(`http://localhost:5000/users/${userId}`, {
-      method: 'GET',
+      method: "GET",
       headers: {
         Authorization: `Bearer ${token}`,
-        'Content-Type': 'application/json',
+        "Content-Type": "application/json",
       },
-    })
+    });
 
-    const user = await response.json()
-    setUserData(user)
-  }
+    const user = await response.json();
+    setUserData(user);
+  };
 
   const updateUserProfile = async (userId, newData) => {
     const response = await fetch(`http://localhost:5000/users/${userId}`, {
-      method: 'PUT',
+      method: "PUT",
       headers: {
         Authorization: `Bearer ${token}`,
-        'Content-Type': 'application/json',
+        "Content-Type": "application/json",
       },
       body: JSON.stringify(newData),
-    })
+    });
 
-    const updateUser = await response.json()
-    setUserData(updateUser)
-  }
+    const updateUser = await response.json();
+    setUserData(updateUser);
+  };
 
   return (
     <UserContext.Provider
@@ -114,7 +130,7 @@ const UserProvider = ({ children }) => {
     >
       {children}
     </UserContext.Provider>
-  )
-}
+  );
+};
 
-export default UserProvider
+export default UserProvider;

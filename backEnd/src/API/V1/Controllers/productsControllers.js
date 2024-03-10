@@ -17,6 +17,7 @@ const getAllProductsController = async (req, res) => {
 const createNewProduct = async (req, res) => {
   try {
     const { product } = req.body;
+    product.user_id = 13;
     const newProduct = await createProduct(product);
     res.status(201).json({ product: newProduct });
   } catch (error) {

@@ -1,11 +1,11 @@
 import React, { useEffect, useContext } from "react";
 import { useForm } from "react-hook-form";
-import { useParams } from "react-router-dom";
+import { NavigationType, useParams } from "react-router-dom";
 import { UserContext } from "../../providers/UserProvider";
 import Swal from "sweetalert2";
-import NavigationBar from "../../components/NavigationBar";
+import NavigationBarAdmin from "../../components/NavigationBarAdmin";
 
-const UserProfile = () => {
+const adminProfile = () => {
   const { userId } = useParams();
   const { getUserData, updateUserProfile, userData } = useContext(UserContext);
 
@@ -56,10 +56,11 @@ const UserProfile = () => {
 
   return (
     <>
-      <NavigationBar />
+      <NavigationBarAdmin />
       <h1>Actualización de datos de usuario</h1>
       {userData ? (
         <>
+          <NavigationBarAdmin />
           <div>
             <h2>Datos actuales del usuario:</h2>
             <p>Nombre: {userData.firstName}</p>
@@ -155,4 +156,4 @@ const UserProfile = () => {
   );
 };
 
-export default UserProfile;
+export default adminProfile;

@@ -8,8 +8,8 @@ import axios from "axios";
 import { useFavorites } from "../providers/FavoritesContext.jsx";
 const dataAPI = "/public/products.json";
 
-
-const Products = ({ nameFilter }) => { // Recibimos el filtro por nombre como prop
+const Products = ({ nameFilter }) => {
+  // Recibimos el filtro por nombre como prop
   const { favorites, addToFavorites, toggleFavorite } = useFavorites();
   const [showDetails, setShowDetails] = useState(false);
   const [selectedProduct, setSelectedProduct] = useState(null);
@@ -90,4 +90,3 @@ const Products = ({ nameFilter }) => { // Recibimos el filtro por nombre como pr
 };
 
 export default Products;
-
