@@ -98,3 +98,7 @@ Completed: 404 message:  Time response: 90 ms Request ID: [97fe0e9e-b7c1-4f11-90
 Started GET /users/undefined for :: ::1 at Mon Mar 11 2024 19:01:14 GMT-0300 (hora de verano de Chile)
   Parameters in body: {}
 Completed: 404 message:  Time response: 124 ms Request ID: [2c0d1b85-c252-4417-965b-6d04a4c5b170]
+
+Started GET /users/undefined for :: ::1 at Mon Mar 11 2024 19:04:19 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {}
+Completed: 404 message:  Time response: 6 ms Request ID: [2be5c71f-2d03-4f87-8d52-a4ed50c0ccd3]
