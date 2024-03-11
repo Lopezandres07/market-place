@@ -7,6 +7,7 @@ import NavigationBar from "../../components/NavigationBar";
 
 const UserProfile = () => {
   const { userId } = useParams();
+  console.log(userId);
   const { getUserData, updateUserProfile, userData } = useContext(UserContext);
 
   const {

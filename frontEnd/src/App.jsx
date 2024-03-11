@@ -13,7 +13,7 @@ import FavoritesUser from "./Views/User/FavoritesUser";
 import AdminCreatePublication from "./Views/Admin/AdminCreatePublication";
 import HomeAdmin from "./Views/Admin/HomeAdmin";
 import Footer from "./components/Footer";
-import adminProfile from "./Views/Admin/adminProfile";
+import AdminProfile from "./Views/Admin/AdminProfile";
 
 function App() {
   const { token } = useContext(UserContext);
@@ -61,7 +61,7 @@ function App() {
           />
           <Route path="/admin/products" element={<HomeAdmin />} />
           <Route path="/admin/products:id" element={<HomeAdmin />} />
-          <Route path="/admin/contact" element={<adminProfile />} />
+          <Route path="/admin/contact" element={<AdminProfile />} />
 
           {/* Admin Routes */}
 
