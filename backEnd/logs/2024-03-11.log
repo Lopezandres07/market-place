@@ -230,3 +230,7 @@ Completed: 200 message:  Time response: 2 ms Request ID: [488576f3-01de-4e37-812
 Started GET /API/V1/products for :: ::1 at Mon Mar 11 2024 01:00:58 GMT-0300 (hora de verano de Chile)
   Parameters in body: {}
 Completed: 304 message:  Time response: 4 ms Request ID: [d5b94d1c-b7ab-4aec-be36-c9aaa0780006]
+
+Started POST /api/v1/login for :: ::1 at Mon Mar 11 2024 12:13:55 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {"data":{"email":"test@test.com","password":"123456"}}
+Completed: 500 message:  Time response: 32 ms Request ID: [c944df82-059b-40f4-b3b5-538cc3c36b89]

@@ -107,20 +107,20 @@ const googleLogin = async (req, res) => {
   }
 };
 
-const getUserData = async (req, res) => {
-  const { userId } = req.params;
+// const getUserData = async (req, res) => {
+//   const { userId } = req.params;
 
-  try {
-    const userData = await getUserById(userId);
+//   try {
+//     const userData = await getUserById(userId);
 
-    if (!userData) {
-      res.status(404).json({ error: "User not found" });
-    } else {
-      res.status(200).json(userData);
-    }
-  } catch (error) {
-    res.status(500).json({ error: error.message });
-  }
-};
+//     if (!userData) {
+//       res.status(404).json({ error: "User not found" });
+//     } else {
+//       res.status(200).json(userData);
+//     }
+//   } catch (error) {
+//     res.status(500).json({ error: error.message });
+//   }
+// };
 
 export { createNewUser, loginUser, googleLogin, getUserData };

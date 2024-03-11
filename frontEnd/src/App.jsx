@@ -8,12 +8,10 @@ import Home from "./Views/Home";
 import Register from "./Views/Register";
 import Login from "./Views/Login";
 import HomeUser from "./Views/User/HomeUser";
-import UserProfile from "./Views/User/UserProfile";
 import FavoritesUser from "./Views/User/FavoritesUser";
 import AdminCreatePublication from "./Views/Admin/AdminCreatePublication";
 import HomeAdmin from "./Views/Admin/HomeAdmin";
 import Footer from "./components/Footer";
-import AdminProfile from "./Views/Admin/AdminProfile";
 
 function App() {
   const { token } = useContext(UserContext);
@@ -54,14 +52,16 @@ function App() {
               />
             }
           />
-          <Route path="/user/profile/:userId" element={<UserProfile />} />
           <Route
             path="/admin/publications/create"
             element={<AdminCreatePublication />}
           />
-          <Route path="/admin/products" element={<HomeAdmin />} />
-          <Route path="/admin/products:id" element={<HomeAdmin />} />
-          <Route path="/admin/contact" element={<AdminProfile />} />
+          {/* <Route path="/admin/products" element={<HomeAdmin />} /> */}
+          <Route
+          path='/admin/products'
+          element={token ? <HomeAdmin /> : <Navigate to='/login' />}
+          />
+          {/* <Route path="/admin/products:id" element={<HomeAdmin />} /> */}
 
           {/* Admin Routes */}
 
@@ -69,10 +69,7 @@ function App() {
           path='/admin/profile'
           element={token ? <AdminProfile /> : <Navigate to='/login' />}
           />
-          <Route
-          path='/admin/publications'
-          element={token ? <AdminPublications /> : <Navigate to='/login' />}
-          />
+         
         <Route
         path='/admin/publications/create'
           element={token ? <CreatePublication /> : <Navigate to='/login' />}
