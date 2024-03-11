@@ -1,0 +1,100 @@
+
+Started GET /users/undefined for :: ::1 at Sun Mar 10 2024 21:08:46 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {}
+Completed: 404 message:  Time response: 22 ms Request ID: [796819b3-5bc3-484c-b7cb-9725a4bad7dd]
+
+Started GET /users/undefined for :: ::1 at Sun Mar 10 2024 21:08:46 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {}
+Completed: 404 message:  Time response: 8 ms Request ID: [a482f187-73ea-4a02-9b70-ca08cc4ead38]
+
+Started POST /api/v1/googleLogin for :: ::1 at Sun Mar 10 2024 21:08:59 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {"data":{"iss":"https://accounts.google.com","azp":"532934723345-md1l4accaej51e91i140vcqbegrp7bv0.apps.googleusercontent.com","aud":"532934723345-md1l4accaej51e91i140vcqbegrp7bv0.apps.googleusercontent.com","sub":"105904049551215951645","email":"andlop17@gmail.com","email_verified":true,"nbf":1710115439,"name":"Andres Lopez","picture":"https://lh3.googleusercontent.com/a/ACg8ocJgzkyiT3nppCy0SsWh_aLPGosGXO7_dGhv20lIbtmPtcs=s96-c","given_name":"Andres","family_name":"Lopez","locale":"es","iat":1710115739,"exp":1710119339,"jti":"fa31ea7701e56a5308639a3d6c6f4df4d8708220"}}
+Completed: 200 message:  Time response: 299 ms Request ID: [079ebe14-722f-4bbb-a358-b09472b0ab6e]
+
+Started GET /users/undefined for :: ::1 at Sun Mar 10 2024 21:09:03 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {}
+Completed: 404 message:  Time response: 6 ms Request ID: [4976ea69-2a93-49b4-a16f-b5289c756004]
+
+Started GET /users/undefined for :: ::1 at Sun Mar 10 2024 21:09:03 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {}
+Completed: 404 message:  Time response: 9 ms Request ID: [0c45589d-09c8-48d3-ad94-12bcd2c39b68]
+
+Started GET /users/undefined for :: ::1 at Sun Mar 10 2024 21:12:58 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {}
+Completed: 404 message:  Time response: 4 ms Request ID: [b0128a2e-070e-4b8f-9d28-e896f3599072]
+
+Started GET /users/undefined for :: ::1 at Sun Mar 10 2024 21:12:58 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {}
+Completed: 404 message:  Time response: 3 ms Request ID: [3085eb09-907d-4451-bbc4-22df6152ee18]
+
+Started GET /users/undefined for :: ::1 at Sun Mar 10 2024 21:13:06 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {}
+Completed: 404 message:  Time response: 8 ms Request ID: [df48bdca-5c99-406e-afbf-24fc1e6bdbec]
+
+Started GET /users/undefined for :: ::1 at Sun Mar 10 2024 21:13:06 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {}
+Completed: 404 message:  Time response: 10 ms Request ID: [27e90651-5d70-459d-b1ce-00deeff6605e]
+
+Started GET /users/undefined for :: ::1 at Sun Mar 10 2024 21:15:18 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {}
+Completed: 404 message:  Time response: 3 ms Request ID: [58427547-d0f4-479f-a370-e1a9cac65225]
+
+Started GET /users/undefined for :: ::1 at Sun Mar 10 2024 21:15:27 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {}
+Completed: 404 message:  Time response: 6 ms Request ID: [d49f259b-fb3c-4739-9a69-007113a74600]
+
+Started GET /users/undefined for :: ::1 at Sun Mar 10 2024 21:15:36 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {}
+Completed: 404 message:  Time response: 6 ms Request ID: [c0caafe3-2bbe-4537-abcc-cd57491bb938]
+
+Started GET /users/undefined for :: ::1 at Sun Mar 10 2024 21:15:36 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {}
+Completed: 404 message:  Time response: 11 ms Request ID: [ffd9c02e-00a9-42e0-a0ee-14dc31a8a062]
+
+Started GET /users/undefined for :: ::1 at Sun Mar 10 2024 21:15:36 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {}
+Completed: 404 message:  Time response: 6 ms Request ID: [94738f84-b75b-44db-8bac-8e0287a03c6e]
+
+Started GET /users/undefined for :: ::1 at Sun Mar 10 2024 21:16:58 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {}
+Completed: 404 message:  Time response: 6 ms Request ID: [c954d7e0-bcde-49d8-a3ce-d57cdca69023]
+
+Started GET /users/undefined for :: ::1 at Sun Mar 10 2024 21:29:29 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {}
+Completed: 404 message:  Time response: 3 ms Request ID: [fccbe724-e266-4235-962c-4c446073f00d]
+
+Started GET /users/undefined for :: ::1 at Sun Mar 10 2024 21:29:29 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {}
+Completed: 404 message:  Time response: 2 ms Request ID: [6260d2ee-4bfa-468c-8fb2-74de046c0bd5]
+
+Started GET /users/undefined for :: ::1 at Sun Mar 10 2024 21:36:33 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {}
+Completed: 404 message:  Time response: 3 ms Request ID: [63788f8b-2e36-4fa5-8d60-b2aa279dc319]
+
+Started GET /users/undefined for :: ::1 at Sun Mar 10 2024 21:36:33 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {}
+Completed: 404 message:  Time response: 5 ms Request ID: [5b64b4c3-49e1-49de-84f1-a5f4f9f9ece9]
+
+Started GET /users/undefined for :: ::1 at Sun Mar 10 2024 21:36:37 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {}
+Completed: 404 message:  Time response: 4 ms Request ID: [ff29c39a-4ff6-4886-952d-caa3f21db4b3]
+
+Started GET /users/undefined for :: ::1 at Sun Mar 10 2024 21:36:37 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {}
+Completed: 404 message:  Time response: 3 ms Request ID: [83124e72-5e8b-46b9-a28a-3e02b9aaccb7]
+
+Started GET /users/undefined for :: ::1 at Sun Mar 10 2024 22:27:19 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {}
+Completed: 404 message:  Time response: 6 ms Request ID: [e4c6f298-f0f3-4af2-9354-c54649ff4e53]
+
+Started GET /users/undefined for :: ::1 at Sun Mar 10 2024 22:27:19 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {}
+Completed: 404 message:  Time response: 3 ms Request ID: [6dc7ada9-3134-432d-bb09-c5916711c2e9]
+
+Started GET /users/undefined for :: ::1 at Mon Mar 11 2024 19:01:14 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {}
+Completed: 404 message:  Time response: 90 ms Request ID: [97fe0e9e-b7c1-4f11-9015-79fafd09fb7c]
+
+Started GET /users/undefined for :: ::1 at Mon Mar 11 2024 19:01:14 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {}
+Completed: 404 message:  Time response: 124 ms Request ID: [2c0d1b85-c252-4417-965b-6d04a4c5b170]

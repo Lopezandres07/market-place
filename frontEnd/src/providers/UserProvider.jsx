@@ -8,7 +8,6 @@ const initialStateToken = localStorage.getItem('token') || null
 
 const UserProvider = ({ children }) => {
   const [token, setToken] = useState(initialStateToken)
-  console.log(token)
 
   const [userData, setUserData] = useState(null)
 
@@ -95,8 +94,10 @@ const UserProvider = ({ children }) => {
     setUserData(null)
   }
 
-  const getUserData = async (userId) => {
-    const response = await fetch(`http://localhost:5000/users/${userId}`, {
+  const getUserData = async (id) => {
+    console.log(id)
+
+    const response = await fetch(`http://localhost:3000/users/${id}`, {
       method: 'GET',
       headers: {
         Authorization: `Bearer ${token}`,

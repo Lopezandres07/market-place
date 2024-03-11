@@ -1,4 +1,9 @@
-import { byEmail, createGoogleUser, createUser } from '../Models/userModels.js'
+import {
+  byEmail,
+  createGoogleUser,
+  createUser,
+  userById,
+} from '../Models/userModels.js'
 import bcrypt from 'bcryptjs'
 import jwt from 'jsonwebtoken'
 
@@ -99,4 +104,16 @@ const googleLogin = async (req, res) => {
   }
 }
 
-export { createNewUser, loginUser, googleLogin }
+const getUserById = async (req, res) => {
+  const { id } = req.params
+
+  try {
+    const user = await userById(id)
+
+    res.status(200).json({ user: user })
+  } catch (error) {
+    console.log('error: ', error)
+  }
+}
+
+export { createNewUser, loginUser, googleLogin, getUserById }
