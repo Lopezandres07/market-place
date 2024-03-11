@@ -58,4 +58,4 @@ const byEmail = async ({ email }) => {
 //   return response.rows[0];
 // };
 
-export { createUser, createGoogleUser, byEmail, getUserById };
+export { createUser, createGoogleUser, byEmail };
