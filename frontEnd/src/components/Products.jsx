@@ -15,14 +15,6 @@ const Products = ({ nameFilter }) => {
   const [selectedProduct, setSelectedProduct] = useState(null);
   const [products, setProducts] = useState([]);
 
-  const handleWhatsAppClick = () => {
-    const phoneNumber = '+56971597559';
-    const message = '¡Hola! Estoy interesado en comprar el producto: ' + selectedProduct.name; // Mensaje predeterminado
-    const whatsappURL = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
-    window.open(whatsappURL, '_blank');
-  };
-  
-
   useEffect(() => {
     const fetchData = async () => {
       try {
@@ -54,6 +46,15 @@ const Products = ({ nameFilter }) => {
     product.name.toLowerCase().includes(nameFilter.toLowerCase())
   );
 
+  const handleWhatsAppClick = () => {
+    const phoneNumber = "+56971597559";
+    const message =
+      "¡Hola! Estoy interesado en comprar el producto: " + selectedProduct.name; // Mensaje predeterminado
+    const whatsappURL = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(
+      message
+    )}`;
+    window.open(whatsappURL, "_blank");
+  };
   return (
     <>
       <h2 className="text-center mb-4">Productos</h2>
@@ -81,7 +82,7 @@ const Products = ({ nameFilter }) => {
         </Modal.Header>
         <Modal.Body className="text-center">
           <img
-            src={selectedProduct && selectedProduct.urlimage}
+            src={selectedProduct && selectedProduct.imageurl}
             alt={selectedProduct && selectedProduct.name}
             className="modal-image"
           />
@@ -91,8 +92,13 @@ const Products = ({ nameFilter }) => {
           <p className="text-center h4">
             Precio: $ {selectedProduct && selectedProduct.price}
           </p>
-          <h5>Interesado en comprar?</h5 >
-          <p>Hablemos <Button id="btn-detalles" onClick={handleWhatsAppClick}><i class="fa-brands fa-whatsapp"></i></Button> </p>
+          <h5>Interesado en comprar?</h5>
+          <p>
+            Hablemos{" "}
+            <Button id="btn-detalles" onClick={handleWhatsAppClick}>
+              <i className="fa-brands fa-whatsapp"></i>
+            </Button>{" "}
+          </p>
         </Modal.Body>
       </Modal>
     </>

@@ -58,8 +58,8 @@ function App() {
           />
           {/* <Route path="/admin/products" element={<HomeAdmin />} /> */}
           <Route
-          path='/admin/products'
-          element={token ? <HomeAdmin /> : <Navigate to='/login' />}
+            path="/admin/products"
+            element={token ? <HomeAdmin /> : <Navigate to="/login" />}
           />
           {/* <Route path="/admin/products:id" element={<HomeAdmin />} /> */}
 

@@ -10,7 +10,7 @@ const CardFavorite = ({ favorite, removeFromFavorites, handleShowModal }) => {
           <Card.Img
             className="product-image-fav"
             variant="top"
-            src={favorite.urlimage}
+            src={favorite.imageurl}
             onClick={() => handleShowModal(favorite)}
           />
           <Card.Body>

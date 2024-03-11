@@ -14,7 +14,7 @@ const CardProducts = ({
         <Card>
           <Card.Img
             variant="top"
-            src={product.urlimage}
+            src={product.imageurl}
             className="product-image"
           />
           <Card.Body>
