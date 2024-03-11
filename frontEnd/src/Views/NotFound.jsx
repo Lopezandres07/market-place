@@ -1,14 +1,16 @@
-import React from 'react'
+import React from "react";
+import NavigationBar from "../components/NavigationBar";
 
 const NotFound = () => {
   return (
-    <div className='d-flex justify-content-center'>
-      <img
-        src='/img/404.png'
-        alt='not found'
-      />
-    </div>
-  )
-}
+    <>
+      {" "}
+      <NavigationBar />
+      <div className="d-flex justify-content-center">
+        <img src="/img/404.png" alt="not found" />
+      </div>
+    </>
+  );
+};
 
-export default NotFound
+export default NotFound;

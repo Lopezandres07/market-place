@@ -94,11 +94,10 @@ const UserProvider = ({ children }) => {
     setUserData(null)
   }
 
-  const getUserData = async (id) => {
-    console.log(id)
-
-    const response = await fetch(`http://localhost:3000/users/${id}`, {
+  const getUserData = async (userId) => {
+    const response = await fetch(`http://localhost:5000/users/${userId}`, {
       method: 'GET',
+
       headers: {
         Authorization: `Bearer ${token}`,
         'Content-Type': 'application/json',

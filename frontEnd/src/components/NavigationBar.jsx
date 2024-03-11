@@ -44,14 +44,6 @@ const NavigationBar = () => {
                   </NavLink>
                 </section>
                 <section className="navLink">
-                  <NavLink
-                    to={`/user/profile/${userId}`}
-                    className={setActiveClass}
-                  >
-                    Mi Perfil
-                  </NavLink>
-                </section>
-                <section className="navLink">
                   <NavLink className={setActiveClass} onClick={logout} to="/">
                     Cerrar Sesión
                   </NavLink>

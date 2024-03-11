@@ -23,11 +23,11 @@ function AdminCreatePublication() {
                   Crear publicación.
                 </Link>
               </li>
-              <li>
+              {/* <li>
                 <Link to="/admin/contact" className="link">
                   Datos de contacto.
                 </Link>
-              </li>
+              </li> */}
             </ul>
           </aside>
           <main className="main-content">
