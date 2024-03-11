@@ -47,15 +47,15 @@ const byEmail = async ({ email }) => {
 
   return response.rows[0];
 };
-const getUserById = async (userId) => {
-  const SQLquery = {
-    text: "SELECT * FROM users WHERE id = $1",
-    values: [userId],
-  };
+// const getUserById = async (userId) => {
+//   const SQLquery = {
+//     text: "SELECT * FROM users WHERE id = $1",
+//     values: [userId],
+//   };
 
-  const response = await pool.query(SQLquery);
+//   const response = await pool.query(SQLquery);
 
-  return response.rows[0];
-};
+//   return response.rows[0];
+// };
 
-export { createUser, createGoogleUser, byEmail, getUserById };
+export { createUser, createGoogleUser, byEmail };

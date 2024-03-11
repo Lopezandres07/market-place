@@ -20,6 +20,15 @@ const Favorites = () => {
   const handleCloseModal = () => {
     setShowModal(false);
   };
+  const handleWhatsAppClick = () => {
+    const phoneNumber = "+56971597559";
+    const message =
+      "¡Hola! Estoy interesado en comprar el producto: " + selectedProduct.name; // Mensaje predeterminado
+    const whatsappURL = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(
+      message
+    )}`;
+    window.open(whatsappURL, "_blank");
+  };
 
   return (
     <>
@@ -50,6 +59,13 @@ const Favorites = () => {
           </p>
           <p className="h4">
             Precio: $ {selectedProduct && selectedProduct.price}
+          </p>
+          <h5>Interesado en comprar?</h5>
+          <p>
+            Hablemos{" "}
+            <Button id="btn-detalles" onClick={handleWhatsAppClick}>
+              <i className="fa-brands fa-whatsapp"></i>
+            </Button>{" "}
           </p>
         </Modal.Body>
       </Modal>
