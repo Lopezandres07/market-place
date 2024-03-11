@@ -6,7 +6,7 @@ import { Modal } from "react-bootstrap";
 import axios from "axios";
 
 import { useFavorites } from "../providers/FavoritesContext.jsx";
-const dataAPI = "/public/products.json";
+const dataAPI = "http://localhost:3000/API/V1/products";
 
 const Products = ({ nameFilter }) => {
   // Recibimos el filtro por nombre como prop
