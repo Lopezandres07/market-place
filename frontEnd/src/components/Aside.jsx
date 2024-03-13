@@ -20,26 +20,6 @@ const Aside = ({ onFilter }) => {
         value={nameFilter}
         onChange={handleNameFilterChange}
       />
-      {/* <br />
-      <br />
-
-      <ul>
-        <li>
-          <Link to="/homeUser" className="link">
-            Home
-          </Link>
-        </li>
-        <li>
-          <Link to="/favoritesUser" className="link">
-            Favoritos
-          </Link>
-        </li>
-        <li>
-          <Link to="/user/profile" className="link">
-            Mi perfil
-          </Link>
-        </li>
-      </ul> */}
     </aside>
   );
 };
