@@ -6,11 +6,7 @@
   "type": "module",
   "scripts": {
     "dev": "nodemon server.js",
-
     "test": "jest --detectOpenHandles"
-
-    "test": "jest"
-
   },
   "keywords": [],
   "author": "",
