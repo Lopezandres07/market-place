@@ -20,7 +20,6 @@ const CardAdminProducts = ({ product, handleDetailsClick }) => {
         }).then(() => {
           window.location.reload();
         });
-        // Actualizar la interfaz de usuario según corresponda
       } else {
         Swal.fire({
           icon: "error",
@@ -67,8 +66,6 @@ const CardAdminProducts = ({ product, handleDetailsClick }) => {
                 <Button id="btn-detalles" onClick={handleDelete}>
                   ❌ Eliminar
                 </Button>
-
-                {/* Al darle click a estos botones podemos desplegar un modal con la ccapacidad de editar la info  */}
               </section>
             </div>
           </Card.Body>

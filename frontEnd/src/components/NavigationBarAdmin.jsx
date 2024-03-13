@@ -7,7 +7,6 @@ const setActiveClass = ({ isActive }) => (isActive ? "active" : "noActive");
 
 const NavigationBarAdmin = () => {
   const { token, logout } = useContext(UserContext);
-  const { userId } = useParams();
 
   const navigate = useNavigate();
 
