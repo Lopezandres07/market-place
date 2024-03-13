@@ -1,9 +1,9 @@
 const validparameters = (req, res, next) => {
-  const { data } = req.body;
+  const { data } = req.body
   if (!data.email || !data.password) {
-    return res.status(400).json({ error: "Faltan email o password" });
+    return res.status(400).json({ error: 'Faltan email o password' })
   }
-  next();
-};
+  next()
+}
 
-export { validparameters };
+export { validparameters }
