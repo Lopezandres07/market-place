@@ -11,11 +11,6 @@ CREATE TABLE roles (
     role_name VARCHAR(50) NOT NULL
 );
 
-INSERT INTO roles (role_name) VALUES (Administrator), (User);
-
-UPDATE users SET role_id = '1' WHERE id = '27';
-
-
 CREATE TABLE users (
     id SERIAL PRIMARY KEY,
     role_id INT REFERENCES roles(id),

@@ -908,3 +908,99 @@ Started GET /API/V1/products for :: ::1 at Mon Mar 11 2024 20:09:54 GMT-0300 (ho
 Completed: 304 message:  Time response: 3 ms Request ID: [b5e5bc4a-5b9e-4e1e-9ad0-de11458f8233]
 
 Completed: 304 message:  Time response: 4 ms Request ID: [045b9556-9b56-42a8-947c-8482d78824c8]
+
+Started POST /api/v1/register for :: ::1 at Mon Mar 11 2024 20:15:16 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {"data":{"firstName":"Fabian","lastName":"Pino","email":"fabian@correo.cl","password":"123456","passwordConfirm":"123456","avatarURL":"Captura de pantalla 2024-03-11 195348.png"}}
+Completed: 201 message:  Time response: 446 ms Request ID: [6d5ace5a-182a-4171-bade-fa824ad5653b]
+
+Started POST /api/v1/login for :: ::1 at Mon Mar 11 2024 20:15:24 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {"data":{"email":"fabian@correo.cl","password":"123456"}}
+Completed: 200 message:  Time response: 180 ms Request ID: [c9b65e1e-471c-428f-8cd9-83bc4ef23a92]
+
+Started GET /API/V1/products for :: ::1 at Mon Mar 11 2024 20:15:25 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {}
+Started GET /API/V1/products for :: ::1 at Mon Mar 11 2024 20:15:25 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {}
+Completed: 304 message:  Time response: 7 ms Request ID: [9d73eccb-d31b-4f18-9320-0527137f5fa5]
+
+Completed: 304 message:  Time response: 5 ms Request ID: [5d240d93-dd24-49a2-bb3f-a7749e3fc0fb]
+
+Started GET /API/V1/products for :: ::1 at Mon Mar 11 2024 20:16:23 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {}
+Completed: 304 message:  Time response: 104 ms Request ID: [7b7389ac-6371-4f71-a535-820a6e492de0]
+
+Started GET /API/V1/products for :: ::1 at Mon Mar 11 2024 20:16:24 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {}
+Completed: 304 message:  Time response: 4 ms Request ID: [b379863b-a21e-4d70-af01-77666216247f]
+
+Started POST /api/v1/login for :: ::1 at Mon Mar 11 2024 20:16:43 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {"data":{"email":"admin@test.cl","password":"123456"}}
+Completed: 200 message:  Time response: 173 ms Request ID: [c27ae2c4-790c-45bd-8d2f-5768492a0dc5]
+
+Started GET /API/V1/products for :: ::1 at Mon Mar 11 2024 20:16:44 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {}
+Completed: 304 message:  Time response: 5 ms Request ID: [f71045ce-e00f-4ad0-898f-221c5ddaaf6d]
+
+Started GET /API/V1/products for :: ::1 at Mon Mar 11 2024 20:16:44 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {}
+Completed: 304 message:  Time response: 5 ms Request ID: [3257964f-f905-474a-a9ea-180b8b7fcf0a]
+
+Started DELETE /api/v1/products/7 for :: ::1 at Mon Mar 11 2024 20:16:59 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {}
+Completed: 200 message:  Time response: 110 ms Request ID: [36099969-9f1b-4258-a98a-49d997ac9ccd]
+
+Started GET /API/V1/products for :: ::1 at Mon Mar 11 2024 20:17:01 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {}
+Completed: 200 message:  Time response: 6 ms Request ID: [e6ea44d1-4d7c-4d5b-b9ff-d22098392504]
+
+Started GET /API/V1/products for :: ::1 at Mon Mar 11 2024 20:17:01 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {}
+Completed: 304 message:  Time response: 3 ms Request ID: [1a7d2642-cff3-469b-ab0a-e3469c014b7e]
+
+Started POST /api/v1/products for :: ::1 at Mon Mar 11 2024 20:17:20 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {"product":{"user_id":27,"name":"Columpio Amarillo 2","description":"Lindo columpio de color amarillo listo para dar comodidad a tu bebé","price":"9990","imageURL":"https://i.imgur.com/1LrXtgz.jpg"}}
+Completed: 201 message:  Time response: 52 ms Request ID: [d5faec48-edd3-4cae-83f7-ea17c631aa68]
+
+Started GET /API/V1/products for :: ::1 at Mon Mar 11 2024 20:17:22 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {}
+Completed: 200 message:  Time response: 6 ms Request ID: [cd6ba94e-48fa-47a6-aaaf-ff539842030c]
+
+Started GET /API/V1/products for :: ::1 at Mon Mar 11 2024 20:17:22 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {}
+Completed: 304 message:  Time response: 6 ms Request ID: [a7c036d7-3d3e-4510-b319-c0774681cab7]
+
+Started POST /api/v1/login for :: ::1 at Mon Mar 11 2024 20:17:47 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {"data":{"email":"user@test.cl","password":"123456"}}
+Completed: 200 message:  Time response: 244 ms Request ID: [3766492b-9286-43d7-a5d1-8a20a9bd1dd7]
+
+Started GET /API/V1/products for :: ::1 at Mon Mar 11 2024 20:17:47 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {}
+Started GET /API/V1/products for :: ::1 at Mon Mar 11 2024 20:17:47 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {}
+Completed: 304 message:  Time response: 5 ms Request ID: [058541f9-586f-4dd9-abba-99b13fffeb98]
+
+Completed: 304 message:  Time response: 3 ms Request ID: [a16eb6ac-dfee-47fe-b64e-fef03166eaac]
+
+Started POST /api/v1/googleLogin for :: ::1 at Mon Mar 11 2024 20:18:08 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {"data":{"iss":"https://accounts.google.com","azp":"532934723345-md1l4accaej51e91i140vcqbegrp7bv0.apps.googleusercontent.com","aud":"532934723345-md1l4accaej51e91i140vcqbegrp7bv0.apps.googleusercontent.com","sub":"105904049551215951645","email":"andlop17@gmail.com","email_verified":true,"nbf":1710198788,"name":"Andres Lopez","picture":"https://lh3.googleusercontent.com/a/ACg8ocJgzkyiT3nppCy0SsWh_aLPGosGXO7_dGhv20lIbtmPtcs=s96-c","given_name":"Andres","family_name":"Lopez","locale":"es","iat":1710199088,"exp":1710202688,"jti":"f40db0cc24cb6cd70f3fa523d4d4121cd3e37945"}}
+Completed: 200 message:  Time response: 181 ms Request ID: [31137209-75f6-4b04-b908-5a1a3e5f4d0d]
+
+Started GET /API/V1/products for :: ::1 at Mon Mar 11 2024 20:18:09 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {}
+Started GET /API/V1/products for :: ::1 at Mon Mar 11 2024 20:18:09 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {}
+Completed: 304 message:  Time response: 5 ms Request ID: [a14bec8e-5a26-4675-85a6-000d5b485d82]
+
+Completed: 304 message:  Time response: 4 ms Request ID: [9b8a9ae9-9539-4cd9-8b9d-4334cde0b3bb]
+
+Started POST /api/v1/googleLogin for :: ::1 at Mon Mar 11 2024 20:20:17 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {"data":{"iss":"https://accounts.google.com","azp":"532934723345-md1l4accaej51e91i140vcqbegrp7bv0.apps.googleusercontent.com","aud":"532934723345-md1l4accaej51e91i140vcqbegrp7bv0.apps.googleusercontent.com","sub":"105904049551215951645","email":"andlop17@gmail.com","email_verified":true,"nbf":1710198916,"name":"Andres Lopez","picture":"https://lh3.googleusercontent.com/a/ACg8ocJgzkyiT3nppCy0SsWh_aLPGosGXO7_dGhv20lIbtmPtcs=s96-c","given_name":"Andres","family_name":"Lopez","locale":"es","iat":1710199216,"exp":1710202816,"jti":"38f2f3d3083495ee04ead3bb86853bba46342f3c"}}
+Completed: 200 message:  Time response: 139 ms Request ID: [aed0b46b-3bfc-44ea-8aae-0ce3c4dd21a0]
+
+Started GET /API/V1/products for :: ::1 at Mon Mar 11 2024 20:20:17 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {}
+Completed: 304 message:  Time response: 5 ms Request ID: [43cf5058-10ef-4b49-8ce4-9b65b0d1d017]
+
+Started GET /API/V1/products for :: ::1 at Mon Mar 11 2024 20:20:17 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {}
+Completed: 304 message:  Time response: 4 ms Request ID: [eaf647e2-1ba8-4074-97ea-8a2ad082b919]
