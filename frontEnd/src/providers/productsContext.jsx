@@ -14,7 +14,7 @@ const ProductsProvider = ({ children }) => {
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
           product: {
-            user_id: 1, //definido de manera estatica. recuerden que solo el id de admin puede hacer posts
+            user_id: 1,
             name,
             description,
             price,
@@ -43,7 +43,6 @@ const ProductsProvider = ({ children }) => {
       if (response.ok) {
         const deletedProduct = await response.json();
         console.log("Producto eliminado:", deletedProduct);
-        // Actualiza el estado o la interfaz de usuario según sea necesario
         return deletedProduct;
       } else {
         throw new Error("Error al eliminar el producto");
