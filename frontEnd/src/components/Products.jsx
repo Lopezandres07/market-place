@@ -9,7 +9,6 @@ import { useFavorites } from "../providers/FavoritesContext.jsx";
 const dataAPI = "http://localhost:3000/API/V1/products";
 
 const Products = ({ nameFilter }) => {
-  // Recibimos el filtro por nombre como prop
   const { favorites, addToFavorites, toggleFavorite } = useFavorites();
   const [showDetails, setShowDetails] = useState(false);
   const [selectedProduct, setSelectedProduct] = useState(null);
@@ -41,7 +40,6 @@ const Products = ({ nameFilter }) => {
     return favorites.some((fav) => fav.id === product.id);
   };
 
-  // Función de filtrado de productos por nombre
   const filteredProducts = products.filter((product) =>
     product.name.toLowerCase().includes(nameFilter.toLowerCase())
   );
