@@ -1,0 +1,79 @@
+import React, { useEffect, useContext } from 'react'
+import { useForm } from 'react-hook-form'
+import { UserContext } from '../../providers/UserProvider'
+import NavigationBar from '../../components/NavigationBar'
+
+const ProfilePage = () => {
+  const { getUserData, updateUserProfile, userData } = useContext(UserContext)
+  const {
+    register,
+    handleSubmit,
+    setValue,
+    reset,
+    formState: { errors },
+  } = useForm()
+
+  useEffect(() => {
+    getUserData()
+  }, [getUserData])
+
+  const onSubmit = async (data) => {
+    const response = await updateUserProfile(data)
+    if (response.success) {
+      reset()
+      alert('Perfil actualizado correctamente')
+    } else {
+      alert('Error al actualizar el perfil')
+    }
+  }
+
+  return (
+    <>
+      <NavigationBar />
+      <div>
+        <h2>Mi perfil</h2>
+        {userData ? (
+          <form onSubmit={handleSubmit(onSubmit)}>
+            <label>Nombre</label>
+            <input
+              type='text'
+              {...register('firstName')}
+              defaultValue={userData.firstName}
+            />
+            {errors.firstName && <span>{errors.firstName.message}</span>}
+
+            <label>Apellido</label>
+            <input
+              type='text'
+              {...register('lastName')}
+              defaultValue={userData.lastName}
+            />
+            {errors.lastName && <span>{errors.lastName.message}</span>}
+
+            <label>Correo electrónico</label>
+            <input
+              type='email'
+              {...register('email')}
+              defaultValue={userData.email}
+            />
+            {errors.email && <span>{errors.email.message}</span>}
+
+            <label>Foto de perfil</label>
+            <input
+              type='text'
+              {...register('avatarURL')}
+              defaultValue={userData.avatarURL}
+            />
+            {errors.avatarURL && <span>{errors.avatarURL.message}</span>}
+
+            <button type='submit'>Guardar cambios</button>
+          </form>
+        ) : (
+          <p>Cargando datos del usuario...</p>
+        )}
+      </div>
+    </>
+  )
+}
+
+export default ProfilePage
