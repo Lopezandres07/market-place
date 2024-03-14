@@ -53,7 +53,7 @@ const ProductsAdmin = () => {
         </Modal.Header>
         <Modal.Body className="text-center">
           <img
-            src={selectedProduct && selectedProduct.urlimage}
+            src={selectedProduct && selectedProduct.imageurl}
             alt={selectedProduct && selectedProduct.name}
             className="modal-image"
           />

@@ -11,7 +11,7 @@ const CardProducts = ({
   return (
     <section>
       <div className="homeCard">
-        <Card>
+        <Card className="shadow">
           <Card.Img
             variant="top"
             src={product.imageurl}

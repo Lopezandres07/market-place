@@ -2,6 +2,7 @@ import {
   createProduct,
   deleteProduct,
   getAllProducts,
+  updateProduct,
 } from "../../../API/V1/Models/productsModels.js";
 
 const getAllProductsController = async (req, res) => {
@@ -38,4 +39,31 @@ const removeProduct = async (req, res) => {
     res.status(400).json(error.message);
   }
 };
-export { createNewProduct, removeProduct, getAllProductsController };
+
+const updateProductController = async (req, res) => {
+  try {
+    const { productId } = req.params;
+    const { name, description, price, imageURL } = req.body;
+
+    const updatedProduct = await updateProduct(productId, {
+      name,
+      description,
+      price,
+      imageURL,
+    });
+    console.log(updateProduct);
+
+    res.status(200).json({
+      message: "Producto actualizado exitosamente",
+      product: updatedProduct,
+    });
+  } catch (error) {
+    res.status(400).json(error.message);
+  }
+};
+export {
+  createNewProduct,
+  removeProduct,
+  getAllProductsController,
+  updateProductController,
+};
