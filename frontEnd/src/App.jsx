@@ -14,7 +14,7 @@ import HomeAdmin from "./Views/Admin/HomeAdmin";
 import Footer from "./components/Footer";
 
 function App() {
-  const { token } = useContext(UserContext);
+  const { token, userData } = useContext(UserContext);
 
   const [favorites, setFavorites] = useState([]);
 
@@ -38,27 +38,48 @@ function App() {
             path="/homeUser"
             element={token ? <HomeUser /> : <Navigate to="/login" />}
           />
-
           <Route path="*" element={<NotFound />} />
           <Route
             path="/favoritesUser"
             element={
-              <FavoritesUser
-                favorites={favorites}
-                removeFromFavorites={removeFromFavorites}
-              />
+              token ? (
+                <FavoritesUser
+                  favorites={favorites}
+                  removeFromFavorites={removeFromFavorites}
+                />
+              ) : (
+                <Navigate to="/login" />
+              )
             }
           />
           <Route
             path="/admin/publications/create"
-            element={<AdminCreatePublication />}
+            element={
+              token ? (
+                userData && userData.role_id == 1 ? (
+                  <AdminCreatePublication />
+                ) : (
+                  <Navigate to="/" />
+                )
+              ) : (
+                <Navigate to="/login" />
+              )
+            }
           />
-          {/* <Route path="/admin/products" element={<HomeAdmin />} /> */}
           <Route
             path="/admin/products"
-            element={token ? <HomeAdmin /> : <Navigate to="/login" />}
+            element={
+              token ? (
+                userData && userData.role_id == 1 ? (
+                  <HomeAdmin />
+                ) : (
+                  <Navigate to="/" />
+                )
+              ) : (
+                <Navigate to="/login" />
+              )
+            }
           />
-          {/* <Route path="/admin/products:id" element={<HomeAdmin />} /> */}
         </Routes>
       </main>
       <Footer />
