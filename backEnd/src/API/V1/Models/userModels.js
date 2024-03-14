@@ -2,7 +2,7 @@ import pool from "../../../../config/db/conectionDb.js";
 import bcrypt from "bcryptjs";
 
 const createUser = async (data) => {
-  const { firstName, lastName, email, password, avatarURL, role_id = 2 } = data;
+  const { firstName, lastName, email, password, avatarURL, role_id = 2 } = data; // See README
 
   const hashedPasword = bcrypt.hashSync(password);
 
@@ -22,7 +22,7 @@ const createGoogleUser = async (data) => {
     email,
     password = data.sub,
     avatarURL = data.picture,
-    role_id = 2,
+    role_id = 2, // // See README
   } = data;
 
   const hashedPasword = bcrypt.hashSync(password);
