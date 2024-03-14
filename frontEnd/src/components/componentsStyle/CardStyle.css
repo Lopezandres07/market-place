@@ -13,8 +13,8 @@ section {
 .cardGallery {
   padding-bottom: 2rem;
   .product-image {
-    min-height: 20rem;
-    max-height: 20rem;
+    min-height: 30rem;
+    max-height: 30rem;
     object-fit: cover;
   }
 }
@@ -23,8 +23,8 @@ section {
   font-weight: 500;
 }
 .product-image {
-  min-height: 14rem;
-  max-height: 14rem;
+  min-height: 15rem;
+  max-height: 15rem;
   object-fit: cover;
 }
 
@@ -64,8 +64,8 @@ section {
 }
 
 .product-image-fav {
-  min-height: 18rem;
-  max-height: 18rem;
+  min-height: 30rem;
+  max-height: 30rem;
   object-fit: cover;
 }
 

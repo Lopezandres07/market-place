@@ -6,15 +6,15 @@ const CardGallery = ({ product }) => {
   return (
     <section>
       <div className="cardGallery">
-        <Card>
+        <Card className="shadow ">
           <Card.Img
             variant="top"
             src={product.urlimage}
             className="product-image"
           />
-          <Card.Body>
+          {/* <Card.Body>
             <Card.Title>{product.name}</Card.Title>
-          </Card.Body>
+          </Card.Body> */}
         </Card>
       </div>
     </section>

@@ -54,6 +54,10 @@ function App() {
           />
           <Route
             path="/admin/publications/create"
+            element={<AdminCreatePublication />}
+          />
+          {/* <Route
+            path="/admin/publications/create"
             element={
               token ? (
                 userData && userData.role_id == 1 ? (
@@ -65,8 +69,11 @@ function App() {
                 <Navigate to="/login" />
               )
             }
-          />
-          <Route
+          /> */}
+
+          <Route path="/admin/products" element={<HomeAdmin />} />
+
+          {/* <Route
             path="/admin/products"
             element={
               token ? (
@@ -79,7 +86,7 @@ function App() {
                 <Navigate to="/login" />
               )
             }
-          />
+          /> */}
         </Routes>
       </main>
       <Footer />

@@ -6,7 +6,7 @@ const CardFavorite = ({ favorite, removeFromFavorites, handleShowModal }) => {
   return (
     <section>
       <div className="CardFavorites">
-        <Card>
+        <Card className="shadow">
           <Card.Img
             className="product-image-fav"
             variant="top"
