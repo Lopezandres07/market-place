@@ -2,7 +2,7 @@ import {
   byEmail,
   createGoogleUser,
   createUser,
-  getUser,
+  getUserById,
   updateUser,
 } from '../Models/userModels.js'
 import bcrypt from 'bcryptjs'
@@ -34,7 +34,7 @@ const loginUser = async (req, res) => {
       if (!validPassword) {
         res.status(500).json({ error: 'Invalid password' })
       } else {
-        const { email, firstname, lastname, role_id } = findUser
+        const { id, email, firstname, lastname, role_id } = findUser
         console.log(findUser)
 
         const token = jwt.sign({ email }, process.env.JWT_SECRET, {
@@ -45,7 +45,7 @@ const loginUser = async (req, res) => {
           message: `Welcome ${firstname} ${lastname}, you have logged in`,
           code: 200,
           token,
-          userData: { email, firstname, lastname, role_id },
+          userData: { id, email, firstname, lastname, role_id },
         })
       }
     }
@@ -88,7 +88,7 @@ const googleLogin = async (req, res) => {
       if (!validPassword) {
         res.status(500).json({ error: error.message })
       } else {
-        const { email, firstname, lastname, role_id } = findUser
+        const { id, email, firstname, lastname, role_id } = findUser
         const token = jwt.sign({ email }, process.env.JWT_SECRET, {
           expiresIn: '1h',
         })
@@ -96,7 +96,7 @@ const googleLogin = async (req, res) => {
           message: `Bienvenido ${firstname} ${lastname}, has iniciado sesion`,
           code: 200,
           token,
-          userData: { email, firstname, lastname, role_id },
+          userData: { id, email, firstname, lastname, role_id },
         })
       }
     }
@@ -106,9 +106,10 @@ const googleLogin = async (req, res) => {
 }
 
 const getUserData = async (req, res) => {
+  const { id } = req.params
+
   try {
-    // Llamar al modelo para obtener los datos del usuario
-    const userData = await getUser(req.userId) // Suponiendo que el userId está disponible en req
+    const userData = await getUserById(id)
 
     if (userData) {
       res.status(200).json({ success: true, userData })

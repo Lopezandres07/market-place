@@ -8,7 +8,6 @@ const ProfilePage = () => {
   const {
     register,
     handleSubmit,
-    setValue,
     reset,
     formState: { errors },
   } = useForm()
@@ -33,41 +32,50 @@ const ProfilePage = () => {
       <div>
         <h2>Mi perfil</h2>
         {userData ? (
-          <form onSubmit={handleSubmit(onSubmit)}>
-            <label>Nombre</label>
-            <input
-              type='text'
-              {...register('firstName')}
-              defaultValue={userData.firstName}
-            />
-            {errors.firstName && <span>{errors.firstName.message}</span>}
+          <div>
+            <form onSubmit={handleSubmit(onSubmit)}>
+              <label>Nombre</label>
+              <input
+                type='text'
+                {...register('firstName')}
+                defaultValue={userData.firstName}
+              />
+              {errors.firstName && <span>{errors.firstName.message}</span>}
 
-            <label>Apellido</label>
-            <input
-              type='text'
-              {...register('lastName')}
-              defaultValue={userData.lastName}
-            />
-            {errors.lastName && <span>{errors.lastName.message}</span>}
+              <label>Apellido</label>
+              <input
+                type='text'
+                {...register('lastName')}
+                defaultValue={userData.lastName}
+              />
+              {errors.lastName && <span>{errors.lastName.message}</span>}
 
-            <label>Correo electrónico</label>
-            <input
-              type='email'
-              {...register('email')}
-              defaultValue={userData.email}
-            />
-            {errors.email && <span>{errors.email.message}</span>}
+              <label>Correo electrónico</label>
+              <input
+                type='email'
+                {...register('email')}
+                defaultValue={userData.email}
+              />
+              {errors.email && <span>{errors.email.message}</span>}
 
-            <label>Foto de perfil</label>
-            <input
-              type='text'
-              {...register('avatarURL')}
-              defaultValue={userData.avatarURL}
-            />
-            {errors.avatarURL && <span>{errors.avatarURL.message}</span>}
+              <label>Foto de perfil</label>
+              <input
+                type='text'
+                {...register('avatarURL')}
+                defaultValue={userData.avatarURL}
+              />
+              {errors.avatarURL && <span>{errors.avatarURL.message}</span>}
 
-            <button type='submit'>Guardar cambios</button>
-          </form>
+              <label>Nueva contraseña (opcional)</label>
+              <input
+                type='password'
+                {...register('password', { minLength: 6 })}
+              />
+              {errors.newPassword && <span>{errors.newPassword.message}</span>}
+
+              <button type='submit'>Guardar cambios</button>
+            </form>
+          </div>
         ) : (
           <p>Cargando datos del usuario...</p>
         )}

@@ -44,23 +44,17 @@ const byEmail = async ({ email }) => {
   }
 
   const response = await pool.query(SQLquery)
-
   return response.rows[0]
 }
 
-const getUser = async (userId) => {
-  const query = {
+const getUserById = async (id) => {
+  const SQLquery = {
     text: 'SELECT * FROM users WHERE id = $1',
-    values: [userId],
+    values: [id],
   }
 
-  try {
-    const { rows } = await pool.query(query)
-    return rows[0] // Devuelve el primer usuario encontrado
-  } catch (error) {
-    console.error('Error en getUserData modelo:', error)
-    throw new Error('Error al obtener datos del usuario')
-  }
+  const response = await pool.query(SQLquery)
+  return response.rows[0]
 }
 
 const updateUser = async (userId, userDataToUpdate) => {
@@ -80,4 +74,4 @@ const updateUser = async (userId, userDataToUpdate) => {
   }
 }
 
-export { createUser, createGoogleUser, byEmail, getUser, updateUser }
+export { createUser, createGoogleUser, byEmail, getUserById, updateUser }

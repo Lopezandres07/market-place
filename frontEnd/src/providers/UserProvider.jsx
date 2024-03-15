@@ -10,10 +10,12 @@ const UserProvider = ({ children }) => {
   const [token, setToken] = useState(initialStateToken)
   const [userData, setUserData] = useState(null)
   const navigate = useNavigate()
+  console.log(userData)
 
   useEffect(() => {
-    if (token) {
+    if (token && userData) {
       localStorage.setItem('token', token)
+      localStorage.setItem('userData', JSON.stringify(userData))
     } else {
       localStorage.removeItem('token')
       setUserData(null)
@@ -37,6 +39,7 @@ const UserProvider = ({ children }) => {
       body: JSON.stringify({ data }),
     })
     const user = await response.json()
+    console.log(user)
     setToken(user.token || null)
     if (user.token && user.userData) {
       navigate(user.userData.role_id === 1 ? '/admin/products' : '/homeUser')
@@ -61,26 +64,26 @@ const UserProvider = ({ children }) => {
     return googleUser
   }
 
-  const logout = () => {
-    setToken(null)
-    setUserData(null)
-  }
-
-  const updateUserProfile = async (userId, newData) => {
-    const response = await fetch(`http://localhost:5000/users/${userId}`, {
-      method: 'PUT',
-      headers: {
-        Authorization: `Bearer ${token}`,
-        'Content-Type': 'application/json',
-      },
-      body: JSON.stringify(newData),
-    })
+  const updateUserProfile = async (data) => {
+    const response = await fetch(
+      `http://localhost:3000/api/v1/user/${data.id}`,
+      {
+        method: 'PUT',
+        headers: {
+          Authorization: `Bearer ${token}`,
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(newData),
+      }
+    )
     const updateUser = await response.json()
     setUserData(updateUser)
   }
 
-  const getUserData = async (userId) => {
-    const response = await fetch(`http://localhost:5000/users/${userId}`, {
+  const getUserData = async (id) => {
+    console.log(id)
+
+    const response = await fetch(`http://localhost:3000/api/v1/user/${id}`, {
       method: 'GET',
       headers: {
         Authorization: `Bearer ${token}`,
@@ -88,7 +91,14 @@ const UserProvider = ({ children }) => {
       },
     })
     const user = await response.json()
-    setUserData(user)
+    console.log(user)
+
+    setUserData(user.userData)
+  }
+
+  const logout = () => {
+    setToken(null)
+    setUserData(null)
   }
 
   return (
