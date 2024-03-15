@@ -1,20 +1,18 @@
-import React, { useEffect, useContext } from 'react'
+import React, { useContext } from 'react'
 import { useForm } from 'react-hook-form'
 import { UserContext } from '../../providers/UserProvider'
 import NavigationBar from '../../components/NavigationBar'
 
 const ProfilePage = () => {
-  const { getUserData, updateUserProfile, userData } = useContext(UserContext)
+  const { updateUserProfile, userData } = useContext(UserContext)
+  console.log(userData)
+
   const {
     register,
     handleSubmit,
     reset,
     formState: { errors },
   } = useForm()
-
-  useEffect(() => {
-    getUserData()
-  }, [getUserData])
 
   const onSubmit = async (data) => {
     const response = await updateUserProfile(data)
