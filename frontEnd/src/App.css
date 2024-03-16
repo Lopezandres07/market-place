@@ -164,6 +164,27 @@
   font-weight: bold;
 }
 
+#btnGuardar {
+  background-color: #ffffff;
+  border-color: #000000;
+  color: #000000;
+}
+#btnGuardar:hover {
+  background-color: #eabe3f;
+  border-color: #000000;
+  color: #ffffff;
+}
+
+#btnCancelar {
+  background-color: #ffffff;
+  border-color: #000000;
+  color: #000000;
+}
+#btnCancelar:hover {
+  background-color: #eabe3f;
+  border-color: #000000;
+  color: #ffffff;
+}
 .login .btn {
   text-align: center;
 }
