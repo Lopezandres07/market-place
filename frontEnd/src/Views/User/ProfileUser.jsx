@@ -1,11 +1,19 @@
 import React, { useContext, useState } from 'react'
 import { UserContext } from '../../providers/UserProvider'
 import NavigationBar from '../../components/NavigationBar'
-import { Modal, Button, Form, FormGroup } from 'react-bootstrap'
+import {
+  Modal,
+  Button,
+  Card,
+  ListGroup,
+  ListGroupItem,
+  Form,
+} from 'react-bootstrap'
 import { useForm } from 'react-hook-form'
+import Swal from 'sweetalert2'
 
 const ProfilePage = () => {
-  const { updateUserProfile, userData } = useContext(UserContext)
+  const { updateUserProfile, userData, setUserData } = useContext(UserContext)
   const [showModal, setShowModal] = useState(false)
   console.log(userData)
 
@@ -14,6 +22,7 @@ const ProfilePage = () => {
     handleSubmit,
     formState: { errors },
     getValues,
+    reset,
   } = useForm()
 
   const handleCloseModal = () => setShowModal(false)
@@ -22,13 +31,78 @@ const ProfilePage = () => {
   const onSubmit = async (data) => {
     console.log(data)
 
+    if (
+      data.avatarURL.length == 0 &&
+      !data.firstname &&
+      !data.lastname &&
+      !data.email &&
+      !data.password
+    ) {
+      Swal.fire({
+        icon: 'warning',
+        title: 'Por favor ingresa algún dato a modificar',
+        allowOutsideClick: false,
+      })
+
+      reset()
+      return
+    }
+
+    const newData = { ...data }
+    console.log(newData)
+
+    newData.firstname = newData.firstname || userData.firstname
+    newData.lastname = newData.lastname || userData.lastname
+    newData.email = newData.email || userData.email
+
+    if (!newData.password) {
+      delete newData.password
+    }
+
+    if (newData.avatarURL.length > 0) {
+      const file = data.avatarURL[0]
+      const formData = new FormData()
+      formData.append('avatar', file)
+
+      try {
+        const response = await fetch(
+          'http://localhost:3000/api/v1/uploadAvatar',
+          {
+            method: 'POST',
+            body: formData,
+          }
+        )
+
+        const imageUrl = await response.json()
+        newData.avatarURL = imageUrl.fileUrl
+      } catch (error) {
+        console.error('Error uploading avatar:', error)
+      }
+    } else {
+      newData.avatarURL = userData.avatarurl
+    }
+
+    console.log(newData)
+
     try {
-      const response = await updateUserProfile(data) // Enviar datos al backend
+      const response = await updateUserProfile(newData)
+      console.log(response)
+
       if (response.success) {
-        alert('Perfil actualizado correctamente')
+        Swal.fire({
+          icon: 'success',
+          title: 'Usuario actualizado con éxito',
+          allowOutsideClick: false,
+        })
+        setUserData(response.userUpdated)
+        reset()
         handleCloseModal()
       } else {
-        alert('Error al actualizar el perfil')
+        Swal.fire({
+          icon: 'error',
+          title: 'Error al actualizar usuario',
+          allowOutsideClick: false,
+        })
       }
     } catch (error) {
       console.error('Error al actualizar el perfil:', error)
@@ -42,51 +116,30 @@ const ProfilePage = () => {
       <section className='login'>
         <h2>Mi perfil</h2>
         {userData ? (
-          <div>
-            <Form>
-              <FormGroup controlId='avatarURL'>
-                <img
-                  src={userData.avatarurl}
-                  alt='Foto de perfil'
-                  style={{ width: '100px', height: '100px' }}
-                />
-              </FormGroup>
-
-              <Form.Group controlId='firstName'>
-                <Form.Label>Nombre</Form.Label>
-                <Form.Control
-                  type='text'
-                  defaultValue={userData.firstname}
-                  disabled
-                />
-              </Form.Group>
-
-              <Form.Group controlId='lastName'>
-                <Form.Label>Apellido</Form.Label>
-                <Form.Control
-                  type='text'
-                  defaultValue={userData.lastname}
-                  disabled
-                />
-              </Form.Group>
-
-              <Form.Group controlId='email'>
-                <Form.Label>Correo electrónico</Form.Label>
-                <Form.Control
-                  type='email'
-                  defaultValue={userData.email}
-                  disabled
-                />
-              </Form.Group>
-              <section>
+          <div className='d-flex justify-content-center'>
+            <Card>
+              <Card.Img
+                src={userData.avatarurl}
+                style={{ width: '200px', height: '180px' }}
+                className='mx-auto'
+              />
+              <Card.Body>
+                <Card.Title>
+                  {userData.firstname} {userData.lastname}
+                </Card.Title>
+              </Card.Body>
+              <ListGroup className='list-group-flush'>
+                <ListGroupItem>Email: {userData.email}</ListGroupItem>
+              </ListGroup>
+              <Card.Body>
                 <Button
                   id='btn-detalles'
                   onClick={handleShowModal}
                 >
                   Editar perfil
                 </Button>
-              </section>
-            </Form>
+              </Card.Body>
+            </Card>
 
             {/* Modal para editar perfil */}
             <Modal
@@ -111,20 +164,16 @@ const ProfilePage = () => {
                     <Form.Label>Nombre</Form.Label>
                     <Form.Control
                       type='text'
-                      {...register('firstName')}
+                      {...register('firstname')}
                     />
-                    {errors.firstName && (
-                      <span>{errors.firstName.message}</span>
-                    )}
                   </Form.Group>
 
                   <Form.Group>
                     <Form.Label>Apellido</Form.Label>
                     <Form.Control
                       type='text'
-                      {...register('lastName')}
+                      {...register('lastname')}
                     />
-                    {errors.lastName && <span>{errors.lastName.message}</span>}
                   </Form.Group>
 
                   <Form.Group>
@@ -133,7 +182,6 @@ const ProfilePage = () => {
                       type='email'
                       {...register('email')}
                     />
-                    {errors.email && <span>{errors.email.message}</span>}
                   </Form.Group>
 
                   <Form.Group controlId='password'>
@@ -160,7 +208,6 @@ const ProfilePage = () => {
                     )}
                   </Form.Group>
                   <section className='d-flex'>
-                    {' '}
                     <Button
                       id='btn-detalles'
                       onClick={handleCloseModal}
