@@ -5,8 +5,7 @@ import { GoogleLogin } from '@react-oauth/google'
 import NavigationBar from '../components/NavigationBar'
 
 const Login = () => {
-  const { loginWithEmailAndPassword, loginWithGoogle, getUserData } =
-    useContext(UserContext)
+  const { loginWithEmailAndPassword, loginWithGoogle } = useContext(UserContext)
 
   const {
     register,
@@ -17,14 +16,14 @@ const Login = () => {
 
   const onSubmit = handleSubmit(async (data) => {
     const response = await loginWithEmailAndPassword(data)
-    console.log('login: ', response)
     reset()
+    return response
   })
 
   const handleGoogleLoginSuccess = async (data) => {
     const { credential } = data
     const response = await loginWithGoogle(credential)
-    console.log('google: ', response)
+    return response
   }
 
   const handleGoogleLoginFailure = () => {
