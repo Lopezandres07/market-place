@@ -1,5 +1,5 @@
 import request from 'supertest'
-import app from '../../server'
+import app from '../server'
 import { faker } from '@faker-js/faker'
 
 describe('POST /api/v1/register create user with valid params', () => {

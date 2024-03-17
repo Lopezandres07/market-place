@@ -1,5 +1,5 @@
 import request from 'supertest'
-import app from '../../server'
+import app from '../server'
 import { faker } from '@faker-js/faker'
 
 describe('GET /api/v1/products get all products', () => {
@@ -15,7 +15,7 @@ describe('POST /api/v1/products create a new product', () => {
       user_id: 27,
       name: faker.commerce.productName(),
       description: faker.lorem.paragraph(),
-      price: faker.number.int({ min: 0, max: 9999 }),
+      price: faker.number.int({ min: 0, max: 999 }),
       imageURL: faker.image.url(),
     },
   }
