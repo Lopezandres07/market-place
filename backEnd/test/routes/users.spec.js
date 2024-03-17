@@ -18,25 +18,16 @@ describe('POST /api/v1/register create user with valid params', () => {
   })
 })
 
-/* describe('POST /login', () => {
-  it('should respond with status 200 and authenticate the user', async () => {
-    const userData = {
-      email: 'usuario@example.com',
-      password: 'contraseña123',
-    }
-    const response = await request(app).post('/login').send(userData)
-    expect(response.status)
+describe('POST /api/v1/login login user with invalid credentials', () => {
+  const payload = {
+    data: {
+      email: faker.internet.email(),
+      password: faker.internet.password(),
+    },
+  }
+
+  it('should respond with status 500', async () => {
+    const response = await request(app).post('/api/v1/login').send(payload)
+    expect(response.statusCode).toBe(500)
   })
 })
-
-describe('POST /googleLogin', () => {
-  it('should respond with status 200 and authenticate the user with Google', async () => {
-    const googleAuthData = {}
-    const response = await request(app)
-      .post('/googleLogin')
-      .send(googleAuthData)
-
-    expect(response.status)
-  })
-})
- */

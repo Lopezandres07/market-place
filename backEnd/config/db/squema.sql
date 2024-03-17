@@ -27,7 +27,7 @@ CREATE TABLE products (
     id SERIAL PRIMARY KEY,
     user_id INT REFERENCES users(id) ON DELETE CASCADE,
     name VARCHAR(50) NOT NULL,
-    description VARCHAR(100) NOT NULL,
+    description VARCHAR(300) NOT NULL,
     price INT NOT NULL,
     imageURL VARCHAR (1000) NOT NULL,
     created_at TIMESTAMP NOT NULL DEFAULT NOW(),
