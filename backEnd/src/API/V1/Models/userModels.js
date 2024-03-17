@@ -48,7 +48,7 @@ const byEmail = async ({ email }) => {
 }
 
 const updateUser = async (id, newData) => {
-  console.log(newData)
+  console.log('model: ', id, newData)
 
   const { firstname, lastname, email, avatarURL } = newData
 

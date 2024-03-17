@@ -139,8 +139,6 @@ const uploadAvatar = async (req, res) => {
 const updateUserProfile = async (req, res) => {
   const { id } = req.params
   const { newData } = req.body
-  console.log(id)
-  console.log(newData)
 
   try {
     const userUpdated = await updateUser(id, newData)
