@@ -1,113 +1,105 @@
-import { createContext, useEffect, useState } from 'react'
-import { jwtDecode } from 'jwt-decode'
-import { useNavigate } from 'react-router-dom'
+import React, { createContext, useEffect, useState } from "react";
+import { jwtDecode } from "jwt-decode";
+import { useNavigate } from "react-router-dom";
 
-export const UserContext = createContext()
+export const UserContext = createContext();
 
-const initialStateToken = localStorage.getItem('token') || null
+const initialStateToken = localStorage.getItem("token") || null;
 const initialStateUserData =
-  JSON.parse(localStorage.getItem('userData')) || null
+  JSON.parse(localStorage.getItem("userData")) || null;
 
 const UserProvider = ({ children }) => {
-  const [token, setToken] = useState(initialStateToken)
-  const [userData, setUserData] = useState(initialStateUserData)
-  const navigate = useNavigate()
-
-  console.log(userData)
-  console.log('Token almacenado en el contexto:', token)
-  // console.log(userData);
+  const [token, setToken] = useState(initialStateToken);
+  const [userData, setUserData] = useState(initialStateUserData);
+  const navigate = useNavigate();
 
   useEffect(() => {
     if (token) {
-      localStorage.setItem('token', token)
+      localStorage.setItem("token", token);
     } else {
-      localStorage.removeItem('token')
+      localStorage.removeItem("token");
     }
 
     if (userData) {
-      localStorage.setItem('userData', JSON.stringify(userData))
+      localStorage.setItem("userData", JSON.stringify(userData));
     } else {
-      localStorage.removeItem('userData')
+      localStorage.removeItem("userData");
     }
-  }, [token, userData])
+  }, [token, userData]);
 
   const createUser = async (data) => {
-    const response = await fetch('http://localhost:3000/api/v1/register', {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
+    const response = await fetch("http://localhost:3000/api/v1/register", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ data }),
-    })
-    const user = await response.json()
-    return user
-  }
+    });
+    const user = await response.json();
+    return user;
+  };
 
   const loginWithEmailAndPassword = async (data) => {
-    const response = await fetch('http://localhost:3000/api/v1/login', {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
+    const response = await fetch("http://localhost:3000/api/v1/login", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ data }),
-    })
-    const user = await response.json()
-    console.log(user)
+    });
+    const user = await response.json();
 
-    setToken(user.token)
-    setUserData(user.userData)
+    setToken(user.token);
+    setUserData(user.userData);
 
     if (user.userData) {
-      navigate(user.userData.role_id === 1 ? '/admin/products' : '/homeUser')
+      navigate(user.userData.role_id === 1 ? "/admin/products" : "/homeUser");
     }
 
-    return user
-  }
+    return user;
+  };
 
   const loginWithGoogle = async (user) => {
-    const data = jwtDecode(user)
-    const response = await fetch('http://localhost:3000/api/v1/googleLogin', {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
+    const data = jwtDecode(user);
+    const response = await fetch("http://localhost:3000/api/v1/googleLogin", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ data }),
-    })
+    });
 
-    const googleUser = await response.json()
+    const googleUser = await response.json();
 
-    setToken(googleUser.token)
-    setUserData(googleUser.userData)
+    setToken(googleUser.token);
+    setUserData(googleUser.userData);
 
     if (googleUser.userData) {
       navigate(
-        googleUser.userData.role_id === 1 ? '/admin/products' : '/homeUser'
-      )
+        googleUser.userData.role_id === 1 ? "/admin/products" : "/homeUser"
+      );
     }
 
-    return googleUser
-  }
+    return googleUser;
+  };
 
   const updateUserProfile = async (newData) => {
-    console.log(newData)
-
     const response = await fetch(
       `http://localhost:3000/api/v1/user/${userData.id}`,
       {
-        method: 'PUT',
+        method: "PUT",
         headers: {
           Authorization: `Bearer ${token}`,
-          'Content-Type': 'application/json',
+          "Content-Type": "application/json",
         },
         body: JSON.stringify({ newData }),
       }
-    )
-    const updateUser = await response.json()
-    console.log(updateUser)
+    );
+    const updateUser = await response.json();
 
-    setUserData(updateUser)
+    setUserData(updateUser);
 
-    return updateUser
-  }
+    return updateUser;
+  };
 
   const logout = () => {
-    setToken(null)
-    setUserData(null)
-  }
+    setToken(null);
+    setUserData(null);
+  };
 
   return (
     <UserContext.Provider
@@ -119,12 +111,11 @@ const UserProvider = ({ children }) => {
         logout,
         updateUserProfile,
         userData,
-        setUserData,
       }}
     >
       {children}
     </UserContext.Provider>
-  )
-}
+  );
+};
 
-export default UserProvider
+export default UserProvider;

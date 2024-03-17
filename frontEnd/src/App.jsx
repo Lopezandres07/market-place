@@ -61,11 +61,11 @@ function App() {
               )
             }
           />
-          <Route
+          {/* <Route
             path="/admin/publications/create"
             element={<AdminCreatePublication />}
-          />
-          {/* <Route
+          /> */}
+          <Route
             path="/admin/publications/create"
             element={
               token ? (
@@ -78,11 +78,11 @@ function App() {
                 <Navigate to="/login" />
               )
             }
-          /> */}
+          />
 
-          <Route path="/admin/products" element={<HomeAdmin />} />
+          {/* <Route path="/admin/products" element={<HomeAdmin />} /> */}
 
-          {/* <Route
+          <Route
             path="/admin/products"
             element={
               token ? (
@@ -95,7 +95,7 @@ function App() {
                 <Navigate to="/login" />
               )
             }
-          /> */}
+          />
         </Routes>
       </main>
       <Footer />
