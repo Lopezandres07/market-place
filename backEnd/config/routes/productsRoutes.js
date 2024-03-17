@@ -5,7 +5,6 @@ import {
   removeProduct,
   updateProductController,
 } from "../../src/API/V1/Controllers/productsControllers.js";
-import { authUser } from "../../middlewares/authUser.js";
 
 const router = express.Router();
 
