@@ -10,9 +10,11 @@ const initialStateUserData =
 
 const UserProvider = ({ children }) => {
   const [token, setToken] = useState(initialStateToken)
-  console.log('Token almacenado en el contexto:', token)
   const [userData, setUserData] = useState(initialStateUserData)
   const navigate = useNavigate()
+
+  console.log(userData)
+  console.log('Token almacenado en el contexto:', token)
   // console.log(userData);
 
   useEffect(() => {
@@ -47,11 +49,14 @@ const UserProvider = ({ children }) => {
     })
     const user = await response.json()
     console.log(user)
-    console.log('Token después de iniciar sesión:', user.token)
-    setToken(user.token || null)
-    if (user.token && user.userData) {
+
+    setToken(user.token)
+    setUserData(user.userData)
+
+    if (user.userData) {
       navigate(user.userData.role_id === 1 ? '/admin/products' : '/homeUser')
     }
+
     return user
   }
 
@@ -62,18 +67,23 @@ const UserProvider = ({ children }) => {
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ data }),
     })
+
     const googleUser = await response.json()
-    setToken(googleUser.token || null)
-    if (googleUser.token && googleUser.userData) {
+
+    setToken(googleUser.token)
+    setUserData(googleUser.userData)
+
+    if (googleUser.userData) {
       navigate(
         googleUser.userData.role_id === 1 ? '/admin/products' : '/homeUser'
       )
     }
+
     return googleUser
   }
 
-  const updateUserProfile = async (data) => {
-    console.log(data)
+  const updateUserProfile = async (newData) => {
+    console.log(newData)
 
     const response = await fetch(
       `http://localhost:3000/api/v1/user/${userData.id}`,
@@ -83,29 +93,15 @@ const UserProvider = ({ children }) => {
           Authorization: `Bearer ${token}`,
           'Content-Type': 'application/json',
         },
-        body: JSON.stringify(data),
+        body: JSON.stringify({ newData }),
       }
     )
     const updateUser = await response.json()
     console.log(updateUser)
 
     setUserData(updateUser)
-  }
 
-  const getUserData = async (id) => {
-    console.log(id)
-
-    const response = await fetch(`http://localhost:3000/api/v1/user/${id}`, {
-      method: 'GET',
-      headers: {
-        Authorization: `Bearer ${token}`,
-        'Content-Type': 'application/json',
-      },
-    })
-    const user = await response.json()
-    console.log(user)
-
-    setUserData(user.userData)
+    return updateUser
   }
 
   const logout = () => {
@@ -122,8 +118,8 @@ const UserProvider = ({ children }) => {
         token,
         logout,
         updateUserProfile,
-        getUserData,
         userData,
+        setUserData,
       }}
     >
       {children}

@@ -2,7 +2,6 @@ import {
   byEmail,
   createGoogleUser,
   createUser,
-  getUserById,
   updateUser,
 } from '../Models/userModels.js'
 import bcrypt from 'bcryptjs'
@@ -34,8 +33,10 @@ const loginUser = async (req, res) => {
       if (!validPassword) {
         res.status(500).json({ error: 'Invalid password' })
       } else {
-        const { id, email, firstname, lastname, role_id } = findUser
         console.log(findUser)
+
+        const { id, email, password, firstname, lastname, avatarurl, role_id } =
+          findUser
 
         const token = jwt.sign({ email }, process.env.JWT_SECRET, {
           expiresIn: '1h',
@@ -45,7 +46,15 @@ const loginUser = async (req, res) => {
           message: `Welcome ${firstname} ${lastname}, you have logged in`,
           code: 200,
           token,
-          userData: { id, email, firstname, lastname, role_id },
+          userData: {
+            id,
+            email,
+            password,
+            firstname,
+            lastname,
+            avatarurl,
+            role_id,
+          },
         })
       }
     }
@@ -55,7 +64,8 @@ const loginUser = async (req, res) => {
 }
 
 const handleNewUser = async (res, newUser) => {
-  const { email, firstname, lastname, role_id } = newUser
+  const { id, email, password, firstname, lastname, avatarurl, role_id } =
+    newUser
 
   const token = jwt.sign({ email }, process.env.JWT_SECRET, {
     expiresIn: '1h',
@@ -65,7 +75,7 @@ const handleNewUser = async (res, newUser) => {
     message: `Bienvenido ${firstname} ${lastname}, has iniciado sesion`,
     code: 200,
     token,
-    userData: { email, firstname, lastname, role_id },
+    userData: { id, email, password, firstname, lastname, avatarurl, role_id },
   })
 }
 
@@ -88,7 +98,10 @@ const googleLogin = async (req, res) => {
       if (!validPassword) {
         res.status(500).json({ error: error.message })
       } else {
-        const { id, email, firstname, lastname, role_id } = findUser
+        console.log(findUser)
+
+        const { id, email, password, firstname, lastname, avatarurl, role_id } =
+          findUser
         const token = jwt.sign({ email }, process.env.JWT_SECRET, {
           expiresIn: '1h',
         })
@@ -96,7 +109,15 @@ const googleLogin = async (req, res) => {
           message: `Bienvenido ${firstname} ${lastname}, has iniciado sesion`,
           code: 200,
           token,
-          userData: { id, email, firstname, lastname, role_id },
+          userData: {
+            id,
+            email,
+            password,
+            firstname,
+            lastname,
+            avatarurl,
+            role_id,
+          },
         })
       }
     }
@@ -105,51 +126,25 @@ const googleLogin = async (req, res) => {
   }
 }
 
-const getUserData = async (req, res) => {
-  const { id } = req.params
-
+const uploadAvatar = async (req, res) => {
   try {
-    const userData = await getUserById(id)
-
-    if (userData) {
-      res.status(200).json({ success: true, userData })
-    } else {
-      res.status(404).json({ success: false, message: 'User not found' })
-    }
+    const fileUrl =
+      req.protocol + '://' + req.get('host') + '/uploads/' + req.file.filename
+    res.status(200).json({ fileUrl })
   } catch (error) {
-    console.error('Error en getUserData:', error)
-    res.status(500).json({ success: false, message: 'Internal server error' })
+    res.status(500).json({ error: error.message })
   }
 }
 
 const updateUserProfile = async (req, res) => {
-  /*   const userId = req.user.id; // Suponiendo que obtienes el ID del usuario del token de autenticación */
-
   const { id } = req.params
-  const { data } = req.body
-
-  console.log(id, data)
-
-  /* 
-  const { firstName, lastName, email, password } = req.body; // Obtén los datos del cuerpo de la solicitud */
+  const { newData } = req.body
+  console.log(id)
+  console.log(newData)
 
   try {
-    /*  // Actualizar el perfil del usuario en la base de datos
-    const updatedUser = await User.findByIdAndUpdate(
-      userId,
-      {
-        firstName,
-        lastName,
-        email,
-        password,
-      },
-      { new: true }
-    ); */
-
-    // Envía una respuesta con el usuario actualizado
-    /*  res.json({ success: true, user: updatedUser }) */
-
-    const userUpdated = await updateUser(id, data)
+    const userUpdated = await updateUser(id, newData)
+    console.log('new user: ', userUpdated)
 
     res.status(200).json({ success: true, userUpdated })
   } catch (error) {
@@ -160,4 +155,10 @@ const updateUserProfile = async (req, res) => {
   }
 }
 
-export { createNewUser, loginUser, googleLogin, getUserData, updateUserProfile }
+export {
+  createNewUser,
+  loginUser,
+  googleLogin,
+  uploadAvatar,
+  updateUserProfile,
+}

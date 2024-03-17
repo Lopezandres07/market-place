@@ -18,9 +18,6 @@ const Login = () => {
   const onSubmit = handleSubmit(async (data) => {
     const response = await loginWithEmailAndPassword(data)
     console.log('login: ', response)
-
-    getUserData(response.userData.id)
-
     reset()
   })
 
@@ -28,8 +25,6 @@ const Login = () => {
     const { credential } = data
     const response = await loginWithGoogle(credential)
     console.log('google: ', response)
-
-    getUserData(response.userData.id)
   }
 
   const handleGoogleLoginFailure = () => {

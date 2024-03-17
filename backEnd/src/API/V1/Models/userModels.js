@@ -47,28 +47,28 @@ const byEmail = async ({ email }) => {
   return response.rows[0]
 }
 
-const getUserById = async (id) => {
-  const SQLquery = {
-    text: 'SELECT * FROM users WHERE id = $1',
-    values: [id],
+const updateUser = async (id, newData) => {
+  console.log(newData)
+
+  const { firstname, lastname, email, avatarURL } = newData
+
+  let SQLquery
+
+  if (newData.password) {
+    const hashedPasword = bcrypt.hashSync(newData.password)
+    SQLquery = {
+      text: 'UPDATE users SET firstName = $1, lastName = $2, email = $3, password = $4, avatarURL = $5 WHERE id = $6 RETURNING *',
+      values: [firstname, lastname, email, hashedPasword, avatarURL, id],
+    }
+  } else {
+    SQLquery = {
+      text: 'UPDATE users SET firstName = $1, lastName = $2, email = $3, avatarURL = $4 WHERE id = $5 RETURNING *',
+      values: [firstname, lastname, email, avatarURL, id],
+    }
   }
 
   const response = await pool.query(SQLquery)
   return response.rows[0]
 }
 
-const updateUser = async (id, data) => {
-  const { firstName, lastName, email, password, avatarURL } = data
-
-  const hashedPasword = bcrypt.hashSync(password)
-
-  const SQLquery = {
-    text: 'UPDATE users SET first_name = $1, last_name = $2, email = $3, password = $4 avatar_url = $5 WHERE id = $6 RETURNING *',
-    values: [firstName, lastName, email, hashedPasword, avatarURL, id],
-  }
-
-  const response = await pool.query(SQLquery)
-  return response.rows[0]
-}
-
-export { createUser, createGoogleUser, byEmail, getUserById, updateUser }
+export { createUser, createGoogleUser, byEmail, updateUser }
