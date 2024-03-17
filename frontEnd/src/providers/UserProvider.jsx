@@ -45,6 +45,8 @@ const UserProvider = ({ children }) => {
     })
     const user = await response.json()
 
+    console.log(user)
+
     setToken(user.token)
     setUserData(user.userData)
 

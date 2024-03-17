@@ -1,24 +1,21 @@
-import React from "react";
-import { Card } from "react-bootstrap";
-import "./componentsStyle/CardStyle.css";
+import React from 'react'
+import { Card } from 'react-bootstrap'
+import './componentsStyle/CardStyle.css'
 
 const CardGallery = ({ product }) => {
   return (
     <section>
-      <div className="cardGallery">
-        <Card className="shadow ">
+      <div className='cardGallery'>
+        <Card className='shadow '>
           <Card.Img
-            variant="top"
+            variant='top'
             src={product.urlimage}
-            className="product-image"
+            className='product-image'
           />
-          {/* <Card.Body>
-            <Card.Title>{product.name}</Card.Title>
-          </Card.Body> */}
         </Card>
       </div>
     </section>
-  );
-};
+  )
+}
 
-export default CardGallery;
+export default CardGallery

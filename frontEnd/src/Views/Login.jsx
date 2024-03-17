@@ -3,6 +3,7 @@ import { useForm } from 'react-hook-form'
 import { UserContext } from '../providers/UserProvider'
 import { GoogleLogin } from '@react-oauth/google'
 import NavigationBar from '../components/NavigationBar'
+import Swal from 'sweetalert2'
 
 const Login = () => {
   const { loginWithEmailAndPassword, loginWithGoogle } = useContext(UserContext)
@@ -14,10 +15,36 @@ const Login = () => {
     formState: { errors },
   } = useForm()
 
+  const Toast = Swal.mixin({
+    toast: true,
+    position: 'top-end',
+    showConfirmButton: false,
+    timer: 3000,
+    timerProgressBar: true,
+    didOpen: (toast) => {
+      toast.onmouseenter = Swal.stopTimer
+      toast.onmouseleave = Swal.resumeTimer
+    },
+  })
+
   const onSubmit = handleSubmit(async (data) => {
-    const response = await loginWithEmailAndPassword(data)
-    reset()
-    return response
+    try {
+      const response = await loginWithEmailAndPassword(data)
+      if (response.success) {
+        Toast.fire({
+          icon: 'success',
+          title: `¡Saludos ${response.userData.firstname} ${response.userData.lastname}!`,
+        })
+        reset()
+      } else {
+        Toast.fire({
+          icon: 'warning',
+          text: 'Usuario o contraseña incorrectos.',
+        })
+      }
+    } catch (error) {
+      console.error('Error al iniciar sesión:', error)
+    }
   })
 
   const handleGoogleLoginSuccess = async (data) => {

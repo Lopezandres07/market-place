@@ -137,7 +137,6 @@ const ProfilePage = () => {
               </Card.Body>
             </Card>
 
-            {/* Modal para editar perfil */}
             <Modal
               show={showModal}
               onHide={handleCloseModal}

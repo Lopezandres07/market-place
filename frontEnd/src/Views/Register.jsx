@@ -10,7 +10,6 @@ const Register = () => {
   const {
     register,
     handleSubmit,
-    setValue,
     reset,
     watch,
     formState: { errors },

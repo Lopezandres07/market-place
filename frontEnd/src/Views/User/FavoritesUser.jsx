@@ -1,22 +1,21 @@
-import React from "react";
-import { Link } from "react-router-dom";
-import "../../App.css";
-import Favorites from "../../components/Favorites";
-import NavigationBar from "../../components/NavigationBar";
+import React from 'react'
+import '../../App.css'
+import Favorites from '../../components/Favorites'
+import NavigationBar from '../../components/NavigationBar'
 
 function FavoritesUser() {
   return (
     <>
       <NavigationBar />
-      <div className="container">
-        <div className="content">
-          <main className="main-content">
+      <div className='container'>
+        <div className='content'>
+          <main className='main-content'>
             <Favorites />
           </main>
         </div>
       </div>
     </>
-  );
+  )
 }
 
-export default FavoritesUser;
+export default FavoritesUser

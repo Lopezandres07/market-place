@@ -43,9 +43,8 @@ const loginUser = async (req, res) => {
         })
 
         res.status(200).json({
-          message: `Welcome ${firstname} ${lastname}, you have logged in`,
-          code: 200,
           token,
+          success: true,
           userData: {
             id,
             email,
@@ -72,8 +71,6 @@ const handleNewUser = async (res, newUser) => {
   })
 
   res.status(200).json({
-    message: `Bienvenido ${firstname} ${lastname}, has iniciado sesion`,
-    code: 200,
     token,
     userData: { id, email, password, firstname, lastname, avatarurl, role_id },
   })
@@ -106,8 +103,6 @@ const googleLogin = async (req, res) => {
           expiresIn: '1h',
         })
         res.status(200).json({
-          message: `Bienvenido ${firstname} ${lastname}, has iniciado sesion`,
-          code: 200,
           token,
           userData: {
             id,
