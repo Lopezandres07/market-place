@@ -1,7 +1,9 @@
 import {
+  addFavorite,
   createProduct,
   deleteProduct,
   getAllProducts,
+  removeFavorite,
   updateProduct,
 } from "../../../API/V1/Models/productsModels.js";
 
@@ -62,10 +64,43 @@ const updateProductController = async (req, res) => {
   } catch (error) {
     res.status(400).json(error.message);
   }
-};
+}
+
+const addToFavorites = async (req, res) => {
+  const { product } = req.body
+
+  try {
+    const newFavorite = await addFavorite(product)
+    res.status(200).json({ success: true, newFavorite })
+  } catch (error) {
+    console.error('Error adding product to favorites:', error)
+    res
+      .status(500)
+      .json({ success: false, message: 'Error adding product to favorites' })
+  }
+}
+
+const removeFromFavorites = async (req, res) => {
+  const { userId, productId } = req.body
+
+  try {
+    const removedFavorite = await removeFavorite(userId, productId)
+    res.status(200).json({ success: true, data: removedFavorite })
+  } catch (error) {
+    console.error('Error removing product from favorites:', error)
+    res.status(500).json({
+      success: false,
+      message: 'Error removing product from favorites',
+    })
+  }
+}
+
 export {
   createNewProduct,
   removeProduct,
   getAllProductsController,
   updateProductController,
-};
+  addToFavorites,
+  removeFromFavorites,
+}
+

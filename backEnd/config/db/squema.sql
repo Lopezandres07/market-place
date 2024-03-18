@@ -34,7 +34,7 @@ CREATE TABLE products (
     updated_at TIMESTAMP NOT NULL DEFAULT NOW()   
 );
 
-CREATE TABLE users_favourites (
+CREATE TABLE users_favorites (
     id SERIAL PRIMARY KEY,
     user_id INT REFERENCES users(id) ON DELETE CASCADE,
     product_id INT REFERENCES products(id) ON DELETE CASCADE,

@@ -39,10 +39,48 @@ const updateProduct = async (productId, { name, description, price }) => {
     text: 'UPDATE products SET name = $1, description = $2, price = $3 WHERE id = $4 RETURNING *',
     values: [name, description, price, productId],
   }
-  console.log(SQLquery)
-
   const response = await pool.query(SQLquery)
   return response.rows[0]
 }
 
-export { createProduct, deleteProduct, getAllProducts, updateProduct }
+const addFavorite = async (product) => {
+  const { user_id, id } = product
+
+  try {
+    const SQLquery = {
+      text: 'INSERT INTO users_favorites (user_id, product_id) VALUES ($1, $2) RETURNING *',
+      values: [user_id, id],
+    }
+
+    const response = await pool.query(SQLquery)
+    return response.rows[0]
+  } catch (error) {
+    console.error('Error adding product to favorites:', error)
+    throw new Error('Error adding product to favorites')
+  }
+}
+
+const removeFavorite = async (product) => {
+  const { user_id, id } = product
+
+  try {
+    const SQLquery = {
+      text: 'DELETE FROM users_favorites WHERE user_id = $1 AND product_id = $2  RETURNING *',
+      values: [user_id, id],
+    }
+    const response = await pool.query(SQLquery)
+    return response.rows[0]
+  } catch (error) {
+    console.error('Error removing product from favorites:', error)
+    throw new Error('Error removing product from favorites')
+  }
+}
+
+export {
+  createProduct,
+  deleteProduct,
+  getAllProducts,
+  updateProduct,
+  addFavorite,
+  removeFavorite,
+}
