@@ -157,11 +157,14 @@
 
 #btnEnviar {
   background-color: #ffffff;
+  border-color: #000000;
+  color: #000000;
+  border-radius: 0.3rem;
 }
 #btnEnviar:hover {
   background-color: #eabe3f;
+  border-color: #000000;
   color: #ffffff;
-  font-weight: bold;
 }
 
 #btnGuardar {
@@ -223,4 +226,13 @@
 
 .modal {
   text-align: center;
+}
+.llamanos {
+  color: #000;
+  text-decoration: none;
+}
+
+.llamanos:hover {
+  color: #eabe3f;
+  text-decoration: underline;
 }
