@@ -16,6 +16,8 @@ Después de eso, solo el usuario Admin puede crear y modificar productos y solo 
 
 DEPLOY
 
+backEnd
 https://market-place-4d96.onrender.com  {working on it} // https://market-place-4d96.onrender.com/api/v1/docs/
-https://marketplacecolumpios.netlify.app/ {working om it}
 
+frontEnd
+https://market-place-murex.vercel.app/register
