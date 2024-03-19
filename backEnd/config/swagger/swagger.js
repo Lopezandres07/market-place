@@ -1,36 +1,36 @@
-import swaggerJSDoc from 'swagger-jsdoc'
-import swaggerUi from 'swagger-ui-express'
-import YAML from 'yamljs'
+import swaggerJSDoc from "swagger-jsdoc";
+import swaggerUi from "swagger-ui-express";
+import YAML from "yamljs";
 
 const options = {
   definition: {
-    openapi: '3.0.0',
+    openapi: "3.0.0",
     info: {
-      title: 'Market Place API',
-      version: '1.0.0',
-      description: 'API para el manejo de usuarios y articulos',
+      title: "Market Place API",
+      version: "1.0.0",
+      description: "API para el manejo de usuarios y articulos",
     },
     servers: [
       {
-        url: 'http://localhost:3000/api/v1',
+        url: "https://market-place-4d96.onrender.com/api/v1",
       },
     ],
   },
-  apis: ['config/routes/docs/*.yaml'],
-}
+  apis: ["config/routes/docs/*.yaml"],
+};
 
-const swaggerDocument = YAML.load('config/routes/docs/swaggerV1.yaml')
+const swaggerDocument = YAML.load("config/routes/docs/swaggerV1.yaml");
 
-const specs = swaggerJSDoc({ ...options, ...swaggerDocument })
+const specs = swaggerJSDoc({ ...options, ...swaggerDocument });
 
 export default (app) => {
   app.use(
-    '/api/v1/docs',
+    "/api/v1/docs",
     swaggerUi.serve,
     swaggerUi.setup(specs, {
       explorer: true,
       customCssUrl:
-        'https://cdn.jsdelivr.net/npm/swagger-ui-themes@3.0.0/themes/3.x/theme-material.css',
+        "https://cdn.jsdelivr.net/npm/swagger-ui-themes@3.0.0/themes/3.x/theme-material.css",
     })
-  )
-}
+  );
+};
