@@ -28,14 +28,11 @@ const UserProvider = ({ children }) => {
   }, [token, userData]);
 
   const createUser = async (data) => {
-    const response = await fetch(
-      "https://market-place-4d96.onrender.com/api/v1/register",
-      {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ data }),
-      }
-    );
+    const response = await fetch("http://localhost:3000/api/v1/register", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ data }),
+    });
     const user = await response.json();
     return user;
   };
