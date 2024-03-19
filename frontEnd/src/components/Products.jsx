@@ -1,18 +1,22 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState, useEffect, useContext } from 'react'
 import { Link } from 'react-router-dom'
 import { Row, Col, Button } from 'react-bootstrap'
 import CardProduct from './CardProducts'
 import { Modal } from 'react-bootstrap'
 import axios from 'axios'
 
-import { useFavorites } from '../providers/FavoritesContext.jsx'
+import { FavoritesContext } from '../providers/FavoritesContext.jsx'
+import { UserContext } from '../providers/UserProvider.jsx'
 const dataAPI = 'http://localhost:3000/API/V1/products'
 
 const Products = ({ nameFilter }) => {
-  const { favorites, addToFavorites, toggleFavorite } = useFavorites()
+  const { favorites, addToFavorites } = useContext(FavoritesContext)
+  const { userData } = useContext(UserContext)
   const [showDetails, setShowDetails] = useState(false)
   const [selectedProduct, setSelectedProduct] = useState(null)
   const [products, setProducts] = useState([])
+
+  console.log(userData)
 
   useEffect(() => {
     const fetchData = async () => {
@@ -53,6 +57,7 @@ const Products = ({ nameFilter }) => {
     )}`
     window.open(whatsappURL, '_blank')
   }
+
   return (
     <>
       <h2 className='text-center mb-4'>Productos</h2>
@@ -74,9 +79,10 @@ const Products = ({ nameFilter }) => {
               product={item}
               handleDetailsClick={handleDetailsClick}
               addToFavorites={addToFavorites}
-              toggleFavorite={toggleFavorite}
+              /*               toggleFavorite={toggleFavorite} */
               isFavorite={isFavorite}
-              favorites={favorites}
+              userData={userData}
+              handleWhatsAppClick={handleWhatsAppClick}
             />
           </Col>
         ))}

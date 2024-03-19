@@ -43,37 +43,39 @@ const updateProduct = async (productId, { name, description, price }) => {
   return response.rows[0]
 }
 
-const addFavorite = async (product) => {
-  const { user_id, id } = product
-
-  try {
-    const SQLquery = {
-      text: 'INSERT INTO users_favorites (user_id, product_id) VALUES ($1, $2) RETURNING *',
-      values: [user_id, id],
-    }
-
-    const response = await pool.query(SQLquery)
-    return response.rows[0]
-  } catch (error) {
-    console.error('Error adding product to favorites:', error)
-    throw new Error('Error adding product to favorites')
+const getUserFavorites = async (id) => {
+  const SQLquery = {
+    text: `SELECT p.id, p.name, p.description, p.imageurl 
+           FROM users_favorites AS uf 
+           JOIN products AS p ON uf.product_id = p.id 
+           WHERE uf.user_id = $1`,
+    values: [id],
   }
+
+  const response = await pool.query(SQLquery)
+  console.log(response)
+
+  return response.rows[0]
 }
 
-const removeFavorite = async (product) => {
-  const { user_id, id } = product
-
-  try {
-    const SQLquery = {
-      text: 'DELETE FROM users_favorites WHERE user_id = $1 AND product_id = $2  RETURNING *',
-      values: [user_id, id],
-    }
-    const response = await pool.query(SQLquery)
-    return response.rows[0]
-  } catch (error) {
-    console.error('Error removing product from favorites:', error)
-    throw new Error('Error removing product from favorites')
+const addFavorite = async (productId, userId) => {
+  const SQLquery = {
+    text: 'INSERT INTO users_favorites (user_id, product_id) VALUES ($1, $2) RETURNING *',
+    values: [userId, productId],
   }
+
+  const response = await pool.query(SQLquery)
+  return response.rows[0]
+}
+
+const removeFavorite = async (id) => {
+  const SQLquery = {
+    text: 'DELETE FROM users_favorites WHERE id = $1 RETURNING *',
+    values: [id],
+  }
+
+  const response = await pool.query(SQLquery)
+  return response.rows[0]
 }
 
 export {
@@ -81,6 +83,7 @@ export {
   deleteProduct,
   getAllProducts,
   updateProduct,
+  getUserFavorites,
   addFavorite,
   removeFavorite,
 }

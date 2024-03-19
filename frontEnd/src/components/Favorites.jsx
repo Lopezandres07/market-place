@@ -1,16 +1,20 @@
-import React from 'react'
+import React, { useContext, useEffect } from 'react'
 import { Row, Col, Button, Modal } from 'react-bootstrap'
 import CardFavorite from './CardFavorite'
-import { useFavorites } from '../providers/FavoritesContext.jsx'
+import { FavoritesContext } from '../providers/FavoritesContext.jsx'
 import { useState } from 'react'
 import { Link } from 'react-router-dom'
 
-const Favorites = () => {
-  const { favorites, removeFromFavorites } = useFavorites()
+const Favorites = (handleWhatsAppClick) => {
+  /*   const { favorites } = useFavorites() */
   const [showModal, setShowModal] = useState(false)
   const [selectedProduct, setSelectedProduct] = useState(null)
+  const { getFavorites, favorites, removeFromFavorites } =
+    useContext(FavoritesContext)
 
-  console.log(favorites)
+  useEffect(() => {
+    getFavorites()
+  }, [])
 
   const handleShowModal = (product) => {
     setSelectedProduct(product)
@@ -20,14 +24,13 @@ const Favorites = () => {
   const handleCloseModal = () => {
     setShowModal(false)
   }
-  const handleWhatsAppClick = () => {
-    const phoneNumber = '+56971597559'
-    const message =
-      '¡Hola! Estoy interesado en comprar el producto: ' + selectedProduct.name
-    const whatsappURL = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(
-      message
-    )}`
-    window.open(whatsappURL, '_blank')
+
+  const handleRemoveFavorite = async (favoriteId) => {
+    try {
+      await removeFromFavorites(favoriteId)
+    } catch (error) {
+      console.log(error)
+    }
   }
 
   return (
@@ -49,8 +52,8 @@ const Favorites = () => {
           <Col key={item.id}>
             <CardFavorite
               favorite={item}
-              removeFromFavorites={removeFromFavorites}
               handleShowModal={handleShowModal}
+              handleRemoveFavorite={handleRemoveFavorite}
             />
           </Col>
         ))}
