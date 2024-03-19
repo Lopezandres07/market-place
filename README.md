@@ -13,3 +13,9 @@ Para iniciar y probar esta aplicación, vaya a backEnd/src/API/V1/userModels.js 
 Si desea crear el Admin con Google, vaya a backEnd/src/API/V1/userModels.js en const createGoogleUser, cambie role_id a 1 para crear un usuario Admin y luego configúrelo nuevamente en 2.
 
 Después de eso, solo el usuario Admin puede crear y modificar productos y solo se pueden crear Users con la vista Register.jsx.
+
+DEPLOY
+
+https://market-place-4d96.onrender.com  {working on it} // https://market-place-4d96.onrender.com/api/v1/docs/
+https://marketplacecolumpios.netlify.app/ {working om it}
+
