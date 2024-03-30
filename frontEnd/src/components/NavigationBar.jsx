@@ -43,6 +43,12 @@ const NavigationBar = () => {
               </NavLink>
               <NavLink
                 className={setActiveClass}
+                to='/aboutUs'
+              >
+                Conóceme
+              </NavLink>
+              <NavLink
+                className={setActiveClass}
                 to={`/user/${userData.id}`}
               >
                 Mi Perfil
@@ -57,6 +63,12 @@ const NavigationBar = () => {
             </div>
           ) : (
             <div>
+              <NavLink
+                className={setActiveClass}
+                to='/aboutUs'
+              >
+                Conóceme
+              </NavLink>
               <NavLink
                 to='/login'
                 className={setActiveClass}

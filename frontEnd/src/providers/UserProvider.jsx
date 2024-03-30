@@ -11,6 +11,7 @@ const initialStateUserData =
 const UserProvider = ({ children }) => {
   const [token, setToken] = useState(initialStateToken)
   const [userData, setUserData] = useState(initialStateUserData)
+  console.log(userData)
   const navigate = useNavigate()
 
   useEffect(() => {

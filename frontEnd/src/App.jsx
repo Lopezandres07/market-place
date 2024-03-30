@@ -14,6 +14,7 @@ import HomeAdmin from './Views/Admin/HomeAdmin'
 import Footer from './components/Footer'
 import ProfileUser from './Views/User/ProfileUser'
 import NavigationBar from './components/NavigationBar'
+import AboutUs from './components/AboutUs'
 
 function App() {
   const { token, userData } = useContext(UserContext)
@@ -46,6 +47,10 @@ function App() {
           <Route
             path='/register'
             element={<Register />}
+          />
+          <Route
+            path='/aboutUs'
+            element={<AboutUs />}
           />
           <Route
             path='/homeUser'
