@@ -9,22 +9,20 @@ import jwt from 'jsonwebtoken'
 
 const createNewUser = async (req, res) => {
   const { data } = req.body
-
   try {
     const newUser = await createUser(data)
-
+    console.log('new user: ', newUser)
     res.status(201).json({ success: true, newUser })
   } catch (error) {
+    console.log(error)
     res.status(400).json(error.message)
   }
 }
 
 const loginUser = async (req, res) => {
   const { data } = req.body
-
   try {
     const findUser = await byEmail(data)
-
     if (!findUser) {
       res.status(500).json({ error: 'User not found' })
     } else {
@@ -34,14 +32,11 @@ const loginUser = async (req, res) => {
         res.status(500).json({ error: 'Invalid password' })
       } else {
         console.log(findUser)
-
         const { id, email, password, firstname, lastname, avatarurl, role_id } =
           findUser
-
         const token = jwt.sign({ email }, process.env.JWT_SECRET, {
           expiresIn: '1h',
         })
-
         res.status(200).json({
           token,
           success: true,
@@ -65,11 +60,9 @@ const loginUser = async (req, res) => {
 const handleNewUser = async (res, newUser) => {
   const { id, email, password, firstname, lastname, avatarurl, role_id } =
     newUser
-
   const token = jwt.sign({ email }, process.env.JWT_SECRET, {
     expiresIn: '1h',
   })
-
   res.status(200).json({
     token,
     userData: { id, email, password, firstname, lastname, avatarurl, role_id },
@@ -78,10 +71,8 @@ const handleNewUser = async (res, newUser) => {
 
 const googleLogin = async (req, res) => {
   const { data } = req.body
-
   try {
     const findUser = await byEmail(data)
-
     if (!findUser) {
       try {
         const newUser = await createGoogleUser(data)
@@ -91,12 +82,10 @@ const googleLogin = async (req, res) => {
       }
     } else {
       const validPassword = bcrypt.compareSync(data.sub, findUser.password)
-
       if (!validPassword) {
         res.status(500).json({ error: error.message })
       } else {
         console.log(findUser)
-
         const { id, email, password, firstname, lastname, avatarurl, role_id } =
           findUser
         const token = jwt.sign({ email }, process.env.JWT_SECRET, {
@@ -134,11 +123,9 @@ const uploadAvatar = async (req, res) => {
 const updateUserProfile = async (req, res) => {
   const { id } = req.params
   const { newData } = req.body
-
   try {
     const userUpdated = await updateUser(id, newData)
-    console.log('new user: ', userUpdated)
-
+    console.log('updated user: ', userUpdated)
     res.status(200).json({ success: true, userUpdated })
   } catch (error) {
     console.error('Error al actualizar el perfil:', error)

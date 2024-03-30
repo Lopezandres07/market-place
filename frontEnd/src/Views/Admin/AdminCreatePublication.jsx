@@ -2,12 +2,10 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import '../../App.css'
 import CreatePublication from '../../components/CreatePublication'
-import NavigationBarAdmin from '../../components/NavigationBarAdmin'
 
 function AdminCreatePublication() {
   return (
     <>
-      <NavigationBarAdmin />
       <div className='container'>
         <div className='content'>
           <aside className='sidebar'>

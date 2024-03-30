@@ -13,9 +13,8 @@ const NavigationBar = () => {
   return (
     <>
       <Navbar
-        className='d-flex justify-content-between px-4 py-0 '
+        className='d-flex justify-content-between px-4'
         style={{
-          backgroundColor: 'white',
           borderBottom: '5px solid #eabf3fb1',
         }}
       >
@@ -34,56 +33,44 @@ const NavigationBar = () => {
           </NavbarText>
         </Navbar.Brand>
         <Nav>
-          <div>
-            {token && userData ? (
-              <>
-                <section className='navLink'>
-                  <NavLink
-                    className={setActiveClass}
-                    to='/homeUser'
-                  >
-                    Inicio
-                  </NavLink>
-                </section>
-                <section className='navLink'>
-                  <NavLink
-                    className={setActiveClass}
-                    to={`/user/${userData.id}`}
-                  >
-                    Mi Perfil
-                  </NavLink>
-                </section>
-                <section className='navLink'>
-                  <NavLink
-                    className={setActiveClass}
-                    onClick={logout}
-                    to='/'
-                  >
-                    Cerrar Sesión
-                  </NavLink>
-                </section>
-              </>
-            ) : (
-              <>
-                <section className='navLink'>
-                  <NavLink
-                    to='/login'
-                    className={setActiveClass}
-                  >
-                    Iniciar Sesión
-                  </NavLink>
-                </section>
-                <section className='navLink'>
-                  <NavLink
-                    to='/register'
-                    className={setActiveClass}
-                  >
-                    Registrarse
-                  </NavLink>
-                </section>
-              </>
-            )}
-          </div>
+          {token && userData ? (
+            <div className='link'>
+              <NavLink
+                className={setActiveClass}
+                to='/homeUser'
+              >
+                Inicio
+              </NavLink>
+              <NavLink
+                className={setActiveClass}
+                to={`/user/${userData.id}`}
+              >
+                Mi Perfil
+              </NavLink>
+              <NavLink
+                className={setActiveClass}
+                onClick={logout}
+                to='/'
+              >
+                Cerrar Sesión
+              </NavLink>
+            </div>
+          ) : (
+            <div>
+              <NavLink
+                to='/login'
+                className={setActiveClass}
+              >
+                Iniciar Sesión
+              </NavLink>
+              <NavLink
+                to='/register'
+                className={setActiveClass}
+              >
+                Registrarse
+              </NavLink>
+            </div>
+          )}
         </Nav>
       </Navbar>
     </>

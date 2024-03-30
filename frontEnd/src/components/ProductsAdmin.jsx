@@ -10,6 +10,7 @@ const ProductsAdmin = () => {
   const [showDetails, setShowDetails] = useState(false)
   const [selectedProduct, setSelectedProduct] = useState(null)
   const [products, setProducts] = useState([])
+  console.log('products: ', products)
 
   useEffect(() => {
     const fetchData = async () => {

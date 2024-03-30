@@ -102,36 +102,23 @@
   margin: 0;
 }
 
-/* Estilos para los enlaces */
 .link {
-  color: #000;
-  text-decoration: none;
-}
-.link:hover {
-  color: #eabe3f;
-  text-decoration: underline;
-}
-
-.navLink {
-  color: #000;
-  text-decoration: none;
-  display: flex;
-  flex-direction: column;
-}
-
-.navLink:hover {
-  color: #eabe3f;
-  text-decoration: underline;
+  display: block;
+  flex-direction: row;
 }
 
 .active {
   color: rgb(0, 0, 0);
-  font-weight: bold;
   text-decoration: none;
+  border: 2px solid #eabf3fb1;
+  padding: 0.3rem;
+  border-radius: 0.5rem;
 }
+
 .noActive {
   color: rgb(0, 0, 0);
   text-decoration: none;
+  padding: 0.3rem;
 }
 
 .social-links .fab.fa-instagram {

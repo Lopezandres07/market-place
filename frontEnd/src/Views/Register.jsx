@@ -2,7 +2,6 @@ import React, { useContext } from 'react'
 import { useForm } from 'react-hook-form'
 import { UserContext } from '../providers/UserProvider'
 import Swal from 'sweetalert2'
-import NavigationBar from '../components/NavigationBar'
 
 const Register = () => {
   const { createUser } = useContext(UserContext)
@@ -58,7 +57,6 @@ const Register = () => {
 
   return (
     <>
-      <NavigationBar />
       <section className='register'>
         <h1>Creación de usuario</h1>
         <form onSubmit={onSubmit}>

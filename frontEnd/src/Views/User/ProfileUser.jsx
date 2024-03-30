@@ -1,6 +1,5 @@
 import React, { useContext, useState } from 'react'
 import { UserContext } from '../../providers/UserProvider'
-import NavigationBar from '../../components/NavigationBar'
 import {
   Modal,
   Button,
@@ -108,7 +107,6 @@ const ProfilePage = () => {
 
   return (
     <>
-      <NavigationBar />
       <section className='login'>
         <h2>Mi perfil</h2>
         {userData ? (

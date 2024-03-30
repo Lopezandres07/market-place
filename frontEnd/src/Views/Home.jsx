@@ -1,16 +1,14 @@
-import React from "react";
-import { Link } from "react-router-dom";
-import Gallery from "../components/Gallery";
-import "../App.css";
-import NavigationBar from "../components/NavigationBar";
+import React from 'react'
+import { Link } from 'react-router-dom'
+import Gallery from '../components/Gallery'
+import '../App.css'
 
 function Home() {
   return (
     <>
-      <NavigationBar />
-      <div className="container">
-        <div className="content">
-          <main className="main-content">
+      <div className='container'>
+        <div className='content'>
+          <main className='main-content'>
             <h2>Bienvenido a Rústico Kids</h2>
             <p>
               Descubre una amplia variedad de productos de diferentes
@@ -18,14 +16,20 @@ function Home() {
             </p>
             <Gallery />
             <p>
-              ¿Ya tienes una cuenta?{" "}
-              <Link to="/login" className="link">
+              ¿Ya tienes una cuenta?{' '}
+              <Link
+                to='/login'
+                className='link'
+              >
                 Inicia sesión
               </Link>
             </p>
             <p>
-              ¿Eres nuevo aquí?{" "}
-              <Link to="/register" className="link">
+              ¿Eres nuevo aquí?{' '}
+              <Link
+                to='/register'
+                className='link'
+              >
                 Regístrate
               </Link>
             </p>
@@ -33,7 +37,7 @@ function Home() {
         </div>
       </div>
     </>
-  );
+  )
 }
 
-export default Home;
+export default Home

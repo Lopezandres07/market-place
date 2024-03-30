@@ -3,15 +3,12 @@ import bcrypt from 'bcryptjs'
 
 const createUser = async (data) => {
   const { firstName, lastName, email, password, avatarURL, role_id = 2 } = data // See README
-
   const hashedPasword = bcrypt.hashSync(password)
-
   const SQLquery = {
-    text: 'INSERT INTO users (firstName, lastName, email, password, avatarURL, role_id) VALUES ($1, $2, $3, $4, $5, $6) RETURNING *',
+    text: 'INSERT INTO users (firstname, lastname, email, password, avatarurl, role_id) VALUES ($1, $2, $3, $4, $5, $6) RETURNING *',
     values: [firstName, lastName, email, hashedPasword, avatarURL, role_id],
   }
   const response = await pool.query(SQLquery)
-
   return response.rows[0]
 }
 

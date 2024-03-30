@@ -13,6 +13,7 @@ import AdminCreatePublication from './Views/Admin/AdminCreatePublication'
 import HomeAdmin from './Views/Admin/HomeAdmin'
 import Footer from './components/Footer'
 import ProfileUser from './Views/User/ProfileUser'
+import NavigationBar from './components/NavigationBar'
 
 function App() {
   const { token, userData } = useContext(UserContext)
@@ -31,6 +32,7 @@ function App() {
 
   return (
     <>
+      <NavigationBar />
       <main>
         <Routes>
           <Route

@@ -11,6 +11,8 @@ CREATE TABLE roles (
     role_name VARCHAR(50) NOT NULL
 );
 
+INSERT INTO roles (role_name) VALUES ('Administrator'), ('User');
+
 CREATE TABLE users (
     id SERIAL PRIMARY KEY,
     role_id INT REFERENCES roles(id),
@@ -22,6 +24,8 @@ CREATE TABLE users (
     created_at TIMESTAMP NOT NULL DEFAULT NOW(),
     updated_at TIMESTAMP NOT NULL DEFAULT NOW()   
 );
+
+UPDATE users SET role_id = 1 WHERE id = 42;
 
 CREATE TABLE products (
     id SERIAL PRIMARY KEY,

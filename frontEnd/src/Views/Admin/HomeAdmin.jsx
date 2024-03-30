@@ -2,12 +2,10 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import '../../App.css'
 import ProductsAdmin from '../../components/ProductsAdmin'
-import NavigationBarAdmin from '../../components/NavigationBarAdmin'
 
 function HomeAdmin() {
   return (
     <>
-      <NavigationBarAdmin />
       <div className='container'>
         <div className='content'>
           <aside className='sidebar'>
