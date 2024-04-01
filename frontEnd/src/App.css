@@ -7,7 +7,8 @@
 }
 
 .logo {
-  padding: 0.3rem;
+  width: 11rem;
+  padding: 0.2rem;
 }
 
 .container {
@@ -41,7 +42,6 @@
 }
 
 .sidebar {
-  background-color: #ffffff;
   padding: 20px;
   width: 15%;
   min-width: 11rem;
@@ -89,7 +89,6 @@
 }
 
 .footer {
-  background-color: white;
   color: black;
   padding: 0.5rem;
   text-align: center;
@@ -102,9 +101,13 @@
   margin: 0;
 }
 
+.navigation {
+  border-bottom: 5px solid #eabf3fb1;
+}
+
 .link {
-  display: block;
-  flex-direction: row;
+  display: flex;
+  align-items: center;
 }
 
 .active {
@@ -118,6 +121,7 @@
 .noActive {
   color: rgb(0, 0, 0);
   text-decoration: none;
+  border: 2px solid transparent;
   padding: 0.3rem;
 }
 
@@ -170,18 +174,22 @@
   border-color: #000000;
   color: #000000;
 }
+
 #btnCancelar:hover {
   background-color: #eabe3f;
   border-color: #000000;
   color: #ffffff;
 }
+
 .login .btn {
   text-align: center;
 }
+
 .google-login-button {
   background-color: #ffffff;
   border-radius: 20rem;
 }
+
 .google-login-button:hover {
   background-color: #eabe3f;
   color: #ffffff;
