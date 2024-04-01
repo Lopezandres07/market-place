@@ -223,3 +223,25 @@
   color: #eabe3f;
   text-decoration: underline;
 }
+
+.about {
+  display: flex;
+  padding: 2.8rem;
+}
+
+.about article {
+  flex-grow: 1;
+}
+
+.aboutAvatar {
+  width: 23rem;
+  border: solid #eabe3f;
+  border-radius: 10px;
+  margin-left: 1.5rem;
+}
+
+.aboutUsParagraph {
+  text-align: justify;
+  text-indent: 1.5rem;
+  margin-right: 1.5rem;
+}

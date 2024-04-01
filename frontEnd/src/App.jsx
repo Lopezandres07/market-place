@@ -14,7 +14,7 @@ import HomeAdmin from './Views/Admin/HomeAdmin'
 import Footer from './components/Footer'
 import ProfileUser from './Views/User/ProfileUser'
 import NavigationBar from './components/NavigationBar'
-import AboutUs from './components/AboutUs'
+import AboutUs from './Views/AboutUs'
 
 function App() {
   const { token, userData } = useContext(UserContext)
