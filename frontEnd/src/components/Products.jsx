@@ -60,13 +60,6 @@ const Products = ({ nameFilter }) => {
 
   return (
     <>
-      <h2 className='text-center mb-4'>Productos</h2>
-      <Link
-        to='/FavoritesUser'
-        className='text-decoration-none text-dark'
-      >
-        Ir a Favoritos
-      </Link>
       <Row
         xs={1}
         sm={2}

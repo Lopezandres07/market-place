@@ -35,13 +35,6 @@ const Favorites = (handleWhatsAppClick) => {
 
   return (
     <>
-      <h2 className='text-center mb-4'>Favoritos</h2>
-      <Link
-        to='/homeUser'
-        className='text-decoration-none text-dark'
-      >
-        Volver a Productos
-      </Link>
       <Row
         xs={1}
         sm={2}

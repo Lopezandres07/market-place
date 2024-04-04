@@ -15,24 +15,6 @@ function Home() {
               categorías.
             </p>
             <Gallery />
-            <p>
-              ¿Ya tienes una cuenta?{' '}
-              <Link
-                to='/login'
-                className='link'
-              >
-                Inicia sesión
-              </Link>
-            </p>
-            <p>
-              ¿Eres nuevo aquí?{' '}
-              <Link
-                to='/register'
-                className='link'
-              >
-                Regístrate
-              </Link>
-            </p>
           </main>
         </div>
       </div>

@@ -14,15 +14,12 @@ const NavigationBar = () => {
     <>
       <Navbar className='navigation px-4 py-0 justify-content-between align-items-center'>
         <Navbar.Brand onClick={() => navigate(token ? '/homeUser' : '/')}>
-          <NavbarText>
-            <h4>Rústico Kids</h4>
-          </NavbarText>
+          <img
+            alt='Logo'
+            src='/img/newLogo.png'
+            className='logo'
+          />
         </Navbar.Brand>
-        <img
-          alt='Logo'
-          src='/img/newLogo.png'
-          className='logo'
-        />
         {token && userData ? (
           <Nav className='link ml-auto'>
             <NavLink
@@ -33,15 +30,15 @@ const NavigationBar = () => {
             </NavLink>
             <NavLink
               className={setActiveClass}
-              to='/aboutUs'
-            >
-              Conóceme
-            </NavLink>
-            <NavLink
-              className={setActiveClass}
               to={`/user/${userData.id}`}
             >
               Mi Perfil
+            </NavLink>
+            <NavLink
+              className={setActiveClass}
+              to='/favoritesUser'
+            >
+              Favoritos
             </NavLink>
             <NavLink
               className={setActiveClass}
@@ -52,7 +49,7 @@ const NavigationBar = () => {
             </NavLink>
           </Nav>
         ) : (
-          <Nav className='link ml-auto'>
+          <Nav className='link'>
             <NavLink
               className={setActiveClass}
               to='/aboutUs'
