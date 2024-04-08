@@ -62,24 +62,23 @@ function App() {
               element={<ProfileUser />}
             />
           ) : (
-            <Route
-              path='/login'
-              element={<Login />}
-            />
+            <Navigate to='/login' />
           )}
-          <Route
-            path='/favoritesUser'
-            element={
-              token ? (
+
+          {token && userData ? (
+            <Route
+              path='/favoritesUser'
+              element={
                 <FavoritesUser
                   favorites={favorites}
                   removeFromFavorites={removeFromFavorites}
                 />
-              ) : (
-                <Navigate to='/login' />
-              )
-            }
-          />
+              }
+            />
+          ) : (
+            <Navigate to='/login' />
+          )}
+
           <Route
             path='/admin/publications/create'
             element={
@@ -94,6 +93,7 @@ function App() {
               )
             }
           />
+
           <Route
             path='/admin/products'
             element={
@@ -108,6 +108,7 @@ function App() {
               )
             }
           />
+
           <Route
             path='*'
             element={<NotFound />}
