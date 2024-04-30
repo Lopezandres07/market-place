@@ -23,10 +23,6 @@ function App() {
 
   const [favorites, setFavorites] = useState([])
 
-  const addToFavorites = (product) => {
-    setFavorites([...favorites, product])
-  }
-
   const removeFromFavorites = (product) => {
     setFavorites(favorites.filter((fav) => fav.id !== product.id))
   }
@@ -53,43 +49,55 @@ function App() {
             element={<AboutUs />}
           />
           <Route
+            path='*'
+            element={<NotFound />}
+          />
+
+          {/* Rutas Protegidas */}
+
+          <Route
             path='/homeUser'
             element={token ? <HomeUser /> : <Navigate to='/login' />}
           />
-          {token && userData ? (
-            <Route
-              path={`/user/:id`}
-              element={<ProfileUser />}
-            />
-          ) : (
-            <Navigate to='/login' />
-          )}
 
-          {token && userData ? (
-            <Route
-              path='/favoritesUser'
-              element={
+          <Route
+            path={`/user/:id`}
+            element={
+              token && userData ? (
+                <ProfileUser />
+              ) : (
+                <>
+                  <Navigate to='/login' />
+                </>
+              )
+            }
+          />
+
+          <Route
+            path='/favoritesUser'
+            element={
+              token && userData ? (
                 <FavoritesUser
                   favorites={favorites}
                   removeFromFavorites={removeFromFavorites}
                 />
-              }
-            />
-          ) : (
-            <Navigate to='/login' />
-          )}
+              ) : (
+                <>
+                  <Navigate to='/login' />
+                </>
+              )
+            }
+          />
 
           <Route
             path='/admin/publications/create'
             element={
-              token ? (
-                userData && userData.role_id == 1 ? (
-                  <AdminCreatePublication />
-                ) : (
-                  <Navigate to='/' />
-                )
+              token && userData && userData.role_id == 1 ? (
+                <AdminCreatePublication />
               ) : (
-                <Navigate to='/login' />
+                <>
+                  <Navigate to='/login' />
+                </>
               )
             }
           />
@@ -97,22 +105,17 @@ function App() {
           <Route
             path='/admin/products'
             element={
-              token ? (
-                userData && userData.role_id == 1 ? (
-                  <HomeAdmin />
-                ) : (
-                  <Navigate to='/' />
-                )
+              token && userData && userData.role_id == 1 ? (
+                <HomeAdmin />
               ) : (
-                <Navigate to='/login' />
+                <>
+                  <Navigate to='/login' />
+                </>
               )
             }
           />
 
-          <Route
-            path='*'
-            element={<NotFound />}
-          />
+          {/* Rutas Protegidas */}
         </Routes>
       </main>
       <Footer />
