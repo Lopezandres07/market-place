@@ -18,8 +18,6 @@ import AboutUs from './Views/AboutUs'
 
 function App() {
   const { token, userData } = useContext(UserContext)
-  console.log(userData)
-  console.log(token)
 
   const [favorites, setFavorites] = useState([])
 
